@@ -1,0 +1,81 @@
+$tiffany: #00cccc;
+$brownish-grey: #626262;
+$white: #ffffff;
+$black: #000000;
+$greyish-brown: #515151;
+$greyish: #b8b8b8;
+$warm-grey: #838383;
+$greyish-brown-two: #494949;
+$warm-grey-two: #747474;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr [col-start]);
+    grid-template-rows: repeat(10, auto [row-start]);
+    grid-column-gap:24px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 10% 1fr;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 20px;
+    grid-column: 1 / -1;
+}
+
+.brand {
+    align-self: center;
+    justify-self: center;
+}
+
+//Flexbox for menu
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    list-style:none;
+    align-self: center;
+    justify-self: center;
+
+    &-link {
+        margin: 0 36px;
+        align-self: center;
+        justify-self: center;
+    }
+}
+
+main {
+    grid-column: 1 / -1;
+    height: 100vh;
+    background: url(../images/HeroImage.png);
+    background-repeat: no-repeat;
+    overflow-y: scroll;
+}
+
+h1 {
+    grid-column: 2 / 4;
+    grid-row: 2;
+}
+
+.services-section {
+
+}
+
+.featured-clients {
+
+}
+
+.featured-clients {
+    
+}
+
+.contact-section {
+
+}
