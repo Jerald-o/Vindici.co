@@ -15,16 +15,21 @@
 }
 
 header {
+  height: 96px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 10% 1fr;
-      grid-template-columns: 10% 1fr;
+  -ms-grid-columns: 5% 1fr;
+      grid-template-columns: 5% 1fr;
   background-color: rgba(0, 0, 0, 0.7);
-  font-size: 20px;
   grid-column: 1 / -1;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .brand {
+  padding-left: 3em;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -44,9 +49,7 @@ header {
           align-items: center;
   color: #ffffff;
   list-style: none;
-  -ms-flex-item-align: center;
-      align-self: center;
-  justify-self: center;
+  overflow: hidden;
 }
 
 .nav-link {
@@ -56,21 +59,37 @@ header {
       align-self: center;
   -ms-grid-column-align: center;
       justify-self: center;
+  font-family: bebas-kai,sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
 }
 
 main {
   grid-column: 1 / -1;
   height: 100vh;
-  background: url(../images/HeroImage.png);
+  display: -ms-grid;
+  display: grid;
+  background: url(../images/landingBG.png);
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
   background-repeat: no-repeat;
-  overflow-y: scroll;
+  overflow: hidden;
 }
 
-h1 {
+main h1 {
   -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-column: 2 / 4;
+  -ms-grid-column-span: 4;
+  grid-column: 2 / 6;
   -ms-grid-row: 2;
   grid-row: 2;
+  font-family: Roboto;
+  font-size: 72px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
 }
 /*# sourceMappingURL=styles.css.map */
