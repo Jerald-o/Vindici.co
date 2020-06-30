@@ -75,9 +75,11 @@ main {
       grid-template-columns: repeat(12, 1fr);
   background-repeat: no-repeat;
   overflow: hidden;
+  background-origin: content-box;
 }
 
 main h1 {
+  margin-top: 2em;
   -ms-grid-column: 2;
   -ms-grid-column-span: 4;
   grid-column: 2 / 6;

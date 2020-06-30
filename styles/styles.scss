@@ -1,102 +1,4 @@
-// $tiffany: #00cccc;
-// $brownish-grey: #626262;
-// $white: #ffffff;
-// $black: #000000;
-// $greyish-brown: #515151;
-// $greyish: #b8b8b8;
-// $warm-grey: #838383;
-// $greyish-brown-two: #494949;
-// $warm-grey-two: #747474;
-
-
-// * {
-//     box-sizing: border-box;
-//     margin: 0;
-// }
-
-// .grid {
-//     display: grid;
-//     grid-template-columns: repeat(12, 1fr [col-start]);
-//     grid-template-rows: repeat(10, auto [row-start]);
-//     grid-column-gap:24px;
-// }
-
-// header {
-//     height: 96px;
-//     display: grid;
-//     grid-template-columns: 10% 1fr;
-//     background-color: rgba(0, 0, 0, 0.7);
-//     grid-column: 1 / -1;
-//     position: relative;
-//     align-items: center;
-// }
-
-// .brand {
-//     align-self: center;
-//     justify-self: center;
-// }
-
-// //Flexbox for menu
-
-// .nav {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     color: $white;
-//     list-style:none;
-//     align-self: center;
-//     justify-self: center;
-//     &-link {
-//         margin: 0 36px;
-//         align-self: center;
-//         justify-self: center;
-//         font-family: bebas-kai,sans-serif;
-//         font-weight: 300;
-//         font-style: normal;
-//         font-size:18px;
-//     }
-// }
-
-// main {
-//     grid-column: 1 / -1;
-//     height: 100vh;
-//     display: grid;
-//     background: url(../images/landingBG.png);;
-//     grid-template-columns: repeat(12, 1fr);
-//     background-repeat: no-repeat;
-
-//     h1 {
-//         grid-column: 2 / 4;
-//         grid-row: 2;
-//         font-family: Roboto
-//         font-size: 72px;
-//         font-weight: bold;
-//         font-stretch: normal;
-//         font-style: normal;
-//         line-height: normal;
-//         letter-spacing: normal;
-        
-//     }
-// }
-
-
-
-// .services-section {
-//     display: grid;
-
-// }
-
-// .featured-clients {
-
-// }
-
-// .featured-clients {
-    
-// }
-
-// .contact-section {
-
-// }  
+@import "scss/fontawesome.scss"
 
 $tiffany: #00cccc;
 $brownish-grey: #626262;
@@ -159,11 +61,13 @@ main {
         grid-column: 1 / -1;
         height: 100vh;
         display: grid;
-        background: url(../images/landingBG.png);;
+        background: url(../images/landingBG.png) ;
         grid-template-columns: repeat(12, 1fr);
         background-repeat: no-repeat;
         overflow: hidden;
+        background-origin: content-box;
         h1 {
+            margin-top:2em;
             grid-column: 2 / 6;
             grid-row: 2;
             font-family: Roboto;
