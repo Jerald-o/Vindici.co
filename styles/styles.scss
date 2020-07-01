@@ -9,6 +9,11 @@ $greyish: #b8b8b8;
 $warm-grey: #838383;
 $greyish-brown-two: #494949;
 $warm-grey-two: #747474;
+$spacing-s: 0.25rem;
+$spacing-md: 0.5rem;
+$spacing-lg: 0.75rem;
+$spacing-xl-2: 1rem;
+$spacing-xxl-3: 1.25rem;
 
 * {
     box-sizing: border-box;
@@ -66,7 +71,7 @@ main {
         background-repeat: no-repeat;
         overflow: hidden;
         background-origin: content-box;
-        h1 {
+        .hero-text {
             margin-top:2em;
             grid-column: 2 / 6;
             grid-row: 2;
@@ -80,11 +85,12 @@ main {
             color: $white;
 
         }
+
+        .hero-text::after {  
+            display: inline-block;
+            content: "";
+            border-top: .6rem solid $tiffany;
+            width: 13.5rem;        
+        }
 }
 
-.hero-text::after {  
-    display: inline-block;
-    content: "";
-    border-top: .6rem solid $tiffany;
-    width: 13.5rem;        
-}
