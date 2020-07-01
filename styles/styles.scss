@@ -1,4 +1,4 @@
-@import "scss/fontawesome.scss"
+@import "scss/fontawesome.scss";
 
 $tiffany: #00cccc;
 $brownish-grey: #626262;
@@ -78,5 +78,13 @@ main {
             line-height: normal;
             letter-spacing: normal;
             color: $white;
+
         }
+}
+
+.hero-text::after {  
+    display: inline-block;
+    content: "";
+    border-top: .6rem solid $tiffany;
+    width: 13.5rem;        
 }
