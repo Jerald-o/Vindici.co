@@ -1,3 +1,5 @@
+@import "scss/fontawesome.scss";
+
 $tiffany: #00cccc;
 $brownish-grey: #626262;
 $white: #ffffff;
@@ -7,6 +9,11 @@ $greyish: #b8b8b8;
 $warm-grey: #838383;
 $greyish-brown-two: #494949;
 $warm-grey-two: #747474;
+$spacing-s: 0.25rem;
+$spacing-md: 0.5rem;
+$spacing-lg: 0.75rem;
+$spacing-xl-2: 1rem;
+$spacing-xxl-3: 1.25rem;
 
 * {
     box-sizing: border-box;
@@ -21,19 +28,20 @@ $warm-grey-two: #747474;
 }
 
 header {
+    height: 96px;
     display: grid;
-    grid-template-columns: 10% 1fr;
+    grid-template-columns: 5% 1fr;
     background-color: rgba(0, 0, 0, 0.7);
-    font-size: 20px;
     grid-column: 1 / -1;
+    position: relative;
+    align-items: center;
 }
 
 .brand {
+    padding-left: 3em;
     align-self: center;
     justify-self: center;
 }
-
-//Flexbox for menu
 
 .nav {
     display: flex;
@@ -41,41 +49,48 @@ header {
     align-items: center;
     color: $white;
     list-style:none;
-    align-self: center;
-    justify-self: center;
-
+    overflow: hidden;
     &-link {
         margin: 0 36px;
         align-self: center;
         justify-self: center;
+        font-family: bebas-kai,sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size:18px;
     }
+
 }
 
 main {
-    grid-column: 1 / -1;
-    height: 100vh;
-    background: url(../images/HeroImage.png);
-    background-repeat: no-repeat;
-    overflow-y: scroll;
+        grid-column: 1 / -1;
+        height: 100vh;
+        display: grid;
+        background: url(../images/landingBG.png) ;
+        grid-template-columns: repeat(12, 1fr);
+        background-repeat: no-repeat;
+        overflow: hidden;
+        background-origin: content-box;
+        .hero-text {
+            margin-top:2em;
+            grid-column: 2 / 6;
+            grid-row: 2;
+            font-family: Roboto;
+            font-size: 72px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: $white;
+
+        }
+
+        .hero-text::after {  
+            display: inline-block;
+            content: "";
+            border-top: .6rem solid $tiffany;
+            width: 13.5rem;        
+        }
 }
 
-h1 {
-    grid-column: 2 / 4;
-    grid-row: 2;
-}
-
-.services-section {
-
-}
-
-.featured-clients {
-
-}
-
-.featured-clients {
-    
-}
-
-.contact-section {
-
-}
