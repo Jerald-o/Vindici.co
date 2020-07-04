@@ -6125,16 +6125,16 @@ main {
   background-origin: content-box;
 }
 
-main h1 {
+main .hero-text {
   margin-top: 2em;
   -ms-grid-column: 2;
   -ms-grid-column-span: 4;
   grid-column: 2 / 6;
   -ms-grid-row: 2;
   grid-row: 2;
-  font-family: Roboto;
+  font-family: Bebas-kai;
   font-size: 72px;
-  font-weight: bold;
+  font-weight: 400;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
@@ -6142,10 +6142,11 @@ main h1 {
   color: #ffffff;
 }
 
-.hero-text::after {
-  display: inline-block;
+main .hero-text::after {
+  display: block;
   content: "";
   border-top: 0.6rem solid #00cccc;
   width: 13.5rem;
+  margin-top: 2rem;
 }
 /*# sourceMappingURL=styles.css.map */

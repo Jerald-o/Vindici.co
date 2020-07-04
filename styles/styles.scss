@@ -1,4 +1,7 @@
 @import "scss/fontawesome.scss";
+@import "./fontawesome/scss/solid.scss";
+@import "./fontawesome/scss/brands.scss";
+
 
 $tiffany: #00cccc;
 $brownish-grey: #626262;
@@ -14,6 +17,15 @@ $spacing-md: 0.5rem;
 $spacing-lg: 0.75rem;
 $spacing-xl-2: 1rem;
 $spacing-xxl-3: 1.25rem;
+
+.user {
+    @extend %fa-icon;
+    @extend .fas;
+  
+    &:before {
+      content: fa-content($fa-var-user);
+    }
+  }
 
 * {
     box-sizing: border-box;
@@ -71,26 +83,37 @@ main {
         background-repeat: no-repeat;
         overflow: hidden;
         background-origin: content-box;
+
         .hero-text {
             margin-top:2em;
             grid-column: 2 / 6;
             grid-row: 2;
-            font-family: Roboto;
+            font-family:Bebas-kai;
             font-size: 72px;
-            font-weight: bold;
+            font-weight:400;
             font-stretch: normal;
             font-style: normal;
             line-height: normal;
             letter-spacing: normal;
             color: $white;
-
         }
 
         .hero-text::after {  
-            display: inline-block;
+            display: block;
             content: "";
             border-top: .6rem solid $tiffany;
-            width: 13.5rem;        
+            width: 13.5rem;     
+            margin-top:2rem;
+
         }
+
+        .instagram {
+            @extend %fa-icon;
+            @extend .fab;
+          
+            &:before {
+              content: fa-content($fa-var-instagram);
+            }
+          }
 }
 
