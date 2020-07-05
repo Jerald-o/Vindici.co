@@ -20,15 +20,15 @@
 .fa-lg {
   font-size: 1.33333em;
   line-height: 0.75em;
-  vertical-align: -.0667em;
+  vertical-align: -0.0667em;
 }
 
 .fa-xs {
-  font-size: .75em;
+  font-size: 0.75em;
 }
 
 .fa-sm {
-  font-size: .875em;
+  font-size: 0.875em;
 }
 
 .fa-1x {
@@ -96,8 +96,8 @@
 
 .fa-border {
   border: solid 0.08em #eee;
-  border-radius: .1em;
-  padding: .2em .25em .15em;
+  border-radius: 0.1em;
+  padding: 0.2em 0.25em 0.15em;
 }
 
 .fa-pull-left {
@@ -113,7 +113,7 @@
 .far.fa-pull-left,
 .fal.fa-pull-left,
 .fab.fa-pull-left {
-  margin-right: .3em;
+  margin-right: 0.3em;
 }
 
 .fa.fa-pull-right,
@@ -121,75 +121,76 @@
 .far.fa-pull-right,
 .fal.fa-pull-right,
 .fab.fa-pull-right {
-  margin-left: .3em;
+  margin-left: 0.3em;
 }
 
 .fa-spin {
   -webkit-animation: fa-spin 2s infinite linear;
-          animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear;
 }
 
 .fa-pulse {
   -webkit-animation: fa-spin 1s infinite steps(8);
-          animation: fa-spin 1s infinite steps(8);
+  animation: fa-spin 1s infinite steps(8);
 }
 
 @-webkit-keyframes fa-spin {
   0% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 @keyframes fa-spin {
   0% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 .fa-rotate-90 {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
   -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 .fa-rotate-180 {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
   -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .fa-rotate-270 {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
   -webkit-transform: rotate(270deg);
-          transform: rotate(270deg);
+  transform: rotate(270deg);
 }
 
 .fa-flip-horizontal {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
   -webkit-transform: scale(-1, 1);
-          transform: scale(-1, 1);
+  transform: scale(-1, 1);
 }
 
 .fa-flip-vertical {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
   -webkit-transform: scale(1, -1);
-          transform: scale(1, -1);
+  transform: scale(1, -1);
 }
 
-.fa-flip-both, .fa-flip-horizontal.fa-flip-vertical {
+.fa-flip-both,
+.fa-flip-horizontal.fa-flip-vertical {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
   -webkit-transform: scale(-1, -1);
-          transform: scale(-1, -1);
+  transform: scale(-1, -1);
 }
 
 :root .fa-rotate-90,
@@ -199,7 +200,7 @@
 :root .fa-flip-vertical,
 :root .fa-flip-both {
   -webkit-filter: none;
-          filter: none;
+  filter: none;
 }
 
 .fa-stack {
@@ -6036,7 +6037,8 @@ readers do not read off random characters that represent icons */
   width: 1px;
 }
 
-.sr-only-focusable:active, .sr-only-focusable:focus {
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
   clip: auto;
   height: auto;
   margin: 0;
@@ -6047,17 +6049,17 @@ readers do not read off random characters that represent icons */
 
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
 }
 
 .grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr [col-start])[12];
-      grid-template-columns: repeat(12, 1fr [col-start]);
-  -ms-grid-rows: (auto [row-start])[10];
-      grid-template-rows: repeat(10, auto [row-start]);
+  -ms-grid-columns: (1fr [col-start]) [12];
+  grid-template-columns: repeat(12, 1fr [col-start]);
+  -ms-grid-rows: (auto [row-start]) [10];
+  grid-template-rows: repeat(10, auto [row-start]);
   grid-column-gap: 24px;
 }
 
@@ -6066,22 +6068,22 @@ header {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 5% 1fr;
-      grid-template-columns: 5% 1fr;
+  grid-template-columns: 5% 1fr;
   background-color: rgba(0, 0, 0, 0.7);
   grid-column: 1 / -1;
   position: relative;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .brand {
   padding-left: 3em;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
   -ms-grid-column-align: center;
-      justify-self: center;
+  justify-self: center;
 }
 
 .nav {
@@ -6089,11 +6091,11 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: #ffffff;
   list-style: none;
   overflow: hidden;
@@ -6102,11 +6104,11 @@ header {
 .nav-link {
   margin: 0 36px;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
   -ms-grid-column-align: center;
-      justify-self: center;
-  font-family: bebas-kai,sans-serif;
+  justify-self: center;
+  font-family: bebas-kai, sans-serif;
   font-weight: 300;
   font-style: normal;
   font-size: 18px;
@@ -6118,14 +6120,14 @@ main {
   display: -ms-grid;
   display: grid;
   background: url(../images/landingBG.png);
-  -ms-grid-columns: (1fr)[12];
-      grid-template-columns: repeat(12, 1fr);
+  -ms-grid-columns: (1fr) [12];
+  grid-template-columns: repeat(12, 1fr);
   background-repeat: no-repeat;
   overflow: hidden;
   background-origin: content-box;
 }
 
-main h1 {
+main .hero-text {
   margin-top: 2em;
   -ms-grid-column: 2;
   -ms-grid-column-span: 4;
@@ -6142,10 +6144,196 @@ main h1 {
   color: #ffffff;
 }
 
-.hero-text::after {
+main .hero-text::after {
   display: inline-block;
   content: "";
   border-top: 0.6rem solid #00cccc;
   width: 13.5rem;
 }
+
+.section-service {
+  display: -ms-grid;
+  display: grid;
+  font-size: 15px;
+  height: 50vh;
+  width: 100vw;
+  background-color: red;
+  display: grid;
+  -ms-grid-columns: (1fr) [12];
+  grid-template-columns: repeat(12, 1fr);
+  -ms-grid-rows: (1fr) [6];
+  grid-template-rows: repeat(6, 1fr);
+  grid-gap: 26x;
+  grid-template-areas: ". . . . . . . . . . . ." ". . . . . . . . . . . ." ". . . . . . . . . . . ." ". . . . . . . . . . . ." ". . . . . . . . . . . ." ". . . . . . . . . . . .";
+}
+
+#service-text {
+  grid-area: text;
+  background-color: palegreen;
+}
+
+#service-icons {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+  grid-area: icon;
+  background-color: purple;
+}
+
+#service_h3 {
+  grid-area: h3;
+  color: white;
+}
+
+#service_p {
+  grid-area: service_p;
+  color: white;
+}
+
+.service-cols {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  font-size: 40px;
+  min-height: 300px;
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-gap: 26px;
+  grid-template-areas:
+    ".    .    .    .     .     .    .    .         .       .      .      ."
+    ".   head head head   .     .    .    .         .       .      .      ."
+    ".   head head head   .     .    .  pshop      prem  figma   sass     ."
+    ".    p    p    p     p     p    .    .         .       .      .      ."
+    ".    p    p    p     p     p    .  jscript    html    css    notion  ."
+    ".    p    p    p     p     p    .    .         .       .       .     ."
+    ".    .    .    .     .     .    .    .         .       .       .     .";
+}
+
+#service-wrapper {
+  display: grid;
+  height: 30.25rem;
+  background-color: #4a4a4a;
+  grid-template-columns: 1fr;
+}
+.service-header {
+
+color: white ;  
+font-family: BebasKai;
+font-size: 2rem;
+grid-area: head;
+align-items: center;
+z-index: 2;
+
+}
+
+.Vector {
+  width: 3.125rem;
+  height: 3.125rem;
+  object-fit: contain;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: var(--tiffany);
+}
+
+#service-bg{
+  background-image: url(/images/bg-logo.png);
+  background-repeat: no-repeat;
+  z-index: 1;
+  grid-row: 2 / 6;
+  grid-column: 2 / 6;
+  
+}
+
+.service-p {
+  font-family: Roboto;
+  font-size: 1.5rem; 
+  color: white;
+  grid-area: p;
+  z-index: 2;
+
+}
+.photoshop-icon {
+  align-self: center;    /* vertical centering */
+  justify-content: center;
+  grid-area: pshop;
+
+}
+
+#photoshop-img{
+  transform: translate(10px, 0px);
+
+}
+
+#photoshop-p{
+  width: 5.5rem;
+  height: 1.313rem;
+  font-family: Roboto;
+  font-size: 1.125rem;
+  color: white;
+}
+
+.premiere-icon {
+  grid-area: prem;
+}
+
+#premiere-p{
+  width: 5.5rem;
+  height: 1.313rem;
+  font-family: Roboto;
+  font-size: 1.125rem;
+  color: white;
+  transform: translate(-5px, 0px);
+  
+}
+.figma-icon {
+  grid-area: figma;
+}
+.notion-icon {
+  grid-area: notion;
+}
+
+.js-icon {
+  grid-area: jscript;
+}
+
+#js-img{
+  transform: translate(10px, 0px);
+
+}
+
+.css-icon {
+  grid-area: css;
+}
+
+#css-p{
+  width: 5.5rem;
+  height: 1.313rem;
+  font-family: Roboto;
+  font-size: 1.125rem;
+  color: white;
+  transform: translate(10px, 0px);
+
+}
+.html-icon {
+  grid-area: html;
+}
+.sass-icon {
+  grid-area: sass;
+}
+
+#sass-p{
+  font-family: Roboto;
+  font-size: 1.125rem;
+  color: white;
+  transform: translate(10px, 0px);
+}
+
+.item11 {
+  background: forestgreen;
+  grid-area: eleven;
+}
+.item12 {
+  background: forestgreen;
+  grid-area: twelve;
+}
+
 /*# sourceMappingURL=styles.css.map */

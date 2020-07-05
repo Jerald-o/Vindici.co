@@ -94,3 +94,50 @@ main {
         }
 }
 
+
+.section-service{
+  display: grid;
+  font-size: 15px;
+  height: 50vh;
+  width: 100vw;
+  background-color: red;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(6,1fr);
+  grid-gap: 26x;
+  grid-template-areas:
+  ". . . . . . . . . . . ."
+  ". . . . . . . . . . . ."
+  ". . . . . . . . . . . ."
+  ". . . . . . . . . . . ."
+  ". . . . . . . . . . . ."
+  ". . . . . . . . . . . .";
+  
+}
+
+#service-text{
+  grid-area: text;
+  background-color: palegreen;
+  
+
+
+}
+
+#service-icons{
+    justify-content: end;
+    grid-area: icon;
+    background-color: purple;
+    
+  
+  }
+
+
+#service_h3{
+  grid-area: h3;
+  color: white;
+}
+
+#service_p{
+  grid-area: service_p;
+  color: white;
+}
