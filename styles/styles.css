@@ -6152,7 +6152,7 @@ main .hero-text::after {
 }
 
 
-@media (min-width: 897px) { 
+@media (min-width: 1056px) { 
 
 #service-wrapper {
   display: grid;
@@ -6327,10 +6327,10 @@ z-index: 2;
   position: relative;
   grid-template-columns: repeat(12, 1fr);
   font-size: 40px;
-  min-height: 35rem;
+  height: 35rem;
   width: 100%;
   display: grid;
-  grid-template-rows: repeat(7, 1fr);
+  grid-template-rows: auto;
   grid-gap: 26px;
   grid-template-areas:
     ".    .    .     .    .     .    .    .       .       .      .      ."
@@ -6338,9 +6338,11 @@ z-index: 2;
     ".    h1   h1   h1    .     .    .    .       .       .      .      ."
     ".    .    gb   gb    .    ecm  ecm   .       jc     jc      .      ."
     ".    .    gb   gb    .    ecm  ecm   .       jc     jc      .      ."
-    ".    .    .    .     .     .    .    .       .       .      .      ."
-    ".    .    .    .     .     .    .    .       .       .      .      .";
-}
+    ".    .    .     .    .     .    .    .       .       .      .      ."
+    ".    .    .     .    .     .    .    .       .       .      .      ."
+
+    ;
+  }
 
 #partners-head{
   grid-area: h1;
@@ -6386,6 +6388,7 @@ z-index: 2;
 
 #partners-ecom{
   width: 7.438rem;
+  z-index: 2;
   margin-top:8vh;  height: 9.75rem;
   object-fit: contain;
   grid-area: ecm;
@@ -6406,7 +6409,7 @@ z-index: 2;
 
 .process-wrapper {
   display: grid;
-  height: 30.25rem;
+  height: 40rem;
   background-color: #4a4a4a;
   grid-template-columns: 1fr;
 }
@@ -6415,12 +6418,13 @@ z-index: 2;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   font-size: 40px;
-  min-height: 30.25rem;
+  height: 40rem;
   width: 100%;
   display: grid;
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: auto;
   grid-gap: 26px;
   grid-template-areas:
+    ".    .    .    .     .     .      .    .       .       .       .      ."
     ".   phd  phd   .     .     .      .    .       .       .       .      ."
     ".    .    .    .     .     .      .    .       .       .       .      ."
     ".    p1   p2   p3    p4    p5     .    .       .       .       .      ."
@@ -6819,10 +6823,10 @@ z-index: 2;
 }
 
 
-@media (max-width: 896px) { 
+@media (max-width: 1056px) { 
   #service-wrapper {
     display: grid;
-    height: 32rem; 
+    height: 38rem;
     width: 100%;
     object-fit: contain;
     background-color: #4a4a4a;
@@ -6832,18 +6836,16 @@ z-index: 2;
   .service-cols {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    height: 32rem;
+    height: 38rem;
     width: 100%;
     object-fit: contain;
     display: grid;
     grid-template-rows: auto;
-    grid-gap: 26px;
+    grid-gap: 16px;
     grid-template-areas:
-    ".            .        .           ."
     ".            .        .           ."
     "head        head     head       head "
     "head        head     head       head"
-    
     "p            p        p           p"
     "p            p        p           p"
     ".            .        .            ."
@@ -6880,12 +6882,17 @@ z-index: 2;
   }
   
   #service-bg{
-    z-index: 1;
+    display: none;
+    /*
+  Code for background, but it clips off
+  
     background-image: url(/images/bg-logo.png);
     background-repeat: no-repeat;
-
-    grid-column: 1 / 5;
-    grid-row: 3/ 7;
+    z-index: 1;
+    grid-row: 2 / 6;
+    grid-column: 2 / 12;
+    */
+    
 
     
   }
@@ -6907,8 +6914,7 @@ z-index: 2;
     display: none;
   }
   .photoshop-icon {
-    align-self: center;    /* vertical centering */
-    justify-content: center;
+    justify-self: center;
     grid-area: pshop;
   
   }
@@ -6928,6 +6934,7 @@ z-index: 2;
   }
   
   .premiere-icon {
+    justify-self: center;
     grid-area: prem;
     font-size: 0.884rem;
 
@@ -6943,31 +6950,21 @@ z-index: 2;
     
   }
   .figma-icon {
-    width: 100%;
-    font-size: 0.884rem;
-
-    height: auto;
     grid-area: figma;
+    justify-self: center;
+
   }
   .notion-icon {
-    width: 100%;
-    height: auto;
-    font-size: 0.884rem;
     grid-area: notion;
+    justify-self: center;
+
   }
 
-  #notion-p{
-    font-family: Roboto;
-    font-size: 0.884rem;
-    color: white;
-  }
   
   .js-icon {
-    width: 100%;
-    font-size: 0.884rem;
-
-    height: auto;
     grid-area: jscript;
+    justify-self: center;
+
   }
   
   #js-img{
@@ -6976,11 +6973,8 @@ z-index: 2;
   }
   
   .css-icon {
-    width: 100%;
-    font-size: 0.884rem;
-
-    height: auto;
     grid-area: css;
+    justify-self: center;
   }
   
   #css-p{
@@ -6993,9 +6987,13 @@ z-index: 2;
   }
   .html-icon {
     grid-area: html;
+    justify-self: center;
+
   }
   .sass-icon {
     grid-area: sass;
+    justify-self: center;
+
   }
   
   #sass-p{
@@ -7008,8 +7006,9 @@ z-index: 2;
 
 .partners-wrapper{
   width: 100%;
+  object-fit: contain;
   display: grid;
-  height: 35rem;
+  height: 45rem;
   background-color: #4a4a4a;
   grid-template-columns: 1fr;
 
@@ -7018,20 +7017,20 @@ z-index: 2;
 #partners-cols{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  height: 32rem;
+  height: 45rem;
   width: 100%;
+  object-fit: contain;
   display: grid;
   grid-template-rows: repeat();
-  grid-gap: 26px;
+  grid-gap: 16px;
   grid-template-areas:
   ".          .      .      ."
-  "h1         h1     h1     h1"
+  ".          .      .      ."
+  "h1         h1     h1     ."
   ".         bh1    bh1    bh1"
-  ".          .      .      ."
-  ".          .      .      ."
-  ".          .      .      ."
-  ".          .      .      ."
-  ".          .      .      ."
+  ".          gb     gb     ."
+  ".          ecm    ecm    ."
+  ".          jc     jc     ."
   ".          .      .      ."
   ".          .      .      .";
   
@@ -7040,90 +7039,125 @@ z-index: 2;
 
 #partners-head{
   grid-area: h1;
+  z-index: 2;
   font-family: Roboto;
   font-size: 3.5rem;
   font-weight: normal;
+  margin-left: .938rem;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
   color: white;
+  justify-self: center;
+
 }
 
-#partners-bh1{
+#partners-bh1{ 
+  z-index: 2;
   position: relative;
   -webkit-filter: blur(16px);
   filter: blur(4px);
   font-family: Roboto;
   font-size: 5rem;
   grid-area: bh1;
-  margin-top: -10vw;
+  width: 24.188rem;
+  margin-left: 10vw;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
   color: rgba(0, 204, 204, 0.3);
+  justify-self: center;
+  margin-top: -3vw;
+
+
 }
 #partners-gsub{
-  z-index: 1;
-  margin-top:8vh;
-  position: relative;
-  width: 13.5rem;
-  height: 13.5rem;
+  z-index: 2;
   object-fit: contain;
   grid-area: gb;
+  justify-self: center;
+
+
+
+}
+
+#gsub-pic{
+  z-index: 2;
+  width: 10rem;
+  height: 10rem;
 
 }
 
 #partners-ecom{
-  width: 7.438rem;
-  margin-top:8vh;  height: 9.75rem;
+  z-index: 2;
   object-fit: contain;
   grid-area: ecm;
-}
+  justify-self: center;
 
+}
+#ecom-pic{
+  z-index: 2;
+  width: 10rem;
+  height: 10rem;
+
+}
 #partners-jckicks{
-  margin-top:8vh;
-  width: 13.5rem;
-  height: 9.063rem;
+  z-index: 2;
   object-fit: contain;
   grid-area: jc;
+  justify-self: center;
+
+}
+
+#jc-pic{
+  z-index: 2;
+  width: 10rem;
+  height: 10rem;
 }
 
 #partners-bg{
-  grid-column: 9 / 12;
-  grid-row: 2 / 7 ;
+  z-index: 1;
+  grid-column: 1 / 4;
+  grid-row: 4 / 10 ;
+  justify-self: center;
+
 }
 
 
 .process-wrapper {
+  object-fit: contain;
   display: grid;
-  height: 30.25rem;
+  height: 50rem;
   background-color: #4a4a4a;
   grid-template-columns: 1fr;
 }
 
-#process-cols{
+#process-cols {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  height: 32rem;
+  height: 50rem;
   width: 100%;
+  object-fit: contain;
   display: grid;
-  grid-template-rows: repeat(10, 1fr);
-  grid-gap: 26px;
+  grid-template-rows: auto;
+  grid-gap: 16px;
   grid-template-areas:
-  ".          .      .      ."
-  ".          .      .      ."
-  ".          .      .      ."
-  ".          .      .      ."
-  ".          .      .      ."
-  ".          .      .      ."
-  ".          .      .      ."
-  ".          .      .      ."
-  ".          .      .      ."
-  ".          .      .      .";
+  ".            .        .            ."
+  "phd        phd      phd           phd "
+  ".            .        .            ."
+  "ppg        ppg      ppg           ppg"
+  "ppg        ppg      ppg           ppg"
+  "p1           p2       p3           p4"
+  "p5           p6       p7           p8"
+  ".            p9       p10           ."
+  ".            .        .            ."
+  ".            .        .            .";
+  
 }
+
 
 #process-head{
   height: 2.25rem;
@@ -7137,64 +7171,84 @@ z-index: 2;
   color: white;
   grid-area: phd;
   margin-top: 5vh;
+  margin-left: .938rem;
+  justify-content: center;
+  justify-self: center;
+
 }
 
 #process-1{
   grid-area: p1;
+  justify-self: center;
 
 }
 
 #process-2{
   grid-area: p2;
+  justify-self: center;
+
   
 }
 
 #process-3{
   grid-area: p3;
+  justify-self: center;
+
   
 }
 
 #process-4{
   grid-area: p4;
+  justify-self: center;
+
 }
 
 #process-5{
   grid-area: p5;
+  justify-self: center;
+
 }
 
 #process-6{
   grid-area: p6;
-  margin-top: 5vh;
+  justify-self: center;
+
 }
 
 #process-7{
   grid-area: p7;
-  margin-top: 5vh;
+  justify-self: center;
+
 
 }
 
 #process-8{
   grid-area: p8;
-  margin-top: 5vh;
+  justify-self: center;
+
 
 }
 
 #process-9{
   grid-area: p9;
-  margin-top: 5vh;
+  justify-self: center;
+
 
 }
 
 #process-10{
   grid-area: p10;
-  margin-top: 5vh;
+  justify-self: center;
+
 
 }
 
 #process-pg{
   height: 8.75rem;
+  width: 22rem;
   font-family: Roboto;
-  font-size: 1.3rem;
+  font-size: 1.25rem;
+  margin-left: .938rem;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -7203,15 +7257,17 @@ z-index: 2;
   color: white;
   grid-area: ppg;
   margin-top: -7vh;
+  justify-self: center;
+
 }
 
 
 .contact-wrapper {
   display: grid;
-  height: 44.125rem;
+  height: 72rem;
   width: 100%;
   object-fit: contain;
-  grid-template-columns: .35fr .65fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 #contact-left {
@@ -7220,17 +7276,17 @@ z-index: 2;
   object-fit: contain;
   background-color: #838383;
   grid-template-columns: repeat(5, 1fr);
-  font-size: 40px;
-  min-height: 44.125rem;;
+  font-size: 30px;
+  min-height: 30rem;
   width: 100%;
   display: grid;
   grid-template-rows: repeat(6, 1fr);
-  grid-gap: 26px;
+  grid-gap: 16px;
   grid-template-areas:
   ".    .    .    .      ."
   ".    .    .    .      ."
   ".   chd  chd  chd     ."
-  ".   btn  btn  btn      ."
+  ".   btn  btn  btn     ."
   ".    .    .    .      ."
   ".    .    .    .      .";
 
@@ -7243,19 +7299,17 @@ z-index: 2;
   object-fit: contain;
   grid-template-columns: repeat(8, 1fr);
   font-size: 40px;
-  min-height: 44.125rem;
+  height: 42rem;
   width: 100%;
   display: grid; 
   grid-template-rows: repeat(8, 1fr);
-  grid-gap: 26px;
+  grid-gap: 16px;
   grid-template-areas:
   ".    .    .    .   .   .    .   . "
-  ".    .  nme  nme nme nme    .   . "
-  ".    .  eml  eml eml eml    .   . "
-  ".    .  bdg  bdg bdg bdg    .   . "
-  ".    .  dsc  dsc dsc dsc    .   . "
-  ".    .    .    .   .   .    .   . "
-  ".    .    .    .   .   .    .   . "
+  ".    nme  nme  nme nme nme  nme   . "
+  ".    eml  eml  eml eml eml  eml   . "
+  ".    bdg  bdg  bdg bdg bdg   bdg   . "
+  ".    dsc  dsc  dsc dsc dsc   dsc   . "
   ".    .    .    .   .   .    .   . ";
 
 }
@@ -7272,6 +7326,8 @@ z-index: 2;
   letter-spacing: normal;
   color: white;
   grid-area: chd;
+  justify-self: center;
+
 
 }
 
@@ -7284,11 +7340,13 @@ z-index: 2;
   border-radius: 220px;
   background-color: var(--greyish);
   grid-area: btn;
-  justify-items: start;
+  justify-self: center;
+  margin-left: -10vw;
+
 }
 
 .contact-name{
-  width: 40vw;
+  width: 75vw;
   height: 4.375rem;
   border-radius: 9px;
   background-color: #515151;
@@ -7301,7 +7359,7 @@ z-index: 2;
 
 }
 .contact-email{
-  width: 40vw;
+  width: 75vw;
   height: 4.375rem;
   border-radius: 9px;
   background-color: #515151;
@@ -7315,7 +7373,7 @@ z-index: 2;
 
 }
 .contact-budget{
-  width: 40vw;
+  width: 75vw;
   height: 4.375rem;
   border-radius: 9px;
   background-color: #515151;
@@ -7329,7 +7387,7 @@ z-index: 2;
 
 }
 .contact-description{
-  width: 40vw;
+  width: 75vw;
   height: 19.625rem;
   border-radius: 9px;
   resize: none;
@@ -7341,6 +7399,159 @@ z-index: 2;
   grid-area: dsc;
 }
 
+
+.footer-wrapper {
+  display: grid;
+  width: 100%;
+  height:  33.25rem;
+  width: 100%;
+  object-fit: contain;
+  grid-template-rows: 1fr;
+}
+
+#footer-left {
+  display: none;
+
+
+}
+
+#footer-right {
+  display: grid;
+  background-color:  #626262;
+  object-fit: contain;
+  height:  33.25rem;
+  grid-template-columns: repeat(6, 1fr);
+  width: 100%;
+  display: grid; 
+  grid-template-rows: auto;
+  grid-gap: 16px;
+  grid-template-areas:
+  ".    .    .    .    .     .       "
+  ".    .    .    .    .     .      "
+  ".    .    .    .    .    mnu     "
+  ".   fhd  fhd   fhd  .    hme   "
+  ".    .    .    .    .    wrk  "
+  ".    be   ig  lin   .    prs     "
+  ".    be   ig  lin    .    cnt  "
+  ".    .    .    .    .     .     "
+  ".   tm   tm   tm   tm    tm     "
+  ".    .    .    .    .     .      ";
+
+}
+
+#footer-logo{
+  grid-area: lgo;
+  margin-top: 5vh;
+}
+
+#footer-head{
+  grid-area: fhd;
+  font-family: Roboto;
+  font-size: 1.875rem;
+  font-weight: normal;
+  justify-self: start;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: white;
+}
+
+#footer-ig{
+  grid-area: ig;
+}
+
+#footer-behance{
+  grid-area: be;
+}
+#footer-linkedin{
+  grid-area: lin;
+
+}
+
+#footer-menu{
+  justify-self: start;
+  width: 3.813rem;
+  height: 1.75rem;
+  font-family: Roboto;
+  font-size: 1.25rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #00cccc;
+  grid-area: mnu;
+  margin-top: -3vh;
+}
+
+#footer-home{
+  justify-self: start;
+  width: 4.063rem;
+  height: 1.75rem;
+  font-family: Roboto;
+  font-size: 1.25rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: white;
+  grid-area: hme;
+}
+
+#footer-work{
+  font-family: Roboto;
+  font-size: 1.25rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: white;
+  grid-area: wrk;
+  justify-self: start;
+}
+
+#footer-process{
+  font-family: Roboto;
+  font-size: 1.25rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: white;
+  justify-self: start;
+  grid-area: prs;
+}
+
+#footer-contact{
+  font-family: Roboto;
+  font-size: 1.25rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  justify-self: start;
+  color: white;
+  grid-area: cnt;
+}
+
+#footer-tm{
+  width: 32.688rem;
+  height: 1.25rem;
+  font-family: Roboto;
+  font-size: .6rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: white;
+  grid-area: tm;
+}
 
 }
 /*# sourceMappingURL=styles.css.map */
