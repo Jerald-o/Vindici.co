@@ -6152,6 +6152,17 @@ main .hero-text::after {
 }
 
 
+@media (min-width: 897px) { 
+
+#service-wrapper {
+  display: grid;
+  height: 32rem;
+  width: 100%;
+  object-fit: contain;
+  background-color: #4a4a4a;
+  grid-template-columns: 1fr;
+}
+
 .service-cols {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -6159,7 +6170,7 @@ main .hero-text::after {
   min-height: 32rem;
   width: 100%;
   display: grid;
-  grid-template-rows: repeat(8, 1fr);
+  grid-template-rows: auto;
   grid-gap: 26px;
   grid-template-areas:
     ".    .    .    .     .     .    .    .         .       .      .      ."
@@ -6173,14 +6184,6 @@ main .hero-text::after {
 
 }
 
-#service-wrapper {
-  display: grid;
-  height: 32rem;
-  width: 100%;
-  object-fit: contain;
-  background-color: #4a4a4a;
-  grid-template-columns: 1fr;
-}
 .service-header {
 color: white ;  
 font-family: bebas-kai;
@@ -6204,7 +6207,7 @@ z-index: 2;
   background-repeat: no-repeat;
   z-index: 1;
   grid-row: 2 / 6;
-  grid-column: 2 / 6;
+  grid-column: 2 / 12;
   
 }
 
@@ -6220,6 +6223,7 @@ z-index: 2;
   align-self: center;    /* vertical centering */
   justify-content: center;
   grid-area: pshop;
+  z-index: 2;
 
 }
 
@@ -6236,8 +6240,17 @@ z-index: 2;
   color: white;
 }
 
+#notion-p{
+  width: 5.5rem;
+  height: 1.313rem;
+  font-family: Roboto;
+  font-size: 1.125rem;
+  color: white;
+}
+
 .premiere-icon {
   grid-area: prem;
+  z-index: 2;
 }
 
 #premiere-p{
@@ -6250,22 +6263,27 @@ z-index: 2;
   
 }
 .figma-icon {
+  z-index: 2;
   grid-area: figma;
 }
 .notion-icon {
+  z-index: 2;
   grid-area: notion;
 }
 
 .js-icon {
+  z-index: 2;
   grid-area: jscript;
 }
 
 #js-img{
+  z-index: 2;
   transform: translate(10px, 0px);
 
 }
 
 .css-icon {
+  z-index: 2;
   grid-area: css;
 }
 
@@ -6279,9 +6297,11 @@ z-index: 2;
 
 }
 .html-icon {
+  z-index: 2;
   grid-area: html;
 }
 .sass-icon {
+  z-index: 2;
   grid-area: sass;
 }
 
@@ -6796,4 +6816,531 @@ z-index: 2;
   grid-area: tm;
 }
 
+}
+
+
+@media (max-width: 896px) { 
+  #service-wrapper {
+    display: grid;
+    height: 32rem; 
+    width: 100%;
+    object-fit: contain;
+    background-color: #4a4a4a;
+    grid-template-columns: 1fr;
+  }
+  
+  .service-cols {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 32rem;
+    width: 100%;
+    object-fit: contain;
+    display: grid;
+    grid-template-rows: auto;
+    grid-gap: 26px;
+    grid-template-areas:
+    ".            .        .           ."
+    ".            .        .           ."
+    "head        head     head       head "
+    "head        head     head       head"
+    
+    "p            p        p           p"
+    "p            p        p           p"
+    ".            .        .            ."
+    "pshop      prem     figma      notion"
+    "jscript     css     html         sass"
+    ".            .        .           ."
+    ".            .        .           ."
+    ".            .        .           .";
+    
+  }
+  
+  .service-header {
+    justify-self: center;
+    padding-left: .7rem;
+    height: 5.875rem;
+    font-size: 2.5rem;
+    font-stretch: normal;
+    font-family: Roboto;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: white;
+    grid-area: head;
+    z-index: 2;
+  
+  }
+  
+  .Vector {
+    width: 3.125rem;
+    height: 3.125rem;
+    object-fit: contain;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background-color: var(--tiffany);
+  }
+  
+  #service-bg{
+    z-index: 1;
+    background-image: url(/images/bg-logo.png);
+    background-repeat: no-repeat;
+
+    grid-column: 1 / 5;
+    grid-row: 3/ 7;
+
+    
+  }
+  
+  .service-p {
+    padding-left: .7rem;
+    justify-self: center;
+    font-family: Roboto;
+    width: 100%;
+    height: 100%;
+    font-size: 1.2rem;
+    color: white;
+    grid-area: p;
+    z-index: 2;
+  
+  }
+
+  #service-ptxt2{
+    display: none;
+  }
+  .photoshop-icon {
+    align-self: center;    /* vertical centering */
+    justify-content: center;
+    grid-area: pshop;
+  
+  }
+  
+  #photoshop-img{
+    transform: translate(10px, 0px);
+  
+  }
+  
+  #photoshop-p{
+    width: 100%;
+    padding-left: .7rem;
+    height: auto;
+    font-family: Roboto;
+    font-size: 0.884rem;
+    color: white;
+  }
+  
+  .premiere-icon {
+    grid-area: prem;
+    font-size: 0.884rem;
+
+  }
+  
+  #premiere-p{
+    width: 100%;
+    height: auto;
+    font-family: Roboto;
+    font-size: 0.884rem;
+    color: white;
+    transform: translate(-5px, 0px);
+    
+  }
+  .figma-icon {
+    width: 100%;
+    font-size: 0.884rem;
+
+    height: auto;
+    grid-area: figma;
+  }
+  .notion-icon {
+    width: 100%;
+    height: auto;
+    font-size: 0.884rem;
+    grid-area: notion;
+  }
+
+  #notion-p{
+    font-family: Roboto;
+    font-size: 0.884rem;
+    color: white;
+  }
+  
+  .js-icon {
+    width: 100%;
+    font-size: 0.884rem;
+
+    height: auto;
+    grid-area: jscript;
+  }
+  
+  #js-img{
+    transform: translate(10px, 0px);
+  
+  }
+  
+  .css-icon {
+    width: 100%;
+    font-size: 0.884rem;
+
+    height: auto;
+    grid-area: css;
+  }
+  
+  #css-p{
+
+    font-family: Roboto;
+    font-size: 0.884rem;
+    color: white;
+    transform: translate(10px, 0px);
+  
+  }
+  .html-icon {
+    grid-area: html;
+  }
+  .sass-icon {
+    grid-area: sass;
+  }
+  
+  #sass-p{
+    font-family: Roboto;
+    font-size: 1.125rem;
+    color: white;
+    transform: translate(10px, 0px);
+  }
+
+
+.partners-wrapper{
+  width: 100%;
+  display: grid;
+  height: 35rem;
+  background-color: #4a4a4a;
+  grid-template-columns: 1fr;
+
+}
+
+#partners-cols{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 32rem;
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat();
+  grid-gap: 26px;
+  grid-template-areas:
+  ".          .      .      ."
+  "h1         h1     h1     h1"
+  ".         bh1    bh1    bh1"
+  ".          .      .      ."
+  ".          .      .      ."
+  ".          .      .      ."
+  ".          .      .      ."
+  ".          .      .      ."
+  ".          .      .      ."
+  ".          .      .      .";
+  
+}
+
+
+#partners-head{
+  grid-area: h1;
+  font-family: Roboto;
+  font-size: 3.5rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: white;
+}
+
+#partners-bh1{
+  position: relative;
+  -webkit-filter: blur(16px);
+  filter: blur(4px);
+  font-family: Roboto;
+  font-size: 5rem;
+  grid-area: bh1;
+  margin-top: -10vw;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: rgba(0, 204, 204, 0.3);
+}
+#partners-gsub{
+  z-index: 1;
+  margin-top:8vh;
+  position: relative;
+  width: 13.5rem;
+  height: 13.5rem;
+  object-fit: contain;
+  grid-area: gb;
+
+}
+
+#partners-ecom{
+  width: 7.438rem;
+  margin-top:8vh;  height: 9.75rem;
+  object-fit: contain;
+  grid-area: ecm;
+}
+
+#partners-jckicks{
+  margin-top:8vh;
+  width: 13.5rem;
+  height: 9.063rem;
+  object-fit: contain;
+  grid-area: jc;
+}
+
+#partners-bg{
+  grid-column: 9 / 12;
+  grid-row: 2 / 7 ;
+}
+
+
+.process-wrapper {
+  display: grid;
+  height: 30.25rem;
+  background-color: #4a4a4a;
+  grid-template-columns: 1fr;
+}
+
+#process-cols{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 32rem;
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(10, 1fr);
+  grid-gap: 26px;
+  grid-template-areas:
+  ".          .      .      ."
+  ".          .      .      ."
+  ".          .      .      ."
+  ".          .      .      ."
+  ".          .      .      ."
+  ".          .      .      ."
+  ".          .      .      ."
+  ".          .      .      ."
+  ".          .      .      ."
+  ".          .      .      .";
+}
+
+#process-head{
+  height: 2.25rem;
+  font-family: bebas-kai;
+  font-size: 3.25rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: white;
+  grid-area: phd;
+  margin-top: 5vh;
+}
+
+#process-1{
+  grid-area: p1;
+
+}
+
+#process-2{
+  grid-area: p2;
+  
+}
+
+#process-3{
+  grid-area: p3;
+  
+}
+
+#process-4{
+  grid-area: p4;
+}
+
+#process-5{
+  grid-area: p5;
+}
+
+#process-6{
+  grid-area: p6;
+  margin-top: 5vh;
+}
+
+#process-7{
+  grid-area: p7;
+  margin-top: 5vh;
+
+}
+
+#process-8{
+  grid-area: p8;
+  margin-top: 5vh;
+
+}
+
+#process-9{
+  grid-area: p9;
+  margin-top: 5vh;
+
+}
+
+#process-10{
+  grid-area: p10;
+  margin-top: 5vh;
+
+}
+
+#process-pg{
+  height: 8.75rem;
+  font-family: Roboto;
+  font-size: 1.3rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: white;
+  grid-area: ppg;
+  margin-top: -7vh;
+}
+
+
+.contact-wrapper {
+  display: grid;
+  height: 44.125rem;
+  width: 100%;
+  object-fit: contain;
+  grid-template-columns: .35fr .65fr;
+}
+
+#contact-left {
+  display: grid;
+  justify-items: start;
+  object-fit: contain;
+  background-color: #838383;
+  grid-template-columns: repeat(5, 1fr);
+  font-size: 40px;
+  min-height: 44.125rem;;
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-gap: 26px;
+  grid-template-areas:
+  ".    .    .    .      ."
+  ".    .    .    .      ."
+  ".   chd  chd  chd     ."
+  ".   btn  btn  btn      ."
+  ".    .    .    .      ."
+  ".    .    .    .      .";
+
+}
+
+#contact-right {
+  justify-items: center;
+  display: grid;
+  background-color: #4a4a4a;
+  object-fit: contain;
+  grid-template-columns: repeat(8, 1fr);
+  font-size: 40px;
+  min-height: 44.125rem;
+  width: 100%;
+  display: grid; 
+  grid-template-rows: repeat(8, 1fr);
+  grid-gap: 26px;
+  grid-template-areas:
+  ".    .    .    .   .   .    .   . "
+  ".    .  nme  nme nme nme    .   . "
+  ".    .  eml  eml eml eml    .   . "
+  ".    .  bdg  bdg bdg bdg    .   . "
+  ".    .  dsc  dsc dsc dsc    .   . "
+  ".    .    .    .   .   .    .   . "
+  ".    .    .    .   .   .    .   . "
+  ".    .    .    .   .   .    .   . ";
+
+}
+
+#contact-head{
+  width: 21rem;
+  height: 9.625rem;
+  font-family: bebas-kai;
+  font-size: 4rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: white;
+  grid-area: chd;
+
+}
+
+#contact-text-blue{
+  color: #00cccc;
+}
+
+.contact-button{
+  height: 4rem;
+  border-radius: 220px;
+  background-color: var(--greyish);
+  grid-area: btn;
+  justify-items: start;
+}
+
+.contact-name{
+  width: 40vw;
+  height: 4.375rem;
+  border-radius: 9px;
+  background-color: #515151;
+  font-family: Roboto;
+  font-size: 1.813rem;
+  padding: 12px 12px;
+  color: #838383;
+  resize: none;
+  grid-area: nme;
+
+}
+.contact-email{
+  width: 40vw;
+  height: 4.375rem;
+  border-radius: 9px;
+  background-color: #515151;
+  font-family: Roboto;
+  font-size: 1.813rem;
+  padding: 12px 12px;
+  color: #838383;
+  resize: none;
+  grid-area: eml;
+
+
+}
+.contact-budget{
+  width: 40vw;
+  height: 4.375rem;
+  border-radius: 9px;
+  background-color: #515151;
+  font-family: Roboto;
+  font-size: 1.813rem;
+  padding: 12px 12px;
+  color: #838383;
+  resize: none;
+  grid-area: bdg;
+
+
+}
+.contact-description{
+  width: 40vw;
+  height: 19.625rem;
+  border-radius: 9px;
+  resize: none;
+  background-color: #515151;
+  font-family: Roboto;
+  font-size: 1.813rem;
+  padding: 12px 12px;
+  color: #838383;
+  grid-area: dsc;
+}
+
+
+}
 /*# sourceMappingURL=styles.css.map */
