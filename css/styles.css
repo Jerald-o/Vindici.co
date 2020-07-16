@@ -1,10 +1,168 @@
-/* Error: Expected newline.
- *   ,
- * 6 | @mixin for-desktop-up {
- *   |                       ^
- *   '
- *   scss\1-helpers\_mixins.sass 6:23  @import
- *   scss\main.scss 7:13               root stylesheet */
+/* Error: Undefined mixin.
+ *     ,
+ * 2   | /  @include for-desktop-up {    
+ * 3   | |   #service-wrapper {
+ * 4   | |     display: grid;
+ * 5   | |     height: 32rem;
+ * 6   | |     width: 100%;
+ * 7   | |     object-fit: contain;
+ * 8   | |     background-color: #4a4a4a;
+ * 9   | |     grid-template-columns: 1fr;
+ * 10  | |   }
+ * 11  | | 
+ * 12  | | .service-cols {
+ * 13  | |     display: grid;
+ * 14  | |     grid-template-columns: repeat(12, 1fr);
+ * 15  | |     font-size: 40px;
+ * 16  | |     min-height: 32rem;
+ * 17  | |     width: 100%;
+ * 18  | |     display: grid;
+ * 19  | |     grid-template-rows: auto;
+ * 20  | |     grid-gap: 26px;
+ * 21  | |     grid-template-areas:
+ * 22  | |       ".    .    .    .     .     .    .    .         .       .      .      ."
+ * 23  | |       ".   head head head   .     .    .    .         .       .      .      ."
+ * 24  | |       ".   head head head   .     .    .  pshop      prem  figma   sass     ."
+ * 25  | |       ".    p    p    p     p     p    .    .         .       .      .      ."
+ * 26  | |       ".    p    p    p     p     p    .  jscript    html    css    notion  ."
+ * 27  | |       ".    p    p    p     p     p    .    .         .       .       .     ."
+ * 28  | |       ".    .    .    .     .     .    .    .         .       .       .     ."
+ * 29  | |       ".    .    .    .     .     .    .    .         .       .       .     .";
+ * 30  | |   
+ * 31  | |   }
+ * 32  | | 
+ * 33  | | #service-bg {
+ * 34  | |     background-image: url(/images/bg-logo.png);
+ * 35  | |     background-repeat: no-repeat;
+ * 36  | |     z-index: 1;
+ * 37  | |     grid-row: 2 / 6;
+ * 38  | |     grid-column: 2 / 12;
+ * 39  | |     
+ * 40  | | }
+ * 41  | | 
+ * 42  | | .service-header {
+ * 43  | |     color: white ;  
+ * 44  | |     font-family: bebas-kai;
+ * 45  | |     font-size: 3rem;
+ * 46  | |     grid-area: head;
+ * 47  | |     align-items: center;
+ * 48  | |     z-index: 2;
+ * 49  | |     
+ * 50  | | }
+ * 51  | | 
+ * 52  | | .service-p {
+ * 53  | |     font-family: Roboto;
+ * 54  | |     font-size: 1.3rem; 
+ * 55  | |     color: white;
+ * 56  | |     grid-area: p;
+ * 57  | |     z-index: 2;
+ * 58  | |   
+ * 59  | | }
+ * 60  | | 
+ * 61  | | .Vector {
+ * 62  | |         width: 3.125rem;
+ * 63  | |         height: 3.125rem;
+ * 64  | |         object-fit: contain;
+ * 65  | |         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+ * 66  | |         background-color: var(--tiffany);
+ * 67  | | }
+ * 68  | |     .photoshop-icon {
+ * 69  | |             align-self: center;    /* vertical centering *∕
+ * 70  | |             justify-content: center;
+ * 71  | |             grid-area: pshop;
+ * 72  | |             z-index: 2;
+ * 73  | |         
+ * 74  | |     }
+ * 75  | |         
+ * 76  | |     #photoshop-img{
+ * 77  | |             transform: translate(10px, 0px);
+ * 78  | |         
+ * 79  | |     }
+ * 80  | |         
+ * 81  | |     #photoshop-p{
+ * 82  | |             width: 5.5rem;
+ * 83  | |             height: 1.313rem;
+ * 84  | |             font-family: Roboto;
+ * 85  | |             font-size: 1.125rem;
+ * 86  | |             color: white;
+ * 87  | |     }
+ * 88  | |       
+ * 89  | |     #notion-p {
+ * 90  | |         width: 5.5rem;
+ * 91  | |         height: 1.313rem;
+ * 92  | |         font-family: Roboto;
+ * 93  | |         font-size: 1.125rem;
+ * 94  | |         color: white;
+ * 95  | |       }
+ * 96  | |       
+ * 97  | |     .premiere-icon {
+ * 98  | |         grid-area: prem;
+ * 99  | |         z-index: 2;
+ * 100 | |       }
+ * 101 | |       
+ * 102 | |     #premiere-p {
+ * 103 | |         width: 5.5rem;
+ * 104 | |         height: 1.313rem;
+ * 105 | |         font-family: Roboto;
+ * 106 | |         font-size: 1.125rem;
+ * 107 | |         color: white;
+ * 108 | |         transform: translate(-5px, 0px);
+ * 109 | |         
+ * 110 | |     }
+ * 111 | |       .figma-icon {
+ * 112 | |         z-index: 2;
+ * 113 | |         grid-area: figma;
+ * 114 | |       }
+ * 115 | |       .notion-icon {
+ * 116 | |         z-index: 2;
+ * 117 | |         grid-area: notion;
+ * 118 | |       }
+ * 119 | |       
+ * 120 | |       .js-icon {
+ * 121 | |         z-index: 2;
+ * 122 | |         grid-area: jscript;
+ * 123 | |       }
+ * 124 | |       
+ * 125 | |       #js-img{
+ * 126 | |         z-index: 2;
+ * 127 | |         transform: translate(10px, 0px);
+ * 128 | |       
+ * 129 | |       }
+ * 130 | |       
+ * 131 | |       .css-icon {
+ * 132 | |         z-index: 2;
+ * 133 | |         grid-area: css;
+ * 134 | |       }
+ * 135 | |       
+ * 136 | |       #css-p{
+ * 137 | |         width: 5.5rem;
+ * 138 | |         height: 1.313rem;
+ * 139 | |         font-family: Roboto;
+ * 140 | |         font-size: 1.125rem;
+ * 141 | |         color: white;
+ * 142 | |         transform: translate(10px, 0px);
+ * 143 | |       
+ * 144 | |       }
+ * 145 | |       .html-icon {
+ * 146 | |         z-index: 2;
+ * 147 | |         grid-area: html;
+ * 148 | |       }
+ * 149 | |       .sass-icon {
+ * 150 | |         z-index: 2;
+ * 151 | |         grid-area: sass;
+ * 152 | |       }
+ * 153 | |       
+ * 154 | |       #sass-p {
+ * 155 | |         font-family: Roboto;
+ * 156 | |         font-size: 1.125rem;
+ * 157 | |         color: white;
+ * 158 | |         transform: translate(10px, 0px);
+ * 159 | |       }
+ * 160 | | 
+ * 161 | \ }
+ *     '
+ *   scss\5-components\_servicesection.scss 2:2  @import
+ *   scss\main.scss 29:13                        root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +172,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Expected newline.\a   \2577 \a 6 \2502  @mixin for-desktop-up {\d\a   \2502                        ^\a   \2575 \a   scss\\1-helpers\\_mixins.sass 6:23  @import\a   scss\\main.scss 7:13               root stylesheet";
+  content: 'Error: Undefined mixin.\a     \2577 \a 2   \2502  \250c   @include for-desktop-up {    \a 3   \2502  \2502    #service-wrapper {\a 4   \2502  \2502      display: grid;\a 5   \2502  \2502      height: 32rem;\a 6   \2502  \2502      width: 100%;\a 7   \2502  \2502      object-fit: contain;\a 8   \2502  \2502      background-color: #4a4a4a;\a 9   \2502  \2502      grid-template-columns: 1fr;\a 10  \2502  \2502    }\a 11  \2502  \2502  \a 12  \2502  \2502  .service-cols {\a 13  \2502  \2502      display: grid;\a 14  \2502  \2502      grid-template-columns: repeat(12, 1fr);\a 15  \2502  \2502      font-size: 40px;\a 16  \2502  \2502      min-height: 32rem;\a 17  \2502  \2502      width: 100%;\a 18  \2502  \2502      display: grid;\a 19  \2502  \2502      grid-template-rows: auto;\a 20  \2502  \2502      grid-gap: 26px;\a 21  \2502  \2502      grid-template-areas:\a 22  \2502  \2502        ".    .    .    .     .     .    .    .         .       .      .      ."\a 23  \2502  \2502        ".   head head head   .     .    .    .         .       .      .      ."\a 24  \2502  \2502        ".   head head head   .     .    .  pshop      prem  figma   sass     ."\a 25  \2502  \2502        ".    p    p    p     p     p    .    .         .       .      .      ."\a 26  \2502  \2502        ".    p    p    p     p     p    .  jscript    html    css    notion  ."\a 27  \2502  \2502        ".    p    p    p     p     p    .    .         .       .       .     ."\a 28  \2502  \2502        ".    .    .    .     .     .    .    .         .       .       .     ."\a 29  \2502  \2502        ".    .    .    .     .     .    .    .         .       .       .     .";\a 30  \2502  \2502    \a 31  \2502  \2502    }\a 32  \2502  \2502  \a 33  \2502  \2502  #service-bg {\a 34  \2502  \2502      background-image: url(/images/bg-logo.png);\a 35  \2502  \2502      background-repeat: no-repeat;\a 36  \2502  \2502      z-index: 1;\a 37  \2502  \2502      grid-row: 2 / 6;\a 38  \2502  \2502      grid-column: 2 / 12;\a 39  \2502  \2502      \a 40  \2502  \2502  }\a 41  \2502  \2502  \a 42  \2502  \2502  .service-header {\a 43  \2502  \2502      color: white ;  \a 44  \2502  \2502      font-family: bebas-kai;\a 45  \2502  \2502      font-size: 3rem;\a 46  \2502  \2502      grid-area: head;\a 47  \2502  \2502      align-items: center;\a 48  \2502  \2502      z-index: 2;\a 49  \2502  \2502      \a 50  \2502  \2502  }\a 51  \2502  \2502  \a 52  \2502  \2502  .service-p {\a 53  \2502  \2502      font-family: Roboto;\a 54  \2502  \2502      font-size: 1.3rem; \a 55  \2502  \2502      color: white;\a 56  \2502  \2502      grid-area: p;\a 57  \2502  \2502      z-index: 2;\a 58  \2502  \2502    \a 59  \2502  \2502  }\a 60  \2502  \2502  \a 61  \2502  \2502  .Vector {\a 62  \2502  \2502          width: 3.125rem;\a 63  \2502  \2502          height: 3.125rem;\a 64  \2502  \2502          object-fit: contain;\a 65  \2502  \2502          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);\a 66  \2502  \2502          background-color: var(--tiffany);\a 67  \2502  \2502  }\a 68  \2502  \2502      .photoshop-icon {\a 69  \2502  \2502              align-self: center;    /* vertical centering */\a 70  \2502  \2502              justify-content: center;\a 71  \2502  \2502              grid-area: pshop;\a 72  \2502  \2502              z-index: 2;\a 73  \2502  \2502          \a 74  \2502  \2502      }\a 75  \2502  \2502          \a 76  \2502  \2502      #photoshop-img{\a 77  \2502  \2502              transform: translate(10px, 0px);\a 78  \2502  \2502          \a 79  \2502  \2502      }\a 80  \2502  \2502          \a 81  \2502  \2502      #photoshop-p{\a 82  \2502  \2502              width: 5.5rem;\a 83  \2502  \2502              height: 1.313rem;\a 84  \2502  \2502              font-family: Roboto;\a 85  \2502  \2502              font-size: 1.125rem;\a 86  \2502  \2502              color: white;\a 87  \2502  \2502      }\a 88  \2502  \2502        \a 89  \2502  \2502      #notion-p {\a 90  \2502  \2502          width: 5.5rem;\a 91  \2502  \2502          height: 1.313rem;\a 92  \2502  \2502          font-family: Roboto;\a 93  \2502  \2502          font-size: 1.125rem;\a 94  \2502  \2502          color: white;\a 95  \2502  \2502        }\a 96  \2502  \2502        \a 97  \2502  \2502      .premiere-icon {\a 98  \2502  \2502          grid-area: prem;\a 99  \2502  \2502          z-index: 2;\a 100 \2502  \2502        }\a 101 \2502  \2502        \a 102 \2502  \2502      #premiere-p {\a 103 \2502  \2502          width: 5.5rem;\a 104 \2502  \2502          height: 1.313rem;\a 105 \2502  \2502          font-family: Roboto;\a 106 \2502  \2502          font-size: 1.125rem;\a 107 \2502  \2502          color: white;\a 108 \2502  \2502          transform: translate(-5px, 0px);\a 109 \2502  \2502          \a 110 \2502  \2502      }\a 111 \2502  \2502        .figma-icon {\a 112 \2502  \2502          z-index: 2;\a 113 \2502  \2502          grid-area: figma;\a 114 \2502  \2502        }\a 115 \2502  \2502        .notion-icon {\a 116 \2502  \2502          z-index: 2;\a 117 \2502  \2502          grid-area: notion;\a 118 \2502  \2502        }\a 119 \2502  \2502        \a 120 \2502  \2502        .js-icon {\a 121 \2502  \2502          z-index: 2;\a 122 \2502  \2502          grid-area: jscript;\a 123 \2502  \2502        }\a 124 \2502  \2502        \a 125 \2502  \2502        #js-img{\a 126 \2502  \2502          z-index: 2;\a 127 \2502  \2502          transform: translate(10px, 0px);\a 128 \2502  \2502        \a 129 \2502  \2502        }\a 130 \2502  \2502        \a 131 \2502  \2502        .css-icon {\a 132 \2502  \2502          z-index: 2;\a 133 \2502  \2502          grid-area: css;\a 134 \2502  \2502        }\a 135 \2502  \2502        \a 136 \2502  \2502        #css-p{\a 137 \2502  \2502          width: 5.5rem;\a 138 \2502  \2502          height: 1.313rem;\a 139 \2502  \2502          font-family: Roboto;\a 140 \2502  \2502          font-size: 1.125rem;\a 141 \2502  \2502          color: white;\a 142 \2502  \2502          transform: translate(10px, 0px);\a 143 \2502  \2502        \a 144 \2502  \2502        }\a 145 \2502  \2502        .html-icon {\a 146 \2502  \2502          z-index: 2;\a 147 \2502  \2502          grid-area: html;\a 148 \2502  \2502        }\a 149 \2502  \2502        .sass-icon {\a 150 \2502  \2502          z-index: 2;\a 151 \2502  \2502          grid-area: sass;\a 152 \2502  \2502        }\a 153 \2502  \2502        \a 154 \2502  \2502        #sass-p {\a 155 \2502  \2502          font-family: Roboto;\a 156 \2502  \2502          font-size: 1.125rem;\a 157 \2502  \2502          color: white;\a 158 \2502  \2502          transform: translate(10px, 0px);\a 159 \2502  \2502        }\a 160 \2502  \2502  \a 161 \2502  \2514  }\a     \2575 \a   scss\\5-components\\_servicesection.scss 2:2  @import\a   scss\\main.scss 29:13                        root stylesheet';
 }
