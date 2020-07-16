@@ -1,5 +1,4 @@
 
- @include for-desktop-up {    
   #service-wrapper {
     display: grid;
     height: 32rem;
@@ -9,7 +8,7 @@
     grid-template-columns: 1fr;
   }
 
-.service-cols {
+  .service-cols {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     font-size: 40px;
@@ -27,135 +26,127 @@
       ".    p    p    p     p     p    .    .         .       .       .     ."
       ".    .    .    .     .     .    .    .         .       .       .     ."
       ".    .    .    .     .     .    .    .         .       .       .     .";
-  
   }
 
-#service-bg {
+  #service-bg {
     background-image: url(/images/bg-logo.png);
     background-repeat: no-repeat;
     z-index: 1;
     grid-row: 2 / 6;
     grid-column: 2 / 12;
-    
-}
+  }
 
-.service-header {
-    color: white ;  
+  .service-header {
+    color: white;
     font-family: bebas-kai;
     font-size: 3rem;
     grid-area: head;
     align-items: center;
     z-index: 2;
-    
-}
+  }
 
-.service-p {
+  .service-p {
     font-family: Roboto;
-    font-size: 1.3rem; 
+    font-size: 1.3rem;
     color: white;
     grid-area: p;
     z-index: 2;
+  }
+
+  .Vector {
+    width: 3.125rem;
+    height: 3.125rem;
+    object-fit: contain;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background-color: var(--tiffany);
+  }
   
-}
+  .photoshop-icon {
+    align-self: center; /* vertical centering */
+    justify-content: center;
+    grid-area: pshop;
+    z-index: 2;
+  }
 
-.Vector {
-        width: 3.125rem;
-        height: 3.125rem;
-        object-fit: contain;
-        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-        background-color: var(--tiffany);
-}
-    .photoshop-icon {
-            align-self: center;    /* vertical centering */
-            justify-content: center;
-            grid-area: pshop;
-            z-index: 2;
-        
-    }
-        
-    #photoshop-img{
-            transform: translate(10px, 0px);
-        
-    }
-        
-    #photoshop-p{
-            width: 5.5rem;
-            height: 1.313rem;
-            font-family: Roboto;
-            font-size: 1.125rem;
-            color: white;
-    }
-      
-    #notion-p {
-        width: 5.5rem;
-        height: 1.313rem;
-        font-family: Roboto;
-        font-size: 1.125rem;
-        color: white;
-      }
-      
-    .premiere-icon {
-        grid-area: prem;
-        z-index: 2;
-      }
-      
-    #premiere-p {
-        width: 5.5rem;
-        height: 1.313rem;
-        font-family: Roboto;
-        font-size: 1.125rem;
-        color: white;
-        transform: translate(-5px, 0px);
-        
-    }
-      .figma-icon {
-        z-index: 2;
-        grid-area: figma;
-      }
-      .notion-icon {
-        z-index: 2;
-        grid-area: notion;
-      }
-      
-      .js-icon {
-        z-index: 2;
-        grid-area: jscript;
-      }
-      
-      #js-img{
-        z-index: 2;
-        transform: translate(10px, 0px);
-      
-      }
-      
-      .css-icon {
-        z-index: 2;
-        grid-area: css;
-      }
-      
-      #css-p{
-        width: 5.5rem;
-        height: 1.313rem;
-        font-family: Roboto;
-        font-size: 1.125rem;
-        color: white;
-        transform: translate(10px, 0px);
-      
-      }
-      .html-icon {
-        z-index: 2;
-        grid-area: html;
-      }
-      .sass-icon {
-        z-index: 2;
-        grid-area: sass;
-      }
-      
-      #sass-p {
-        font-family: Roboto;
-        font-size: 1.125rem;
-        color: white;
-        transform: translate(10px, 0px);
-      }
+  #photoshop-img {
+    transform: translate(10px, 0px);
+  }
 
-}
+  #photoshop-p {
+    width: 5.5rem;
+    height: 1.313rem;
+    font-family: Roboto;
+    font-size: 1.125rem;
+    color: white;
+  }
+
+  #notion-p {
+    width: 5.5rem;
+    height: 1.313rem;
+    font-family: Roboto;
+    font-size: 1.125rem;
+    color: white;
+  }
+
+  .premiere-icon {
+    grid-area: prem;
+    z-index: 2;
+  }
+
+  #premiere-p {
+    width: 5.5rem;
+    height: 1.313rem;
+    font-family: Roboto;
+    font-size: 1.125rem;
+    color: white;
+    transform: translate(-5px, 0px);
+  }
+
+  .figma-icon {
+    z-index: 2;
+    grid-area: figma;
+  }
+  .notion-icon {
+    z-index: 2;
+    grid-area: notion;
+  }
+
+  .js-icon {
+    z-index: 2;
+    grid-area: jscript;
+  }
+
+  #js-img {
+    z-index: 2;
+    transform: translate(10px, 0px);
+  }
+
+  .css-icon {
+    z-index: 2;
+    grid-area: css;
+  }
+
+  #css-p {
+    width: 5.5rem;
+    height: 1.313rem;
+    font-family: Roboto;
+    font-size: 1.125rem;
+    color: white;
+    transform: translate(10px, 0px);
+  }
+  .html-icon {
+    z-index: 2;
+    grid-area: html;
+  }
+  .sass-icon {
+    z-index: 2;
+    grid-area: sass;
+  }
+
+  #sass-p {
+    font-family: Roboto;
+    font-size: 1.125rem;
+    color: white;
+    transform: translate(10px, 0px);
+  }
+
