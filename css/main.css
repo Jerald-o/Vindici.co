@@ -1,0 +1,672 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr [col-start]);
+  grid-template-rows: repeat(10, auto [row-start]);
+  grid-column-gap: 24px;
+}
+
+header {
+  height: 96px;
+  display: grid;
+  grid-template-columns: 5% 1fr;
+  background-color: rgba(0, 0, 0, 0.7);
+  grid-column: 1 / -1;
+  position: relative;
+  align-items: center;
+}
+
+.brand {
+  padding-left: 3em;
+  align-self: center;
+  justify-self: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  list-style: none;
+  overflow: hidden;
+}
+
+.nav-link {
+  margin: 0 36px;
+  align-self: center;
+  justify-self: center;
+  font-family: bebas-kai,sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+}
+
+main {
+  grid-column: 1 / -1;
+  height: 100vh;
+  display: grid;
+  background: url(../images/landingBG.png);
+  grid-template-columns: repeat(12, 1fr);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-origin: content-box;
+}
+
+.hero-text {
+  margin-top: 2em;
+  grid-column: 2 / 6;
+  grid-row: 2;
+  font-family: Bebas-kai;
+  font-size: 72px;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+.hero-text ::after {
+  display: block;
+  content: "";
+  border-top: 0.6rem solid #00cccc;
+  width: 13.5rem;
+  margin-top: 2rem;
+}
+
+.footer-wrapper {
+  display: grid;
+  width: 100%;
+  height: 33.25rem;
+  width: 100%;
+  object-fit: contain;
+  grid-template-rows: 1fr;
+}
+
+#footer-left {
+  display: none;
+}
+
+#footer-right {
+  display: grid;
+  background-color: #626262;
+  object-fit: contain;
+  height: 33.25rem;
+  grid-template-columns: repeat(6, 1fr);
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 16px;
+  grid-template-areas: ".    .    .    .    .     .       " ".    .    .    .    .     .      " ".    .    .    .    .    mnu     " ".   fhd  fhd   fhd  .    hme   " ".    .    .    .    .    wrk  " ".    be   ig  lin   .    prs     " ".    be   ig  lin    .    cnt  " ".    .    .    .    .     .     " ".   tm   tm   tm   tm    tm     " ".    .    .    .    .     .      ";
+}
+
+#footer-logo {
+  grid-area: lgo;
+  margin-top: 5vh;
+}
+
+#footer-head {
+  grid-area: fhd;
+  font-family: Roboto;
+  font-size: 1.875rem;
+  font-weight: normal;
+  justify-self: start;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: white;
+}
+
+#footer-ig {
+  grid-area: ig;
+}
+
+#footer-behance {
+  grid-area: be;
+}
+
+#footer-linkedin {
+  grid-area: lin;
+}
+
+#footer-menu {
+  justify-self: start;
+  width: 3.813rem;
+  height: 1.75rem;
+  font-family: Roboto;
+  font-size: 1.25rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #00cccc;
+  grid-area: mnu;
+  margin-top: -3vh;
+}
+
+#footer-home {
+  justify-self: start;
+  width: 4.063rem;
+  height: 1.75rem;
+  font-family: Roboto;
+  font-size: 1.25rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: white;
+  grid-area: hme;
+}
+
+#footer-work {
+  font-family: Roboto;
+  font-size: 1.25rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: white;
+  grid-area: wrk;
+  justify-self: start;
+}
+
+#footer-process {
+  font-family: Roboto;
+  font-size: 1.25rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: white;
+  justify-self: start;
+  grid-area: prs;
+}
+
+#footer-contact {
+  font-family: Roboto;
+  font-size: 1.25rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  justify-self: start;
+  color: white;
+  grid-area: cnt;
+}
+
+#footer-tm {
+  width: 32.688rem;
+  height: 1.25rem;
+  font-family: Roboto;
+  font-size: .6rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: white;
+  grid-area: tm;
+}
+
+.contact-wrapper {
+  display: grid;
+  height: 72rem;
+  width: 100%;
+  object-fit: contain;
+  grid-template-rows: 1fr 1fr;
+}
+
+#contact-left {
+  display: grid;
+  justify-items: start;
+  object-fit: contain;
+  background-color: #838383;
+  grid-template-columns: repeat(5, 1fr);
+  font-size: 30px;
+  min-height: 30rem;
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-gap: 16px;
+  grid-template-areas: ".    .    .    .      ." ".    .    .    .      ." ".   chd  chd  chd     ." ".   btn  btn  btn     ." ".    .    .    .      ." ".    .    .    .      .";
+}
+
+#contact-right {
+  justify-items: center;
+  display: grid;
+  background-color: #4a4a4a;
+  object-fit: contain;
+  grid-template-columns: repeat(8, 1fr);
+  font-size: 40px;
+  height: 42rem;
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+  grid-gap: 16px;
+  grid-template-areas: ".    .    .    .   .   .    .   . " ".    nme  nme  nme nme nme  nme   . " ".    eml  eml  eml eml eml  eml   . " ".    bdg  bdg  bdg bdg bdg   bdg   . " ".    dsc  dsc  dsc dsc dsc   dsc   . " ".    .    .    .   .   .    .   . ";
+}
+
+#contact-head {
+  width: 21rem;
+  height: 9.625rem;
+  font-family: bebas-kai;
+  font-size: 4rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: white;
+  grid-area: chd;
+  justify-self: center;
+}
+
+#contact-text-blue {
+  color: #00cccc;
+}
+
+.contact-button {
+  height: 4rem;
+  border-radius: 220px;
+  background-color: var(--greyish);
+  grid-area: btn;
+  justify-self: center;
+  margin-left: -10vw;
+}
+
+.contact-name {
+  width: 75vw;
+  height: 4.375rem;
+  border-radius: 9px;
+  background-color: #515151;
+  font-family: Roboto;
+  font-size: 1.813rem;
+  padding: 12px 12px;
+  color: #838383;
+  resize: none;
+  grid-area: nme;
+}
+
+.contact-email {
+  width: 75vw;
+  height: 4.375rem;
+  border-radius: 9px;
+  background-color: #515151;
+  font-family: Roboto;
+  font-size: 1.813rem;
+  padding: 12px 12px;
+  color: #838383;
+  resize: none;
+  grid-area: eml;
+}
+
+.contact-budget {
+  width: 75vw;
+  height: 4.375rem;
+  border-radius: 9px;
+  background-color: #515151;
+  font-family: Roboto;
+  font-size: 1.813rem;
+  padding: 12px 12px;
+  color: #838383;
+  resize: none;
+  grid-area: bdg;
+}
+
+.contact-description {
+  width: 75vw;
+  height: 19.625rem;
+  border-radius: 9px;
+  resize: none;
+  background-color: #515151;
+  font-family: Roboto;
+  font-size: 1.813rem;
+  padding: 12px 12px;
+  color: #838383;
+  grid-area: dsc;
+}
+
+#service-wrapper {
+  display: grid;
+  height: 32rem;
+  width: 100%;
+  object-fit: contain;
+  background-color: #4a4a4a;
+  grid-template-columns: 1fr;
+}
+
+.service-cols {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  font-size: 40px;
+  min-height: 32rem;
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 26px;
+  grid-template-areas: ".    .    .    .     .     .    .    .         .       .      .      ." ".   head head head   .     .    .    .         .       .      .      ." ".   head head head   .     .    .  pshop      prem  figma   sass     ." ".    p    p    p     p     p    .    .         .       .      .      ." ".    p    p    p     p     p    .  jscript    html    css    notion  ." ".    p    p    p     p     p    .    .         .       .       .     ." ".    .    .    .     .     .    .    .         .       .       .     ." ".    .    .    .     .     .    .    .         .       .       .     .";
+}
+
+#service-bg {
+  background-image: url(/images/bg-logo.png);
+  background-repeat: no-repeat;
+  z-index: 1;
+  grid-row: 2 / 6;
+  grid-column: 2 / 12;
+}
+
+.service-header {
+  color: white;
+  font-family: bebas-kai;
+  font-size: 3rem;
+  grid-area: head;
+  align-items: center;
+  z-index: 2;
+}
+
+.service-p {
+  font-family: Roboto;
+  font-size: 1.3rem;
+  color: white;
+  grid-area: p;
+  z-index: 2;
+}
+
+.Vector {
+  width: 3.125rem;
+  height: 3.125rem;
+  object-fit: contain;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: var(--tiffany);
+}
+
+.photoshop-icon {
+  align-self: center;
+  /* vertical centering */
+  justify-content: center;
+  grid-area: pshop;
+  z-index: 2;
+}
+
+#photoshop-img {
+  transform: translate(10px, 0px);
+}
+
+#photoshop-p {
+  width: 5.5rem;
+  height: 1.313rem;
+  font-family: Roboto;
+  font-size: 1.125rem;
+  color: white;
+}
+
+#notion-p {
+  width: 5.5rem;
+  height: 1.313rem;
+  font-family: Roboto;
+  font-size: 1.125rem;
+  color: white;
+}
+
+.premiere-icon {
+  grid-area: prem;
+  z-index: 2;
+}
+
+#premiere-p {
+  width: 5.5rem;
+  height: 1.313rem;
+  font-family: Roboto;
+  font-size: 1.125rem;
+  color: white;
+  transform: translate(-5px, 0px);
+}
+
+.figma-icon {
+  z-index: 2;
+  grid-area: figma;
+}
+
+.notion-icon {
+  z-index: 2;
+  grid-area: notion;
+}
+
+.js-icon {
+  z-index: 2;
+  grid-area: jscript;
+}
+
+#js-img {
+  z-index: 2;
+  transform: translate(10px, 0px);
+}
+
+.css-icon {
+  z-index: 2;
+  grid-area: css;
+}
+
+#css-p {
+  width: 5.5rem;
+  height: 1.313rem;
+  font-family: Roboto;
+  font-size: 1.125rem;
+  color: white;
+  transform: translate(10px, 0px);
+}
+
+.html-icon {
+  z-index: 2;
+  grid-area: html;
+}
+
+.sass-icon {
+  z-index: 2;
+  grid-area: sass;
+}
+
+#sass-p {
+  font-family: Roboto;
+  font-size: 1.125rem;
+  color: white;
+  transform: translate(10px, 0px);
+}
+
+.process-wrapper {
+  object-fit: contain;
+  display: grid;
+  height: 50rem;
+  background-color: #4a4a4a;
+  grid-template-columns: 1fr;
+}
+
+#process-cols {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 50rem;
+  width: 100%;
+  object-fit: contain;
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 16px;
+  grid-template-areas: ".            .        .            ." "phd        phd      phd           phd " ".            .        .            ." "ppg        ppg      ppg           ppg" "ppg        ppg      ppg           ppg" "p1           p2       p3           p4" "p5           p6       p7           p8" ".            p9       p10           ." ".            .        .            ." ".            .        .            .";
+}
+
+#process-head {
+  height: 2.25rem;
+  font-family: bebas-kai;
+  font-size: 3.25rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: white;
+  grid-area: phd;
+  margin-top: 5vh;
+  margin-left: .938rem;
+  justify-content: center;
+  justify-self: center;
+}
+
+#process-1 {
+  grid-area: p1;
+  justify-self: center;
+}
+
+#process-2 {
+  grid-area: p2;
+  justify-self: center;
+}
+
+#process-3 {
+  grid-area: p3;
+  justify-self: center;
+}
+
+#process-4 {
+  grid-area: p4;
+  justify-self: center;
+}
+
+#process-5 {
+  grid-area: p5;
+  justify-self: center;
+}
+
+#process-6 {
+  grid-area: p6;
+  justify-self: center;
+}
+
+#process-7 {
+  grid-area: p7;
+  justify-self: center;
+}
+
+#process-8 {
+  grid-area: p8;
+  justify-self: center;
+}
+
+#process-9 {
+  grid-area: p9;
+  justify-self: center;
+}
+
+#process-10 {
+  grid-area: p10;
+  justify-self: center;
+}
+
+#process-pg {
+  height: 8.75rem;
+  width: 22rem;
+  font-family: Roboto;
+  font-size: 1.25rem;
+  margin-left: .938rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: white;
+  grid-area: ppg;
+  margin-top: -7vh;
+  justify-self: center;
+}
+
+.partners-wrapper {
+  width: 100%;
+  display: grid;
+  height: 35rem;
+  background-color: #4a4a4a;
+  grid-template-columns: 1fr;
+}
+
+#partners-cols {
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(12, 1fr);
+  font-size: 40px;
+  height: 35rem;
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 26px;
+  grid-template-areas: ".    .    .     .    .     .    .    .       .       .      .      ." ".    h1   h1   h1    .     .    .    .       .       .      .      ." ".    h1   h1   h1    .     .    .    .       .       .      .      ." ".    .    gb   gb    .    ecm  ecm   .       jc     jc      .      ." ".    .    gb   gb    .    ecm  ecm   .       jc     jc      .      ." ".    .    .     .    .     .    .    .       .       .      .      ." ".    .    .     .    .     .    .    .       .       .      .      .";
+}
+
+#partners-head {
+  grid-area: h1;
+  width: 15.875rem;
+  height: 6rem;
+  font-family: bebas-kai;
+  font-size: 5rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: white;
+}
+
+#partners-bh1 {
+  position: relative;
+  width: 39.688rem;
+  height: 15rem;
+  filter: blur(8px);
+  font-family: bebas-kai;
+  font-size: 12.5rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  grid-row: 4;
+  grid-column: 2 / 7;
+  line-height: normal;
+  letter-spacing: normal;
+  color: rgba(0, 204, 204, 0.3);
+}
+
+#partners-gsub {
+  z-index: 1;
+  margin-top: 8vh;
+  position: relative;
+  width: 13.5rem;
+  height: 13.5rem;
+  object-fit: contain;
+  grid-area: gb;
+}
+
+#partners-ecom {
+  width: 7.438rem;
+  z-index: 2;
+  margin-top: 8vh;
+  height: 9.75rem;
+  object-fit: contain;
+  grid-area: ecm;
+}
+
+#partners-jckicks {
+  margin-top: 8vh;
+  width: 13.5rem;
+  height: 9.063rem;
+  object-fit: contain;
+  grid-area: jc;
+}
+
+#partners-bg {
+  grid-column: 9 / 12;
+  grid-row: 2 / 7;
+}

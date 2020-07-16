@@ -1,0 +1,95 @@
+@include for-desktop-up {
+.partners-wrapper{
+    width: 100%;
+    display: grid;
+    height: 35rem;
+    background-color: #4a4a4a;
+    grid-template-columns: 1fr;
+  
+  }
+  
+  #partners-cols {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(12, 1fr);
+    font-size: 40px;
+    height: 35rem;
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto;
+    grid-gap: 26px;
+    grid-template-areas:
+      ".    .    .     .    .     .    .    .       .       .      .      ."
+      ".    h1   h1   h1    .     .    .    .       .       .      .      ."
+      ".    h1   h1   h1    .     .    .    .       .       .      .      ."
+      ".    .    gb   gb    .    ecm  ecm   .       jc     jc      .      ."
+      ".    .    gb   gb    .    ecm  ecm   .       jc     jc      .      ."
+      ".    .    .     .    .     .    .    .       .       .      .      ."
+      ".    .    .     .    .     .    .    .       .       .      .      ."
+  
+      ;
+    }
+  
+  #partners-head{
+    grid-area: h1;
+    width: 15.875rem;
+    height: 6rem;
+    font-family: bebas-kai;
+    font-size: 5rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: white;
+  }
+  
+  #partners-bh1{
+    position: relative;
+    width: 39.688rem;
+    height: 15rem;
+    -webkit-filter: blur(16px);
+    filter: blur(8px);
+    font-family: bebas-kai;
+    font-size: 12.5rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    grid-row: 4;
+    grid-column: 2 / 7 ;
+    line-height: normal;
+    letter-spacing: normal;
+    color: rgba(0, 204, 204, 0.3);
+  }
+  #partners-gsub{
+    z-index: 1;
+    margin-top:8vh;
+    position: relative;
+    width: 13.5rem;
+    height: 13.5rem;
+    object-fit: contain;
+    grid-area: gb;
+  
+  }
+  
+  #partners-ecom{
+    width: 7.438rem;
+    z-index: 2;
+    margin-top:8vh;  height: 9.75rem;
+    object-fit: contain;
+    grid-area: ecm;
+  }
+  
+  #partners-jckicks{
+    margin-top:8vh;
+    width: 13.5rem;
+    height: 9.063rem;
+    object-fit: contain;
+    grid-area: jc;
+  }
+  
+  #partners-bg{
+    grid-column: 9 / 12;
+    grid-row: 2 / 7 ;
+  }
+}

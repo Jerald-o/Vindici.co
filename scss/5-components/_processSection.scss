@@ -1,0 +1,136 @@
+@include for-desktop-up {
+
+.process-wrapper {
+  object-fit: contain;
+  display: grid;
+  height: 50rem;
+  background-color: #4a4a4a;
+  grid-template-columns: 1fr;
+}
+
+#process-cols {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 50rem;
+  width: 100%;
+  object-fit: contain;
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 16px;
+  grid-template-areas:
+  ".            .        .            ."
+  "phd        phd      phd           phd "
+  ".            .        .            ."
+  "ppg        ppg      ppg           ppg"
+  "ppg        ppg      ppg           ppg"
+  "p1           p2       p3           p4"
+  "p5           p6       p7           p8"
+  ".            p9       p10           ."
+  ".            .        .            ."
+  ".            .        .            .";
+  
+}
+
+
+#process-head{
+  height: 2.25rem;
+  font-family: bebas-kai;
+  font-size: 3.25rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: white;
+  grid-area: phd;
+  margin-top: 5vh;
+  margin-left: .938rem;
+  justify-content: center;
+  justify-self: center;
+
+}
+
+#process-1{
+  grid-area: p1;
+  justify-self: center;
+
+}
+
+#process-2{
+  grid-area: p2;
+  justify-self: center;
+
+  
+}
+
+#process-3{
+  grid-area: p3;
+  justify-self: center;
+
+  
+}
+
+#process-4{
+  grid-area: p4;
+  justify-self: center;
+
+}
+
+#process-5{
+  grid-area: p5;
+  justify-self: center;
+
+}
+
+#process-6{
+  grid-area: p6;
+  justify-self: center;
+
+}
+
+#process-7{
+  grid-area: p7;
+  justify-self: center;
+
+
+}
+
+#process-8{
+  grid-area: p8;
+  justify-self: center;
+
+
+}
+
+#process-9{
+  grid-area: p9;
+  justify-self: center;
+
+
+}
+
+#process-10{
+  grid-area: p10;
+  justify-self: center;
+
+
+}
+
+#process-pg{
+  height: 8.75rem;
+  width: 22rem;
+  font-family: Roboto;
+  font-size: 1.25rem;
+  margin-left: .938rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: white;
+  grid-area: ppg;
+  margin-top: -7vh;
+  justify-self: center;
+
+}
+}

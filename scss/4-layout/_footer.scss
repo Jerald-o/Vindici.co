@@ -1,0 +1,153 @@
+.footer-wrapper {
+    display: grid;
+    width: 100%;
+    height:  33.25rem;
+    width: 100%;
+    object-fit: contain;
+    grid-template-rows: 1fr;
+  }
+  
+  #footer-left {
+    display: none;
+  
+  
+  }
+  
+  #footer-right {
+    display: grid;
+    background-color:  #626262;
+    object-fit: contain;
+    height:  33.25rem;
+    grid-template-columns: repeat(6, 1fr);
+    width: 100%;
+    display: grid; 
+    grid-template-rows: auto;
+    grid-gap: 16px;
+    grid-template-areas:
+    ".    .    .    .    .     .       "
+    ".    .    .    .    .     .      "
+    ".    .    .    .    .    mnu     "
+    ".   fhd  fhd   fhd  .    hme   "
+    ".    .    .    .    .    wrk  "
+    ".    be   ig  lin   .    prs     "
+    ".    be   ig  lin    .    cnt  "
+    ".    .    .    .    .     .     "
+    ".   tm   tm   tm   tm    tm     "
+    ".    .    .    .    .     .      ";
+  
+  }
+  
+  #footer-logo{
+    grid-area: lgo;
+    margin-top: 5vh;
+  }
+  
+  #footer-head{
+    grid-area: fhd;
+    font-family: Roboto;
+    font-size: 1.875rem;
+    font-weight: normal;
+    justify-self: start;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: white;
+  }
+  
+  #footer-ig{
+    grid-area: ig;
+  }
+  
+  #footer-behance{
+    grid-area: be;
+  }
+  #footer-linkedin{
+    grid-area: lin;
+  
+  }
+  
+  #footer-menu{
+    justify-self: start;
+    width: 3.813rem;
+    height: 1.75rem;
+    font-family: Roboto;
+    font-size: 1.25rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #00cccc;
+    grid-area: mnu;
+    margin-top: -3vh;
+  }
+  
+  #footer-home{
+    justify-self: start;
+    width: 4.063rem;
+    height: 1.75rem;
+    font-family: Roboto;
+    font-size: 1.25rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: white;
+    grid-area: hme;
+  }
+  
+  #footer-work{
+    font-family: Roboto;
+    font-size: 1.25rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: white;
+    grid-area: wrk;
+    justify-self: start;
+  }
+  
+  #footer-process{
+    font-family: Roboto;
+    font-size: 1.25rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: white;
+    justify-self: start;
+    grid-area: prs;
+  }
+  
+  #footer-contact{
+    font-family: Roboto;
+    font-size: 1.25rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    justify-self: start;
+    color: white;
+    grid-area: cnt;
+  }
+  
+  #footer-tm{
+    width: 32.688rem;
+    height: 1.25rem;
+    font-family: Roboto;
+    font-size: .6rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: white;
+    grid-area: tm;
+  }
+  

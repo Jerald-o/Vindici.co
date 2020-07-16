@@ -1,0 +1,79 @@
+// The single file output by sass. It is intended to ONLY @import other files.
+
+// 0- plugins 
+
+// 1 - helpers
+    @import "1-helpers/functions";
+    @import "1-helpers/mixins";
+    @import "1-helpers/variables";
+
+// 2 - tools
+    @import "2-tools/fontawesome";
+
+// 3 - basics
+    @import "3-basics/breakpoints";
+    @import "3-basics/links";
+    @import "3-basics/reset";
+    @import "3-basics/selection-color";
+    @import "3-basics/typography";
+
+// 4 - layouts
+    @import "4-layout/grid";
+    @import "4-layout/navigation";
+    @import "4-layout/hero";
+    @import "4-layout/footer";
+    @import "4-layout/contact";
+
+// 5 - components
+    @import "5-components/buttons";
+    @import "5-components/serviceSection";
+    @import "5-components/processSection";
+    @import "5-components/partnersSection";
+// 6 - pages 
+    // @import "6-pages/";
+
+
+// sass/
+// |
+// |– 1-helpers/ (or '1-helpers/')
+// |   |– _functions.scss // Sass Functions
+// |   |– _mixins.scss    // Sass Mixins
+// |   |– _variables.scss // Sass Variables
+// |
+// |– 2-tools/ (or '2-tools/')
+// |   |– _bootstrap.scss    // Tool/Framework Name
+// |   |– _jquery-ui.scss    // Tool/Framework Name
+// |
+// |– 3-basics/ (or '3-basics/')
+// |   |– _reset.scss        // Reset/normalize
+// |   |– _breakpoint.scss   // Responsive Web Design Screen Breakpoints
+// |   |– _typography.scss   // Typographic Scale & Styling
+// |   |– _selection-color.scss   // Selection rules
+// |   |– _links.scss       // Link Styling
+// |   |– _buttons.scss       // Button Styling
+// |
+// |– 4-layout/ (or '4-layout/ ')
+// |   |– _navigation.scss   // Navigation
+// |   |– _grid.scss         // Grid system
+// |   |– _header.scss       // Header
+// |   |– _footer.scss       // Footer
+// |   |– _sidebar.scss      // Sidebar
+// |   |– _forms.scss        // Forms
+// |
+// |– 5-components/ (or '5-components/ ')
+// |   |– _buttons.scss      // Buttons
+// |   |– _carousel.scss     // Carousel
+// |   |– _slider.scss       // Slider
+// |
+// |– 6-pages/ (or '4-layout/ ')
+// |   |– _home.scss         // Home specific styles
+// |   |– _about.scss        // About specific styles
+// |   |– _contact.scss      // Contact specific styles
+// |
+// |   *********EXPERIMENTAL***************
+// |– 7-themes/
+// |   |– _theme.scss        // Default theme
+// |   |– _admin.scss        // Admin theme
+// |   *********EXPERIMENTAL***************
+// |
+// `– main.scss              // Main Sass file

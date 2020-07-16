@@ -1,0 +1,12 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+
+@mixin for-desktop-up {
+  @media (min-width: 1056px) { @content; }
+}
+
+@mixin for-desktop-down {
+  @media (max-width: 1056px) { @content; }
+}

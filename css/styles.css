@@ -1,0 +1,18 @@
+/* Error: Expected newline.
+ *   ,
+ * 6 | @mixin for-desktop-up {
+ *   |                       ^
+ *   '
+ *   scss\1-helpers\_mixins.sass 6:23  @import
+ *   scss\main.scss 7:13               root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Expected newline.\a   \2577 \a 6 \2502  @mixin for-desktop-up {\d\a   \2502                        ^\a   \2575 \a   scss\\1-helpers\\_mixins.sass 6:23  @import\a   scss\\main.scss 7:13               root stylesheet";
+}
