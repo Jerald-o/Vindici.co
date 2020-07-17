@@ -31,11 +31,11 @@
       </div>
       <span id="service-bg"> </span>
       <div class="photoshop-icon">
-          <img
-            id="photoshop-img"
-            src="/images/ps-icon.svg"
-            class="Vector"
-            alt="pshop"
+        <img
+          id="photoshop-img"
+          src="/images/ps-icon.svg"
+          class="Vector"
+          alt="pshop"
         />
         <p id="photoshop-p">Photoshop</p>
       </div>
@@ -83,8 +83,12 @@
       <div id="partners-bh1">
         Partners
       </div>
-      <div id="partners-gsub"><img id="gsub-pic" src="/images/GSUB.png" alt="gsub" /></div>
-      <div id="partners-ecom"><img id="ecom-pic" src="/images/Ecom.png" alt="ecom" /></div>
+      <div id="partners-gsub">
+        <img id="gsub-pic" src="/images/GSUB.png" alt="gsub" />
+      </div>
+      <div id="partners-ecom">
+        <img id="ecom-pic" src="/images/Ecom.png" alt="ecom" />
+      </div>
       <div id="partners-jckicks">
         <img id="jc-pic" src="/images/JCK.png" alt="jc kicks" />
       </div>
@@ -186,4 +190,49 @@
       </div>
     </div>
   </div>
+
+  <script src="https://unpkg.com/popmotion/dist/popmotion.global.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+  <script>
+    const container = popmotion.styler(document.querySelector(".service-p"));
+
+    popmotion
+      .tween({
+        from: {
+          scale: 0.4,
+          opacity: 0,
+          y: -300,
+        },
+        to: {
+          scale: 1,
+          opacity: 1,
+          y: 0,
+        },
+        duration: 1000,
+      })
+      .start(container.set);
+      
+
+  </script>
+
+  <script>
+
+const formElements = document.querySelector('.sass-icon');
+
+const stylers = Array
+  .from(formElements.children)
+  .map(popmotion.styler); 
+        
+const animations = Array(stylers.length)
+  .fill(popmotion.spring({ from: 100, to:  0 }));
+
+popmotion.stagger(animations, 100)
+  .start((v) => v.forEach((x, i) => stylers[i].set('x', x)));
+  
+  </script>
+
+  
+
+  <script src="/animations.js"></script>
 </html>

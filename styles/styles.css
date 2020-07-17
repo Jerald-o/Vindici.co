@@ -6434,7 +6434,7 @@ z-index: 2;
     ".    .    .    .     .     .      .    .       .       .       .      .";
 }
 
-#process-head{
+.process-head{
   height: 2.25rem;
   font-family: bebas-kai;
   font-size: 3.25rem;
@@ -7159,7 +7159,7 @@ z-index: 2;
 }
 
 
-#process-head{
+.process-head{
   height: 2.25rem;
   font-family: bebas-kai;
   font-size: 3.25rem;
