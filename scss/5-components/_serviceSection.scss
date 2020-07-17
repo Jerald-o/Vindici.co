@@ -1,5 +1,8 @@
 
-  #service-wrapper {
+
+@include media('<=desktop') {
+  
+#service-wrapper {
     display: grid;
     height: 32rem;
     width: 100%;
@@ -150,3 +153,4 @@
     transform: translate(10px, 0px);
   }
 
+}
