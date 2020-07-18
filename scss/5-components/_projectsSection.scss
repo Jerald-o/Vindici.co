@@ -1,0 +1,101 @@
+
+.project-wrapper {
+  display: grid;
+  height: 60.563rem;
+  width: 100%;
+  object-fit: contain;
+  grid-template-columns: 1fr;
+}
+
+#project-cols {
+  display: grid;
+  justify-items: start;
+  object-fit: contain;
+  background-color: #838383;
+  grid-template-columns: repeat(12 1fr);
+  font-size: 30px;
+  min-height: 60.563rem;
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 32px;
+  grid-template-areas:
+  ".    .    .    .    .   hd  hd   .    .    .    .    ."
+  ".    .    .   id   id   dv   dv  mk  mk    .    .    ."
+  ".    .    .    .    .   .    .   .    .    .    .    ."
+  ".    .    .   gy    gy   gy  gy  gy  gy    .    .    . "
+  ".    .    .   gy    gy   gy  gy  gy  gy    .    .    . "
+  ".    .    .    .    .   .    .   .    .    .    .    ."
+
+}
+
+
+#project-header{
+    font-family: Bebas-kai;
+    font-size: 8rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: white;
+    grid-area: hd;
+    text-align: center;
+    justify-self: center;
+}
+
+#project-identity{
+  font-family: Bebas-kai;
+  font-size: 3rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: white;
+  grid-area: id;
+  text-align: center;
+  justify-self: center;
+}
+
+
+#project-development{
+  font-family: Bebas-kai;
+  font-size: 3rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: white;
+  grid-area: dv;
+  text-align: center;
+  justify-self: center;
+}
+
+#project-marketing{
+  font-family: Bebas-kai;
+  font-size: 3rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: white;
+  grid-area: mk;
+  text-align: center;
+  justify-self: center;
+}
+
+#project-carousel{
+  grid-area: gy;
+  width: 65rem;
+  height: 40.964rem;
+  justify-self: center;
+  margin-left: -6rem;
+}
+
+#slide-gsu{
+  background-image: url(/images/GSUB.png);
+}
+

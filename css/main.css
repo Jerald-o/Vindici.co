@@ -933,13 +933,6 @@
     z-index: 2;
   }
   .photoshop-icon {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    /* vertical centering */
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -ms-grid-row: 3;
     -ms-grid-column: 8;
     grid-area: pshop;
@@ -955,6 +948,8 @@
     font-family: Roboto;
     font-size: 1.125rem;
     color: white;
+    -webkit-transform: translate(-5px, 0px);
+            transform: translate(-5px, 0px);
   }
   #notion-p {
     width: 5.5rem;
@@ -975,14 +970,21 @@
     font-family: Roboto;
     font-size: 1.125rem;
     color: white;
-    -webkit-transform: translate(-5px, 0px);
-            transform: translate(-5px, 0px);
+    -webkit-transform: translate(-8px, 0px);
+            transform: translate(-8px, 0px);
   }
   .figma-icon {
     z-index: 2;
     -ms-grid-row: 3;
     -ms-grid-column: 10;
     grid-area: figma;
+  }
+  #figma-p {
+    width: 5.5rem;
+    height: 1.313rem;
+    font-family: Roboto;
+    font-size: 1.125rem;
+    color: white;
   }
   .notion-icon {
     z-index: 2;
@@ -1001,6 +1003,15 @@
     -webkit-transform: translate(10px, 0px);
             transform: translate(10px, 0px);
   }
+  #javascript-p {
+    width: 5.5rem;
+    height: 1.313rem;
+    font-family: Roboto;
+    font-size: 1.125rem;
+    color: white;
+    -webkit-transform: translate(-5px, 0px);
+            transform: translate(-5px, 0px);
+  }
   .css-icon {
     z-index: 2;
     -ms-grid-row: 5;
@@ -1013,14 +1024,25 @@
     font-family: Roboto;
     font-size: 1.125rem;
     color: white;
-    -webkit-transform: translate(10px, 0px);
-            transform: translate(10px, 0px);
+    -webkit-transform: translate(9px, 0px);
+            transform: translate(9px, 0px);
   }
   .html-icon {
     z-index: 2;
     -ms-grid-row: 5;
     -ms-grid-column: 9;
     grid-area: html;
+    -webkit-transform: translate(2px, 0px);
+            transform: translate(2px, 0px);
+  }
+  #html-p {
+    width: 5.5rem;
+    height: 1.313rem;
+    font-family: Roboto;
+    font-size: 1.125rem;
+    color: white;
+    -webkit-transform: translate(4px, 0px);
+            transform: translate(4px, 0px);
   }
   .sass-icon {
     z-index: 2;
@@ -1032,8 +1054,8 @@
     font-family: Roboto;
     font-size: 1.125rem;
     color: white;
-    -webkit-transform: translate(10px, 0px);
-            transform: translate(10px, 0px);
+    -webkit-transform: translate(5px, 0px);
+            transform: translate(5px, 0px);
   }
 }
 
@@ -1725,4 +1747,123 @@
   #partners-bg {
     display: none;
   }
+}
+
+.project-wrapper {
+  display: -ms-grid;
+  display: grid;
+  height: 60.563rem;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+#project-cols {
+  display: -ms-grid;
+  display: grid;
+  justify-items: start;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-color: #838383;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12 1fr);
+  font-size: 30px;
+  min-height: 60.563rem;
+  width: 100%;
+  display: grid;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  grid-gap: 32px;
+      grid-template-areas: ".    .    .    .    .   hd  hd   .    .    .    .    ." ".    .    .   id   id   dv   dv  mk  mk    .    .    ." ".    .    .    .    .   .    .   .    .    .    .    ." ".    .    .   gy    gy   gy  gy  gy  gy    .    .    . " ".    .    .   gy    gy   gy  gy  gy  gy    .    .    . " ".    .    .    .    .   .    .   .    .    .    .    .";
+}
+
+#project-header {
+  font-family: Bebas-kai;
+  font-size: 8rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: white;
+  -ms-grid-row: 1;
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 2;
+  grid-area: hd;
+  text-align: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+#project-identity {
+  font-family: Bebas-kai;
+  font-size: 3rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: white;
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
+  grid-area: id;
+  text-align: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+#project-development {
+  font-family: Bebas-kai;
+  font-size: 3rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: white;
+  -ms-grid-row: 2;
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 2;
+  grid-area: dv;
+  text-align: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+#project-marketing {
+  font-family: Bebas-kai;
+  font-size: 3rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: white;
+  -ms-grid-row: 2;
+  -ms-grid-column: 8;
+  -ms-grid-column-span: 2;
+  grid-area: mk;
+  text-align: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+#project-carousel {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 6;
+  grid-area: gy;
+  width: 65rem;
+  height: 40.964rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin-left: -6rem;
+}
+
+#slide-gsu {
+  background-image: url(/images/GSUB.png);
 }

@@ -72,8 +72,6 @@
     
     }
     .photoshop-icon {
-      align-self: center;    /* vertical centering */
-      justify-content: center;
       grid-area: pshop;
       z-index: 2;
     
@@ -90,6 +88,8 @@
       font-family: Roboto;
       font-size: 1.125rem;
       color: white;
+      transform: translate(-5px, 0px);
+
     }
     
     #notion-p{
@@ -111,12 +111,21 @@
       font-family: Roboto;
       font-size: 1.125rem;
       color: white;
-      transform: translate(-5px, 0px);
+      transform: translate(-8px, 0px);
       
     }
     .figma-icon {
       z-index: 2;
       grid-area: figma;
+    }
+
+    #figma-p{
+      width: 5.5rem;
+      height: 1.313rem;
+      font-family: Roboto;
+      font-size: 1.125rem;
+      color: white;
+      
     }
     .notion-icon {
       z-index: 2;
@@ -133,10 +142,21 @@
       transform: translate(10px, 0px);
     
     }
+
+    #javascript-p{
+      width: 5.5rem;
+      height: 1.313rem;
+      font-family: Roboto;
+      font-size: 1.125rem;
+      color: white;
+      transform: translate(-5px, 0px);
+      
+    }
     
     .css-icon {
       z-index: 2;
       grid-area: css;
+      
     }
     
     #css-p{
@@ -145,12 +165,24 @@
       font-family: Roboto;
       font-size: 1.125rem;
       color: white;
-      transform: translate(10px, 0px);
+      transform: translate(9px, 0px);
     
     }
     .html-icon {
       z-index: 2;
       grid-area: html;
+      transform: translate(2px, 0px);
+
+    }
+
+    #html-p{
+      width: 5.5rem;
+      height: 1.313rem;
+      font-family: Roboto;
+      font-size: 1.125rem;
+      color: white;
+      transform: translate(4px, 0px);
+      
     }
     .sass-icon {
       z-index: 2;
@@ -161,7 +193,7 @@
       font-family: Roboto;
       font-size: 1.125rem;
       color: white;
-      transform: translate(10px, 0px);
+      transform: translate(5px, 0px);
     }
 
   }
