@@ -12,6 +12,11 @@
       object-fit: contain;
       background-color: #4a4a4a;
       grid-template-columns: 1fr;
+      grid-template-columns: 1fr;
+      background-image: url(/images/bg-logo.png);
+      background-repeat: no-repeat;
+      background-size: initial;
+      background-position: left top;
     }
     
     .service-cols {
@@ -37,7 +42,7 @@
     
     .service-header {
     color: white ;  
-    font-family: Bebas-kai, Roboto;
+    font-family: Bebas-kai;
     font-size: 3rem;
     grid-area: head;
     align-items: center;
@@ -54,13 +59,9 @@
     }
     
     #service-bg{
-      background-image: url(/images/bg-logo.png);
-      background-repeat: no-repeat;
-      z-index: 1;
-      grid-row: 2 / 6;
-      grid-column: 2 / 12;
-      
+      display: none;
     }
+      
     
     .service-p {
       font-family: Roboto;
@@ -180,6 +181,10 @@
       object-fit: contain;
       background-color: #4a4a4a;
       grid-template-columns: 1fr;
+      background-image: url(/images/bg-logo.png);
+      background-repeat: no-repeat;
+      background-size: initial;
+      background-position: center;
     }
     
     .service-cols {
@@ -219,6 +224,7 @@
       color: white;
       grid-area: head;
       z-index: 2;
+
     
     }
     
@@ -232,18 +238,7 @@
     
     #service-bg{
       display: none;
-      /*
-    Code for background, but it clips off
-    
-      background-image: url(/images/bg-logo.png);
-      background-repeat: no-repeat;
-      z-index: 1;
-      grid-row: 2 / 6;
-      grid-column: 2 / 12;
-      */
-      
-  
-      
+     
     }
     
     .service-p {
