@@ -1,156 +1,355 @@
 
+/*
+ v v  v SCSS for Desktop  v v v
+*/
 
-@include media('<=desktop') {
-  
-#service-wrapper {
-    display: grid;
-    height: 32rem;
-    width: 100%;
-    object-fit: contain;
-    background-color: #4a4a4a;
-    grid-template-columns: 1fr;
-  }
-
-  .service-cols {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    font-size: 40px;
-    min-height: 32rem;
-    width: 100%;
-    display: grid;
-    grid-template-rows: auto;
-    grid-gap: 26px;
-    grid-template-areas:
-      ".    .    .    .     .     .    .    .         .       .      .      ."
-      ".   head head head   .     .    .    .         .       .      .      ."
-      ".   head head head   .     .    .  pshop      prem  figma   sass     ."
-      ".    p    p    p     p     p    .    .         .       .      .      ."
-      ".    p    p    p     p     p    .  jscript    html    css    notion  ."
-      ".    p    p    p     p     p    .    .         .       .       .     ."
-      ".    .    .    .     .     .    .    .         .       .       .     ."
-      ".    .    .    .     .     .    .    .         .       .       .     .";
-  }
-
-  #service-bg {
-    background-image: url(/images/bg-logo.png);
-    background-repeat: no-repeat;
-    z-index: 1;
-    grid-row: 2 / 6;
-    grid-column: 2 / 12;
-  }
-
-  .service-header {
-    color: white;
-    font-family: bebas-kai;
+  @media (min-width: 1056px) { 
+ 
+    #service-wrapper {
+      display: grid;
+      height: 32rem;
+      width: 100%;
+      object-fit: contain;
+      background-color: #4a4a4a;
+      grid-template-columns: 1fr;
+    }
+    
+    .service-cols {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      font-size: 40px;
+      min-height: 32rem;
+      width: 100%;
+      display: grid;
+      grid-template-rows: auto;
+      grid-gap: 26px;
+      grid-template-areas:
+        ".    .    .    .     .     .    .    .         .       .      .      ."
+        ".   head head head   .     .    .    .         .       .      .      ."
+        ".   head head head   .     .    .  pshop      prem  figma   sass     ."
+        ".    p    p    p     p     p    .    .         .       .      .      ."
+        ".    p    p    p     p     p    .  jscript    html    css    notion  ."
+        ".    p    p    p     p     p    .    .         .       .       .     ."
+        ".    .    .    .     .     .    .    .         .       .       .     ."
+        ".    .    .    .     .     .    .    .         .       .       .     .";
+    
+    }
+    
+    .service-header {
+    color: white ;  
+    font-family: Bebas-kai, Roboto;
     font-size: 3rem;
     grid-area: head;
     align-items: center;
     z-index: 2;
+    
+    }
+    
+    .Vector {
+      width: 3.125rem;
+      height: 3.125rem;
+      object-fit: contain;
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+      background-color: var(--tiffany);
+    }
+    
+    #service-bg{
+      background-image: url(/images/bg-logo.png);
+      background-repeat: no-repeat;
+      z-index: 1;
+      grid-row: 2 / 6;
+      grid-column: 2 / 12;
+      
+    }
+    
+    .service-p {
+      font-family: Roboto;
+      font-size: 1.3rem; 
+      color: white;
+      grid-area: p;
+      z-index: 2;
+    
+    }
+    .photoshop-icon {
+      align-self: center;    /* vertical centering */
+      justify-content: center;
+      grid-area: pshop;
+      z-index: 2;
+    
+    }
+    
+    #photoshop-img{
+      transform: translate(10px, 0px);
+    
+    }
+    
+    #photoshop-p{
+      width: 5.5rem;
+      height: 1.313rem;
+      font-family: Roboto;
+      font-size: 1.125rem;
+      color: white;
+    }
+    
+    #notion-p{
+      width: 5.5rem;
+      height: 1.313rem;
+      font-family: Roboto;
+      font-size: 1.125rem;
+      color: white;
+    }
+    
+    .premiere-icon {
+      grid-area: prem;
+      z-index: 2;
+    }
+    
+    #premiere-p{
+      width: 5.5rem;
+      height: 1.313rem;
+      font-family: Roboto;
+      font-size: 1.125rem;
+      color: white;
+      transform: translate(-5px, 0px);
+      
+    }
+    .figma-icon {
+      z-index: 2;
+      grid-area: figma;
+    }
+    .notion-icon {
+      z-index: 2;
+      grid-area: notion;
+    }
+    
+    .js-icon {
+      z-index: 2;
+      grid-area: jscript;
+    }
+    
+    #js-img{
+      z-index: 2;
+      transform: translate(10px, 0px);
+    
+    }
+    
+    .css-icon {
+      z-index: 2;
+      grid-area: css;
+    }
+    
+    #css-p{
+      width: 5.5rem;
+      height: 1.313rem;
+      font-family: Roboto;
+      font-size: 1.125rem;
+      color: white;
+      transform: translate(10px, 0px);
+    
+    }
+    .html-icon {
+      z-index: 2;
+      grid-area: html;
+    }
+    .sass-icon {
+      z-index: 2;
+      grid-area: sass;
+    }
+    
+    #sass-p{
+      font-family: Roboto;
+      font-size: 1.125rem;
+      color: white;
+      transform: translate(10px, 0px);
+    }
+
   }
 
-  .service-p {
-    font-family: Roboto;
-    font-size: 1.3rem;
-    color: white;
-    grid-area: p;
-    z-index: 2;
-  }
 
-  .Vector {
-    width: 3.125rem;
-    height: 3.125rem;
-    object-fit: contain;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    background-color: var(--tiffany);
-  }
+
+
+/*
+ v v  v SCSS for Tablet and mobile  v v v
+*/
+
+  @media (max-width: 1056px) { 
+    #service-wrapper {
+      display: grid;
+      height: 38rem;
+      width: 100%;
+      object-fit: contain;
+      background-color: #4a4a4a;
+      grid-template-columns: 1fr;
+    }
+    
+    .service-cols {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      height: 38rem;
+      width: 100%;
+      object-fit: contain;
+      display: grid;
+      grid-template-rows: auto;
+      grid-gap: 16px;
+      grid-template-areas:
+      ".            .        .           ."
+      "head        head     head       head "
+      "head        head     head       head"
+      "p            p        p           p"
+      "p            p        p           p"
+      ".            .        .            ."
+      "pshop      prem     figma      notion"
+      "jscript     css     html         sass"
+      ".            .        .           ."
+      ".            .        .           ."
+      ".            .        .           .";
+      
+    }
+    
+    .service-header {
+      justify-self: center;
+      padding-left: .7rem;
+      height: 5.875rem;
+      font-size: 2.5rem;
+      font-stretch: normal;
+      font-family: Bebas-kai, Roboto;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: white;
+      grid-area: head;
+      z-index: 2;
+    
+    }
+    
+    .Vector {
+      width: 3.125rem;
+      height: 3.125rem;
+      object-fit: contain;
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+      background-color: var(--tiffany);
+    }
+    
+    #service-bg{
+      display: none;
+      /*
+    Code for background, but it clips off
+    
+      background-image: url(/images/bg-logo.png);
+      background-repeat: no-repeat;
+      z-index: 1;
+      grid-row: 2 / 6;
+      grid-column: 2 / 12;
+      */
+      
   
-  .photoshop-icon {
-    align-self: center; /* vertical centering */
-    justify-content: center;
-    grid-area: pshop;
-    z-index: 2;
-  }
-
-  #photoshop-img {
-    transform: translate(10px, 0px);
-  }
-
-  #photoshop-p {
-    width: 5.5rem;
-    height: 1.313rem;
-    font-family: Roboto;
-    font-size: 1.125rem;
-    color: white;
-  }
-
-  #notion-p {
-    width: 5.5rem;
-    height: 1.313rem;
-    font-family: Roboto;
-    font-size: 1.125rem;
-    color: white;
-  }
-
-  .premiere-icon {
-    grid-area: prem;
-    z-index: 2;
-  }
-
-  #premiere-p {
-    width: 5.5rem;
-    height: 1.313rem;
-    font-family: Roboto;
-    font-size: 1.125rem;
-    color: white;
-    transform: translate(-5px, 0px);
-  }
-
-  .figma-icon {
-    z-index: 2;
-    grid-area: figma;
-  }
-  .notion-icon {
-    z-index: 2;
-    grid-area: notion;
-  }
-
-  .js-icon {
-    z-index: 2;
-    grid-area: jscript;
-  }
-
-  #js-img {
-    z-index: 2;
-    transform: translate(10px, 0px);
-  }
-
-  .css-icon {
-    z-index: 2;
-    grid-area: css;
-  }
-
-  #css-p {
-    width: 5.5rem;
-    height: 1.313rem;
-    font-family: Roboto;
-    font-size: 1.125rem;
-    color: white;
-    transform: translate(10px, 0px);
-  }
-  .html-icon {
-    z-index: 2;
-    grid-area: html;
-  }
-  .sass-icon {
-    z-index: 2;
-    grid-area: sass;
-  }
-
-  #sass-p {
-    font-family: Roboto;
-    font-size: 1.125rem;
-    color: white;
-    transform: translate(10px, 0px);
-  }
-
-}
+      
+    }
+    
+    .service-p {
+      padding-left: .7rem;
+      justify-self: center;
+      font-family: Roboto;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      font-size: 1.2rem;
+      color: white;
+      grid-area: p;
+      z-index: 2;
+    
+    }
+  
+    #service-ptxt2{
+      display: none;
+    }
+    .photoshop-icon {
+      justify-self: center;
+      grid-area: pshop;
+    
+    }
+    
+    #photoshop-img{
+      transform: translate(10px, 0px);
+    
+    }
+    
+    #photoshop-p{
+      width: 100%;
+      padding-left: .7rem;
+      height: auto;
+      font-family: Roboto;
+      font-size: 0.884rem;
+      color: white;
+    }
+    
+    .premiere-icon {
+      justify-self: center;
+      grid-area: prem;
+      font-size: 0.884rem;
+  
+    }
+    
+    #premiere-p{
+      width: 100%;
+      height: auto;
+      font-family: Roboto;
+      font-size: 0.884rem;
+      color: white;
+      transform: translate(-5px, 0px);
+      
+    }
+    .figma-icon {
+      grid-area: figma;
+      justify-self: center;
+  
+    }
+    .notion-icon {
+      grid-area: notion;
+      justify-self: center;
+  
+    }
+  
+    
+    .js-icon {
+      grid-area: jscript;
+      justify-self: center;
+  
+    }
+    
+    #js-img{
+      transform: translate(10px, 0px);
+    
+    }
+    
+    .css-icon {
+      grid-area: css;
+      justify-self: center;
+    }
+    
+    #css-p{
+  
+      font-family: Roboto;
+      font-size: 0.884rem;
+      color: white;
+      transform: translate(10px, 0px);
+    
+    }
+    .html-icon {
+      grid-area: html;
+      justify-self: center;
+  
+    }
+    .sass-icon {
+      grid-area: sass;
+      justify-self: center;
+  
+    }
+    
+    #sass-p{
+      font-family: Roboto;
+      font-size: 1.125rem;
+      color: white;
+      transform: translate(10px, 0px);
+    }
+  } 

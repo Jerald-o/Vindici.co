@@ -1,3 +1,9 @@
+/*
+ v v  v SCSS for Desktop  v v v
+*/
+
+@media (min-width: 1056px) { 
+
 header {
     height: 96px;
     display: grid;
@@ -28,7 +34,51 @@ header {
         font-family: bebas-kai,sans-serif;
         font-weight: 300;
         font-style: normal;
-        font-size:18px;
+        font-size:22px;
     }
 
+}
+
+}
+
+/*
+ v v  v SCSS for Tablet and mobile  v v v
+*/
+
+@media (max-width: 1056px) { 
+
+    header {
+        height: 96px;
+        display: grid;
+        grid-template-columns: 5% 1fr;
+        background-color: rgba(0, 0, 0, 0.7);
+        grid-column: 1 / -1;
+        position: relative;
+        align-items: center;
+    }
+    
+    .brand {
+        margin-left: 90px;
+        align-self: center;
+        justify-self: center;
+    }
+    
+    .nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $white;
+        list-style:none;
+        overflow: hidden;
+        &-link {
+            margin: 0 18px;
+            align-self: center;
+            justify-self: center;
+            font-family: bebas-kai,sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            font-size:22px;
+        }
+    
+    }
 }

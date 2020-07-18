@@ -1,0 +1,91 @@
+/*
+ v v  v SCSS for Desktop  v v v
+*/
+
+@media (min-width: 1056px) { 
+
+main {
+    grid-column: 1 / -1;
+    height: 100vh;
+    display: grid;
+    background: url(../images/landingBG.png);
+    overflow: hidden;
+    background-origin: content-box;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  .hero-text {
+    margin-top: 2em;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 4;
+    grid-column: 2 / 6;
+    -ms-grid-row: 2;
+    grid-row: 2;
+    font-family: Bebas-kai;
+    font-size: 72px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+  }
+  
+  .hero-text ::after {
+    display: block;
+    content: "";
+    border-top: 0.6rem solid #00cccc;
+    width: 13.5rem;
+    margin-top: 2rem;
+  }
+
+}
+
+/*
+ v v  v SCSS for Tablet and mobile  v v v
+*/
+
+@media (max-width: 1056px) { 
+
+    main {
+        grid-column: 1 / -1;
+        height: 100vh;
+        display: grid;
+        background: url(../images/landingBG_mobile2.png);
+        overflow: hidden;
+        background-origin: content-box;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+      
+      .hero-text {
+        margin: 16px;
+        -ms-grid-column: 2;
+        -ms-grid-column-span: 4;
+        grid-column: 2 / 6;
+        -ms-grid-row: 2;
+        grid-row: 2;
+        font-family: Bebas-kai;
+        font-size: 72px;
+        font-weight: 400;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #ffffff;
+      }
+      
+      .hero-text ::after {
+        display: block;
+        content: "";
+        border-top: 0.6rem solid #00cccc;
+        width: 13.5rem;
+        margin-top: 2rem;
+      }
+
+}

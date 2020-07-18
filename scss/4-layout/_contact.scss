@@ -1,3 +1,158 @@
+/*
+ v v  v SCSS for Desktop  v v v
+*/
+
+@media (min-width: 1056px) { 
+
+.contact-wrapper {
+  display: grid;
+  height: 44.125rem;
+  width: 100%;
+  object-fit: contain;
+  grid-template-columns: .35fr .65fr;
+}
+
+#contact-left {
+  display: grid;
+  justify-items: start;
+  object-fit: contain;
+  background-color: #838383;
+  grid-template-columns: repeat(5, 1fr);
+  font-size: 40px;
+  min-height: 44.125rem;;
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-gap: 26px;
+  grid-template-areas:
+  ".    .    .    .      ."
+  ".    .    .    .      ."
+  ".   chd  chd  chd     ."
+  ".   btn  btn  btn      ."
+  ".    .    .    .      ."
+  ".    .    .    .      .";
+
+}
+
+#contact-right {
+  justify-items: center;
+  display: grid;
+  background-color: #4a4a4a;
+  object-fit: contain;
+  grid-template-columns: repeat(8, 1fr);
+  font-size: 40px;
+  min-height: 44.125rem;
+  width: 100%;
+  display: grid; 
+  grid-template-rows: repeat(8, 1fr);
+  grid-gap: 26px;
+  grid-template-areas:
+  ".    .    .    .   .   .    .   . "
+  ".    .  nme  nme nme nme    .   . "
+  ".    .  eml  eml eml eml    .   . "
+  ".    .  bdg  bdg bdg bdg    .   . "
+  ".    .  dsc  dsc dsc dsc    .   . "
+  ".    .    .    .   .   .    .   . "
+  ".    .    .    .   .   .    .   . "
+  ".    .    .    .   .   .    .   . ";
+
+}
+
+#contact-head{
+  width: 21rem;
+  height: 9.625rem;
+  font-family: bebas-kai;
+  font-size: 4rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: white;
+  grid-area: chd;
+
+}
+
+#contact-text-blue{
+  color: #00cccc;
+}
+
+.contact-button{
+  height: 4rem;
+  border-radius: 220px;
+  background-color: var(--greyish);
+  grid-area: btn;
+  justify-items: start;
+}
+
+.contact-name{
+  width: 40vw;
+  height: 4.375rem;
+  border-radius: 9px;
+  background-color: #515151;
+  font-family: Roboto;
+  font-size: 1.813rem;
+  padding: 12px 12px;
+  color: #838383;
+  resize: none;
+  grid-area: nme;
+
+}
+.contact-email{
+  width: 40vw;
+  height: 4.375rem;
+  border-radius: 9px;
+  background-color: #515151;
+  font-family: Roboto;
+  font-size: 1.813rem;
+  padding: 12px 12px;
+  color: #838383;
+  resize: none;
+  grid-area: eml;
+
+
+}
+.contact-budget{
+  width: 40vw;
+  height: 4.375rem;
+  border-radius: 9px;
+  background-color: #515151;
+  font-family: Roboto;
+  font-size: 1.813rem;
+  padding: 12px 12px;
+  color: #838383;
+  resize: none;
+  grid-area: bdg;
+
+
+}
+.contact-description{
+  width: 40vw;
+  height: 19.625rem;
+  border-radius: 9px;
+  resize: none;
+  background-color: #515151;
+  font-family: Roboto;
+  font-size: 1.813rem;
+  padding: 12px 12px;
+  color: #838383;
+  grid-area: dsc;
+}
+
+}
+
+
+
+
+
+
+
+/*
+ v v  v SCSS for Tablet and Mobile  v v v
+*/
+
+@media (max-width: 1056px) { 
+
 
 .contact-wrapper {
     display: grid;
@@ -135,3 +290,5 @@
     color: #838383;
     grid-area: dsc;
   }
+
+}
