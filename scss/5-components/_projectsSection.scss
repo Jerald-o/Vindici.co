@@ -92,10 +92,39 @@
   width: 65rem;
   height: 40.964rem;
   justify-self: center;
-  margin-left: -6rem;
 }
 
 #slide-gsu{
   background-image: url(/images/GSUB.png);
 }
 
+#project-slider-wrapper{
+  display: flex;
+  flex-flow: row nowrap;
+  height: 250px;
+  justify-content: center;
+
+}
+
+.slider-gsub{
+  margin: 40px;
+  background-color: red;
+text-align: center;
+
+
+}
+.slider-ecom{
+  margin: 40px;
+
+  background-color: red;
+text-align: center;
+
+
+}
+.slider-jck{
+  margin: 40px;
+
+  background-color: red;
+text-align: center;
+
+}

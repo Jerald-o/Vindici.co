@@ -1861,9 +1861,40 @@
   height: 40.964rem;
   -ms-grid-column-align: center;
       justify-self: center;
-  margin-left: -6rem;
 }
 
 #slide-gsu {
   background-image: url(/images/GSUB.png);
+}
+
+#project-slider-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  height: 250px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.slider-gsub {
+  margin: 40px;
+  background-color: red;
+  text-align: center;
+}
+
+.slider-ecom {
+  margin: 40px;
+  background-color: red;
+  text-align: center;
+}
+
+.slider-jck {
+  margin: 40px;
+  background-color: red;
+  text-align: center;
 }
