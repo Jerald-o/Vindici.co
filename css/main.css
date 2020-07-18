@@ -1054,7 +1054,7 @@
     background-image: url(/images/bg-logo.png);
     background-repeat: no-repeat;
     background-size: initial;
-    background-position: center;
+    background-position: center 260px;
   }
   .service-cols {
     display: -ms-grid;
@@ -1103,7 +1103,6 @@
     display: none;
   }
   .service-p {
-    padding-left: .7rem;
     -ms-grid-column-align: center;
         justify-self: center;
     font-family: Roboto;
