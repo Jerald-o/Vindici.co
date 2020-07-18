@@ -1612,17 +1612,24 @@
        object-fit: contain;
     display: -ms-grid;
     display: grid;
-    height: 45rem;
+    height: 60rem;
     background-color: #4a4a4a;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    background-image: url(/images/bg-nowords.png);
+    overflow: hidden;
+    background-origin: content-box;
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
   }
   #partners-cols {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
-    height: 45rem;
+    height: 60rem;
     width: 100%;
     -o-object-fit: contain;
        object-fit: contain;
@@ -1630,7 +1637,7 @@
     -ms-grid-rows: repeat();
         grid-template-rows: repeat();
     grid-gap: 16px;
-        grid-template-areas: ".          .      .      ." ".          .      .      ." "h1         h1     h1     ." ".         bh1    bh1    bh1" ".          gb     gb     ." ".          ecm    ecm    ." ".          jc     jc     ." ".          .      .      ." ".          .      .      .";
+        grid-template-areas: ".          .      .      ." ".          .      .      ." "h1         h1     h1     ." "bh1        bh1    bh1    ." ".          gb     gb     ." ".          ecm    ecm    ." ".          jc     jc     ." ".          .      .      ." ".          .      .      .";
   }
   #partners-head {
     -ms-grid-row: 3;
@@ -1638,10 +1645,12 @@
     -ms-grid-column-span: 3;
     grid-area: h1;
     z-index: 2;
+    position: relative;
     font-family: Bebas-kai;
-    font-size: 3.5rem;
+    font-size: 5rem;
+    width: 24.188rem;
+    margin-left: 10vw;
     font-weight: normal;
-    margin-left: .938rem;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
@@ -1649,6 +1658,7 @@
     color: white;
     -ms-grid-column-align: center;
         justify-self: center;
+    margin-top: -3vw;
   }
   #partners-bh1 {
     z-index: 2;
@@ -1656,9 +1666,9 @@
     -webkit-filter: blur(16px);
     filter: blur(4px);
     font-family: Bebas-kai;
-    font-size: 5rem;
+    font-size: 9rem;
     -ms-grid-row: 4;
-    -ms-grid-column: 2;
+    -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-area: bh1;
     width: 24.188rem;
@@ -1686,8 +1696,8 @@
   }
   #gsub-pic {
     z-index: 2;
-    width: 10rem;
-    height: 10rem;
+    width: 13rem;
+    height: 13rem;
   }
   #partners-ecom {
     z-index: 2;
@@ -1702,8 +1712,8 @@
   }
   #ecom-pic {
     z-index: 2;
-    width: 10rem;
-    height: 10rem;
+    width: 13rem;
+    height: 13rem;
   }
   #partners-jckicks {
     z-index: 2;
@@ -1718,18 +1728,10 @@
   }
   #jc-pic {
     z-index: 2;
-    width: 10rem;
-    height: 10rem;
+    width: 13rem;
+    height: 13rem;
   }
   #partners-bg {
-    z-index: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
-    grid-column: 1 / 4;
-    -ms-grid-row: 4;
-    -ms-grid-row-span: 6;
-    grid-row: 4 / 10;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    display: none;
   }
 }
