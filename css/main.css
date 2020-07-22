@@ -23,6 +23,15 @@
  v v  v SCSS for Desktop  v v v
 */
 @media (min-width: 1056px) {
+  .header-wrapper {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    height: 38rem;
+    background-color: #4a4a4a;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
   header {
     height: 96px;
     display: -ms-grid;
@@ -37,13 +46,15 @@
             align-items: center;
   }
   .brand {
-    padding-left: 3em;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
   .nav {
     display: -webkit-box;
@@ -1578,7 +1589,7 @@
     width: 100%;
     display: -ms-grid;
     display: grid;
-    height: 35rem;
+    height: 38rem;
     background-color: #4a4a4a;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -1590,7 +1601,7 @@
     -ms-grid-columns: (1fr)[12];
         grid-template-columns: repeat(12, 1fr);
     font-size: 40px;
-    height: 35rem;
+    height: 38rem;
     width: 100%;
     display: grid;
     -ms-grid-rows: auto;
