@@ -1316,56 +1316,96 @@
     -ms-grid-row: 4;
     -ms-grid-column: 2;
     grid-area: p1;
+    font-family: Roboto;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
   }
   #process-2 {
     -ms-grid-row: 4;
     -ms-grid-column: 3;
     grid-area: p2;
+    font-family: Roboto;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
   }
   #process-3 {
     -ms-grid-row: 4;
     -ms-grid-column: 4;
     grid-area: p3;
+    font-family: Roboto;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
   }
   #process-4 {
     -ms-grid-row: 4;
     -ms-grid-column: 5;
     grid-area: p4;
+    font-family: Roboto;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
   }
   #process-5 {
     -ms-grid-row: 4;
     -ms-grid-column: 6;
     grid-area: p5;
+    font-family: Roboto;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
   }
   #process-6 {
     -ms-grid-row: 5;
     -ms-grid-column: 2;
     grid-area: p6;
     margin-top: 5vh;
+    font-family: Roboto;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
   }
   #process-7 {
     -ms-grid-row: 5;
     -ms-grid-column: 3;
     grid-area: p7;
     margin-top: 5vh;
+    font-family: Roboto;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
   }
   #process-8 {
     -ms-grid-row: 5;
     -ms-grid-column: 4;
     grid-area: p8;
     margin-top: 5vh;
+    font-family: Roboto;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
   }
   #process-9 {
     -ms-grid-row: 5;
     -ms-grid-column: 5;
     grid-area: p9;
     margin-top: 5vh;
+    font-family: Roboto;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
   }
   #process-10 {
     -ms-grid-row: 5;
     -ms-grid-column: 6;
     grid-area: p10;
     margin-top: 5vh;
+    font-family: Roboto;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
   }
   #process-pg {
     height: 8.75rem;
