@@ -1,7 +1,12 @@
+/*
+ v v  v SCSS for Desktop  v v v
+*/
+
+@media (min-width: 1056px) { 
 
 .project-wrapper {
   display: grid;
-  height: 60.563rem;
+  height: 65.563rem;
   width: 100%;
   object-fit: contain;
   grid-template-columns: 1fr;
@@ -9,23 +14,23 @@
 
 #project-cols {
   display: grid;
-  justify-items: start;
   object-fit: contain;
-  background-color: #838383;
+  background: linear-gradient(90deg, #4a4a4a 50%, #3b3b3b 50%);
   grid-template-columns: repeat(12 1fr);
   font-size: 30px;
-  min-height: 60.563rem;
+  height: 65.563rem;
   width: 100%;
   display: grid;
   grid-template-rows: auto;
-  grid-gap: 32px;
   grid-template-areas:
-  ".    .    .    .    .   hd  hd   .    .    .    .    ."
-  ".    .    .   id   id   dv   dv  mk  mk    .    .    ."
   ".    .    .    .    .   .    .   .    .    .    .    ."
-  ".    .    .   gy    gy   gy  gy  gy  gy    .    .    . "
-  ".    .    .   gy    gy   gy  gy  gy  gy    .    .    . "
-  ".    .    .    .    .   .    .   .    .    .    .    ."
+
+  ".    .    .    hd   hd   hd  hd  hd   hd    .    .     ."
+  ".    .    .    ps   ps   ps  ps  ps   ps    .    .    ."
+  ".    .    .    gy   gy   gy  gy  gy   gy    .    .    . "
+  ".    .    .    .    .    .    .   .    .    .    .    ."
+  ".    .    .    .    .    sl  sl   .    .    .    .    . "
+  ".    .    .    .    .    .    .   .    .    .    .    .";
 
 }
 
@@ -43,7 +48,17 @@
     text-align: center;
     justify-self: center;
 }
-
+#project-sections{
+    display: flex;
+    flex-flow: row wrap;
+    height: 2rem;
+    justify-content: center;
+    justify-self: center;
+    grid-area: ps;
+    align-content: center;
+    align-items:center;
+  
+}
 #project-identity{
   font-family: Bebas-kai;
   font-size: 3rem;
@@ -56,6 +71,8 @@
   grid-area: id;
   text-align: center;
   justify-self: center;
+  
+
 }
 
 
@@ -71,6 +88,9 @@
   grid-area: dv;
   text-align: center;
   justify-self: center;
+  padding-left: 4.232142857142857vw;
+  padding-right: 4.232142857142857vw;
+
 }
 
 #project-marketing{
@@ -85,46 +105,271 @@
   grid-area: mk;
   text-align: center;
   justify-self: center;
+
 }
 
 #project-carousel{
   grid-area: gy;
-  width: 65rem;
-  height: 40.964rem;
+  width: 46.438rem;
+  height: 22.964rem;
   justify-self: center;
 }
 
-#slide-gsu{
-  background-image: url(/images/GSUB.png);
-}
 
 #project-slider-wrapper{
   display: flex;
   flex-flow: row nowrap;
-  height: 250px;
+  height: 2rem;
   justify-content: center;
+  justify-self: center;
+  grid-area: sl;
+  align-content: center;
+  align-items:center;
+  padding-right: 2.3rem;
+
+
 
 }
 
 .slider-gsub{
-  margin: 40px;
-  background-color: red;
-text-align: center;
+  align-items: center; /* NEW */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  list-style: none;
+  padding: 2rem;
 
+  overflow: hidden;
+  
+  
 
 }
+
 .slider-ecom{
-  margin: 40px;
+  align-items: center; /* NEW */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  list-style: none;
+  padding: 2rem;
 
-  background-color: red;
-text-align: center;
+  overflow: hidden;
 
+  
 
 }
+
+
 .slider-jck{
-  margin: 40px;
+  align-items: center; /* NEW */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  list-style: none;
+  padding: 2rem;
 
-  background-color: red;
-text-align: center;
+  overflow: hidden;
+  
+  
+
 
 }
+}
+
+/*
+ v v  v SCSS for Tablet and Mobile  v v v
+*/
+
+@media (max-width: 1056px) { 
+
+  .project-wrapper {
+    display: grid;
+    height: 107.563rem;
+    width: 100%;
+    object-fit: contain;
+    grid-template-columns: 1fr;
+  }
+  
+  #project-cols {
+    display: grid;
+    justify-items: start;
+    object-fit: contain;
+    background: linear-gradient(90deg, #4a4a4a 50%, #3b3b3b 50%);
+    grid-template-columns: repeat(12 1fr);
+    font-size: 30px;
+    height: 107.563rem;
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas:
+    ".    .    .    .    .   .    .   .    .    .    .    ."
+  
+    ".    .    .    hd   hd   hd  hd  hd   hd    .    .     ."
+    ".    .    .    ps   ps   ps  ps  ps   ps    .    .    ."
+    ".    .    .    gy   gy   gy  gy  gy   gy    .    .    . "
+    ".    .    .    .    .    .    .   .    .    .    .    ."
+    ".    .    .    .    .   .    .   .    .    .    .    ."
+    ".    .    .    .    .   .    .   .    .    .    .    ."
+    ".    .    .    .    .   .    .   .    .    .    .    ."
+    ".    .    .    .    .   .    .   .    .    .    .    ."
+    ".    .    .    .    .    sl  sl   .    .    .    .    . "
+    ".    .    .    .    .    sl  sl   .    .    .    .    . "
+    ".    .    .    .    .    sl  sl   .    .    .    .    . "
+    ".    .    .    .    .    sl  sl   .    .    .    .    . "
+    ".    .    .    .    .   .    .   .    .    .    .    ."
+
+    ".    .    .    .    .    .    .   .    .    .    .    .";
+  
+  }
+  
+  
+  #project-header{
+      font-family: Bebas-kai;
+      font-size: 8rem;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: white;
+      grid-area: hd;
+      text-align: center;
+      justify-self: center;
+  }
+  #project-sections{
+      display: flex;
+      flex-flow: row wrap;
+      height: 5rem;
+      justify-content: center;
+      justify-self: center;
+      grid-area: ps;
+      align-content: center;
+      align-items:center;
+    
+  }
+  #project-identity{
+    font-family: Bebas-kai;
+    font-size: 3rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: white;
+    grid-area: id;
+    text-align: center;
+    justify-self: center;
+    
+  
+  }
+  
+  
+  #project-development{
+    font-family: Bebas-kai;
+    font-size: 3rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: white;
+    grid-area: dv;
+    text-align: center;
+    justify-self: center;
+    padding-left: 4.232142857142857vw;
+    padding-right: 4.232142857142857vw;
+  
+  }
+  
+  #project-marketing{
+    font-family: Bebas-kai;
+    font-size: 3rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: white;
+    grid-area: mk;
+    text-align: center;
+    justify-self: center;
+  
+  }
+  
+  #project-carousel{
+    grid-area: gy;
+    width: 100%;
+    height: 90%;
+    margin: 16px;
+    justify-self: center;
+  }
+  
+  
+  #project-slider-wrapper{
+    display: flex;
+    flex-flow: column ;
+    height: 2rem;
+    justify-content: center;
+    justify-self: center;
+    grid-area: sl;
+    align-content: center;
+    align-items:center;
+    padding-right: 2.3rem;
+  
+  
+  
+  }
+  
+  .slider-gsub{
+    align-items: center; /* NEW */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    list-style: none;
+    padding: 2rem;
+  
+    
+    
+  
+  }
+  
+  .slider-ecom{
+    align-items: center; /* NEW */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    list-style: none;
+    padding: 2rem;
+    
+    
+  
+  }
+  
+  
+  .slider-jck{
+    align-items: center; /* NEW */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    list-style: none;
+    padding: 2rem;
+  
+    
+    
+  
+  
+  }
+  }
+

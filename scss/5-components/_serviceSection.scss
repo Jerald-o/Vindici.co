@@ -330,10 +330,30 @@
       justify-self: center;
   
     }
+
+    #figma-p{
+      width: 100%;
+      height: auto;
+      font-family: Roboto;
+      font-size: 0.884rem;
+      color: white;
+
+      
+    }
     .notion-icon {
       grid-area: notion;
       justify-self: center;
   
+    }
+
+    #notion-p{
+      width: 100%;
+      height: auto;
+      font-family: Roboto;
+      font-size: 0.884rem;
+      color: white;
+
+      
     }
   
     
@@ -341,6 +361,17 @@
       grid-area: jscript;
       justify-self: center;
   
+    }
+    
+
+    #javascript-p{
+      width: 100%;
+      height: auto;
+      font-family: Roboto;
+      font-size: 0.884rem;
+      color: white;
+
+      
     }
     
     #js-img{
@@ -365,6 +396,17 @@
       grid-area: html;
       justify-self: center;
   
+    }
+  
+
+    #html-p{
+      width: 100%;
+      height: auto;
+      font-family: Roboto;
+      font-size: 0.884rem;
+      color: white;
+
+      
     }
     .sass-icon {
       grid-area: sass;

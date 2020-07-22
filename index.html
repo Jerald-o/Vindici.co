@@ -10,13 +10,30 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
       rel="stylesheet"
     />
-<!-- CSS only -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
 
-<!-- JS, Popper.js, and jQuery -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- JS, Popper.js, and jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="main-grid">
@@ -38,6 +55,7 @@
                 width="1"
                 height="1"
               >
+              
                 <use
                   xlink:href="#image0"
                   transform="translate(-0.00175215) scale(0.000724029 0.00124533)"
@@ -72,7 +90,7 @@
           <i class="fab fa-linkedin"></i>
         </div>
       </main>
-    </div>
+    </div> 
 
     <div id="service-wrapper">
       <div class="service-cols">
@@ -158,6 +176,98 @@
         </div>
       </div>
     </div>
+
+    <div class="project-wrapper">
+      <div id="project-cols">
+        <div id="project-header"><p>projects</p></div>
+        <div id="project-sections">
+          <div id="project-identity"><p>Brand Identiy</p></div>
+          <div id="project-development"><p>UI/Web Development</p></div>
+          <div id="project-marketing"><p>Digital Marketing</p></div>
+        </div>
+
+        <div
+          id="project-carousel"
+          class="carousel slide carousel-fade"
+          data-ride="carousel"
+        >
+          <!--Carousel ^^ Wrapper-->
+          <!--Indicators-->
+          <ol class="carousel-indicators">
+            <li
+              id="slide-gsu"
+              data-target="#project-carousel"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#project-carousel" data-slide-to="1"></li>
+            <li data-target="#project-carousel" data-slide-to="2"></li>
+          </ol>
+
+          <!--/.Indicators-->
+          <!--Slides-->
+          <div class="carousel-inner" role="listbox">
+            <!--First slide-->
+            <div class="carousel-item active">
+              <img
+                class="d-block w-100"
+                src="/images/Project2.png"
+                alt="First slide"
+              />
+            </div>
+            <!--/First slide-->
+            <!--Second slide-->
+            <div class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="/images/Project2.png"
+                alt="Second slide"
+              />
+            </div>
+            <!--/Second slide-->
+            <!--Third slide-->
+            <div class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="/images/Project2.png"
+                alt="Third slide"
+              />
+            </div>
+            <!--/Third slide-->
+          </div>
+          <!--/.Slides-->
+          <!--Controls-->
+          <a
+            class="carousel-control-prev"
+            href="#project-carousel"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#project-carousel"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+          <!--/.Controls-->
+        </div>
+
+        <ul id="project-slider-wrapper">
+          <li class="slider-gsub"><img src="/images/GSUB.png" alt="" /></li>
+          <li class="slider-ecom"><img src="/images/Ecom.png" /></li>
+          <li class="slider-jck"><img src="/images/JCK.png" /></li>
+        </ul>
+
+
+      </div>
+    </div>
+
 
     <div class="process-wrapper">
       <div id="process-cols">
@@ -256,72 +366,19 @@
       </div>
     </div>
 
-    <div class="project-wrapper">
-      <div id="project-cols">
-        <div id="project-header"><p>projects</p></div>
-        <div id="project-identity"><p>Brand Identiy</p></div>
-        <div id="project-development"><p>UI/Web Development</p></div>
-        <div id="project-marketing"><p>UI/Web Development</p></div>
-<!--Carousel Wrapper-->
-<div id="project-carousel" class="carousel slide carousel-fade" data-ride="carousel">
-  <!--Indicators-->
-  <ol class="carousel-indicators">
-    <li id="slide-gsu" data-target="#project-carousel" data-slide-to="0" class="active"></li>
-    <li data-target="#project-carousel" data-slide-to="1"></li>
-    <li data-target="#project-carousel" data-slide-to="2"></li>
-  </ol>
-  <!--/.Indicators-->
-  <!--Slides-->
-  <div class="carousel-inner" role="listbox">
-    <!--First slide-->
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="/images/Project2.png"
-        alt="First slide">
-    </div>
-    <!--/First slide-->
-    <!--Second slide-->
-    <div class="carousel-item">
-      <img class="d-block w-100" src="/images/Project2.png"
-        alt="Second slide">
-    </div>
-    <!--/Second slide-->
-    <!--Third slide-->
-    <div class="carousel-item">
-      <img class="d-block w-100" src="/images/Project2.png"
-        alt="Third slide">
-    </div>
-    <!--/Third slide-->
-  </div>
-  <!--/.Slides-->
-  <!--Controls-->
-  <a class="carousel-control-prev" href="#project-carousel" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#project-carousel" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-  <!--/.Controls-->
-</div>
-<!--/.Carousel Wrapper-->
-
-      </div>
-    </div>
-    <div id="project-slider-wrapper">
-      <div class="slider-gsub"><img src="/images/GSUB.png" alt=""></div>
-      <div class="slider-ecom"><img src="/images/GSUB.png"></div>
-      <div class="slider-jck"><img src="/images/GSUB.png"> </div>
-    </div>
-    
-
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  </head>
-  <body>
-  
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 
-    
-
+  <script>
+    // Stop carousel
+    $(".carousel").carousel({
+      interval: false,
+    });
+  </script>
 </html>

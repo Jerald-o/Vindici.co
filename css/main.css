@@ -38,11 +38,12 @@
   }
   .brand {
     padding-left: 3em;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .nav {
     display: -webkit-box;
@@ -1186,6 +1187,13 @@
     -ms-grid-column-align: center;
         justify-self: center;
   }
+  #figma-p {
+    width: 100%;
+    height: auto;
+    font-family: Roboto;
+    font-size: 0.884rem;
+    color: white;
+  }
   .notion-icon {
     -ms-grid-row: 7;
     -ms-grid-column: 4;
@@ -1193,12 +1201,26 @@
     -ms-grid-column-align: center;
         justify-self: center;
   }
+  #notion-p {
+    width: 100%;
+    height: auto;
+    font-family: Roboto;
+    font-size: 0.884rem;
+    color: white;
+  }
   .js-icon {
     -ms-grid-row: 8;
     -ms-grid-column: 1;
     grid-area: jscript;
     -ms-grid-column-align: center;
         justify-self: center;
+  }
+  #javascript-p {
+    width: 100%;
+    height: auto;
+    font-family: Roboto;
+    font-size: 0.884rem;
+    color: white;
   }
   #js-img {
     -webkit-transform: translate(10px, 0px);
@@ -1224,6 +1246,13 @@
     grid-area: html;
     -ms-grid-column-align: center;
         justify-self: center;
+  }
+  #html-p {
+    width: 100%;
+    height: auto;
+    font-family: Roboto;
+    font-size: 0.884rem;
+    color: white;
   }
   .sass-icon {
     -ms-grid-row: 8;
@@ -1749,152 +1778,442 @@
   }
 }
 
-.project-wrapper {
-  display: -ms-grid;
-  display: grid;
-  height: 60.563rem;
-  width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+/*
+ v v  v SCSS for Desktop  v v v
+*/
+@media (min-width: 1056px) {
+  .project-wrapper {
+    display: -ms-grid;
+    display: grid;
+    height: 65.563rem;
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #project-cols {
+    display: -ms-grid;
+    display: grid;
+    -o-object-fit: contain;
+       object-fit: contain;
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #4a4a4a), color-stop(50%, #3b3b3b));
+    background: linear-gradient(90deg, #4a4a4a 50%, #3b3b3b 50%);
+    -ms-grid-columns: (1fr)[12];
+        grid-template-columns: repeat(12 1fr);
+    font-size: 30px;
+    height: 65.563rem;
+    width: 100%;
+    display: grid;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: ".    .    .    .    .   .    .   .    .    .    .    ."  ".    .    .    hd   hd   hd  hd  hd   hd    .    .     ." ".    .    .    ps   ps   ps  ps  ps   ps    .    .    ." ".    .    .    gy   gy   gy  gy  gy   gy    .    .    . " ".    .    .    .    .    .    .   .    .    .    .    ." ".    .    .    .    .    sl  sl   .    .    .    .    . " ".    .    .    .    .    .    .   .    .    .    .    .";
+  }
+  #project-header {
+    font-family: Bebas-kai;
+    font-size: 8rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: white;
+    -ms-grid-row: 2;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 6;
+    grid-area: hd;
+    text-align: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  #project-sections {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    height: 2rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-self: center;
+    -ms-grid-row: 3;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 6;
+    grid-area: ps;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #project-identity {
+    font-family: Bebas-kai;
+    font-size: 3rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: white;
+    grid-area: id;
+    text-align: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  #project-development {
+    font-family: Bebas-kai;
+    font-size: 3rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: white;
+    grid-area: dv;
+    text-align: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    padding-left: 4.232142857142857vw;
+    padding-right: 4.232142857142857vw;
+  }
+  #project-marketing {
+    font-family: Bebas-kai;
+    font-size: 3rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: white;
+    grid-area: mk;
+    text-align: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  #project-carousel {
+    -ms-grid-row: 4;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 6;
+    grid-area: gy;
+    width: 46.438rem;
+    height: 22.964rem;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  #project-slider-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    height: 2rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-self: center;
+    -ms-grid-row: 6;
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 2;
+    grid-area: sl;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-right: 2.3rem;
+  }
+  .slider-gsub {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /* NEW */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    list-style: none;
+    padding: 2rem;
+    overflow: hidden;
+  }
+  .slider-ecom {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /* NEW */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    list-style: none;
+    padding: 2rem;
+    overflow: hidden;
+  }
+  .slider-jck {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /* NEW */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    list-style: none;
+    padding: 2rem;
+    overflow: hidden;
+  }
 }
 
-#project-cols {
-  display: -ms-grid;
-  display: grid;
-  justify-items: start;
-  -o-object-fit: contain;
-     object-fit: contain;
-  background-color: #838383;
-  -ms-grid-columns: (1fr)[12];
-      grid-template-columns: repeat(12 1fr);
-  font-size: 30px;
-  min-height: 60.563rem;
-  width: 100%;
-  display: grid;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
-  grid-gap: 32px;
-      grid-template-areas: ".    .    .    .    .   hd  hd   .    .    .    .    ." ".    .    .   id   id   dv   dv  mk  mk    .    .    ." ".    .    .    .    .   .    .   .    .    .    .    ." ".    .    .   gy    gy   gy  gy  gy  gy    .    .    . " ".    .    .   gy    gy   gy  gy  gy  gy    .    .    . " ".    .    .    .    .   .    .   .    .    .    .    .";
-}
-
-#project-header {
-  font-family: Bebas-kai;
-  font-size: 8rem;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: white;
-  -ms-grid-row: 1;
-  -ms-grid-column: 6;
-  -ms-grid-column-span: 2;
-  grid-area: hd;
-  text-align: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
-}
-
-#project-identity {
-  font-family: Bebas-kai;
-  font-size: 3rem;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: white;
-  -ms-grid-row: 2;
-  -ms-grid-column: 4;
-  -ms-grid-column-span: 2;
-  grid-area: id;
-  text-align: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
-}
-
-#project-development {
-  font-family: Bebas-kai;
-  font-size: 3rem;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: white;
-  -ms-grid-row: 2;
-  -ms-grid-column: 6;
-  -ms-grid-column-span: 2;
-  grid-area: dv;
-  text-align: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
-}
-
-#project-marketing {
-  font-family: Bebas-kai;
-  font-size: 3rem;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: white;
-  -ms-grid-row: 2;
-  -ms-grid-column: 8;
-  -ms-grid-column-span: 2;
-  grid-area: mk;
-  text-align: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
-}
-
-#project-carousel {
-  -ms-grid-row: 4;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 4;
-  -ms-grid-column-span: 6;
-  grid-area: gy;
-  width: 65rem;
-  height: 40.964rem;
-  -ms-grid-column-align: center;
-      justify-self: center;
-}
-
-#slide-gsu {
-  background-image: url(/images/GSUB.png);
-}
-
-#project-slider-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  height: 250px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.slider-gsub {
-  margin: 40px;
-  background-color: red;
-  text-align: center;
-}
-
-.slider-ecom {
-  margin: 40px;
-  background-color: red;
-  text-align: center;
-}
-
-.slider-jck {
-  margin: 40px;
-  background-color: red;
-  text-align: center;
+/*
+ v v  v SCSS for Tablet and Mobile  v v v
+*/
+@media (max-width: 1056px) {
+  .project-wrapper {
+    display: -ms-grid;
+    display: grid;
+    height: 107.563rem;
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #project-cols {
+    display: -ms-grid;
+    display: grid;
+    justify-items: start;
+    -o-object-fit: contain;
+       object-fit: contain;
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #4a4a4a), color-stop(50%, #3b3b3b));
+    background: linear-gradient(90deg, #4a4a4a 50%, #3b3b3b 50%);
+    -ms-grid-columns: (1fr)[12];
+        grid-template-columns: repeat(12 1fr);
+    font-size: 30px;
+    height: 107.563rem;
+    width: 100%;
+    display: grid;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: ".    .    .    .    .   .    .   .    .    .    .    ."  ".    .    .    hd   hd   hd  hd  hd   hd    .    .     ." ".    .    .    ps   ps   ps  ps  ps   ps    .    .    ." ".    .    .    gy   gy   gy  gy  gy   gy    .    .    . " ".    .    .    .    .    .    .   .    .    .    .    ." ".    .    .    .    .   .    .   .    .    .    .    ." ".    .    .    .    .   .    .   .    .    .    .    ." ".    .    .    .    .   .    .   .    .    .    .    ." ".    .    .    .    .   .    .   .    .    .    .    ." ".    .    .    .    .    sl  sl   .    .    .    .    . " ".    .    .    .    .    sl  sl   .    .    .    .    . " ".    .    .    .    .    sl  sl   .    .    .    .    . " ".    .    .    .    .    sl  sl   .    .    .    .    . " ".    .    .    .    .   .    .   .    .    .    .    ."  ".    .    .    .    .    .    .   .    .    .    .    .";
+  }
+  #project-header {
+    font-family: Bebas-kai;
+    font-size: 8rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: white;
+    -ms-grid-row: 2;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 6;
+    grid-area: hd;
+    text-align: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  #project-sections {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    height: 5rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-self: center;
+    -ms-grid-row: 3;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 6;
+    grid-area: ps;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #project-identity {
+    font-family: Bebas-kai;
+    font-size: 3rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: white;
+    grid-area: id;
+    text-align: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  #project-development {
+    font-family: Bebas-kai;
+    font-size: 3rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: white;
+    grid-area: dv;
+    text-align: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    padding-left: 4.232142857142857vw;
+    padding-right: 4.232142857142857vw;
+  }
+  #project-marketing {
+    font-family: Bebas-kai;
+    font-size: 3rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: white;
+    grid-area: mk;
+    text-align: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  #project-carousel {
+    -ms-grid-row: 4;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 6;
+    grid-area: gy;
+    width: 100%;
+    height: 90%;
+    margin: 16px;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  #project-slider-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    height: 2rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-self: center;
+    -ms-grid-row: 10;
+    -ms-grid-row-span: 4;
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 2;
+    grid-area: sl;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-right: 2.3rem;
+  }
+  .slider-gsub {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /* NEW */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    list-style: none;
+    padding: 2rem;
+  }
+  .slider-ecom {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /* NEW */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    list-style: none;
+    padding: 2rem;
+  }
+  .slider-jck {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /* NEW */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    list-style: none;
+    padding: 2rem;
+  }
 }
