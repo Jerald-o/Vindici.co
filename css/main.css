@@ -19,6 +19,7 @@
  v v  v SCSS for Desktop  v v v
 */
 @media (min-width: 1056px) {
+  
   .header {
     height: 96px;
     display: grid;
@@ -189,7 +190,12 @@
     display: grid;
     grid-template-rows: repeat(6, 1fr);
     grid-gap: 26px;
-    grid-template-areas: ".    .    .    .  " ".   lgo  lgo   .  " ".   lgo  lgo   .  " ".   lgo  lgo   .  " ".   lgo  lgo   .  " ".    .    .    .  ";
+    grid-template-areas: ".    .    .    .  "
+ ".   lgo  lgo   .  "
+ ".   lgo  lgo   .  "
+ ".   lgo  lgo   .  "
+ ".   lgo  lgo   .  "
+ ".    .    .    .  ";
   }
   #footer-right {
     display: grid;
@@ -202,7 +208,16 @@
     display: grid;
     grid-template-rows: repeat(10, 1fr);
     grid-gap: 26px;
-    grid-template-areas: ".    .    .    .    .     .      .   . " ".    .    .    .    .     .      .   . " ".    .    .    .    .    mnu     .   . " ".   fhd  fhd   fhd  .    hme     .   . " ".    .    .    .    .    wrk     .   . " ".    be   ig  lin   .    prs     .   . " ".    be   ig  lin    .    cnt     .   . " ".    .    .    .    .     .      .   . " ".   tm   tm   tm   tm    tm      .   . " ".    .    .    .    .     .      .   . ";
+    grid-template-areas: ".    .    .    .    .     .      .   . "
+ ".    .    .    .    .     .      .   . "
+ ".    .    .    .    .    mnu     .   . "
+ ".   fhd  fhd   fhd  .    hme     .   . "
+ ".    .    .    .    .    wrk     .   . "
+ ".    be   ig  lin   .    prs     .   . "
+ ".    be   ig  lin    .    cnt     .   . "
+ ".    .    .    .    .     .      .   . "
+ ".   tm   tm   tm   tm    tm      .   . "
+ ".    .    .    .    .     .      .   . ";
   }
   #footer-logo {
     grid-area: lgo;
@@ -334,7 +349,16 @@
     display: grid;
     grid-template-rows: auto;
     grid-gap: 16px;
-    grid-template-areas: ".    .    .    .    .     .       " ".    .    .    .    .     .      " ".    .    .    .    .    mnu     " ".   fhd  fhd   fhd  .    hme   " ".    .    .    .    .    wrk  " ".    be   ig  lin   .    prs     " ".    be   ig  lin    .    cnt  " ".    .    .    .    .     .     " ".   tm   tm   tm   tm    tm     " ".    .    .    .    .     .      ";
+    grid-template-areas: ".    .    .    .    .     .       "
+ ".    .    .    .    .     .      "
+ ".    .    .    .    .    mnu     "
+ ".   fhd  fhd   fhd  .    hme   "
+ ".    .    .    .    .    wrk  "
+ ".    be   ig  lin   .    prs     "
+ ".    be   ig  lin    .    cnt  "
+ ".    .    .    .    .     .     "
+ ".   tm   tm   tm   tm    tm     "
+ ".    .    .    .    .     .      ";
   }
   #footer-logo {
     grid-area: lgo;
@@ -470,7 +494,12 @@
     display: grid;
     grid-template-rows: repeat(6, 1fr);
     grid-gap: 26px;
-    grid-template-areas: ".    .    .    .      ." ".    .    .    .      ." ".   chd  chd  chd     ." ".   btn  btn  btn      ." ".    .    .    .      ." ".    .    .    .      .";
+    grid-template-areas: ".    .    .    .      ."
+ ".    .    .    .      ."
+ ".   chd  chd  chd     ."
+ ".   btn  btn  btn      ."
+ ".    .    .    .      ."
+ ".    .    .    .      .";
   }
   #contact-right {
     justify-items: center;
@@ -482,9 +511,10 @@
     min-height: 44.125rem;
     width: 100%;
     display: grid;
-    grid-template-rows: repeat(8, 1fr);
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
     grid-gap: 26px;
-    grid-template-areas: ".    .    .    .   .   .    .   . " ".    .  nme  nme nme nme    .   . " ".    .  eml  eml eml eml    .   . " ".    .  bdg  bdg bdg bdg    .   . " ".    .  dsc  dsc dsc dsc    .   . " ".    .    .    .   .   .    .   . " ".    .    .    .   .   .    .   . " ".    .    .    .   .   .    .   . ";
+        grid-template-areas: ".    .    .    .   .   .    .   . " ".    .  nme  nme nme nme    .   . " ".    .  eml  eml eml eml    .   . " ".    .  bdg  bdg bdg bdg    .   . " ".    .  dsc  dsc dsc dsc    .   . " ".    .  smt  smt smt smt    .   . " ".    .    .    .   .   .    .   . " ".    .    .    .   .   .    .   . ";
   }
   #contact-head {
     width: 21rem;
@@ -505,9 +535,23 @@
   .contact-button {
     height: 4rem;
     border-radius: 220px;
-    background-color: var(--greyish);
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 3;
     grid-area: btn;
+    background-color: #b8b8b8;
     justify-items: start;
+    border: none;
+  }
+  #creative-button {
+    width: 15rem;
+    height: 4rem;
+    border-radius: 220px;
+    color: white;
+    background-color: #b8b8b8;
+    font-family: Roboto;
+    font-size: 1.25rem;
+    border: none;
   }
   .contact-name {
     width: 40vw;
@@ -518,6 +562,7 @@
     font-size: 1.813rem;
     padding: 12px 12px;
     color: #838383;
+    border: none;
     resize: none;
     grid-area: nme;
   }
@@ -529,6 +574,7 @@
     font-family: Roboto;
     font-size: 1.813rem;
     padding: 12px 12px;
+    border: none;
     color: #838383;
     resize: none;
     grid-area: eml;
@@ -541,14 +587,16 @@
     font-family: Roboto;
     font-size: 1.813rem;
     padding: 12px 12px;
+    border: none;
     color: #838383;
     resize: none;
     grid-area: bdg;
   }
   .contact-description {
     width: 40vw;
-    height: 19.625rem;
+    height: 14.625rem;
     border-radius: 9px;
+    border: none;
     resize: none;
     background-color: #515151;
     font-family: Roboto;
@@ -556,6 +604,22 @@
     padding: 12px 12px;
     color: #838383;
     grid-area: dsc;
+  }
+  #submit {
+    width: 40vw;
+    border: none;
+    height: 4.375rem;
+    border-radius: 9px;
+    resize: none;
+    background-color: #00CCCC;
+    font-family: Roboto;
+    font-size: 1.813rem;
+    padding: 12px 12px;
+    color: white;
+    -ms-grid-row: 6;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 4;
+    grid-area: smt;
   }
 }
 
@@ -565,7 +629,7 @@
 @media (max-width: 1056px) {
   .contact-wrapper {
     display: grid;
-    height: 72rem;
+    height: 77rem;
     width: 100%;
     object-fit: contain;
     grid-template-rows: 1fr 1fr;
@@ -582,7 +646,12 @@
     display: grid;
     grid-template-rows: repeat(6, 1fr);
     grid-gap: 16px;
-    grid-template-areas: ".    .    .    .      ." ".    .    .    .      ." ".   chd  chd  chd     ." ".   btn  btn  btn     ." ".    .    .    .      ." ".    .    .    .      .";
+    grid-template-areas: ".    .    .    .      ."
+ ".    .    .    .      ."
+ ".   chd  chd  chd     ."
+ ".   btn  btn  btn     ."
+ ".    .    .    .      ."
+ ".    .    .    .      .";
   }
   #contact-right {
     justify-items: center;
@@ -591,12 +660,17 @@
     object-fit: contain;
     grid-template-columns: repeat(8, 1fr);
     font-size: 40px;
-    height: 42rem;
+    height: 47rem;
     width: 100%;
     display: grid;
-    grid-template-rows: repeat(8, 1fr);
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
     grid-gap: 16px;
-    grid-template-areas: ".    .    .    .   .   .    .   . " ".    nme  nme  nme nme nme  nme   . " ".    eml  eml  eml eml eml  eml   . " ".    bdg  bdg  bdg bdg bdg   bdg   . " ".    dsc  dsc  dsc dsc dsc   dsc   . " ".    .    .    .   .   .    .   . ";
+        grid-template-areas: ".    .    .    .   .   .    .   . " ".    nme  nme  nme nme nme  nme   . " ".    eml  eml  eml eml eml  eml   . " ".    bdg  bdg  bdg bdg bdg   bdg   . " ".    dsc  dsc  dsc dsc dsc   dsc   . " ".    smt  smt  smt smt smt   smt   . " ".    .    .    .   .   .    .   . ";
+  }
+  .form-right {
+    justify-items: center;
+
   }
   #contact-head {
     width: 21rem;
@@ -612,9 +686,6 @@
     grid-area: chd;
     justify-self: center;
   }
-  #contact-text-blue {
-    color: #00cccc;
-  }
   .contact-button {
     height: 4rem;
     border-radius: 220px;
@@ -622,10 +693,30 @@
     grid-area: btn;
     justify-self: center;
     margin-left: -10vw;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+  }
+  #contact-text-blue {
+    color: #00cccc;
+  }
+  #creative-button {
+    width: 15rem;
+    height: 4rem;
+    border-radius: 220px;
+    color: white;
+    background-color: #b8b8b8;
+    font-family: Roboto;
+    border: none;
+    padding: 0;
+    font-size: 1.25rem;
   }
   .contact-name {
     width: 75vw;
     height: 4.375rem;
+    border: none;
     border-radius: 9px;
     background-color: #515151;
     font-family: Roboto;
@@ -642,6 +733,7 @@
     background-color: #515151;
     font-family: Roboto;
     font-size: 1.813rem;
+    border: none;
     padding: 12px 12px;
     color: #838383;
     resize: none;
@@ -655,21 +747,39 @@
     font-family: Roboto;
     font-size: 1.813rem;
     padding: 12px 12px;
+    border: none;
     color: #838383;
     resize: none;
     grid-area: bdg;
   }
   .contact-description {
     width: 75vw;
-    height: 19.625rem;
+    height: 17.625rem;
     border-radius: 9px;
     resize: none;
     background-color: #515151;
+    border: none;
     font-family: Roboto;
     font-size: 1.813rem;
     padding: 12px 12px;
     color: #838383;
     grid-area: dsc;
+  }
+  #submit {
+    width: 75vw;
+    border: none;
+    height: 4.375rem;
+    border-radius: 9px;
+    resize: none;
+    background-color: #00CCCC;
+    font-family: Roboto;
+    font-size: 1.813rem;
+    padding: 12px 12px;
+    color: white;
+    -ms-grid-row: 6;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 6;
+    grid-area: smt;
   }
 }
 
@@ -699,7 +809,14 @@
     display: grid;
     grid-template-rows: auto;
     grid-gap: 26px;
-    grid-template-areas: ".    .    .    .     .     .    .    .         .       .      .      ." ".   head head head   .     .    .    .         .       .      .      ." ".   head head head   .     .    .  pshop      prem  figma   sass     ." ".    p    p    p     p     p    .    .         .       .      .      ." ".    p    p    p     p     p    .  jscript    html    css    notion  ." ".    p    p    p     p     p    .    .         .       .       .     ." ".    .    .    .     .     .    .    .         .       .       .     ." ".    .    .    .     .     .    .    .         .       .       .     .";
+    grid-template-areas: ".    .    .    .     .     .    .    .         .       .      .      ."
+ ".   head head head   .     .    .    .         .       .      .      ."
+ ".   head head head   .     .    .  pshop      prem  figma   sass     ."
+ ".    p    p    p     p     p    .    .         .       .      .      ."
+ ".    p    p    p     p     p    .  jscript    html    css    notion  ."
+ ".    p    p    p     p     p    .    .         .       .       .     ."
+ ".    .    .    .     .     .    .    .         .       .       .     ."
+ ".    .    .    .     .     .    .    .         .       .       .     .";
   }
   .service-header {
     color: white;
@@ -853,7 +970,17 @@
     display: grid;
     grid-template-rows: auto;
     grid-gap: 16px;
-    grid-template-areas: ".            .        .           ." "head        head     head       head " "head        head     head       head" "p            p        p           p" "p            p        p           p" ".            .        .            ." "pshop      prem     figma      notion" "jscript     css     html         sass" ".            .        .           ." ".            .        .           ." ".            .        .           .";
+    grid-template-areas: ".            .        .           ."
+ "head        head     head       head "
+ "head        head     head       head"
+ "p            p        p           p"
+ "p            p        p           p"
+ ".            .        .            ."
+ "pshop      prem     figma      notion"
+ "jscript     css     html         sass"
+ ".            .        .           ."
+ ".            .        .           ."
+ ".            .        .           .";
   }
   .service-header {
     justify-self: center;
@@ -1009,7 +1136,14 @@
     display: grid;
     grid-template-rows: auto;
     grid-gap: 26px;
-    grid-template-areas: ".    .    .    .     .     .      .    .       .       .       .      ." ".   phd  phd   .     .     .      .    .       .       .       .      ." ".    .    .    .     .     .      .    .       .       .       .      ." ".    p1   p2   p3    p4    p5     .    .       .       .       .      ." ".    p6   p7   p8    p9    p10    .   ppg     ppg     ppg     ppg     ." ".    .    .    .     .     .      .    .       .       .       .      ." ".    .    .    .     .     .      .    .       .       .       .      ." ".    .    .    .     .     .      .    .       .       .       .      .";
+    grid-template-areas: ".    .    .    .     .     .      .    .       .       .       .      ."
+ ".   phd  phd   .     .     .      .    .       .       .       .      ."
+ ".    .    .    .     .     .      .    .       .       .       .      ."
+ ".    p1   p2   p3    p4    p5     .    .       .       .       .      ."
+ ".    p6   p7   p8    p9    p10    .   ppg     ppg     ppg     ppg     ."
+ ".    .    .    .     .     .      .    .       .       .       .      ."
+ ".    .    .    .     .     .      .    .       .       .       .      ."
+ ".    .    .    .     .     .      .    .       .       .       .      .";
   }
   #process-head {
     height: 2.25rem;
@@ -1134,7 +1268,16 @@
     display: grid;
     grid-template-rows: auto;
     grid-gap: 16px;
-    grid-template-areas: ".            .        .             ." "phd        phd      phd           phd" ".            .        .             ." "ppg        ppg      ppg           ppg" "ppg        ppg      ppg           ppg" "p1           p2       p3           p4" "p5           p6       p7           p8" ".            p9       p10           ." ".            .        .             ." ".            .        .             .";
+    grid-template-areas: ".            .        .             ."
+ "phd        phd      phd           phd"
+ ".            .        .             ."
+ "ppg        ppg      ppg           ppg"
+ "ppg        ppg      ppg           ppg"
+ "p1           p2       p3           p4"
+ "p5           p6       p7           p8"
+ ".            p9       p10           ."
+ ".            .        .             ."
+ ".            .        .             .";
   }
   #process-head {
     height: 2.25rem;
@@ -1232,7 +1375,13 @@
     display: grid;
     grid-template-rows: auto;
     grid-gap: 26px;
-    grid-template-areas: ".    .    .     .    .     .    .    .       .       .      .      ." ".    h1   h1   h1    .     .    .    .       .       .      .      ." ".    h1   h1   h1    .     .    .    .       .       .      .      ." ".    .    gb   gb    .    ecm  ecm   .       jc     jc      .      ." ".    .    gb   gb    .    ecm  ecm   .       jc     jc      .      ." ".    .    .     .    .     .    .    .       .       .      .      ." ".    .    .     .    .     .    .    .       .       .      .      .";
+    grid-template-areas: ".    .    .     .    .     .    .    .       .       .      .      ."
+ ".    h1   h1   h1    .     .    .    .       .       .      .      ."
+ ".    h1   h1   h1    .     .    .    .       .       .      .      ."
+ ".    .    gb   gb    .    ecm  ecm   .       jc     jc      .      ."
+ ".    .    gb   gb    .    ecm  ecm   .       jc     jc      .      ."
+ ".    .    .     .    .     .    .    .       .       .      .      ."
+ ".    .    .     .    .     .    .    .       .       .      .      .";
   }
   #partners-head {
     grid-area: h1;
@@ -1321,7 +1470,15 @@
     display: grid;
     grid-template-rows: repeat();
     grid-gap: 16px;
-    grid-template-areas: ".          .      .      ." ".          .      .      ." "h1         h1     h1     ." "bh1        bh1    bh1    ." ".          gb     gb     ." ".          ecm    ecm    ." ".          jc     jc     ." ".          .      .      ." ".          .      .      .";
+    grid-template-areas: ".          .      .      ."
+ ".          .      .      ."
+ "h1         h1     h1     ."
+ "bh1        bh1    bh1    ."
+ ".          gb     gb     ."
+ ".          ecm    ecm    ."
+ ".          jc     jc     ."
+ ".          .      .      ."
+ ".          .      .      .";
   }
   #partners-head {
     grid-area: h1;
@@ -1417,7 +1574,13 @@
     width: 100%;
     display: grid;
     grid-template-rows: auto;
-    grid-template-areas: ".    .    .    .    .   .    .   .    .    .    .    ."  ".    .    .    hd   hd   hd  hd  hd   hd    .    .     ." ".    .    .    ps   ps   ps  ps  ps   ps    .    .    ." ".    .    .    gy   gy   gy  gy  gy   gy    .    .    . " ".    .    .    .    .    .    .   .    .    .    .    ." ".    .    .    .    .    sl  sl   .    .    .    .    . " ".    .    .    .    .    .    .   .    .    .    .    .";
+    grid-template-areas: ".    .    .    .    .   .    .   .    .    .    .    ."
+  ".    .    .    hd   hd   hd  hd  hd   hd    .    .     ."
+ ".    .    .    ps   ps   ps  ps  ps   ps    .    .    ."
+ ".    .    .    gy   gy   gy  gy  gy   gy    .    .    . "
+ ".    .    .    .    .    .    .   .    .    .    .    ."
+ ".    .    .    .    .    sl  sl   .    .    .    .    . "
+ ".    .    .    .    .    .    .   .    .    .    .    .";
   }
   #project-header {
     font-family: Bebas-kai;
@@ -1560,7 +1723,21 @@
     width: 100%;
     display: grid;
     grid-template-rows: auto;
-    grid-template-areas: ".    .    .    .    .   .    .   .    .    .    .    ."  ".    .    .    hd   hd   hd  hd  hd   hd    .    .     ." ".    .    .    ps   ps   ps  ps  ps   ps    .    .    ." ".    .    .    gy   gy   gy  gy  gy   gy    .    .    . " ".    .    .    .    .    .    .   .    .    .    .    ." ".    .    .    .    .   .    .   .    .    .    .    ." ".    .    .    .    .   .    .   .    .    .    .    ." ".    .    .    .    .   .    .   .    .    .    .    ." ".    .    .    .    .   .    .   .    .    .    .    ." ".    .    .    .    .    sl  sl   .    .    .    .    . " ".    .    .    .    .    sl  sl   .    .    .    .    . " ".    .    .    .    .    sl  sl   .    .    .    .    . " ".    .    .    .    .    sl  sl   .    .    .    .    . " ".    .    .    .    .   .    .   .    .    .    .    ."  ".    .    .    .    .    .    .   .    .    .    .    .";
+    grid-template-areas: ".    .    .    .    .   .    .   .    .    .    .    ."
+  ".    .    .    hd   hd   hd  hd  hd   hd    .    .     ."
+ ".    .    .    ps   ps   ps  ps  ps   ps    .    .    ."
+ ".    .    .    gy   gy   gy  gy  gy   gy    .    .    . "
+ ".    .    .    .    .    .    .   .    .    .    .    ."
+ ".    .    .    .    .   .    .   .    .    .    .    ."
+ ".    .    .    .    .   .    .   .    .    .    .    ."
+ ".    .    .    .    .   .    .   .    .    .    .    ."
+ ".    .    .    .    .   .    .   .    .    .    .    ."
+ ".    .    .    .    .    sl  sl   .    .    .    .    . "
+ ".    .    .    .    .    sl  sl   .    .    .    .    . "
+ ".    .    .    .    .    sl  sl   .    .    .    .    . "
+ ".    .    .    .    .    sl  sl   .    .    .    .    . "
+ ".    .    .    .    .   .    .   .    .    .    .    ."
+  ".    .    .    .    .    .    .   .    .    .    .    .";
   }
   #project-header {
     font-family: Bebas-kai;
