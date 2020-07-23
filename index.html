@@ -39,7 +39,7 @@
     <div class="main-grid">
       <header>
         <div class="brand">
-          <img src="/images/head-logo.svg" alt="logo">
+          <img src="/images/head-logo.svg" alt="logo" />
         </div>
         <nav id="vindici-nav">
           <ul class="nav">
@@ -61,7 +61,7 @@
           <i class="fab fa-linkedin"></i>
         </div>
       </main>
-    </div> 
+    </div>
 
     <div id="service-wrapper">
       <div class="service-cols">
@@ -234,27 +234,54 @@
           <li class="slider-ecom"><img src="/images/Ecom.png" /></li>
           <li class="slider-jck"><img src="/images/JCK.png" /></li>
         </ul>
-
-
       </div>
     </div>
-
 
     <div class="process-wrapper">
       <div id="process-cols">
         <div id="process-head">
           <p>Our Process</p>
         </div>
-        <div id="process-1"><img src="/images/kick-off.svg" alt="css" /><p>Kick Off</p></div>
-        <div id="process-2"><img src="/images/research.svg" alt="css" /><p>Project Research</p></div>
-        <div id="process-3"><img src="/images/wireframe.svg" alt="css" /><p>Wireframe</p></div>
-        <div id="process-4"><img src="/images/prototype.svg" alt="css" /><p>Prototype </p></div>
-        <div id="process-5"><img src="/images/presentation.svg" alt="css" /><p>Presentation</p></div>
-        <div id="process-6"><img src="/images/client.svg" alt="css" /><p>Client Review</p></div>
-        <div id="process-7"><img src="/images/development.svg" alt="css" /><p>Development</p></div>
-        <div id="process-8"><img src="/images/review.svg" alt="css" /><p>Project Review</p></div>
-        <div id="process-9"><img src="/images/beta-testing.svg" alt="css" /><p>Beta Testing</p></div>
-        <div id="process-10"><img src="/images/launch.svg" alt="css" /><p>Launch</p></div>
+        <div id="process-1">
+          <img src="/images/kick-off.svg" alt="css" />
+          <p>Kick Off</p>
+        </div>
+        <div id="process-2">
+          <img src="/images/research.svg" alt="css" />
+          <p>Project Research</p>
+        </div>
+        <div id="process-3">
+          <img src="/images/wireframe.svg" alt="css" />
+          <p>Wireframe</p>
+        </div>
+        <div id="process-4">
+          <img src="/images/prototype.svg" alt="css" />
+          <p>Prototype</p>
+        </div>
+        <div id="process-5">
+          <img src="/images/presentation.svg" alt="css" />
+          <p>Presentation</p>
+        </div>
+        <div id="process-6">
+          <img src="/images/client.svg" alt="css" />
+          <p>Client Review</p>
+        </div>
+        <div id="process-7">
+          <img src="/images/development.svg" alt="css" />
+          <p>Development</p>
+        </div>
+        <div id="process-8">
+          <img src="/images/review.svg" alt="css" />
+          <p>Project Review</p>
+        </div>
+        <div id="process-9">
+          <img src="/images/beta-testing.svg" alt="css" />
+          <p>Beta Testing</p>
+        </div>
+        <div id="process-10">
+          <img src="/images/launch.svg" alt="css" />
+          <p>Launch</p>
+        </div>
         <div id="process-pg">
           <p>
             Have a concept you need done but don’t quite have the words to
@@ -272,10 +299,17 @@
           <p id="contact-text-blue">Lets Work.</p>
         </div>
         <div class="contact-button">
-          <img src="/images/contact-button.png" alt="contact button" />
+          <form id="creative-button" action="https://formspree.io/xwkraovk" method="POST">
+            <input id="creative-button" type="submit" value="Creative Brief">
+          </form>
         </div>
       </div>
-      <div id="contact-right">
+      <form
+        action="https://formspree.io/xwkraovk"
+        method="POST"
+        id="contact-right"
+        name="loginForm"
+      >
         <textarea
           placeholder=" Name"
           class="contact-name"
@@ -304,7 +338,9 @@
           cols="30"
           rows="10"
         ></textarea>
-      </div>
+
+        <input id="submit" type="submit" value="submit">
+      </form>
     </div>
 
     <div class="footer-wrapper">
