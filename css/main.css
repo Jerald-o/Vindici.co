@@ -4,18 +4,14 @@
 *
 **/
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
 }
 
 .main-grid {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr [col-start])[12];
-      grid-template-columns: repeat(12, 1fr [col-start]);
-  -ms-grid-rows: (auto [row-start])[10];
-      grid-template-rows: repeat(10, auto [row-start]);
+  grid-template-columns: repeat(12, 1fr [col-start]);
+  grid-template-rows: repeat(10, auto [row-start]);
   grid-column-gap: 24px;
 }
 
@@ -23,60 +19,32 @@
  v v  v SCSS for Desktop  v v v
 */
 @media (min-width: 1056px) {
-  .header-wrapper {
-    width: 100%;
-    display: -ms-grid;
-    display: grid;
-    height: 38rem;
-    background-color: #4a4a4a;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-  header {
+  .header {
     height: 96px;
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 5% 1fr;
-        grid-template-columns: 5% 1fr;
+    grid-template-columns: 5% 1fr;
     background-color: rgba(0, 0, 0, 0.7);
     grid-column: 1 / -1;
     position: relative;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
   .brand {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
+    padding-left: 3em;
+    justify-content: center;
+    align-items: center;
   }
   .nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     color: #ffffff;
     list-style: none;
     overflow: hidden;
   }
   .nav-link {
     margin: 0 36px;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    align-self: center;
+    justify-self: center;
     font-family: bebas-kai,sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -88,48 +56,32 @@
  v v  v SCSS for Tablet and mobile  v v v
 */
 @media (max-width: 1056px) {
-  header {
+  .header {
     height: 96px;
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 5% 1fr;
-        grid-template-columns: 5% 1fr;
+    grid-template-columns: 5% 1fr;
     background-color: rgba(0, 0, 0, 0.7);
     grid-column: 1 / -1;
     position: relative;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
   .brand {
     margin-left: 90px;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    align-self: center;
+    justify-self: center;
   }
   .nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     color: #ffffff;
     list-style: none;
     overflow: hidden;
   }
   .nav-link {
     margin: 0 18px;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    align-self: center;
+    justify-self: center;
     font-family: bebas-kai,sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -141,10 +93,9 @@
  v v  v SCSS for Desktop  v v v
 */
 @media (min-width: 1056px) {
-  main {
+  .hero {
     grid-column: 1 / -1;
     height: 100vh;
-    display: -ms-grid;
     display: grid;
     background: url(../images/landingBG.png);
     overflow: hidden;
@@ -156,10 +107,7 @@
   }
   .hero-text {
     margin-top: 2em;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 4;
     grid-column: 2 / 6;
-    -ms-grid-row: 2;
     grid-row: 2;
     font-family: Bebas-kai;
     font-size: 72px;
@@ -183,10 +131,9 @@
  v v  v SCSS for Tablet and mobile  v v v
 */
 @media (max-width: 1056px) {
-  main {
+  .hero {
     grid-column: 1 / -1;
     height: 100vh;
-    display: -ms-grid;
     display: grid;
     background: url(../images/landingBG_mobile2.png);
     overflow: hidden;
@@ -198,10 +145,7 @@
   }
   .hero-text {
     margin: 16px;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 4;
     grid-column: 2 / 6;
-    -ms-grid-row: 2;
     grid-row: 2;
     font-family: Bebas-kai;
     font-size: 72px;
@@ -226,69 +170,50 @@
 */
 @media (min-width: 1056px) {
   .footer-wrapper {
-    display: -ms-grid;
     display: grid;
     width: 89.938rem;
     height: 28.25rem;
     width: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
-    -ms-grid-columns: .35fr .65fr;
-        grid-template-columns: .35fr .65fr;
+    object-fit: contain;
+    grid-template-columns: .35fr .65fr;
   }
   #footer-left {
-    display: -ms-grid;
     display: grid;
     justify-items: center;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     background-color: #494949;
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     font-size: 40px;
     height: 28.25rem;
     width: 100%;
     display: grid;
-    -ms-grid-rows: (1fr)[6];
-        grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     grid-gap: 26px;
-        grid-template-areas: ".    .    .    .  " ".   lgo  lgo   .  " ".   lgo  lgo   .  " ".   lgo  lgo   .  " ".   lgo  lgo   .  " ".    .    .    .  ";
+    grid-template-areas: ".    .    .    .  " ".   lgo  lgo   .  " ".   lgo  lgo   .  " ".   lgo  lgo   .  " ".   lgo  lgo   .  " ".    .    .    .  ";
   }
   #footer-right {
-    display: -ms-grid;
     display: grid;
     background-color: #626262;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     height: 28.25rem;
-    -ms-grid-columns: (1fr)[8];
-        grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     font-size: 40px;
     width: 100%;
     display: grid;
-    -ms-grid-rows: (1fr)[10];
-        grid-template-rows: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
     grid-gap: 26px;
-        grid-template-areas: ".    .    .    .    .     .      .   . " ".    .    .    .    .     .      .   . " ".    .    .    .    .    mnu     .   . " ".   fhd  fhd   fhd  .    hme     .   . " ".    .    .    .    .    wrk     .   . " ".    be   ig  lin   .    prs     .   . " ".    be   ig  lin    .    cnt     .   . " ".    .    .    .    .     .      .   . " ".   tm   tm   tm   tm    tm      .   . " ".    .    .    .    .     .      .   . ";
+    grid-template-areas: ".    .    .    .    .     .      .   . " ".    .    .    .    .     .      .   . " ".    .    .    .    .    mnu     .   . " ".   fhd  fhd   fhd  .    hme     .   . " ".    .    .    .    .    wrk     .   . " ".    be   ig  lin   .    prs     .   . " ".    be   ig  lin    .    cnt     .   . " ".    .    .    .    .     .      .   . " ".   tm   tm   tm   tm    tm      .   . " ".    .    .    .    .     .      .   . ";
   }
   #footer-logo {
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 4;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
     grid-area: lgo;
     margin-top: 5vh;
   }
   #footer-head {
-    -ms-grid-row: 4;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 3;
     grid-area: fhd;
     font-family: Roboto;
     font-size: 1.875rem;
     font-weight: normal;
-    -ms-grid-column-align: start;
-        justify-self: start;
+    justify-self: start;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
@@ -296,26 +221,16 @@
     color: white;
   }
   #footer-ig {
-    -ms-grid-row: 6;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 3;
     grid-area: ig;
   }
   #footer-behance {
-    -ms-grid-row: 6;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 2;
     grid-area: be;
   }
   #footer-linkedin {
-    -ms-grid-row: 6;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 4;
     grid-area: lin;
   }
   #footer-menu {
-    -ms-grid-column-align: start;
-        justify-self: start;
+    justify-self: start;
     width: 3.813rem;
     height: 1.75rem;
     font-family: Roboto;
@@ -326,14 +241,11 @@
     line-height: normal;
     letter-spacing: normal;
     color: #00cccc;
-    -ms-grid-row: 3;
-    -ms-grid-column: 6;
     grid-area: mnu;
     margin-top: -3vh;
   }
   #footer-home {
-    -ms-grid-column-align: start;
-        justify-self: start;
+    justify-self: start;
     width: 4.063rem;
     height: 1.75rem;
     font-family: Roboto;
@@ -344,8 +256,6 @@
     line-height: normal;
     letter-spacing: normal;
     color: white;
-    -ms-grid-row: 4;
-    -ms-grid-column: 6;
     grid-area: hme;
   }
   #footer-work {
@@ -357,11 +267,8 @@
     line-height: normal;
     letter-spacing: normal;
     color: white;
-    -ms-grid-row: 5;
-    -ms-grid-column: 6;
     grid-area: wrk;
-    -ms-grid-column-align: start;
-        justify-self: start;
+    justify-self: start;
   }
   #footer-process {
     font-family: Roboto;
@@ -372,10 +279,7 @@
     line-height: normal;
     letter-spacing: normal;
     color: white;
-    -ms-grid-column-align: start;
-        justify-self: start;
-    -ms-grid-row: 6;
-    -ms-grid-column: 6;
+    justify-self: start;
     grid-area: prs;
   }
   #footer-contact {
@@ -386,11 +290,8 @@
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
-    -ms-grid-column-align: start;
-        justify-self: start;
+    justify-self: start;
     color: white;
-    -ms-grid-row: 7;
-    -ms-grid-column: 6;
     grid-area: cnt;
   }
   #footer-tm {
@@ -404,9 +305,6 @@
     line-height: normal;
     letter-spacing: normal;
     color: white;
-    -ms-grid-row: 9;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 5;
     grid-area: tm;
   }
 }
@@ -416,49 +314,38 @@
 */
 @media (max-width: 1056px) {
   .footer-wrapper {
-    display: -ms-grid;
     display: grid;
     width: 100%;
     height: 33.25rem;
     width: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
+    object-fit: contain;
+    grid-template-rows: 1fr;
   }
   #footer-left {
     display: none;
   }
   #footer-right {
-    display: -ms-grid;
     display: grid;
     background-color: #626262;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     height: 33.25rem;
-    -ms-grid-columns: (1fr)[6];
-        grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     width: 100%;
     display: grid;
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
+    grid-template-rows: auto;
     grid-gap: 16px;
-        grid-template-areas: ".    .    .    .    .     .       " ".    .    .    .    .     .      " ".    .    .    .    .    mnu     " ".   fhd  fhd   fhd  .    hme   " ".    .    .    .    .    wrk  " ".    be   ig  lin   .    prs     " ".    be   ig  lin    .    cnt  " ".    .    .    .    .     .     " ".   tm   tm   tm   tm    tm     " ".    .    .    .    .     .      ";
+    grid-template-areas: ".    .    .    .    .     .       " ".    .    .    .    .     .      " ".    .    .    .    .    mnu     " ".   fhd  fhd   fhd  .    hme   " ".    .    .    .    .    wrk  " ".    be   ig  lin   .    prs     " ".    be   ig  lin    .    cnt  " ".    .    .    .    .     .     " ".   tm   tm   tm   tm    tm     " ".    .    .    .    .     .      ";
   }
   #footer-logo {
     grid-area: lgo;
     margin-top: 5vh;
   }
   #footer-head {
-    -ms-grid-row: 4;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 3;
     grid-area: fhd;
     font-family: Roboto;
     font-size: 1.875rem;
     font-weight: normal;
-    -ms-grid-column-align: start;
-        justify-self: start;
+    justify-self: start;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
@@ -466,26 +353,16 @@
     color: white;
   }
   #footer-ig {
-    -ms-grid-row: 6;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 3;
     grid-area: ig;
   }
   #footer-behance {
-    -ms-grid-row: 6;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 2;
     grid-area: be;
   }
   #footer-linkedin {
-    -ms-grid-row: 6;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 4;
     grid-area: lin;
   }
   #footer-menu {
-    -ms-grid-column-align: start;
-        justify-self: start;
+    justify-self: start;
     width: 3.813rem;
     height: 1.75rem;
     font-family: Roboto;
@@ -496,16 +373,13 @@
     line-height: normal;
     letter-spacing: normal;
     color: #00cccc;
-    -ms-grid-row: 3;
-    -ms-grid-column: 6;
     grid-area: mnu;
     margin-top: -3vh;
     margin-right: 16px;
   }
   #footer-home {
     margin-right: 16px;
-    -ms-grid-column-align: start;
-        justify-self: start;
+    justify-self: start;
     width: 4.063rem;
     height: 1.75rem;
     font-family: Roboto;
@@ -516,8 +390,6 @@
     line-height: normal;
     letter-spacing: normal;
     color: white;
-    -ms-grid-row: 4;
-    -ms-grid-column: 6;
     grid-area: hme;
   }
   #footer-work {
@@ -530,11 +402,8 @@
     line-height: normal;
     letter-spacing: normal;
     color: white;
-    -ms-grid-row: 5;
-    -ms-grid-column: 6;
     grid-area: wrk;
-    -ms-grid-column-align: start;
-        justify-self: start;
+    justify-self: start;
   }
   #footer-process {
     margin-right: 16px;
@@ -546,10 +415,7 @@
     line-height: normal;
     letter-spacing: normal;
     color: white;
-    -ms-grid-column-align: start;
-        justify-self: start;
-    -ms-grid-row: 6;
-    -ms-grid-column: 6;
+    justify-self: start;
     grid-area: prs;
   }
   #footer-contact {
@@ -561,11 +427,8 @@
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
-    -ms-grid-column-align: start;
-        justify-self: start;
+    justify-self: start;
     color: white;
-    -ms-grid-row: 7;
-    -ms-grid-column: 6;
     grid-area: cnt;
   }
   #footer-tm {
@@ -580,9 +443,6 @@
     line-height: normal;
     letter-spacing: normal;
     color: white;
-    -ms-grid-row: 9;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 5;
     grid-area: tm;
   }
 }
@@ -592,50 +452,39 @@
 */
 @media (min-width: 1056px) {
   .contact-wrapper {
-    display: -ms-grid;
     display: grid;
     height: 44.125rem;
     width: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
-    -ms-grid-columns: .35fr .65fr;
-        grid-template-columns: .35fr .65fr;
+    object-fit: contain;
+    grid-template-columns: .35fr .65fr;
   }
   #contact-left {
-    display: -ms-grid;
     display: grid;
     justify-items: start;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     background-color: #838383;
-    -ms-grid-columns: (1fr)[5];
-        grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     font-size: 40px;
     min-height: 44.125rem;
     width: 100%;
     display: grid;
-    -ms-grid-rows: (1fr)[6];
-        grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     grid-gap: 26px;
-        grid-template-areas: ".    .    .    .      ." ".    .    .    .      ." ".   chd  chd  chd     ." ".   btn  btn  btn      ." ".    .    .    .      ." ".    .    .    .      .";
+    grid-template-areas: ".    .    .    .      ." ".    .    .    .      ." ".   chd  chd  chd     ." ".   btn  btn  btn      ." ".    .    .    .      ." ".    .    .    .      .";
   }
   #contact-right {
     justify-items: center;
-    display: -ms-grid;
     display: grid;
     background-color: #4a4a4a;
-    -o-object-fit: contain;
-       object-fit: contain;
-    -ms-grid-columns: (1fr)[8];
-        grid-template-columns: repeat(8, 1fr);
+    object-fit: contain;
+    grid-template-columns: repeat(8, 1fr);
     font-size: 40px;
     min-height: 44.125rem;
     width: 100%;
     display: grid;
-    -ms-grid-rows: (1fr)[8];
-        grid-template-rows: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
     grid-gap: 26px;
-        grid-template-areas: ".    .    .    .   .   .    .   . " ".    .  nme  nme nme nme    .   . " ".    .  eml  eml eml eml    .   . " ".    .  bdg  bdg bdg bdg    .   . " ".    .  dsc  dsc dsc dsc    .   . " ".    .    .    .   .   .    .   . " ".    .    .    .   .   .    .   . " ".    .    .    .   .   .    .   . ";
+    grid-template-areas: ".    .    .    .   .   .    .   . " ".    .  nme  nme nme nme    .   . " ".    .  eml  eml eml eml    .   . " ".    .  bdg  bdg bdg bdg    .   . " ".    .  dsc  dsc dsc dsc    .   . " ".    .    .    .   .   .    .   . " ".    .    .    .   .   .    .   . " ".    .    .    .   .   .    .   . ";
   }
   #contact-head {
     width: 21rem;
@@ -648,9 +497,6 @@
     line-height: normal;
     letter-spacing: normal;
     color: white;
-    -ms-grid-row: 3;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 3;
     grid-area: chd;
   }
   #contact-text-blue {
@@ -660,9 +506,6 @@
     height: 4rem;
     border-radius: 220px;
     background-color: var(--greyish);
-    -ms-grid-row: 4;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 3;
     grid-area: btn;
     justify-items: start;
   }
@@ -676,9 +519,6 @@
     padding: 12px 12px;
     color: #838383;
     resize: none;
-    -ms-grid-row: 2;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 4;
     grid-area: nme;
   }
   .contact-email {
@@ -691,9 +531,6 @@
     padding: 12px 12px;
     color: #838383;
     resize: none;
-    -ms-grid-row: 3;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 4;
     grid-area: eml;
   }
   .contact-budget {
@@ -706,9 +543,6 @@
     padding: 12px 12px;
     color: #838383;
     resize: none;
-    -ms-grid-row: 4;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 4;
     grid-area: bdg;
   }
   .contact-description {
@@ -721,9 +555,6 @@
     font-size: 1.813rem;
     padding: 12px 12px;
     color: #838383;
-    -ms-grid-row: 5;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 4;
     grid-area: dsc;
   }
 }
@@ -733,50 +564,39 @@
 */
 @media (max-width: 1056px) {
   .contact-wrapper {
-    display: -ms-grid;
     display: grid;
     height: 72rem;
     width: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+    object-fit: contain;
+    grid-template-rows: 1fr 1fr;
   }
   #contact-left {
-    display: -ms-grid;
     display: grid;
     justify-items: start;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     background-color: #838383;
-    -ms-grid-columns: (1fr)[5];
-        grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     font-size: 30px;
     min-height: 30rem;
     width: 100%;
     display: grid;
-    -ms-grid-rows: (1fr)[6];
-        grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     grid-gap: 16px;
-        grid-template-areas: ".    .    .    .      ." ".    .    .    .      ." ".   chd  chd  chd     ." ".   btn  btn  btn     ." ".    .    .    .      ." ".    .    .    .      .";
+    grid-template-areas: ".    .    .    .      ." ".    .    .    .      ." ".   chd  chd  chd     ." ".   btn  btn  btn     ." ".    .    .    .      ." ".    .    .    .      .";
   }
   #contact-right {
     justify-items: center;
-    display: -ms-grid;
     display: grid;
     background-color: #4a4a4a;
-    -o-object-fit: contain;
-       object-fit: contain;
-    -ms-grid-columns: (1fr)[8];
-        grid-template-columns: repeat(8, 1fr);
+    object-fit: contain;
+    grid-template-columns: repeat(8, 1fr);
     font-size: 40px;
     height: 42rem;
     width: 100%;
     display: grid;
-    -ms-grid-rows: (1fr)[8];
-        grid-template-rows: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
     grid-gap: 16px;
-        grid-template-areas: ".    .    .    .   .   .    .   . " ".    nme  nme  nme nme nme  nme   . " ".    eml  eml  eml eml eml  eml   . " ".    bdg  bdg  bdg bdg bdg   bdg   . " ".    dsc  dsc  dsc dsc dsc   dsc   . " ".    .    .    .   .   .    .   . ";
+    grid-template-areas: ".    .    .    .   .   .    .   . " ".    nme  nme  nme nme nme  nme   . " ".    eml  eml  eml eml eml  eml   . " ".    bdg  bdg  bdg bdg bdg   bdg   . " ".    dsc  dsc  dsc dsc dsc   dsc   . " ".    .    .    .   .   .    .   . ";
   }
   #contact-head {
     width: 21rem;
@@ -789,12 +609,8 @@
     line-height: normal;
     letter-spacing: normal;
     color: white;
-    -ms-grid-row: 3;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 3;
     grid-area: chd;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   #contact-text-blue {
     color: #00cccc;
@@ -803,12 +619,8 @@
     height: 4rem;
     border-radius: 220px;
     background-color: var(--greyish);
-    -ms-grid-row: 4;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 3;
     grid-area: btn;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
     margin-left: -10vw;
   }
   .contact-name {
@@ -821,9 +633,6 @@
     padding: 12px 12px;
     color: #838383;
     resize: none;
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 6;
     grid-area: nme;
   }
   .contact-email {
@@ -836,9 +645,6 @@
     padding: 12px 12px;
     color: #838383;
     resize: none;
-    -ms-grid-row: 3;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 6;
     grid-area: eml;
   }
   .contact-budget {
@@ -851,9 +657,6 @@
     padding: 12px 12px;
     color: #838383;
     resize: none;
-    -ms-grid-row: 4;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 6;
     grid-area: bdg;
   }
   .contact-description {
@@ -866,9 +669,6 @@
     font-size: 1.813rem;
     padding: 12px 12px;
     color: #838383;
-    -ms-grid-row: 5;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 6;
     grid-area: dsc;
   }
 }
@@ -878,15 +678,12 @@
 */
 @media (min-width: 1056px) {
   #service-wrapper {
-    display: -ms-grid;
     display: grid;
     height: 32rem;
     width: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     background-color: #4a4a4a;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
     grid-template-columns: 1fr;
     background-image: url(/images/bg-logo.png);
     background-repeat: no-repeat;
@@ -894,40 +691,29 @@
     background-position: left top;
   }
   .service-cols {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[12];
-        grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     font-size: 40px;
     min-height: 32rem;
     width: 100%;
     display: grid;
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
+    grid-template-rows: auto;
     grid-gap: 26px;
-        grid-template-areas: ".    .    .    .     .     .    .    .         .       .      .      ." ".   head head head   .     .    .    .         .       .      .      ." ".   head head head   .     .    .  pshop      prem  figma   sass     ." ".    p    p    p     p     p    .    .         .       .      .      ." ".    p    p    p     p     p    .  jscript    html    css    notion  ." ".    p    p    p     p     p    .    .         .       .       .     ." ".    .    .    .     .     .    .    .         .       .       .     ." ".    .    .    .     .     .    .    .         .       .       .     .";
+    grid-template-areas: ".    .    .    .     .     .    .    .         .       .      .      ." ".   head head head   .     .    .    .         .       .      .      ." ".   head head head   .     .    .  pshop      prem  figma   sass     ." ".    p    p    p     p     p    .    .         .       .      .      ." ".    p    p    p     p     p    .  jscript    html    css    notion  ." ".    p    p    p     p     p    .    .         .       .       .     ." ".    .    .    .     .     .    .    .         .       .       .     ." ".    .    .    .     .     .    .    .         .       .       .     .";
   }
   .service-header {
     color: white;
     font-family: Bebas-kai;
     font-size: 3rem;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 3;
     grid-area: head;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     z-index: 2;
   }
   .Vector {
     width: 3.125rem;
     height: 3.125rem;
-    -o-object-fit: contain;
-       object-fit: contain;
-    -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    object-fit: contain;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     background-color: var(--tiffany);
   }
   #service-bg {
@@ -937,22 +723,15 @@
     font-family: Roboto;
     font-size: 1.3rem;
     color: white;
-    -ms-grid-row: 4;
-    -ms-grid-row-span: 3;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 5;
     grid-area: p;
     z-index: 2;
   }
   .photoshop-icon {
-    -ms-grid-row: 3;
-    -ms-grid-column: 8;
     grid-area: pshop;
     z-index: 2;
   }
   #photoshop-img {
-    -webkit-transform: translate(10px, 0px);
-            transform: translate(10px, 0px);
+    transform: translate(10px, 0px);
   }
   #photoshop-p {
     width: 5.5rem;
@@ -960,8 +739,7 @@
     font-family: Roboto;
     font-size: 1.125rem;
     color: white;
-    -webkit-transform: translate(-5px, 0px);
-            transform: translate(-5px, 0px);
+    transform: translate(-5px, 0px);
   }
   #notion-p {
     width: 5.5rem;
@@ -971,8 +749,6 @@
     color: white;
   }
   .premiere-icon {
-    -ms-grid-row: 3;
-    -ms-grid-column: 9;
     grid-area: prem;
     z-index: 2;
   }
@@ -982,13 +758,10 @@
     font-family: Roboto;
     font-size: 1.125rem;
     color: white;
-    -webkit-transform: translate(-8px, 0px);
-            transform: translate(-8px, 0px);
+    transform: translate(-8px, 0px);
   }
   .figma-icon {
     z-index: 2;
-    -ms-grid-row: 3;
-    -ms-grid-column: 10;
     grid-area: figma;
   }
   #figma-p {
@@ -1000,20 +773,15 @@
   }
   .notion-icon {
     z-index: 2;
-    -ms-grid-row: 5;
-    -ms-grid-column: 11;
     grid-area: notion;
   }
   .js-icon {
     z-index: 2;
-    -ms-grid-row: 5;
-    -ms-grid-column: 8;
     grid-area: jscript;
   }
   #js-img {
     z-index: 2;
-    -webkit-transform: translate(10px, 0px);
-            transform: translate(10px, 0px);
+    transform: translate(10px, 0px);
   }
   #javascript-p {
     width: 5.5rem;
@@ -1021,13 +789,10 @@
     font-family: Roboto;
     font-size: 1.125rem;
     color: white;
-    -webkit-transform: translate(-5px, 0px);
-            transform: translate(-5px, 0px);
+    transform: translate(-5px, 0px);
   }
   .css-icon {
     z-index: 2;
-    -ms-grid-row: 5;
-    -ms-grid-column: 10;
     grid-area: css;
   }
   #css-p {
@@ -1036,16 +801,12 @@
     font-family: Roboto;
     font-size: 1.125rem;
     color: white;
-    -webkit-transform: translate(9px, 0px);
-            transform: translate(9px, 0px);
+    transform: translate(9px, 0px);
   }
   .html-icon {
     z-index: 2;
-    -ms-grid-row: 5;
-    -ms-grid-column: 9;
     grid-area: html;
-    -webkit-transform: translate(2px, 0px);
-            transform: translate(2px, 0px);
+    transform: translate(2px, 0px);
   }
   #html-p {
     width: 5.5rem;
@@ -1053,21 +814,17 @@
     font-family: Roboto;
     font-size: 1.125rem;
     color: white;
-    -webkit-transform: translate(4px, 0px);
-            transform: translate(4px, 0px);
+    transform: translate(4px, 0px);
   }
   .sass-icon {
     z-index: 2;
-    -ms-grid-row: 3;
-    -ms-grid-column: 11;
     grid-area: sass;
   }
   #sass-p {
     font-family: Roboto;
     font-size: 1.125rem;
     color: white;
-    -webkit-transform: translate(5px, 0px);
-            transform: translate(5px, 0px);
+    transform: translate(5px, 0px);
   }
 }
 
@@ -1076,38 +833,30 @@
 */
 @media (max-width: 1056px) {
   #service-wrapper {
-    display: -ms-grid;
     display: grid;
     height: 38rem;
     width: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     background-color: #4a4a4a;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
     background-image: url(/images/bg-logo.png);
     background-repeat: no-repeat;
     background-size: initial;
     background-position: center 260px;
   }
   .service-cols {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     height: 38rem;
     width: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     display: grid;
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
+    grid-template-rows: auto;
     grid-gap: 16px;
-        grid-template-areas: ".            .        .           ." "head        head     head       head " "head        head     head       head" "p            p        p           p" "p            p        p           p" ".            .        .            ." "pshop      prem     figma      notion" "jscript     css     html         sass" ".            .        .           ." ".            .        .           ." ".            .        .           .";
+    grid-template-areas: ".            .        .           ." "head        head     head       head " "head        head     head       head" "p            p        p           p" "p            p        p           p" ".            .        .            ." "pshop      prem     figma      notion" "jscript     css     html         sass" ".            .        .           ." ".            .        .           ." ".            .        .           .";
   }
   .service-header {
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
     padding-left: .7rem;
     height: 5.875rem;
     font-size: 2.5rem;
@@ -1117,38 +866,27 @@
     line-height: normal;
     letter-spacing: normal;
     color: white;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 4;
     grid-area: head;
     z-index: 2;
   }
   .Vector {
     width: 3.125rem;
     height: 3.125rem;
-    -o-object-fit: contain;
-       object-fit: contain;
-    -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    object-fit: contain;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     background-color: var(--tiffany);
   }
   #service-bg {
     display: none;
   }
   .service-p {
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
     font-family: Roboto;
     text-align: center;
     width: 100%;
     height: 100%;
     font-size: 1.2rem;
     color: white;
-    -ms-grid-row: 4;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 4;
     grid-area: p;
     z-index: 2;
   }
@@ -1156,15 +894,11 @@
     display: none;
   }
   .photoshop-icon {
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -ms-grid-row: 7;
-    -ms-grid-column: 1;
+    justify-self: center;
     grid-area: pshop;
   }
   #photoshop-img {
-    -webkit-transform: translate(10px, 0px);
-            transform: translate(10px, 0px);
+    transform: translate(10px, 0px);
   }
   #photoshop-p {
     width: 100%;
@@ -1175,10 +909,7 @@
     color: white;
   }
   .premiere-icon {
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -ms-grid-row: 7;
-    -ms-grid-column: 2;
+    justify-self: center;
     grid-area: prem;
     font-size: 0.884rem;
   }
@@ -1188,15 +919,11 @@
     font-family: Roboto;
     font-size: 0.884rem;
     color: white;
-    -webkit-transform: translate(-5px, 0px);
-            transform: translate(-5px, 0px);
+    transform: translate(-5px, 0px);
   }
   .figma-icon {
-    -ms-grid-row: 7;
-    -ms-grid-column: 3;
     grid-area: figma;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   #figma-p {
     width: 100%;
@@ -1206,11 +933,8 @@
     color: white;
   }
   .notion-icon {
-    -ms-grid-row: 7;
-    -ms-grid-column: 4;
     grid-area: notion;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   #notion-p {
     width: 100%;
@@ -1220,11 +944,8 @@
     color: white;
   }
   .js-icon {
-    -ms-grid-row: 8;
-    -ms-grid-column: 1;
     grid-area: jscript;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   #javascript-p {
     width: 100%;
@@ -1234,29 +955,21 @@
     color: white;
   }
   #js-img {
-    -webkit-transform: translate(10px, 0px);
-            transform: translate(10px, 0px);
+    transform: translate(10px, 0px);
   }
   .css-icon {
-    -ms-grid-row: 8;
-    -ms-grid-column: 2;
     grid-area: css;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   #css-p {
     font-family: Roboto;
     font-size: 0.884rem;
     color: white;
-    -webkit-transform: translate(10px, 0px);
-            transform: translate(10px, 0px);
+    transform: translate(10px, 0px);
   }
   .html-icon {
-    -ms-grid-row: 8;
-    -ms-grid-column: 3;
     grid-area: html;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   #html-p {
     width: 100%;
@@ -1266,18 +979,14 @@
     color: white;
   }
   .sass-icon {
-    -ms-grid-row: 8;
-    -ms-grid-column: 4;
     grid-area: sass;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   #sass-p {
     font-family: Roboto;
     font-size: 1.125rem;
     color: white;
-    -webkit-transform: translate(10px, 0px);
-            transform: translate(10px, 0px);
+    transform: translate(10px, 0px);
   }
 }
 
@@ -1286,26 +995,21 @@
 */
 @media (min-width: 1056px) {
   .process-wrapper {
-    display: -ms-grid;
     display: grid;
     height: 40rem;
     background-color: #4a4a4a;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
   #process-cols {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[12];
-        grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     font-size: 40px;
     height: 40rem;
     width: 100%;
     display: grid;
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
+    grid-template-rows: auto;
     grid-gap: 26px;
-        grid-template-areas: ".    .    .    .     .     .      .    .       .       .       .      ." ".   phd  phd   .     .     .      .    .       .       .       .      ." ".    .    .    .     .     .      .    .       .       .       .      ." ".    p1   p2   p3    p4    p5     .    .       .       .       .      ." ".    p6   p7   p8    p9    p10    .   ppg     ppg     ppg     ppg     ." ".    .    .    .     .     .      .    .       .       .       .      ." ".    .    .    .     .     .      .    .       .       .       .      ." ".    .    .    .     .     .      .    .       .       .       .      .";
+    grid-template-areas: ".    .    .    .     .     .      .    .       .       .       .      ." ".   phd  phd   .     .     .      .    .       .       .       .      ." ".    .    .    .     .     .      .    .       .       .       .      ." ".    p1   p2   p3    p4    p5     .    .       .       .       .      ." ".    p6   p7   p8    p9    p10    .   ppg     ppg     ppg     ppg     ." ".    .    .    .     .     .      .    .       .       .       .      ." ".    .    .    .     .     .      .    .       .       .       .      ." ".    .    .    .     .     .      .    .       .       .       .      .";
   }
   #process-head {
     height: 2.25rem;
@@ -1317,15 +1021,10 @@
     line-height: normal;
     letter-spacing: normal;
     color: white;
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
     grid-area: phd;
     margin-top: 5vh;
   }
   #process-1 {
-    -ms-grid-row: 4;
-    -ms-grid-column: 2;
     grid-area: p1;
     font-family: Roboto;
     font-size: 1rem;
@@ -1333,8 +1032,6 @@
     text-align: center;
   }
   #process-2 {
-    -ms-grid-row: 4;
-    -ms-grid-column: 3;
     grid-area: p2;
     font-family: Roboto;
     font-size: 1rem;
@@ -1342,8 +1039,6 @@
     text-align: center;
   }
   #process-3 {
-    -ms-grid-row: 4;
-    -ms-grid-column: 4;
     grid-area: p3;
     font-family: Roboto;
     font-size: 1rem;
@@ -1351,8 +1046,6 @@
     text-align: center;
   }
   #process-4 {
-    -ms-grid-row: 4;
-    -ms-grid-column: 5;
     grid-area: p4;
     font-family: Roboto;
     font-size: 1rem;
@@ -1360,8 +1053,6 @@
     text-align: center;
   }
   #process-5 {
-    -ms-grid-row: 4;
-    -ms-grid-column: 6;
     grid-area: p5;
     font-family: Roboto;
     font-size: 1rem;
@@ -1369,8 +1060,6 @@
     text-align: center;
   }
   #process-6 {
-    -ms-grid-row: 5;
-    -ms-grid-column: 2;
     grid-area: p6;
     margin-top: 5vh;
     font-family: Roboto;
@@ -1379,8 +1068,6 @@
     text-align: center;
   }
   #process-7 {
-    -ms-grid-row: 5;
-    -ms-grid-column: 3;
     grid-area: p7;
     margin-top: 5vh;
     font-family: Roboto;
@@ -1389,8 +1076,6 @@
     text-align: center;
   }
   #process-8 {
-    -ms-grid-row: 5;
-    -ms-grid-column: 4;
     grid-area: p8;
     margin-top: 5vh;
     font-family: Roboto;
@@ -1399,8 +1084,6 @@
     text-align: center;
   }
   #process-9 {
-    -ms-grid-row: 5;
-    -ms-grid-column: 5;
     grid-area: p9;
     margin-top: 5vh;
     font-family: Roboto;
@@ -1409,8 +1092,6 @@
     text-align: center;
   }
   #process-10 {
-    -ms-grid-row: 5;
-    -ms-grid-column: 6;
     grid-area: p10;
     margin-top: 5vh;
     font-family: Roboto;
@@ -1428,9 +1109,6 @@
     line-height: normal;
     letter-spacing: normal;
     color: white;
-    -ms-grid-row: 5;
-    -ms-grid-column: 8;
-    -ms-grid-column-span: 4;
     grid-area: ppg;
     margin-top: -7vh;
   }
@@ -1441,29 +1119,22 @@
 */
 @media (max-width: 1056px) {
   .process-wrapper {
-    -o-object-fit: contain;
-       object-fit: contain;
-    display: -ms-grid;
+    object-fit: contain;
     display: grid;
     height: 50rem;
     background-color: #4a4a4a;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
   #process-cols {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     height: 50rem;
     width: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     display: grid;
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
+    grid-template-rows: auto;
     grid-gap: 16px;
-        grid-template-areas: ".            .        .             ." "phd        phd      phd           phd" ".            .        .             ." "ppg        ppg      ppg           ppg" "ppg        ppg      ppg           ppg" "p1           p2       p3           p4" "p5           p6       p7           p8" ".            p9       p10           ." ".            .        .             ." ".            .        .             .";
+    grid-template-areas: ".            .        .             ." "phd        phd      phd           phd" ".            .        .             ." "ppg        ppg      ppg           ppg" "ppg        ppg      ppg           ppg" "p1           p2       p3           p4" "p5           p6       p7           p8" ".            p9       p10           ." ".            .        .             ." ".            .        .             .";
   }
   #process-head {
     height: 2.25rem;
@@ -1475,87 +1146,51 @@
     line-height: normal;
     letter-spacing: normal;
     color: white;
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 4;
     grid-area: phd;
     margin-top: 5vh;
     margin-left: .938rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-content: center;
+    justify-self: center;
   }
   #process-1 {
-    -ms-grid-row: 6;
-    -ms-grid-column: 1;
     grid-area: p1;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   #process-2 {
-    -ms-grid-row: 6;
-    -ms-grid-column: 2;
     grid-area: p2;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   #process-3 {
-    -ms-grid-row: 6;
-    -ms-grid-column: 3;
     grid-area: p3;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   #process-4 {
-    -ms-grid-row: 6;
-    -ms-grid-column: 4;
     grid-area: p4;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   #process-5 {
-    -ms-grid-row: 7;
-    -ms-grid-column: 1;
     grid-area: p5;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   #process-6 {
-    -ms-grid-row: 7;
-    -ms-grid-column: 2;
     grid-area: p6;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   #process-7 {
-    -ms-grid-row: 7;
-    -ms-grid-column: 3;
     grid-area: p7;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   #process-8 {
-    -ms-grid-row: 7;
-    -ms-grid-column: 4;
     grid-area: p8;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   #process-9 {
-    -ms-grid-row: 8;
-    -ms-grid-column: 2;
     grid-area: p9;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   #process-10 {
-    -ms-grid-row: 8;
-    -ms-grid-column: 3;
     grid-area: p10;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   #process-pg {
     height: 8.75rem;
@@ -1570,14 +1205,9 @@
     letter-spacing: normal;
     color: white;
     text-align: center;
-    -ms-grid-row: 4;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 4;
     grid-area: ppg;
     margin-top: -7vh;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
 }
 
@@ -1587,33 +1217,24 @@
 @media (min-width: 1056px) {
   .partners-wrapper {
     width: 100%;
-    display: -ms-grid;
     display: grid;
     height: 38rem;
     background-color: #4a4a4a;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
   #partners-cols {
-    display: -ms-grid;
     display: grid;
     position: relative;
-    -ms-grid-columns: (1fr)[12];
-        grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     font-size: 40px;
     height: 38rem;
     width: 100%;
     display: grid;
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
+    grid-template-rows: auto;
     grid-gap: 26px;
-        grid-template-areas: ".    .    .     .    .     .    .    .       .       .      .      ." ".    h1   h1   h1    .     .    .    .       .       .      .      ." ".    h1   h1   h1    .     .    .    .       .       .      .      ." ".    .    gb   gb    .    ecm  ecm   .       jc     jc      .      ." ".    .    gb   gb    .    ecm  ecm   .       jc     jc      .      ." ".    .    .     .    .     .    .    .       .       .      .      ." ".    .    .     .    .     .    .    .       .       .      .      .";
+    grid-template-areas: ".    .    .     .    .     .    .    .       .       .      .      ." ".    h1   h1   h1    .     .    .    .       .       .      .      ." ".    h1   h1   h1    .     .    .    .       .       .      .      ." ".    .    gb   gb    .    ecm  ecm   .       jc     jc      .      ." ".    .    gb   gb    .    ecm  ecm   .       jc     jc      .      ." ".    .    .     .    .     .    .    .       .       .      .      ." ".    .    .     .    .     .    .    .       .       .      .      .";
   }
   #partners-head {
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 3;
     grid-area: h1;
     width: 15.875rem;
     height: 6rem;
@@ -1630,17 +1251,13 @@
     position: relative;
     width: 39.688rem;
     height: 15rem;
-    -webkit-filter: blur(16px);
     filter: blur(8px);
     font-family: Bebas-kai;
     font-size: 12.5rem;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
-    -ms-grid-row: 4;
     grid-row: 4;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 5;
     grid-column: 2 / 7;
     line-height: normal;
     letter-spacing: normal;
@@ -1652,12 +1269,7 @@
     position: relative;
     width: 13.5rem;
     height: 13.5rem;
-    -o-object-fit: contain;
-       object-fit: contain;
-    -ms-grid-row: 4;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 2;
+    object-fit: contain;
     grid-area: gb;
   }
   #partners-ecom {
@@ -1665,32 +1277,18 @@
     z-index: 2;
     margin-top: 8vh;
     height: 9.75rem;
-    -o-object-fit: contain;
-       object-fit: contain;
-    -ms-grid-row: 4;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 6;
-    -ms-grid-column-span: 2;
+    object-fit: contain;
     grid-area: ecm;
   }
   #partners-jckicks {
     margin-top: 8vh;
     width: 13.5rem;
     height: 9.063rem;
-    -o-object-fit: contain;
-       object-fit: contain;
-    -ms-grid-row: 4;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 9;
-    -ms-grid-column-span: 2;
+    object-fit: contain;
     grid-area: jc;
   }
   #partners-bg {
-    -ms-grid-column: 9;
-    -ms-grid-column-span: 3;
     grid-column: 9 / 12;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 5;
     grid-row: 2 / 7;
   }
 }
@@ -1701,14 +1299,11 @@
 @media (max-width: 1056px) {
   .partners-wrapper {
     width: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
-    display: -ms-grid;
+    object-fit: contain;
     display: grid;
     height: 60rem;
     background-color: #4a4a4a;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
     background-image: url(/images/bg-nowords.png);
     overflow: hidden;
     background-origin: content-box;
@@ -1718,24 +1313,17 @@
     background-size: cover;
   }
   #partners-cols {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     height: 60rem;
     width: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     display: grid;
-    -ms-grid-rows: repeat();
-        grid-template-rows: repeat();
+    grid-template-rows: repeat();
     grid-gap: 16px;
-        grid-template-areas: ".          .      .      ." ".          .      .      ." "h1         h1     h1     ." "bh1        bh1    bh1    ." ".          gb     gb     ." ".          ecm    ecm    ." ".          jc     jc     ." ".          .      .      ." ".          .      .      .";
+    grid-template-areas: ".          .      .      ." ".          .      .      ." "h1         h1     h1     ." "bh1        bh1    bh1    ." ".          gb     gb     ." ".          ecm    ecm    ." ".          jc     jc     ." ".          .      .      ." ".          .      .      .";
   }
   #partners-head {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
     grid-area: h1;
     z-index: 2;
     position: relative;
@@ -1749,20 +1337,15 @@
     line-height: normal;
     letter-spacing: normal;
     color: white;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
     margin-top: -3vw;
   }
   #partners-bh1 {
     z-index: 2;
     position: relative;
-    -webkit-filter: blur(16px);
     filter: blur(4px);
     font-family: Bebas-kai;
     font-size: 9rem;
-    -ms-grid-row: 4;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
     grid-area: bh1;
     width: 24.188rem;
     margin-left: 10vw;
@@ -1772,20 +1355,14 @@
     line-height: normal;
     letter-spacing: normal;
     color: rgba(0, 204, 204, 0.3);
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
     margin-top: -3vw;
   }
   #partners-gsub {
     z-index: 2;
-    -o-object-fit: contain;
-       object-fit: contain;
-    -ms-grid-row: 5;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
+    object-fit: contain;
     grid-area: gb;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   #gsub-pic {
     z-index: 2;
@@ -1794,14 +1371,9 @@
   }
   #partners-ecom {
     z-index: 2;
-    -o-object-fit: contain;
-       object-fit: contain;
-    -ms-grid-row: 6;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
+    object-fit: contain;
     grid-area: ecm;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   #ecom-pic {
     z-index: 2;
@@ -1810,14 +1382,9 @@
   }
   #partners-jckicks {
     z-index: 2;
-    -o-object-fit: contain;
-       object-fit: contain;
-    -ms-grid-row: 7;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
+    object-fit: contain;
     grid-area: jc;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   #jc-pic {
     z-index: 2;
@@ -1834,31 +1401,23 @@
 */
 @media (min-width: 1056px) {
   .project-wrapper {
-    display: -ms-grid;
     display: grid;
     height: 65.563rem;
     width: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    object-fit: contain;
+    grid-template-columns: 1fr;
   }
   #project-cols {
-    display: -ms-grid;
     display: grid;
-    -o-object-fit: contain;
-       object-fit: contain;
-    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #4a4a4a), color-stop(50%, #3b3b3b));
+    object-fit: contain;
     background: linear-gradient(90deg, #4a4a4a 50%, #3b3b3b 50%);
-    -ms-grid-columns: (1fr)[12];
-        grid-template-columns: repeat(12 1fr);
+    grid-template-columns: repeat(12 1fr);
     font-size: 30px;
     height: 65.563rem;
     width: 100%;
     display: grid;
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
-        grid-template-areas: ".    .    .    .    .   .    .   .    .    .    .    ."  ".    .    .    hd   hd   hd  hd  hd   hd    .    .     ." ".    .    .    ps   ps   ps  ps  ps   ps    .    .    ." ".    .    .    gy   gy   gy  gy  gy   gy    .    .    . " ".    .    .    .    .    .    .   .    .    .    .    ." ".    .    .    .    .    sl  sl   .    .    .    .    . " ".    .    .    .    .    .    .   .    .    .    .    .";
+    grid-template-rows: auto;
+    grid-template-areas: ".    .    .    .    .   .    .   .    .    .    .    ."  ".    .    .    hd   hd   hd  hd  hd   hd    .    .     ." ".    .    .    ps   ps   ps  ps  ps   ps    .    .    ." ".    .    .    gy   gy   gy  gy  gy   gy    .    .    . " ".    .    .    .    .    .    .   .    .    .    .    ." ".    .    .    .    .    sl  sl   .    .    .    .    . " ".    .    .    .    .    .    .   .    .    .    .    .";
   }
   #project-header {
     font-family: Bebas-kai;
@@ -1869,36 +1428,19 @@
     line-height: normal;
     letter-spacing: normal;
     color: white;
-    -ms-grid-row: 2;
-    -ms-grid-column: 4;
-    -ms-grid-column-span: 6;
     grid-area: hd;
     text-align: center;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   #project-sections {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
+    flex-flow: row wrap;
     height: 2rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     justify-self: center;
-    -ms-grid-row: 3;
-    -ms-grid-column: 4;
-    -ms-grid-column-span: 6;
     grid-area: ps;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-content: center;
+    align-items: center;
   }
   #project-identity {
     font-family: Bebas-kai;
@@ -1911,8 +1453,7 @@
     color: white;
     grid-area: id;
     text-align: center;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   #project-development {
     font-family: Bebas-kai;
@@ -1925,8 +1466,7 @@
     color: white;
     grid-area: dv;
     text-align: center;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
     padding-left: 4.232142857142857vw;
     padding-right: 4.232142857142857vw;
   }
@@ -1941,108 +1481,57 @@
     color: white;
     grid-area: mk;
     text-align: center;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   #project-carousel {
-    -ms-grid-row: 4;
-    -ms-grid-column: 4;
-    -ms-grid-column-span: 6;
     grid-area: gy;
     width: 46.438rem;
     height: 22.964rem;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   #project-slider-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
+    flex-flow: row nowrap;
     height: 2rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     justify-self: center;
-    -ms-grid-row: 6;
-    -ms-grid-column: 6;
-    -ms-grid-column-span: 2;
     grid-area: sl;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-content: center;
+    align-items: center;
     padding-right: 2.3rem;
   }
   .slider-gsub {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     /* NEW */
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
     list-style: none;
     padding: 2rem;
     overflow: hidden;
   }
   .slider-ecom {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     /* NEW */
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
     list-style: none;
     padding: 2rem;
     overflow: hidden;
   }
   .slider-jck {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     /* NEW */
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
     list-style: none;
     padding: 2rem;
     overflow: hidden;
@@ -2054,32 +1543,24 @@
 */
 @media (max-width: 1056px) {
   .project-wrapper {
-    display: -ms-grid;
     display: grid;
     height: 107.563rem;
     width: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    object-fit: contain;
+    grid-template-columns: 1fr;
   }
   #project-cols {
-    display: -ms-grid;
     display: grid;
     justify-items: start;
-    -o-object-fit: contain;
-       object-fit: contain;
-    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #4a4a4a), color-stop(50%, #3b3b3b));
+    object-fit: contain;
     background: linear-gradient(90deg, #4a4a4a 50%, #3b3b3b 50%);
-    -ms-grid-columns: (1fr)[12];
-        grid-template-columns: repeat(12 1fr);
+    grid-template-columns: repeat(12 1fr);
     font-size: 30px;
     height: 107.563rem;
     width: 100%;
     display: grid;
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
-        grid-template-areas: ".    .    .    .    .   .    .   .    .    .    .    ."  ".    .    .    hd   hd   hd  hd  hd   hd    .    .     ." ".    .    .    ps   ps   ps  ps  ps   ps    .    .    ." ".    .    .    gy   gy   gy  gy  gy   gy    .    .    . " ".    .    .    .    .    .    .   .    .    .    .    ." ".    .    .    .    .   .    .   .    .    .    .    ." ".    .    .    .    .   .    .   .    .    .    .    ." ".    .    .    .    .   .    .   .    .    .    .    ." ".    .    .    .    .   .    .   .    .    .    .    ." ".    .    .    .    .    sl  sl   .    .    .    .    . " ".    .    .    .    .    sl  sl   .    .    .    .    . " ".    .    .    .    .    sl  sl   .    .    .    .    . " ".    .    .    .    .    sl  sl   .    .    .    .    . " ".    .    .    .    .   .    .   .    .    .    .    ."  ".    .    .    .    .    .    .   .    .    .    .    .";
+    grid-template-rows: auto;
+    grid-template-areas: ".    .    .    .    .   .    .   .    .    .    .    ."  ".    .    .    hd   hd   hd  hd  hd   hd    .    .     ." ".    .    .    ps   ps   ps  ps  ps   ps    .    .    ." ".    .    .    gy   gy   gy  gy  gy   gy    .    .    . " ".    .    .    .    .    .    .   .    .    .    .    ." ".    .    .    .    .   .    .   .    .    .    .    ." ".    .    .    .    .   .    .   .    .    .    .    ." ".    .    .    .    .   .    .   .    .    .    .    ." ".    .    .    .    .   .    .   .    .    .    .    ." ".    .    .    .    .    sl  sl   .    .    .    .    . " ".    .    .    .    .    sl  sl   .    .    .    .    . " ".    .    .    .    .    sl  sl   .    .    .    .    . " ".    .    .    .    .    sl  sl   .    .    .    .    . " ".    .    .    .    .   .    .   .    .    .    .    ."  ".    .    .    .    .    .    .   .    .    .    .    .";
   }
   #project-header {
     font-family: Bebas-kai;
@@ -2090,36 +1571,19 @@
     line-height: normal;
     letter-spacing: normal;
     color: white;
-    -ms-grid-row: 2;
-    -ms-grid-column: 4;
-    -ms-grid-column-span: 6;
     grid-area: hd;
     text-align: center;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   #project-sections {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
+    flex-flow: row wrap;
     height: 5rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     justify-self: center;
-    -ms-grid-row: 3;
-    -ms-grid-column: 4;
-    -ms-grid-column-span: 6;
     grid-area: ps;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-content: center;
+    align-items: center;
   }
   #project-identity {
     font-family: Bebas-kai;
@@ -2132,8 +1596,7 @@
     color: white;
     grid-area: id;
     text-align: center;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   #project-development {
     font-family: Bebas-kai;
@@ -2146,8 +1609,7 @@
     color: white;
     grid-area: dv;
     text-align: center;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
     padding-left: 4.232142857142857vw;
     padding-right: 4.232142857142857vw;
   }
@@ -2162,108 +1624,56 @@
     color: white;
     grid-area: mk;
     text-align: center;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   #project-carousel {
-    -ms-grid-row: 4;
-    -ms-grid-column: 4;
-    -ms-grid-column-span: 6;
     grid-area: gy;
     width: 100%;
     height: 90%;
     margin: 16px;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   #project-slider-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column;
+    flex-flow: column;
     height: 2rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     justify-self: center;
-    -ms-grid-row: 10;
-    -ms-grid-row-span: 4;
-    -ms-grid-column: 6;
-    -ms-grid-column-span: 2;
     grid-area: sl;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-content: center;
+    align-items: center;
     padding-right: 2.3rem;
   }
   .slider-gsub {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     /* NEW */
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
     list-style: none;
     padding: 2rem;
   }
   .slider-ecom {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     /* NEW */
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
     list-style: none;
     padding: 2rem;
   }
   .slider-jck {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     /* NEW */
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
     list-style: none;
     padding: 2rem;
   }
