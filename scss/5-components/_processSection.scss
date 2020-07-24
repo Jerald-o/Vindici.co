@@ -23,7 +23,7 @@
   grid-gap: 26px;
   grid-template-areas:
     ".    .    .    .     .     .      .    .       .       .       .      ."
-    ".   phd  phd   .     .     .      .    .       .       .       .      ."
+    ".   phd  phd   phd     .     .      .    .       .       .       .      ."
     ".    .    .    .     .     .      .    .       .       .       .      ."
     ".    p1   p2   p3    p4    p5     .    .       .       .       .      ."
     ".    p6   p7   p8    p9    p10    .   ppg     ppg     ppg     ppg     ."
@@ -192,6 +192,8 @@
   ".            .        .             ."
   "phd        phd      phd           phd"
   ".            .        .             ."
+
+  ".            .        .             ."
   "ppg        ppg      ppg           ppg"
   "ppg        ppg      ppg           ppg"
   "p1           p2       p3           p4"
@@ -222,67 +224,93 @@
 
 #process-1 {
   grid-area: p1;
-  justify-self: center;
+  font-family: Roboto;
+  font-size: 1rem; 
+  color: white;
+  text-align: center;
 
 }
 
 #process-2{
   grid-area: p2;
-  justify-self: center;
+  font-family: Roboto;
+  font-size: 1rem; 
+  color: white;
+  text-align: center;
 
   
 }
 
 #process-3{
   grid-area: p3;
-  justify-self: center;
+  font-family: Roboto;
+  font-size: 1rem; 
+  color: white;
+  text-align: center;
 
   
 }
 
 #process-4{
   grid-area: p4;
-  justify-self: center;
+  font-family: Roboto;
+  font-size: 1rem; 
+  color: white;
+  text-align: center;
 
 }
 
 #process-5{
   grid-area: p5;
-  justify-self: center;
+  font-family: Roboto;
+  font-size: 1rem; 
+  color: white;
+  text-align: center;
 
 }
 
 #process-6{
   grid-area: p6;
-  justify-self: center;
+  font-family: Roboto;
+  font-size: 1rem; 
+  color: white;
+  text-align: center;
 
 }
 
 #process-7{
   grid-area: p7;
-  justify-self: center;
-
+  font-family: Roboto;
+  font-size: 1rem; 
+  color: white;
+  text-align: center;
 
 }
 
 #process-8{
   grid-area: p8;
-  justify-self: center;
-
+  font-family: Roboto;
+  font-size: 1rem; 
+  color: white;
+  text-align: center;
 
 }
 
 #process-9{
   grid-area: p9;
-  justify-self: center;
-
+  font-family: Roboto;
+  font-size: 1rem; 
+  color: white;
+  text-align: center;
 
 }
 
 #process-10{
   grid-area: p10;
-  justify-self: center;
-
+  font-family: Roboto;
+  font-size: 1rem; 
+  color: white;
+  text-align: center;
 
 }
 

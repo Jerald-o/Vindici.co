@@ -59,6 +59,7 @@
     
     .brand {
         margin-left: 90px;
+        height: 50%;
         align-self: center;
         justify-self: center;
     }
@@ -71,13 +72,12 @@
         list-style:none;
         overflow: hidden;
         &-link {
-            margin: 0 18px;
             align-self: center;
             justify-self: center;
             font-family: bebas-kai,sans-serif;
             font-weight: 300;
             font-style: normal;
-            font-size:22px;
+            font-size:15px;
         }
     
     }
