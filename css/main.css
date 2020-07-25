@@ -947,15 +947,15 @@ html {
     color: #00cccc;
   }
   .contact-button {
-    height: 4rem;
-    border-radius: 220px;
-    -ms-grid-row: 4;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 3;
-    grid-area: btn;
-    background-color: #b8b8b8;
-    justify-items: start;
-    border: none;
+    display: none;
+    /*
+  height: 4rem;
+  border-radius: 220px;
+  grid-area: btn;
+  background-color: #b8b8b8;
+  justify-items: start;
+  border: none;
+  */
   }
   #creative-button {
     width: 15rem;
@@ -2046,10 +2046,10 @@ html {
     grid-area: gb;
   }
   #partners-ecom {
-    width: 7.438rem;
+    width: 13.5rem;
+    height: 13.5rem;
     z-index: 2;
     margin-top: 8vh;
-    height: 9.75rem;
     -o-object-fit: contain;
        object-fit: contain;
     -ms-grid-row: 4;
@@ -2061,7 +2061,7 @@ html {
   #partners-jckicks {
     margin-top: 8vh;
     width: 13.5rem;
-    height: 9.063rem;
+    height: 13.5rem;
     -o-object-fit: contain;
        object-fit: contain;
     -ms-grid-row: 4;
