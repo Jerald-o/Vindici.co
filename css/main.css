@@ -4,6 +4,8 @@
 * Testing
 *
 **/
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400);
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -34,9 +36,7 @@ body {
 }
 
 .brand {
-  position: absolute;
-  padding-left: 20px;
-  padding-top: 10px;
+  position: relative;
   float: left;
   line-height: 70px;
   text-transform: uppercase;
@@ -129,13 +129,15 @@ nav ul li ul li a {
   }
   nav {
     width: 100%;
-    padding: 70px 0 15px;
   }
   nav ul {
     display: none;
   }
   nav ul li {
     float: none;
+  }
+  .brand {
+    padding-left: 20px;
   }
   .nav-list {
     font-family: bebas-kai;
@@ -217,6 +219,10 @@ nav ul li ul li a {
           transform: rotate(-45deg);
 }
 
+.brand {
+  padding-left: 20px;
+}
+
 article {
   max-width: 1000px;
   margin: 0 auto;
@@ -226,19 +232,235 @@ article {
 /*
  v v  v SCSS for Desktop  v v v
 */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
 @media (min-width: 1056px) {
-  .hero {
-    grid-column: 1 / -1;
-    height: 100vh;
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  #hero-wrapper {
     display: -ms-grid;
     display: grid;
-    background: url(../images/landingBG.png);
+    height: 95vh;
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    background-color: #4a4a4a;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .hero-cols {
+    display: -ms-grid;
+    display: grid;
+    background-image: url(/images/landingBG.png);
+    overflow: hidden;
+    background-origin: content-box;
+    overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -ms-grid-columns: (1fr)[12];
+        grid-template-columns: repeat(12, 1fr);
+    font-size: 40px;
+    height: 95vh;
+    width: 100%;
+    display: grid;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    grid-gap: 26px;
+        grid-template-areas: ".      .      .      .       .     .      .      .     .      .    .      . " ".      .      .      .       .     .      .      .     .      .    .      . " ".      .      .      .       .     .      .      .     .      .    .      . " ".      .      .      .       .     .      .      .     .      .    .      . " ".     hh     hh     hh      hh     hh     .      .     .      .    .      . " ".     hh     hh     hh      hh     hh     .      .     .      .    .      . " ".      .      .      .       .     .      .      .     .      .    .      . " ".      .      .      .       .     .      .      .     .      .    cfw      . " ".      .      .      .       .     .      .      .     .     hc   cfw      . " ".      .      .      .       .     .      .      .     .      .    .      . ";
+  }
+  section::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 80%;
+  }
+  .demo a {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: #00cccc;
+    font: normal 400 20px/1 'Josefin Sans', sans-serif;
+    letter-spacing: .1em;
+    text-decoration: none;
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s;
+  }
+  .demo a:hover {
+    opacity: .5;
+  }
+  #section02 a {
+    padding-top: 60px;
+  }
+  #section02 a span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 46px;
+    height: 46px;
+    margin-left: -23px;
+    border: 2px solid #00cccc;
+    border-radius: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  #section02 a span::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: '';
+    width: 16px;
+    height: 16px;
+    margin: -12px 0 0 -8px;
+    border-left: 2px solid #00cccc;
+    border-bottom: 2px solid #00cccc;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  #hero-header {
+    width: 30.625rem;
+    height: 10.75rem;
+    font-family: bebas-kai;
+    font-size: 4.5rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--white);
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 5;
+    grid-area: hh;
+  }
+  #hero-header ::after {
+    display: block;
+    content: "";
+    border-top: 0.6rem solid #00cccc;
+    width: 13.5rem;
+    margin-top: 2rem;
+    grid-area: hl;
+  }
+  #hero-connect {
+    width: 8.313rem;
+    height: 3.25rem;
+    font-family: bebas-kai;
+    font-size: 2.688rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--white);
+    -ms-grid-row: 9;
+    -ms-grid-column: 10;
+    grid-area: hc;
+  }
+  #connect-flex-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: end;
+        align-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -ms-grid-row: 8;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 11;
+    grid-area: cfw;
+  }
+}
+
+/*
+ v v  v SCSS for Mobile and Tablet  v v v
+*/
+@media (max-width: 1056px) {
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  #hero-wrapper {
+    display: -ms-grid;
+    display: grid;
+    height: 90vh;
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    background-color: #4a4a4a;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .hero-cols {
+    z-index: 1;
+    display: -ms-grid;
+    display: grid;
+    background-image: url(/images/landingBG_mobile2.png);
     overflow: hidden;
     background-origin: content-box;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    -ms-grid-columns: (1fr)[6];
+        grid-template-columns: repeat(6, 1fr);
+    font-size: 40px;
+    height: 90vh;
+    width: 100%;
+    display: grid;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    grid-gap: 16px;
+        grid-template-areas: ".    .    .    .     .     .  " ".    .    .    .     .     .  " ".    .    .    .     .     .  "  "hh   hh   hh    hh  hh    hh  " "hl   hl   hl    hl   .     .  " ".    .    .    .     .     .  ";
+  }
+  #hero-header {
+    width: 23rem;
+    height: 6.639rem;
+    font-family: bebas-kai;
+    font-size: 2.845rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--white);
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-area: hh;
+    text-align: left;
+    margin: 16px;
+  }
+  #hero-header ::after {
+    display: block;
+    content: "";
+    border-top: 0.6rem solid #00cccc;
+    width: 13.5rem;
+    height: 0.5rem;
+    margin-top: 1rem;
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-area: hl;
   }
   .hero-text {
     margin-top: 2em;
@@ -263,48 +485,29 @@ article {
     width: 13.5rem;
     margin-top: 2rem;
   }
-}
-
-/*
- v v  v SCSS for Tablet and mobile  v v v
-*/
-@media (max-width: 1056px) {
-  .hero {
-    grid-column: 1 / -1;
-    height: 100vh;
-    display: -ms-grid;
-    display: grid;
-    background: url(../images/landingBG_mobile2.png);
-    overflow: hidden;
-    width: 100%;
-    background-origin: content-box;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+  section::after {
+    display: none;
   }
-  .hero-text {
-    margin: 16px;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 4;
-    grid-column: 2 / 6;
-    -ms-grid-row: 2;
-    grid-row: 2;
-    font-family: Bebas-kai;
-    font-size: 72px;
-    font-weight: 400;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #ffffff;
+  .demo a {
+    display: none;
   }
-  .hero-text ::after {
-    display: block;
-    content: "";
-    border-top: 0.6rem solid #00cccc;
-    width: 13.5rem;
-    margin-top: 2rem;
+  .demo a:hover {
+    display: none;
+  }
+  #section02 a {
+    display: none;
+  }
+  #section02 a span {
+    display: none;
+  }
+  #section02 a span::after {
+    display: none;
+  }
+  #hero-connect {
+    display: none;
+  }
+  #connect-flex-wrapper {
+    display: none;
   }
 }
 
@@ -876,7 +1079,7 @@ article {
     -ms-grid-rows: (1fr)[6];
         grid-template-rows: repeat(6, 1fr);
     grid-gap: 16px;
-        grid-template-areas: ".    .    .    .      ." ".    .    .    .      ." ".   chd  chd  chd     ." ".   btn  btn  btn     ." ".    .    .    .      ." ".    .    .    .      .";
+        grid-template-areas: ".    .    .    .      ." ".    .    .    .      ." ".   chd  chd  chd     ." ".   chd  chd  chd     ." ".    .    .    .      ." ".    .    .    .      .";
   }
   #contact-right {
     justify-items: center;
@@ -911,28 +1114,31 @@ article {
     letter-spacing: normal;
     color: white;
     -ms-grid-row: 3;
+    -ms-grid-row-span: 2;
     -ms-grid-column: 2;
     -ms-grid-column-span: 3;
     grid-area: chd;
     -ms-grid-column-align: center;
         justify-self: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    text-align: center;
   }
   .contact-button {
+    display: none;
+    /*
     height: 4rem;
     border-radius: 220px;
     background-color: var(--greyish);
-    -ms-grid-row: 4;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 3;
     grid-area: btn;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
     margin-left: -10vw;
     background: none;
     color: inherit;
     border: none;
     padding: 0;
     font: inherit;
+    */
   }
   #contact-text-blue {
     color: #00cccc;
@@ -1267,7 +1473,8 @@ article {
         justify-self: center;
     padding-left: .7rem;
     height: 5.875rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
+    width: 80%;
     font-stretch: normal;
     font-family: Bebas-kai, Roboto;
     font-style: normal;
@@ -1279,6 +1486,7 @@ article {
     -ms-grid-column: 1;
     -ms-grid-column-span: 4;
     grid-area: head;
+    text-align: center;
     z-index: 2;
   }
   .Vector {
@@ -1620,10 +1828,10 @@ article {
     -ms-grid-rows: auto;
         grid-template-rows: auto;
     grid-gap: 16px;
-        grid-template-areas: ".            .        .             ." "phd        phd      phd           phd" ".            .        .             ."  ".            .        .             ." "ppg        ppg      ppg           ppg" "ppg        ppg      ppg           ppg" "p1           p2       p3           p4" "p5           p6       p7           p8" ".            p9       p10           ." ".            .        .             ." ".            .        .             .";
+        grid-template-areas: ".            .        .             ." "phd        phd      phd           phd" ".            .        .             ." ".            .        .             ." "ppg        ppg      ppg           ppg" "ppg        ppg      ppg           ppg" "p1           p2       p3           p4" "p5           p6       p7           p8" ".            p9       p10           ." ".            .        .             ." ".            .        .             .";
   }
   #process-head {
-    height: 2.25rem;
+    height: 4.25rem;
     font-family: Bebas-kai;
     font-size: 3.25rem;
     font-weight: normal;
@@ -1649,7 +1857,7 @@ article {
     -ms-grid-column: 1;
     grid-area: p1;
     font-family: Roboto;
-    font-size: 1rem;
+    font-size: .8rem;
     color: white;
     text-align: center;
   }
@@ -1658,7 +1866,7 @@ article {
     -ms-grid-column: 2;
     grid-area: p2;
     font-family: Roboto;
-    font-size: 1rem;
+    font-size: .8rem;
     color: white;
     text-align: center;
   }
@@ -1667,7 +1875,7 @@ article {
     -ms-grid-column: 3;
     grid-area: p3;
     font-family: Roboto;
-    font-size: 1rem;
+    font-size: .8rem;
     color: white;
     text-align: center;
   }
@@ -1676,7 +1884,7 @@ article {
     -ms-grid-column: 4;
     grid-area: p4;
     font-family: Roboto;
-    font-size: 1rem;
+    font-size: .8rem;
     color: white;
     text-align: center;
   }
@@ -1685,7 +1893,7 @@ article {
     -ms-grid-column: 1;
     grid-area: p5;
     font-family: Roboto;
-    font-size: 1rem;
+    font-size: .8rem;
     color: white;
     text-align: center;
   }
@@ -1694,7 +1902,7 @@ article {
     -ms-grid-column: 2;
     grid-area: p6;
     font-family: Roboto;
-    font-size: 1rem;
+    font-size: .8rem;
     color: white;
     text-align: center;
   }
@@ -1703,7 +1911,7 @@ article {
     -ms-grid-column: 3;
     grid-area: p7;
     font-family: Roboto;
-    font-size: 1rem;
+    font-size: .8rem;
     color: white;
     text-align: center;
   }
@@ -1712,7 +1920,7 @@ article {
     -ms-grid-column: 4;
     grid-area: p8;
     font-family: Roboto;
-    font-size: 1rem;
+    font-size: .8rem;
     color: white;
     text-align: center;
   }
@@ -1721,7 +1929,7 @@ article {
     -ms-grid-column: 2;
     grid-area: p9;
     font-family: Roboto;
-    font-size: 1rem;
+    font-size: .8rem;
     color: white;
     text-align: center;
   }
@@ -1730,13 +1938,13 @@ article {
     -ms-grid-column: 3;
     grid-area: p10;
     font-family: Roboto;
-    font-size: 1rem;
+    font-size: .8rem;
     color: white;
     text-align: center;
   }
   #process-pg {
-    height: 8.75rem;
-    width: 22rem;
+    height: 9.75rem;
+    width: 90%;
     font-family: Roboto;
     font-size: 1.25rem;
     margin-left: .938rem;
@@ -1919,15 +2127,12 @@ article {
     font-family: Bebas-kai;
     font-size: 5rem;
     width: 24.188rem;
-    margin-left: 10vw;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
     color: white;
-    -ms-grid-column-align: center;
-        justify-self: center;
     margin-top: -3vw;
   }
   #partners-bh1 {
@@ -1936,7 +2141,7 @@ article {
     -webkit-filter: blur(16px);
     filter: blur(4px);
     font-family: Bebas-kai;
-    font-size: 9rem;
+    font-size: 7rem;
     -ms-grid-row: 4;
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
@@ -1949,8 +2154,6 @@ article {
     line-height: normal;
     letter-spacing: normal;
     color: rgba(0, 204, 204, 0.3);
-    -ms-grid-column-align: center;
-        justify-self: center;
     margin-top: -3vw;
   }
   #partners-gsub {
@@ -2009,6 +2212,15 @@ article {
 /*
  v v  v SCSS for Desktop  v v v
 */
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
 @media (min-width: 1056px) {
   .project-wrapper {
     display: -ms-grid;
@@ -2035,7 +2247,7 @@ article {
     display: grid;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
-        grid-template-areas: ".    .    .    .    .   .    .   .    .    .    .    ."  ".    .    .    hd   hd   hd  hd  hd   hd    .    .     ." ".    .    .    ps   ps   ps  ps  ps   ps    .    .    ." ".    .    .    gy   gy   gy  gy  gy   gy    .    .    . " ".    .    .    .    .    .    .   .    .    .    .    ." ".    .    .    .    .    sl  sl   .    .    .    .    . " ".    .    .    .    .    .    .   .    .    .    .    .";
+        grid-template-areas: ".    .    .    .    .   .    .   .    .    .    .    ."  ".    .    .    hd   hd   hd  hd  hd   hd    .    .     ." ".    .    .    ps   ps   ps  ps  ps   ps    .    .    ." ".    .    .    gy   gy   gy  gy  gy   gy    .    .    . " ".    .    .    .    .   .    .   .    .    .    .    ." ".    .    .    .    .    .    .   .    .    .    .    ." ".    .    .    .    .    sl  sl   .    .    .    .    . " ".    .    .    .    .    .    .   .    .    .    .    .";
   }
   #project-header {
     font-family: Bebas-kai;
@@ -2144,7 +2356,7 @@ article {
         -ms-flex-pack: center;
             justify-content: center;
     justify-self: center;
-    -ms-grid-row: 6;
+    -ms-grid-row: 7;
     -ms-grid-column: 6;
     -ms-grid-column-span: 2;
     grid-area: sl;
@@ -2175,6 +2387,7 @@ article {
         -ms-flex-pack: center;
             justify-content: center;
     list-style: none;
+    padding-top: 1rem;
     padding: 2rem;
     overflow: hidden;
   }
@@ -2256,11 +2469,11 @@ article {
     display: grid;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
-        grid-template-areas: ".    .    .    .    .   .    .   .    .    .    .    ."  ".    .    .    hd   hd   hd  hd  hd   hd    .    .     ." ".    .    .    ps   ps   ps  ps  ps   ps    .    .    ." ".    .    .    gy   gy   gy  gy  gy   gy    .    .    . " ".    .    .    .    .    .    .   .    .    .    .    ." ".    .    .    .    .   .    .   .    .    .    .    ." ".    .    .    .    .   .    .   .    .    .    .    ." ".    .    .    .    .   .    .   .    .    .    .    ." ".    .    .    .    .   .    .   .    .    .    .    ." ".    .    .    .    .    sl  sl   .    .    .    .    . " ".    .    .    .    .    sl  sl   .    .    .    .    . " ".    .    .    .    .    sl  sl   .    .    .    .    . " ".    .    .    .    .    sl  sl   .    .    .    .    . " ".    .    .    .    .   .    .   .    .    .    .    ."  ".    .    .    .    .    .    .   .    .    .    .    .";
+        grid-template-areas: ".    .    .    .    .   .    .   .    .    .    .    ."  ".    .    .    hd   hd   hd  hd  hd   hd    .    .     ." ".    .    .    .    .   .    .   .    .    .    .    ." ".    .    .    ps   ps   ps  ps  ps   ps    .    .    ." ".    .    .    .    .   .    .   .    .    .    .    ." ".    .    .    gy   gy   gy  gy  gy   gy    .    .    . " ".    .    .    .    .    .    .   .    .    .    .    ." ".    .    .    .    .   .    .   .    .    .    .    ." ".    .    .    .    .   .    .   .    .    .    .    ." ".    .    .    .    .    sl  sl   .    .    .    .    . " ".    .    .    .    .    sl  sl   .    .    .    .    . " ".    .    .    .    .    sl  sl   .    .    .    .    . " ".    .    .    .    .    sl  sl   .    .    .    .    . " ".    .    .    .    .   .    .   .    .    .    .    ."  ".    .    .    .    .    .    .   .    .    .    .    .";
   }
   #project-header {
     font-family: Bebas-kai;
-    font-size: 8rem;
+    font-size: 5rem;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -2288,7 +2501,7 @@ article {
         -ms-flex-pack: center;
             justify-content: center;
     justify-self: center;
-    -ms-grid-row: 3;
+    -ms-grid-row: 4;
     -ms-grid-column: 4;
     -ms-grid-column-span: 6;
     grid-area: ps;
@@ -2300,7 +2513,7 @@ article {
   }
   #project-identity {
     font-family: Bebas-kai;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -2314,7 +2527,7 @@ article {
   }
   #project-development {
     font-family: Bebas-kai;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -2330,7 +2543,7 @@ article {
   }
   #project-marketing {
     font-family: Bebas-kai;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -2343,11 +2556,11 @@ article {
         justify-self: center;
   }
   #project-carousel {
-    -ms-grid-row: 4;
+    -ms-grid-row: 6;
     -ms-grid-column: 4;
     -ms-grid-column-span: 6;
     grid-area: gy;
-    width: 100%;
+    width: 80%;
     height: 90%;
     margin: 16px;
     -ms-grid-column-align: center;
@@ -2359,89 +2572,28 @@ article {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column;
-    height: 2rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    justify-self: center;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: end;
+        align-content: flex-end;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-right: 2.3rem;
+    list-style: none;
     -ms-grid-row: 10;
     -ms-grid-row-span: 4;
     -ms-grid-column: 6;
     -ms-grid-column-span: 2;
     grid-area: sl;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding-right: 2.3rem;
   }
   .slider-gsub {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    /* NEW */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    list-style: none;
     padding: 2rem;
   }
   .slider-ecom {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    /* NEW */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    list-style: none;
     padding: 2rem;
   }
   .slider-jck {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    /* NEW */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    list-style: none;
     padding: 2rem;
   }
 }

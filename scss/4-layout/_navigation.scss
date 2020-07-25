@@ -11,12 +11,10 @@ body{
    }
    
    .brand {
-     position: absolute;
-     padding-left: 20px;
-     padding-top: 10px;
+     position: relative;
      float: left;
      line-height: 70px;
-     text-transform: uppercase;
+      text-transform: uppercase;
      font-size: 1.4em;
    }
    .brand a,
@@ -98,13 +96,16 @@ body{
    
      nav {
        width: 100%;
-       padding: 70px 0 15px;
      }
      nav ul {
        display: none;
      }
      nav ul li {
        float: none;
+     }
+     
+     .brand{
+         padding-left: 20px;
      }
  
      .nav-list{
@@ -176,9 +177,15 @@ body{
    #nav-toggle.active span:after {
      transform: rotate(-45deg);
    }
+
+   .brand{
+    padding-left: 20px;
+}
+
    
    article {
      max-width: 1000px;
      margin: 0 auto;
      padding: 10px;
    }
+

@@ -218,7 +218,7 @@
     ".    .    .    .      ."
     ".    .    .    .      ."
     ".   chd  chd  chd     ."
-    ".   btn  btn  btn     ."
+    ".   chd  chd  chd     ."
     ".    .    .    .      ."
     ".    .    .    .      .";
   
@@ -265,12 +265,16 @@
     color: white;
     grid-area: chd;
     justify-self: center;
+    align-content: center;
+    text-align: center;
   
   
   }
   
   
   .contact-button {
+    display: none;
+    /*
     height: 4rem;
     border-radius: 220px;
     background-color: var(--greyish);
@@ -282,6 +286,7 @@
     border: none;
     padding: 0;
     font: inherit;
+    */
 }
 #contact-text-blue{
   color: #00cccc;
