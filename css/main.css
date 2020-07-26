@@ -2662,8 +2662,8 @@ html {
     width: auto;
   }
   #case-img {
-    height: auto;
-    width: auto;
+    height: 100%;
+    width: 100%;
   }
   #ecomCase-background {
     height: 2.25rem;
@@ -2891,6 +2891,320 @@ html {
         -ms-flex-direction: row nowrap;
             flex-direction: row nowrap;
     -ms-grid-row: 9;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-area: bf;
+    margin: 16px;
+  }
+  #behance-text {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    height: 2.25rem;
+    font-family: Roboto;
+    font-size: 1.3rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: white;
+  }
+}
+
+/*
+ v v  v SCSS for Desktop  v v v
+*/
+@media (min-width: 1056px) {
+  .ecomCase-wrapper {
+    display: -ms-grid;
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #ecomCase-cols {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[12];
+        grid-template-columns: repeat(12, 1fr);
+    font-size: 40px;
+    height: 100vh;
+    background-color: #4a4a4a;
+    width: 100%;
+    display: grid;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    grid-gap: 26px;
+        grid-template-areas: ".    .    .    .     .     .      .    .       .       .       .      ." "hd   hd   hd   hd    hd   hd      hd   hd      hd      hd     hd     hd" ".    .    .    .     .     .      .    .       .       .       .      ." ".    bg   bg   bg   bg    bg      .    .       .       .       .      ." ".    es   es   es   es    es      .    .       .       .       .      ." ".    ed   ed   ed   ed    ed      .    bf      bf      bf      bf      ." ".    .    .    .     .     .      .    .       .       .       .      ."  ".    .    .    .     .     .      .    .       .       .       .      .";
+  }
+  .ecomCase-flex-head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row nowrap;
+            flex-direction: row nowrap;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-area: hd;
+    background-image: url(/images/case-econ-bg.png);
+    background-size: contain;
+    background-position: 20.5vw center;
+    background-repeat: no-repeat;
+  }
+  #ecomCase-head {
+    height: auto;
+    width: auto;
+    font-family: Bebas-kai;
+    font-size: 5.25rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: white;
+  }
+  #ecomCase-img {
+    height: auto;
+    width: auto;
+  }
+  #case-img {
+    height: 100%;
+    width: 100%;
+  }
+  #ecomCase-background {
+    height: 2.25rem;
+    font-family: bebas-kai;
+    font-size: 4.5rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #00cccc;
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 5;
+    grid-area: bg;
+    margin-top: 5vh;
+  }
+  #ecomCase-services {
+    width: auto;
+    font-family: bebas-kai;
+    font-size: 2.25rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #00cccc;
+    -ms-grid-row: 5;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 5;
+    grid-area: es;
+  }
+  #service-type {
+    font-family: Roboto;
+    color: white;
+  }
+  #ecomCase-description {
+    height: 2.25rem;
+    font-family: Roboto;
+    font-size: 1.3rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: white;
+    -ms-grid-row: 6;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 5;
+    grid-area: ed;
+  }
+  #behance-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row nowrap;
+            flex-direction: row nowrap;
+    -ms-grid-row: 6;
+    -ms-grid-column: 8;
+    -ms-grid-column-span: 4;
+    grid-area: bf;
+  }
+  #behance-text {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    height: 2.25rem;
+    font-family: Roboto;
+    font-size: 1.3rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: white;
+  }
+  #behance-img {
+    padding-top: 1vw;
+  }
+}
+
+/*
+   v v  v SCSS for Mobile and Tablet  v v v
+  */
+@media (max-width: 1056px) {
+  .ecomCase-wrapper {
+    display: -ms-grid;
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #ecomCase-cols {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[12];
+        grid-template-columns: repeat(12, 1fr);
+    font-size: 40px;
+    height: 100vh;
+    background-color: #4a4a4a;
+    width: 100%;
+    display: grid;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    grid-gap: 26px;
+        grid-template-areas: ".    .    .    .     .     .      .    .       .       .       .      ." "hd   hd   hd   hd    hd   hd      hd   hd      hd      hd     hd     hd" "hd   hd   hd   hd    hd   hd      hd   hd      hd      hd     hd     hd" "hd   hd   hd   hd    hd   hd      hd   hd      hd      hd     hd     hd"  "bg   bg   bg   bg   bg    bg      bg   bg      bg      bg     bg     bg " ".    .    .    .     .     .      .    .       .       .       .      ."  "es   es   es   es   es    es      es   es      es      es      es     es" "ed   ed   ed   ed   ed    ed      ed   ed      ed      ed      ed     ed" ".    .    .    .     .     .      .    .       .       .       .      ." "bf   bf   bf   bf    bf   bf      bf    bf      bf      bf      bf     bf" ".    .    .    .     .     .      .    .       .       .       .      .";
+  }
+  .ecomCase-flex-head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-area: hd;
+    background-image: url(/images/case-econ-bg.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 16px;
+  }
+  #ecomCase-head {
+    height: auto;
+    width: auto;
+    font-family: Bebas-kai;
+    font-size: 4rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: white;
+    text-align: center;
+  }
+  #ecomCase-img {
+    height: auto;
+    width: auto;
+  }
+  #case-img {
+    height: 100%;
+    width: 100%;
+  }
+  #ecomCase-background {
+    height: 2.25rem;
+    font-family: bebas-kai;
+    font-size: 3.5rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #00cccc;
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-area: bg;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  #ecomCase-services {
+    width: auto;
+    font-family: bebas-kai;
+    font-size: 1.25rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #00cccc;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-area: es;
+  }
+  #service-type {
+    font-family: Roboto;
+    color: white;
+  }
+  #ecomCase-description {
+    height: 2.25rem;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: white;
+    -ms-grid-row: 8;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-area: ed;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    text-align: center;
+    margin: 16px;
+  }
+  #behance-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row nowrap;
+            flex-direction: row nowrap;
+    -ms-grid-row: 10;
     -ms-grid-column: 1;
     -ms-grid-column-span: 12;
     grid-area: bf;

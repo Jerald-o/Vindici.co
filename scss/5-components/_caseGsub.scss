@@ -1,0 +1,326 @@
+/*
+ v v  v SCSS for Desktop  v v v
+*/
+
+@media (min-width: 1056px) { 
+
+  .ecomCase-wrapper{
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: 1fr;
+  
+  
+  }
+  
+  
+  #ecomCase-cols{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    font-size: 40px;
+    height: 100vh;
+    background-color: #4a4a4a;
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto;
+    grid-gap: 26px;
+    grid-template-areas:
+      ".    .    .    .     .     .      .    .       .       .       .      ."
+      "hd   hd   hd   hd    hd   hd      hd   hd      hd      hd     hd     hd"
+      ".    .    .    .     .     .      .    .       .       .       .      ."
+      ".    bg   bg   bg   bg    bg      .    .       .       .       .      ."
+      ".    es   es   es   es    es      .    .       .       .       .      ."
+      ".    ed   ed   ed   ed    ed      .    bf      bf      bf      bf      ."
+      ".    .    .    .     .     .      .    .       .       .       .      ."
+  
+      ".    .    .    .     .     .      .    .       .       .       .      .";
+  
+  }
+  
+  
+  
+  .ecomCase-flex-head {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row nowrap;
+    grid-area: hd;
+    background-image: url(/images/case-econ-bg.png);
+    background-size: contain;
+    background-position: 20.5vw center;
+    background-repeat: no-repeat;
+  }
+  
+  #ecomCase-head{
+    height: auto;
+    width: auto;
+    font-family: Bebas-kai;
+    font-size: 5.25rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: white;
+  
+  
+  }
+  
+  #ecomCase-img{
+    height: auto;
+    width: auto;
+   }
+  
+   #case-img{
+    height: 100%;
+    width: 100%;
+   }
+  
+   #ecomCase-background{
+    height: 2.25rem;
+    font-family: bebas-kai;
+    font-size: 4.5rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #00cccc;
+    grid-area: bg;
+    margin-top: 5vh;
+   }
+  
+   #ecomCase-services{
+    width: auto;
+    font-family: bebas-kai;
+    font-size: 2.25rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #00cccc;
+    grid-area: es;
+  
+   }
+  
+   #service-type{
+    font-family: Roboto;
+    color: white;
+  
+   }
+  
+   #ecomCase-description{
+    height: 2.25rem;
+    font-family: Roboto;
+    font-size: 1.3rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: white;
+    grid-area: ed;
+  
+   }
+  
+  
+  #behance-flex{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row nowrap;
+    grid-area: bf;
+  
+  
+  }
+  
+  #behance-text{
+    align-self: center;
+    height: 2.25rem;
+    font-family: Roboto;
+    font-size: 1.3rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: white;
+  
+  }
+  
+  #behance-img{
+    padding-top: 1vw;
+  }
+  
+  }
+  
+  
+  
+  
+  
+  /*
+   v v  v SCSS for Mobile and Tablet  v v v
+  */
+  
+  @media (max-width: 1056px) { 
+  
+  .ecomCase-wrapper{
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: 1fr;
+  
+  
+  }
+  
+  
+  #ecomCase-cols{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    font-size: 40px;
+    height: 100vh;
+    background-color: #4a4a4a;
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto;
+    grid-gap: 26px;
+    grid-template-areas:
+      ".    .    .    .     .     .      .    .       .       .       .      ."
+      "hd   hd   hd   hd    hd   hd      hd   hd      hd      hd     hd     hd"
+      "hd   hd   hd   hd    hd   hd      hd   hd      hd      hd     hd     hd"
+      "hd   hd   hd   hd    hd   hd      hd   hd      hd      hd     hd     hd"
+  
+      "bg   bg   bg   bg   bg    bg      bg   bg      bg      bg     bg     bg "
+      ".    .    .    .     .     .      .    .       .       .       .      ."
+
+      "es   es   es   es   es    es      es   es      es      es      es     es"
+      "ed   ed   ed   ed   ed    ed      ed   ed      ed      ed      ed     ed"
+      ".    .    .    .     .     .      .    .       .       .       .      ."
+      "bf   bf   bf   bf    bf   bf      bf    bf      bf      bf      bf     bf"
+      ".    .    .    .     .     .      .    .       .       .       .      .";
+  
+  }
+  
+  
+  
+  .ecomCase-flex-head {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    grid-area: hd;
+    background-image: url(/images/case-econ-bg.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 16px;
+  
+  }
+  
+  #ecomCase-head{
+    height: auto;
+    width: auto;
+    font-family: Bebas-kai;
+    font-size: 4rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: white;
+    text-align: center;
+  
+  
+  }
+  
+  #ecomCase-img{
+    height: auto;
+    width: auto;
+   }
+  
+   #case-img{
+    height: 100%;
+    width: 100%;
+  }
+  
+   #ecomCase-background{
+    height: 2.25rem;
+    font-family: bebas-kai;
+    font-size: 3.5rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #00cccc;
+    grid-area: bg;
+    justify-self: center;
+   }
+  
+   #ecomCase-services{
+    width: auto;
+    font-family: bebas-kai;
+    font-size: 1.25rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #00cccc;
+    justify-self: center;
+  
+    grid-area: es;
+  
+   }
+  
+   #service-type{
+    font-family: Roboto;
+    color: white;
+  
+   }
+  
+   #ecomCase-description{
+    height: 2.25rem;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: white;
+    grid-area: ed;
+    justify-self: center;
+    text-align: center;
+    margin: 16px;
+  
+   }
+  
+  
+  #behance-flex{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row nowrap;
+    grid-area: bf;
+    margin: 16px;
+  
+  
+  }
+  
+  #behance-text{
+    align-self: center;
+    height: 2.25rem;
+    font-family: Roboto;
+    font-size: 1.3rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: white;
+  
+  }
+  
+  
+  
+  }
