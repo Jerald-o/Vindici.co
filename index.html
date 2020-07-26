@@ -35,52 +35,56 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/scrollreveal"></script>
-
   </head>
   <body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<section class="navigation">
-  <div class="nav-container">
-    <div class="brand">
-      <a href="#!"><img src="/images/head-logo.svg" alt=""></a>
+    <section class="navigation">
+      <div class="nav-container">
+        <div class="brand">
+          <a href="#!"><img src="/images/head-logo.svg" alt="" /></a>
+        </div>
+        <nav>
+          <div class="nav-mobile">
+            <a id="nav-toggle" href="#!"><span></span></a>
+          </div>
+          <ul class="nav-list">
+            <li>
+              <a href="#!">Home</a>
+            </li>
+            <li>
+              <a href="#!">Works</a>
+            </li>
+            <li>
+              <a href="#!">Process</a>
+            </li>
+            <li>
+              <a href="#!">Contact</a>
+            </li>
+          </ul>
+        </ul>        
+        </nav>
+      </div>
+    </section>
+    <div class="hero-wrapper">
+      <div class="hero-cols">
+        <div id="hero-header"><p>We Design Incredible Things</p></div>
+        <div id="hero-connect"><p>Connect</p></div>
+        <div id="connect-flex-wrapper">
+          <div id="connect-ig">
+            <img src="/images/Instagram.svg" alt="instagram" />
+          </div>
+          <div id="connect-linkedin">
+            <img src="/images/Linkedin.svg" alt="linkedin" />
+          </div>
+          <div id="connect-behance">
+            <img src="/images/Behance.svg" alt="behance" />
+          </div>
+        </div>
+      </div>
     </div>
-    <nav>
-      <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
-      <ul class="nav-list">
-        <li>
-          <a href="#!">Home</a>
-        </li>
-        <li>
-          <a href="#!">Works</a>
-        </li>
-        <li>
-          <a href="#!">Process</a>
-        </li>
-        <li>
-          <a href="#!">Contact</a>
-        </li>
-          </ul>        
-      </ul>
-    </nav>
-  </div>
-</section>
-<div class="hero-wrapper">
-  <div class="hero-cols">
-  <div id="hero-header"><p>We Design Incredible Things</p></div>
-  <div id="hero-connect"><p>Connect</p></div>
-  <div id="connect-flex-wrapper">
-    <div id="connect-ig"><img src="/images/Instagram.svg" alt="instagram"></div>
-    <div id="connect-linkedin"><img src="/images/Linkedin.svg" alt="linkedin"></div>
-    <div id="connect-behance"><img src="/images/Behance.svg" alt="behance"></div>
-  </div>
-</div>
-</div>
-<section id="section02" class="demo">
-  <a id="scroll-img" href="#service-wrapper"><span></span></a>
-</section>
-
-
-
+    <section id="section02" class="demo">
+      <a id="scroll-img" href="#service-wrapper"><span></span></a>
+    </section>
 
     <div id="service-wrapper">
       <div class="service-cols">
@@ -155,7 +159,7 @@
         <div class="hvr-underline-from-left" id="partners-gsub">
           <img id="gsub-pic" src="/images/GSUB.png" alt="gsub" />
         </div>
-        <div class="hvr-underline-from-center"  id="partners-ecom">
+        <div class="hvr-underline-from-center" id="partners-ecom">
           <img id="ecom-pic" src="/images/Ecom.png" alt="ecom" />
         </div>
         <div class="hvr-underline-from-right" id="partners-jckicks">
@@ -171,9 +175,15 @@
       <div id="project-cols">
         <div id="project-header"><p>projects</p></div>
         <div id="project-sections">
-          <div class="hvr-underline-from-left" id="project-identity"><p>Brand Identity</p></div>
-          <div class="hvr-underline-from-center" id="project-development"><p>UI/Web Development</p></div>
-          <div class="hvr-underline-from-right" id="project-marketing"><p>Digital Marketing</p></div>
+          <div class="hvr-underline-from-left" id="project-identity">
+            <p>Brand Identity</p>
+          </div>
+          <div class="hvr-underline-from-center" id="project-development">
+            <p>UI/Web Development</p>
+          </div>
+          <div class="hvr-underline-from-right" id="project-marketing">
+            <p>Digital Marketing</p>
+          </div>
         </div>
 
         <div
@@ -249,9 +259,15 @@
         </div>
 
         <ul id="project-slider-wrapper">
-          <li class="slider-gsub hvr-underline-from-left"><img src="/images/GSUB.png" alt="" /></li>
-          <li class="slider-ecom hvr-underline-from-center"><img src="/images/Ecom.png" /></li>
-          <li class="slider-jck hvr-underline-from-right"><img src="/images/JCK.png" /></li>
+          <li class="slider-gsub hvr-underline-from-left">
+            <img src="/images/GSUB.png" alt="" />
+          </li>
+          <li class="slider-ecom hvr-underline-from-center">
+            <img src="/images/Ecom.png" />
+          </li>
+          <li class="slider-jck hvr-underline-from-right">
+            <img src="/images/JCK.png" />
+          </li>
         </ul>
       </div>
     </div>
@@ -318,8 +334,12 @@
           <p id="contact-text-blue">Lets Work.</p>
         </div>
         <div class="contact-button">
-          <form id="creative-button" action="https://formspree.io/xwkraovk" method="POST">
-            <input id="creative-button" type="submit" value="Creative Brief">
+          <form
+            id="creative-button"
+            action="https://formspree.io/xwkraovk"
+            method="POST"
+          >
+            <input id="creative-button" type="submit" value="Creative Brief" />
           </form>
         </div>
       </div>
@@ -358,7 +378,7 @@
           rows="10"
         ></textarea>
 
-        <input class="hvr-grow" id="submit" type="submit" value="submit">
+        <input class="hvr-grow" id="submit" type="submit" value="submit" />
       </form>
     </div>
 
@@ -380,10 +400,10 @@
           <img src="/images/Linkedin.png" alt="linkedin" />
         </div>
         <div class="hvr-grow" id="footer-menu"><p>Menu</p></div>
-        <div class="hvr-grow"  id="footer-home"><p>Home</p></div>
-        <div class="hvr-grow"  id="footer-work"><p>Work</p></div>
+        <div class="hvr-grow" id="footer-home"><p>Home</p></div>
+        <div class="hvr-grow" id="footer-work"><p>Work</p></div>
         <div class="hvr-grow" id="footer-process"><p>Process</p></div>
-        <div class="hvr-grow"  id="footer-contact"><p>Contact</p></div>
+        <div class="hvr-grow" id="footer-contact"><p>Contact</p></div>
         <div id="footer-tm">
           <p>
             Designed & Developed by Vindici Co. © 2019-2020. All rights reserved
@@ -391,7 +411,6 @@
         </div>
       </div>
     </div>
-
   </body>
 
   <script>
@@ -401,86 +420,93 @@
     });
   </script>
 
-<script>(function($) { // Begin jQuery
-  $(function() { // DOM ready
-    // If a link has a dropdown, add sub menu toggle.
-    $('nav ul li a:not(:only-child)').click(function(e) {
-      $(this).siblings('.nav-dropdown').toggle();
-      // Close one dropdown when selecting another
-      $('.nav-dropdown').not($(this).siblings()).hide();
-      e.stopPropagation();
+  <script>
+    (function ($) {
+      // Begin jQuery
+      $(function () {
+        // DOM ready
+        // If a link has a dropdown, add sub menu toggle.
+        $("nav ul li a:not(:only-child)").click(function (e) {
+          $(this).siblings(".nav-dropdown").toggle();
+          // Close one dropdown when selecting another
+          $(".nav-dropdown").not($(this).siblings()).hide();
+          e.stopPropagation();
+        });
+        // Clicking away from dropdown will remove the dropdown class
+        $("html").click(function () {
+          $(".nav-dropdown").hide();
+        });
+        // Toggle open and close nav styles on click
+        $("#nav-toggle").click(function () {
+          $("nav ul").slideToggle();
+        });
+        // Hamburger to X toggle
+        $("#nav-toggle").on("click", function () {
+          this.classList.toggle("active");
+        });
+      }); // end DOM ready
+    })(jQuery); // end jQuery
+  </script>
+
+  <script>
+    $(function () {
+      $("a[href*=#]").on("click", function (e) {
+        e.preventDefault();
+        $("html, body").animate(
+          { scrollTop: $($(this).attr("href")).offset().top },
+          500,
+          "linear"
+        );
+      });
     });
-    // Clicking away from dropdown will remove the dropdown class
-    $('html').click(function() {
-      $('.nav-dropdown').hide();
-    });
-    // Toggle open and close nav styles on click
-    $('#nav-toggle').click(function() {
-      $('nav ul').slideToggle();
-    });
-    // Hamburger to X toggle
-    $('#nav-toggle').on('click', function() {
-      this.classList.toggle('active');
-    });
-  }); // end DOM ready
-})(jQuery); // end jQuery</script>
+  </script>
 
-<script>$(function() {
-  $('a[href*=#]').on('click', function(e) {
-    e.preventDefault();
-    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
-  });
-});</script>
+  <script>
+    ScrollReveal().reveal("#service-cols");
+    ScrollReveal().reveal(".service-p", { delay: 700 });
+    ScrollReveal().reveal(".service-header", { delay: 500 });
+    ScrollReveal().reveal(".photoshop-icon", { delay: 1000 });
+    ScrollReveal().reveal(".premiere-icon", { delay: 1000 });
+    ScrollReveal().reveal(".figma-icon", { delay: 1000 });
+    ScrollReveal().reveal(".sass-icon", { delay: 1000 });
+    ScrollReveal().reveal(".js-icon", { delay: 1000 });
+    ScrollReveal().reveal(".html-icon", { delay: 1000 });
+    ScrollReveal().reveal(".css-icon", { delay: 1000 });
+    ScrollReveal().reveal(".notion-icon", { delay: 1000 });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+  <script src="https://unpkg.com/popmotion/dist/popmotion.global.min.js"></script>
+  <link href="css/hover-min.css" rel="stylesheet" media="all" />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+    crossorigin="anonymous"
+  />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"
+  ></script>
 
-<script>
-  ScrollReveal().reveal('#service-cols');
-ScrollReveal().reveal('.service-p', { delay: 700 });
-ScrollReveal().reveal('.service-header', { delay: 500 });
-ScrollReveal().reveal('.photoshop-icon', { delay: 1000 });
-ScrollReveal().reveal('.premiere-icon', { delay: 1000 });
-ScrollReveal().reveal('.figma-icon', { delay: 1000 });
-ScrollReveal().reveal('.sass-icon', { delay: 1000 });
-ScrollReveal().reveal('.js-icon', { delay: 1000 });
-ScrollReveal().reveal('.html-icon', { delay: 1000 });
-ScrollReveal().reveal('.css-icon', { delay: 1000 });
-ScrollReveal().reveal('.notion-icon', { delay: 1000 });
+  <script>
+    const container = popmotion.styler(document.querySelector("#hero-header"));
 
-
-
-
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
-<script src="https://unpkg.com/popmotion/dist/popmotion.global.min.js"></script>
-<link href="css/hover-min.css" rel="stylesheet" media="all">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<script
-  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-  integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-  crossorigin="anonymous"
-></script>
-
-
-<script>
-  const container = popmotion.styler(document.querySelector("#hero-header"));
-
-  popmotion
-    .tween({
-      from: {
-        scale: 0.4,
-        opacity: 0,
-        x: -300,
-      },
-      to: {
-        scale: 1,
-        opacity: 1,
-        x: 0,
-      },
-      duration: 1000,
-    })
-    .start(container.set);
-
-
-</script>
+    popmotion
+      .tween({
+        from: {
+          scale: 0.4,
+          opacity: 0,
+          x: -300,
+        },
+        to: {
+          scale: 1,
+          opacity: 1,
+          x: 0,
+        },
+        duration: 1000,
+      })
+      .start(container.set);
+  </script>
 </html>
