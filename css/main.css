@@ -416,7 +416,7 @@ html {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: contain;
+    background-size: cover;
     -ms-grid-columns: (1fr)[6];
         grid-template-columns: repeat(6, 1fr);
     font-size: 40px;
