@@ -209,6 +209,7 @@ html {
     background-origin: content-box;
     background-attachment: fixed;
     background-size: contain;
+    background-repeat: no-repeat;
     grid-template-columns: repeat(6, 1fr);
     font-size: 40px;
     height: 90vh;
@@ -228,8 +229,6 @@ html {
   }
 
   #hero-header{
-    width: 23rem;
-    height: 6.639rem;
     font-family: bebas-kai;
     font-size: 2.845rem;
     font-weight: bold;
@@ -240,7 +239,7 @@ html {
     color: var(--white);
     grid-area: hh;
     text-align: left;
-    margin: 16px;
+    margin-left: .5em;
   }
   
   #hero-header ::after {

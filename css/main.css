@@ -378,6 +378,7 @@ html {
     background-origin: content-box;
     background-attachment: fixed;
     background-size: contain;
+    background-repeat: no-repeat;
     grid-template-columns: repeat(6, 1fr);
     font-size: 40px;
     height: 90vh;
@@ -388,8 +389,6 @@ html {
     grid-template-areas: ".    .    .    .     .     .  " ".    .    .    .     .     .  " ".    .    .    .     .     .  "  "hh   hh   hh    hh  hh    hh  " "hl   hl   hl    hl   .     .  " ".    .    .    .     .     .  ";
   }
   #hero-header {
-    width: 23rem;
-    height: 6.639rem;
     font-family: bebas-kai;
     font-size: 2.845rem;
     font-weight: bold;
@@ -400,7 +399,7 @@ html {
     color: var(--white);
     grid-area: hh;
     text-align: left;
-    margin: 16px;
+    margin-left: .5em;
   }
   #hero-header ::after {
     display: block;
@@ -1208,6 +1207,7 @@ html {
   }
   .service-header {
     justify-self: center;
+    margin-top: 1.2em;
     margin-bottom: -.5em;
     font-size: 2.4rem;
     font-stretch: normal;
@@ -1217,7 +1217,7 @@ html {
     letter-spacing: normal;
     color: white;
     grid-area: head;
-    text-align: center;
+    text-align: left;
     z-index: 2;
   }
   .Vector {
@@ -1489,7 +1489,7 @@ html {
   }
   #process-head {
     font-family: Bebas-kai;
-    font-size: 2.4rem;
+    font-size: 3rem;
     font-weight: normal;
     font-style: normal;
     line-height: normal;
@@ -1497,6 +1497,7 @@ html {
     color: white;
     grid-area: phd;
     margin-top: 5vh;
+    margin-bottom: -.8em;
     justify-content: center;
     justify-self: center;
   }
@@ -1950,7 +1951,7 @@ html {
   }
   #project-header {
     font-family: Bebas-kai;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
