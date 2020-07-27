@@ -410,13 +410,14 @@ html {
   .hero-cols {
     display: -ms-grid;
     display: grid;
-    background-image: url(/images/mobile-hero.png);
+    background-image: url(/images/tiff-logo.png);
+    background-color: #4a4a4a;
     overflow: hidden;
     background-origin: content-box;
-    background-position: center;
+    background-position: center 300px;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: contain;
     -ms-grid-columns: (1fr)[6];
         grid-template-columns: repeat(6, 1fr);
     font-size: 40px;
