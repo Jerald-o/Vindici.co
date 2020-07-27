@@ -408,7 +408,6 @@ html {
         grid-template-columns: 1fr;
   }
   .hero-cols {
-    z-index: 1;
     display: -ms-grid;
     display: grid;
     background-image: url(/images/mobile-hero.png);
@@ -417,7 +416,7 @@ html {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: contain;
     -ms-grid-columns: (1fr)[6];
         grid-template-columns: repeat(6, 1fr);
     font-size: 40px;
