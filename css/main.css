@@ -414,7 +414,7 @@ html {
     background-image: url(/images/mobile-hero.png);
     overflow: hidden;
     background-origin: content-box;
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
