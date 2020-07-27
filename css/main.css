@@ -2606,7 +2606,7 @@ html {
   .ecomCase-wrapper {
     display: -ms-grid;
     display: grid;
-    height: 100vh;
+    height: 120vh;
     width: 100%;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -2617,7 +2617,7 @@ html {
     -ms-grid-columns: (1fr)[12];
         grid-template-columns: repeat(12, 1fr);
     font-size: 40px;
-    height: 100vh;
+    height: 120vh;
     background-color: #4a4a4a;
     width: 100%;
     display: grid;
@@ -2920,7 +2920,7 @@ html {
   .ecomCase-wrapper {
     display: -ms-grid;
     display: grid;
-    height: 100vh;
+    height: 120vh;
     width: 100%;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -2931,7 +2931,7 @@ html {
     -ms-grid-columns: (1fr)[12];
         grid-template-columns: repeat(12, 1fr);
     font-size: 40px;
-    height: 100vh;
+    height: 120vh;
     background-color: #4a4a4a;
     width: 100%;
     display: grid;
@@ -2940,7 +2940,7 @@ html {
     grid-gap: 26px;
         grid-template-areas: ".    .    .    .     .     .      .    .       .       .       .      ." "hd   hd   hd   hd    hd   hd      hd   hd      hd      hd     hd     hd" ".    .    .    .     .     .      .    .       .       .       .      ." ".    bg   bg   bg   bg    bg      .    .       .       .       .      ." ".    es   es   es   es    es      .    .       .       .       .      ." ".    ed   ed   ed   ed    ed      .    bf      bf      bf      bf      ." ".    .    .    .     .     .      .    .       .       .       .      ."  ".    .    .    .     .     .      .    .       .       .       .      .";
   }
-  .ecomCase-flex-head {
+  .gsubCase-flex-head {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2955,7 +2955,7 @@ html {
     -ms-grid-column: 1;
     -ms-grid-column-span: 12;
     grid-area: hd;
-    background-image: url(/images/case-econ-bg.png);
+    background-image: url(/images/new-GSUB.png);
     background-size: contain;
     background-position: 20.5vw center;
     background-repeat: no-repeat;
@@ -2976,7 +2976,7 @@ html {
     height: auto;
     width: auto;
   }
-  #case-img {
+  #gsub-case-img {
     height: 100%;
     width: 100%;
   }
@@ -3072,7 +3072,7 @@ html {
   .ecomCase-wrapper {
     display: -ms-grid;
     display: grid;
-    height: 110vh;
+    height: 80rem;
     width: 100%;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -3083,7 +3083,7 @@ html {
     -ms-grid-columns: (1fr)[12];
         grid-template-columns: repeat(12, 1fr);
     font-size: 40px;
-    height: 110vh;
+    height: 80rem;
     background-color: #4a4a4a;
     width: 100%;
     display: grid;
@@ -3092,7 +3092,7 @@ html {
     grid-gap: 26px;
         grid-template-areas: ".    .    .    .     .     .      .    .       .       .       .      ." "hd   hd   hd   hd    hd   hd      hd   hd      hd      hd     hd     hd" "hd   hd   hd   hd    hd   hd      hd   hd      hd      hd     hd     hd" "hd   hd   hd   hd    hd   hd      hd   hd      hd      hd     hd     hd"  "bg   bg   bg   bg   bg    bg      bg   bg      bg      bg     bg     bg " ".    .    .    .     .     .      .    .       .       .       .      ."  "es   es   es   es   es    es      es   es      es      es      es     es" "ed   ed   ed   ed   ed    ed      ed   ed      ed      ed      ed     ed" ".    .    .    .     .     .      .    .       .       .       .      ." "bf   bf   bf   bf    bf   bf      bf    bf      bf      bf      bf     bf" ".    .    .    .     .     .      .    .       .       .       .      ."  ".    .    .    .     .     .      .    .       .       .       .      .";
   }
-  .ecomCase-flex-head {
+  .gsubCase-flex-head {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3235,7 +3235,7 @@ html {
   .ecomCase-wrapper {
     display: -ms-grid;
     display: grid;
-    height: 100vh;
+    height: 120vh;
     width: 100%;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -3246,7 +3246,7 @@ html {
     -ms-grid-columns: (1fr)[12];
         grid-template-columns: repeat(12, 1fr);
     font-size: 40px;
-    height: 100vh;
+    height: 120vh;
     background-color: #4a4a4a;
     width: 100%;
     display: grid;
@@ -3255,7 +3255,7 @@ html {
     grid-gap: 26px;
         grid-template-areas: ".    .    .    .     .     .      .    .       .       .       .      ." "hd   hd   hd   hd    hd   hd      hd   hd      hd      hd     hd     hd" ".    .    .    .     .     .      .    .       .       .       .      ." ".    bg   bg   bg   bg    bg      .    .       .       .       .      ." ".    es   es   es   es    es      .    .       .       .       .      ." ".    ed   ed   ed   ed    ed      .    bf      bf      bf      bf      ." ".    .    .    .     .     .      .    .       .       .       .      ."  ".    .    .    .     .     .      .    .       .       .       .      .";
   }
-  .ecomCase-flex-head {
+  .altitudeCase-flex-head {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3270,10 +3270,10 @@ html {
     -ms-grid-column: 1;
     -ms-grid-column-span: 12;
     grid-area: hd;
-    background-image: url(/images/case-econ-bg.png);
     background-size: contain;
     background-position: 20.5vw center;
     background-repeat: no-repeat;
+    background-image: url(/images/new-altitude-logo.png);
   }
   #ecomCase-head {
     height: auto;
@@ -3407,7 +3407,7 @@ html {
     grid-gap: 26px;
         grid-template-areas: ".    .    .    .     .     .      .    .       .       .       .      ." "hd   hd   hd   hd    hd   hd      hd   hd      hd      hd     hd     hd" "hd   hd   hd   hd    hd   hd      hd   hd      hd      hd     hd     hd" "hd   hd   hd   hd    hd   hd      hd   hd      hd      hd     hd     hd"  "bg   bg   bg   bg   bg    bg      bg   bg      bg      bg     bg     bg " ".    .    .    .     .     .      .    .       .       .       .      ."  "es   es   es   es   es    es      es   es      es      es      es     es" "ed   ed   ed   ed   ed    ed      ed   ed      ed      ed      ed     ed" ".    .    .    .     .     .      .    .       .       .       .      ." "bf   bf   bf   bf    bf   bf      bf    bf      bf      bf      bf     bf" ".    .    .    .     .     .      .    .       .       .       .      .";
   }
-  .ecomCase-flex-head {
+  .altitudeCase-flex-head {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

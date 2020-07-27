@@ -37,14 +37,14 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <link href="css/hover-min.css" rel="stylesheet" media="all" />
-
   </head>
   <body>
-
     <section class="navigation">
       <div class="nav-container">
         <div class="brand">
-          <a href="#/index.html#home"><img src="/images/head-logo.svg" alt="" /></a>
+          <a href="/index.html#home"
+            ><img src="/images/head-logo.svg" alt=""
+          /></a>
         </div>
         <nav>
           <div class="nav-mobile">
@@ -64,24 +64,23 @@
               <a id="a-override" href="/index.html#contact-left">Contact</a>
             </li>
           </ul>
-          </ul>
+        </ul>
         </nav>
       </div>
     </section>
 
-
     <div class="ecomCase-wrapper">
       <div id="ecomCase-cols">
-        <div class="ecomCase-flex-head">
+        <div class="gsubCase-flex-head">
           <div id="ecomCase-head">
             <p>
+              Blockchain <br />
               Georgia <br />
-              State <br />
-              Blockchain
+              State
             </p>
           </div>
           <div id="ecomCase-img">
-            <img id="case-img" src="/images/case-gsub-img1.png" alt="" />
+            <img id="gsub-case-img" src="/images/gsu-709.png" alt="" />
           </div>
         </div>
         <div id="ecomCase-background"><p>Background</p></div>
@@ -91,15 +90,21 @@
         </div>
         <div id="ecomCase-description">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id in
-            consectetur congue eu vel mattis pellentesque. Donec mi tristique
-            ultrices accumsan nunc est massa velit. At cras mi odio gravida
-            tellus. Consectetur congue tincidunt aliquet malesuada felis lorem.
+            GSU Blockchain is the official blockchain organization of Georgia
+            State University. They offer information on how Cryptocurrencies
+            work, and even host courses on how to create your own decentralized
+            currency. Vindici previously helped GSU Blockchain to develop a
+            complete brand identity, as well as developing the complete stack
+            for their website.
           </p>
         </div>
         <div id="behance-flex">
-          <div id="behance-text"><p>See More Snapshots on Behance  </p></div>
-          <div id="behance-img"><img src="/images/Behance.png" alt="behance"></div>
+          <div id="behance-text"><p>See More Snapshots on Behance</p></div>
+          <a href="https://www.behance.net/VindiciCompany">
+            <div id="behance-img">
+              <img src="/images/Behance.svg" alt="behance" />
+            </div>
+          </a>
         </div>
       </div>
     </div>
@@ -113,19 +118,33 @@
       <div id="footer-right">
         <div id="footer-head"><p>Connect With Us.</p></div>
         <div id="footer-ig">
-          <a href="https://www.instagram.com/vindici.co/?hl=en"> <img src="/images/Instagram.svg" alt="instagram" /> </a>
+          <a href="https://www.instagram.com/vindici.co/?hl=en">
+            <img src="/images/Instagram.svg" alt="instagram" />
+          </a>
         </div>
         <div id="footer-behance">
-        <a href="https://www.behance.net/VindiciCompany"> <img src="/images/Behance.svg" alt="behance" /> </a> 
+          <a href="https://www.behance.net/VindiciCompany">
+            <img src="/images/Behance.svg" alt="behance" />
+          </a>
         </div>
         <div id="footer-linkedin">
-         <a href="https://www.linkedin.com/company/vindici/?viewAsMember=true"> <img src="/images/Linkedin.svg" alt="linkedin" /> </a> 
+          <a href="https://www.linkedin.com/company/vindici/?viewAsMember=true">
+            <img src="/images/Linkedin.svg" alt="linkedin" />
+          </a>
         </div>
-        <div  id="footer-menu"><p>Menu</p></div>
-        <div class="hvr-grow" id="footer-home"><a id="a-override" href="/index.html#home">Home</a></div> 
-        <div class="hvr-grow" id="footer-work"><a id="a-override" href="/index.html#service-wrapper">Work</a></div>
-        <div class="hvr-grow" id="footer-process"><a id="a-override" href="/index.html#process-cols">Process</a> </div>
-        <div class="hvr-grow" id="footer-contact"><a id="a-override" href="/index.html#contact-left">Contact</a></div>
+        <div id="footer-menu"><p>Menu</p></div>
+        <div class="hvr-grow" id="footer-home">
+          <a id="a-override" href="/index.html#home">Home</a>
+        </div>
+        <div class="hvr-grow" id="footer-work">
+          <a id="a-override" href="/index.html#service-wrapper">Work</a>
+        </div>
+        <div class="hvr-grow" id="footer-process">
+          <a id="a-override" href="/index.html#process-cols">Process</a>
+        </div>
+        <div class="hvr-grow" id="footer-contact">
+          <a id="a-override" href="/index.html#contact-left">Contact</a>
+        </div>
         <div id="footer-tm">
           <p>
             Designed & Developed by Vindici Co. © 2019-2020. All rights reserved
@@ -133,9 +152,7 @@
         </div>
       </div>
     </div>
-
   </body>
-
 
   <script>
     (function ($) {
@@ -164,5 +181,4 @@
       }); // end DOM ready
     })(jQuery); // end jQuery
   </script>
-  
 </html>

@@ -6,7 +6,7 @@
 
   .ecomCase-wrapper{
     display: grid;
-    height: 100vh;
+    height: 120vh;
     width: 100%;
     grid-template-columns: 1fr;
   
@@ -18,7 +18,7 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     font-size: 40px;
-    height: 100vh;
+    height: 120vh;
     background-color: #4a4a4a;
     width: 100%;
     display: grid;
@@ -39,15 +39,15 @@
   
   
   
-  .ecomCase-flex-head {
+  .altitudeCase-flex-head {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row nowrap;
     grid-area: hd;
-    background-image: url(/images/case-econ-bg.png);
     background-size: contain;
     background-position: 20.5vw center;
     background-repeat: no-repeat;
+    background-image: url(/images/new-altitude-logo.png);
   }
   
   #ecomCase-head{
@@ -203,7 +203,7 @@
   
   
   
-  .ecomCase-flex-head {
+  .altitudeCase-flex-head {
     display: flex;
     justify-content: center;
     justify-items: center;

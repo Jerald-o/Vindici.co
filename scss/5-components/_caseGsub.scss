@@ -6,7 +6,7 @@
 
   .ecomCase-wrapper{
     display: grid;
-    height: 100vh;
+    height: 120vh;
     width: 100%;
     grid-template-columns: 1fr;
   
@@ -18,7 +18,7 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     font-size: 40px;
-    height: 100vh;
+    height: 120vh;
     background-color: #4a4a4a;
     width: 100%;
     display: grid;
@@ -39,12 +39,12 @@
   
   
   
-  .ecomCase-flex-head {
+  .gsubCase-flex-head {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row nowrap;
     grid-area: hd;
-    background-image: url(/images/case-econ-bg.png);
+    background-image: url(/images/new-GSUB.png);
     background-size: contain;
     background-position: 20.5vw center;
     background-repeat: no-repeat;
@@ -70,7 +70,7 @@
     width: auto;
    }
   
-   #case-img{
+   #gsub-case-img{
     height: 100%;
     width: 100%;
    }
@@ -166,7 +166,7 @@
   
   .ecomCase-wrapper{
     display: grid;
-    height: 110vh;
+    height: 80rem;
     width: 100%;
     grid-template-columns: 1fr;
   
@@ -178,7 +178,7 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     font-size: 40px;
-    height: 110vh;
+    height: 80rem;
     background-color: #4a4a4a;
     width: 100%;
     display: grid;
@@ -205,7 +205,7 @@
   
   
   
-  .ecomCase-flex-head {
+  .gsubCase-flex-head {
     display: flex;
     justify-content: center;
     justify-items: center;
