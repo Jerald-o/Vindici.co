@@ -273,7 +273,7 @@ html {
     -ms-grid-rows: auto;
         grid-template-rows: auto;
     grid-gap: 26px;
-        grid-template-areas: ".      .      .      .       .     .      .      .     .      .    .      . " ".      .      .      .       .     .      .      .     .      .    .      . " ".      .      .      .       .     .      .      .     .      .    .      . " ".      .      .      .       .     .      .      .     .      .    .      . " ".     hh     hh     hh      hh     hh     .      .     .      .    .      . " ".     hh     hh     hh      hh     hh     .      .     .      .    .      . " ".      .      .      .       .     .      .      .     .      .    .      . " ".      .      .      .       .     .      .      .     .      .    cfw      . " ".      .      .      .       .     .      .      .     .     hc   cfw      . " ".      .      .      .       .     .      .      .     .      .    .      . ";
+        grid-template-areas: ".      .      .      .       .     .      .      .     .      .    .      . " ".      .      .      .       .     .      .      .     .      .    .      . " ".      .      .      .       .     .      .      .     .      .    .      . " ".      .      .      .       .     .      .      .     .      .    .      . " ".     hh     hh     hh      hh     hh     .      .     .      .    .      . " ".     hh     hh     hh      hh     hh     .      .     .      .    .      . " ".      cfw    .      .       .     .      .      .     .      .    .      . " ".      cfw    .     .       .     .      .      .     .      .    .      . " ".      .      .      .       .     .      .      .     .      .    .      . " ".      .      .      .       .     .      .      .     .      .    .      . "  ".      .      .      .       .     .      .      .     .      .    .      . ";
   }
   section::after {
     position: absolute;
@@ -281,7 +281,6 @@ html {
     left: 0;
     content: '';
     width: 100%;
-    height: 80%;
   }
   .demo a {
     position: absolute;
@@ -367,8 +366,6 @@ html {
     line-height: normal;
     letter-spacing: normal;
     color: var(--white);
-    -ms-grid-row: 9;
-    -ms-grid-column: 10;
     grid-area: hc;
   }
   #connect-flex-wrapper {
@@ -384,9 +381,9 @@ html {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    -ms-grid-row: 8;
+    -ms-grid-row: 7;
     -ms-grid-row-span: 2;
-    -ms-grid-column: 11;
+    -ms-grid-column: 2;
     grid-area: cfw;
   }
 }
@@ -1670,7 +1667,7 @@ html {
     -ms-grid-rows: auto;
         grid-template-rows: auto;
     grid-gap: 26px;
-        grid-template-areas: ".    .    .    .     .     .      .    .       .       .       .      ." ".   phd  phd   phd     .     .      .    .       .       .       .      ." ".    .    .    .     .     .      .    .       .       .       .      ." ".    p1   p2   p3    p4    p5     .    .       .       .       .      ." ".    p6   p7   p8    p9    p10    .   ppg     ppg     ppg     ppg     ." ".    .    .    .     .     .      .    .       .       .       .      ." ".    .    .    .     .     .      .    .       .       .       .      ." ".    .    .    .     .     .      .    .       .       .       .      .";
+        grid-template-areas: ".    .    .    .     .     .      .    .       .       .       .      ." ".   phd  phd   phd   .     .      .    .       .       .       .      ." ".    .    .    .     .     .      .    .       .       .       .      ." ".    p1   p2   p3    p4    p5     .    .       .       .       .      ." ".    p6   p7   p8    p9    p10    .   ppg     ppg     ppg     ppg     ." ".    .    .    .     .     .      .    .       .       .       .      ." ".    .    .    .     .     .      .    .       .       .       .      ." ".    .    .    .     .     .      .    .       .       .       .      .";
   }
   #process-head {
     height: 2.25rem;
@@ -1798,6 +1795,7 @@ html {
     -ms-grid-column-span: 4;
     grid-area: ppg;
     margin-top: -7vh;
+    text-align: left;
   }
 }
 
@@ -2146,7 +2144,7 @@ html {
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-area: bh1;
-    width: 24.188rem;
+    width: auto;
     margin-left: 10vw;
     font-weight: normal;
     font-stretch: normal;
@@ -2221,6 +2219,16 @@ html {
   overflow-x: hidden;
 }
 
+#a-override {
+  color: white;
+  text-decoration: none;
+}
+
+#a-override:hover, #a-override:focus {
+  color: white;
+  text-decoration: none;
+}
+
 @media (min-width: 1056px) {
   .project-wrapper {
     display: -ms-grid;
@@ -2247,7 +2255,7 @@ html {
     display: grid;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
-        grid-template-areas: ".    .    .    .    .   .    .   .    .    .    .    ."  ".    .    .    hd   hd   hd  hd  hd   hd    .    .     ." ".    .    .    ps   ps   ps  ps  ps   ps    .    .    ." ".    .    .    gy   gy   gy  gy  gy   gy    .    .    . " ".    .    .    .    .   .    .   .    .    .    .    ." ".    .    .    .    .    .    .   .    .    .    .    ." ".    .    .    .    .    sl  sl   .    .    .    .    . " ".    .    .    .    .    .    .   .    .    .    .    .";
+        grid-template-areas: ".    .    .    .    .   .    .   .    .    .    .    ."  ".    .    .    hd   hd   hd  hd  hd   hd    .    .     ." ".    .    .    ps   ps   ps  ps  ps   ps    .    .    ." ".    .    .    gy   gy   gy  gy  gy   gy    .    .    . " ".    .    .    .    .    .    .   .    .    .    .    .";
   }
   #project-header {
     font-family: Bebas-kai;
@@ -2356,9 +2364,6 @@ html {
         -ms-flex-pack: center;
             justify-content: center;
     justify-self: center;
-    -ms-grid-row: 7;
-    -ms-grid-column: 6;
-    -ms-grid-column-span: 2;
     grid-area: sl;
     -ms-flex-line-pack: center;
         align-content: center;
@@ -2446,7 +2451,7 @@ html {
   .project-wrapper {
     display: -ms-grid;
     display: grid;
-    height: 107.563rem;
+    height: 40rem;
     width: 100%;
     -o-object-fit: contain;
        object-fit: contain;
@@ -2464,12 +2469,12 @@ html {
     -ms-grid-columns: (1fr)[12];
         grid-template-columns: repeat(12 1fr);
     font-size: 30px;
-    height: 107.563rem;
+    height: 40rem;
     width: 100%;
     display: grid;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
-        grid-template-areas: ".    .    .    .    .   .    .   .    .    .    .    ."  ".    .    .    hd   hd   hd  hd  hd   hd    .    .     ." ".    .    .    .    .   .    .   .    .    .    .    ." ".    .    .    ps   ps   ps  ps  ps   ps    .    .    ." ".    .    .    .    .   .    .   .    .    .    .    ." ".    .    .    gy   gy   gy  gy  gy   gy    .    .    . " ".    .    .    .    .    .    .   .    .    .    .    ." ".    .    .    .    .   .    .   .    .    .    .    ." ".    .    .    .    .   .    .   .    .    .    .    ." ".    .    .    .    .    sl  sl   .    .    .    .    . " ".    .    .    .    .    sl  sl   .    .    .    .    . " ".    .    .    .    .    sl  sl   .    .    .    .    . " ".    .    .    .    .    sl  sl   .    .    .    .    . " ".    .    .    .    .   .    .   .    .    .    .    ."  ".    .    .    .    .    .    .   .    .    .    .    .";
+        grid-template-areas: ".    .    .    .    .   .    .   .    .     .    .    ." ".    .    .    hd   hd   hd  hd  hd   hd    .    .    ." ".    .    .    .    .   .    .   .    .     .    .    ." ".    .    .    ps   ps   ps  ps  ps   ps    .    .    ." ".    .    .    .    .   .    .   .    .     .    .    ." ".    .    .    gy   gy   gy  gy  gy   gy    .    .    . " ".    .    .    .    .    .    .   .    .    .    .    .";
   }
   #project-header {
     font-family: Bebas-kai;
@@ -2581,10 +2586,6 @@ html {
             justify-content: flex-start;
     padding-right: 2.3rem;
     list-style: none;
-    -ms-grid-row: 10;
-    -ms-grid-row-span: 4;
-    -ms-grid-column: 6;
-    -ms-grid-column-span: 2;
     grid-area: sl;
   }
   .slider-gsub {
@@ -2995,7 +2996,7 @@ html {
     grid-area: bg;
     margin-top: 5vh;
   }
-  #ecomCase-services {
+  #gsubCase-services {
     width: auto;
     font-family: bebas-kai;
     font-size: 2.25rem;
@@ -3009,6 +3010,7 @@ html {
     -ms-grid-column: 2;
     -ms-grid-column-span: 5;
     grid-area: es;
+    margin-top: 16px;
   }
   #service-type {
     font-family: Roboto;
@@ -3154,7 +3156,322 @@ html {
     -ms-grid-column-align: center;
         justify-self: center;
   }
-  #ecomCase-services {
+  #gsubCase-services {
+    width: auto;
+    font-family: bebas-kai;
+    font-size: 1.25rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #00cccc;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-area: es;
+  }
+  #service-type {
+    font-family: Roboto;
+    color: white;
+  }
+  #ecomCase-description {
+    height: 2.25rem;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: white;
+    -ms-grid-row: 8;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-area: ed;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    text-align: center;
+    margin: 16px;
+  }
+  #behance-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row nowrap;
+            flex-direction: row nowrap;
+    -ms-grid-row: 10;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-area: bf;
+    margin: 16px;
+  }
+  #behance-text {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    height: 2.25rem;
+    font-family: Roboto;
+    font-size: 1.3rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: white;
+  }
+}
+
+/*
+ v v  v SCSS for Desktop  v v v
+*/
+@media (min-width: 1056px) {
+  .ecomCase-wrapper {
+    display: -ms-grid;
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #ecomCase-cols {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[12];
+        grid-template-columns: repeat(12, 1fr);
+    font-size: 40px;
+    height: 100vh;
+    background-color: #4a4a4a;
+    width: 100%;
+    display: grid;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    grid-gap: 26px;
+        grid-template-areas: ".    .    .    .     .     .      .    .       .       .       .      ." "hd   hd   hd   hd    hd   hd      hd   hd      hd      hd     hd     hd" ".    .    .    .     .     .      .    .       .       .       .      ." ".    bg   bg   bg   bg    bg      .    .       .       .       .      ." ".    es   es   es   es    es      .    .       .       .       .      ." ".    ed   ed   ed   ed    ed      .    bf      bf      bf      bf      ." ".    .    .    .     .     .      .    .       .       .       .      ."  ".    .    .    .     .     .      .    .       .       .       .      .";
+  }
+  .ecomCase-flex-head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row nowrap;
+            flex-direction: row nowrap;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-area: hd;
+    background-image: url(/images/case-econ-bg.png);
+    background-size: contain;
+    background-position: 20.5vw center;
+    background-repeat: no-repeat;
+  }
+  #ecomCase-head {
+    height: auto;
+    width: auto;
+    font-family: Bebas-kai;
+    font-size: 5.25rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: white;
+  }
+  #ecomCase-img {
+    height: auto;
+    width: auto;
+  }
+  #case-img {
+    height: 100%;
+    width: 100%;
+  }
+  #ecomCase-background {
+    height: 2.25rem;
+    font-family: bebas-kai;
+    font-size: 4.5rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #00cccc;
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 5;
+    grid-area: bg;
+    margin-top: 5vh;
+  }
+  #ecomCase-services1 {
+    width: auto;
+    font-family: bebas-kai;
+    font-size: 2.25rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #00cccc;
+    -ms-grid-row: 5;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 5;
+    grid-area: es;
+    margin-top: 16px;
+  }
+  #service-type {
+    font-family: Roboto;
+    color: white;
+  }
+  #ecomCase-description {
+    height: 2.25rem;
+    font-family: Roboto;
+    font-size: 1.3rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: white;
+    -ms-grid-row: 6;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 5;
+    grid-area: ed;
+  }
+  #behance-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row nowrap;
+            flex-direction: row nowrap;
+    -ms-grid-row: 6;
+    -ms-grid-column: 8;
+    -ms-grid-column-span: 4;
+    grid-area: bf;
+  }
+  #behance-text {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    height: 2.25rem;
+    font-family: Roboto;
+    font-size: 1.3rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: white;
+  }
+  #behance-img {
+    padding-top: 1vw;
+  }
+}
+
+/*
+   v v  v SCSS for Mobile and Tablet  v v v
+  */
+@media (max-width: 1056px) {
+  .ecomCase-wrapper {
+    display: -ms-grid;
+    display: grid;
+    height: 110vh;
+    width: 100%;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #ecomCase-cols {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[12];
+        grid-template-columns: repeat(12, 1fr);
+    font-size: 40px;
+    height: 110vh;
+    background-color: #4a4a4a;
+    width: 100%;
+    display: grid;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    grid-gap: 26px;
+        grid-template-areas: ".    .    .    .     .     .      .    .       .       .       .      ." "hd   hd   hd   hd    hd   hd      hd   hd      hd      hd     hd     hd" "hd   hd   hd   hd    hd   hd      hd   hd      hd      hd     hd     hd" "hd   hd   hd   hd    hd   hd      hd   hd      hd      hd     hd     hd"  "bg   bg   bg   bg   bg    bg      bg   bg      bg      bg     bg     bg " ".    .    .    .     .     .      .    .       .       .       .      ."  "es   es   es   es   es    es      es   es      es      es      es     es" "ed   ed   ed   ed   ed    ed      ed   ed      ed      ed      ed     ed" ".    .    .    .     .     .      .    .       .       .       .      ." "bf   bf   bf   bf    bf   bf      bf    bf      bf      bf      bf     bf" ".    .    .    .     .     .      .    .       .       .       .      .";
+  }
+  .ecomCase-flex-head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-area: hd;
+    background-image: url(/images/case-econ-bg.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 16px;
+  }
+  #ecomCase-head {
+    height: auto;
+    width: auto;
+    font-family: Bebas-kai;
+    font-size: 4rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: white;
+    text-align: center;
+  }
+  #ecomCase-img {
+    height: auto;
+    width: auto;
+  }
+  #case-img {
+    height: 100%;
+    width: 100%;
+  }
+  #ecomCase-background {
+    height: 2.25rem;
+    font-family: bebas-kai;
+    font-size: 3.5rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #00cccc;
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-area: bg;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  #ecomCase-services1 {
     width: auto;
     font-family: bebas-kai;
     font-size: 1.25rem;

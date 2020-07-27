@@ -41,43 +41,43 @@
     <section class="navigation">
       <div class="nav-container">
         <div class="brand">
-          <a href="#!"><img src="/images/head-logo.svg" alt="" /></a>
+          <a href="#home"><img src="/images/head-logo.svg" alt="" /></a>
         </div>
-        <nav>
+        <nav id="home">
           <div class="nav-mobile">
             <a id="nav-toggle" href="#!"><span></span></a>
           </div>
           <ul class="nav-list">
             <li>
-              <a href="#!">Home</a>
+              <a href="#home">Home</a> 
             </li>
             <li>
-              <a href="#!">Works</a>
+              <a href="#service-wrapper">Works</a> 
             </li>
             <li>
-              <a href="#!">Process</a>
+              <a href="#process-cols">Process</a>
             </li>
             <li>
-              <a href="#!">Contact</a>
+              <a href="#contact-left">Contact</a>
             </li>
           </ul>
-        </ul>        
+          </ul>
         </nav>
       </div>
     </section>
-    <div class="hero-wrapper">
+
+    <div  class="hero-wrapper">
       <div class="hero-cols">
         <div id="hero-header"><p>We Design Incredible Things</p></div>
-        <div id="hero-connect"><p>Connect</p></div>
         <div id="connect-flex-wrapper">
           <div id="connect-ig">
-            <img src="/images/Instagram.svg" alt="instagram" />
+            <a href="https://www.instagram.com/vindici.co/?hl=en"> <img src="/images/Instagram.svg" alt="instagram" /> </a>
           </div>
           <div id="connect-linkedin">
-            <img src="/images/Linkedin.svg" alt="linkedin" />
+            <a href="https://www.linkedin.com/company/vindici/?viewAsMember=true"> <img src="/images/Linkedin.svg" alt="linkedin" /> </a> 
           </div>
           <div id="connect-behance">
-            <img src="/images/Behance.svg" alt="behance" />
+            <a href="https://www.behance.net/VindiciCompany"> <img src="/images/Behance.svg" alt="behance" /> </a> 
           </div>
         </div>
       </div>
@@ -92,8 +92,9 @@
         <div class="service-p">
           <p id="service-ptext">
             Have a concept you need done but don’t quite have the words to
-            articulate it? No worries, we got you. From Graphic Design to Web
-            Development we run a full stack creative media agency. <br />
+            articulate it? We have you covered. From Graphic Design to Web
+            Development we run a full stack creative media agency.
+            <br />
             <br />
           </p>
           <p id="service-ptxt2">
@@ -154,16 +155,16 @@
           <p>Partners</p>
         </div>
         <div id="partners-bh1">
-          <p>Partners</p>
+          <p id="bh1">Partners</p>
         </div>
         <div class="hvr-underline-from-left" id="partners-gsub">
-          <img id="gsub-pic" src="/images/GSUB.png" alt="gsub" />
+         <a href="./case_gsub.html"> <img id="gsub-pic" src="/images/GSUB.png" alt="gsub" /> </a>
         </div>
         <div class="hvr-underline-from-center" id="partners-ecom">
-          <img id="ecom-pic" src="/images/Ecom.png" alt="ecom" />
+        <a href="./case_Jckicks.html"> <img id="ecom-pic" src="/images/altitude-logo.png" alt="ecom" /> </a>
         </div>
         <div class="hvr-underline-from-right" id="partners-jckicks">
-          <img id="jc-pic" src="/images/JCK.png" alt="jc kicks" />
+        <a href="./case_ecom.html">  <img id="jc-pic" src="/images/Ecom.png" alt="jc kicks" /> </a>
         </div>
         <div id="partners-bg">
           <img src="/images/bg-nowords.png" alt="bg" />
@@ -176,13 +177,14 @@
         <div id="project-header"><p>projects</p></div>
         <div id="project-sections">
           <div class="hvr-underline-from-left" id="project-identity">
-            <p>Brand Identity</p>
+            <a id="a-override" href="/case_Jckicks.html">Brand Identity </a>
           </div>
           <div class="hvr-underline-from-center" id="project-development">
-            <p>UI/Web Development</p>
+            <a id="a-override" href="/case_gsub.html">UI/Web Development </a>
           </div>
           <div class="hvr-underline-from-right" id="project-marketing">
-            <p>Digital Marketing</p>
+            <a id="a-override" href="/case_ecom.html">Digital Marketing </a>
+
           </div>
         </div>
 
@@ -209,29 +211,35 @@
           <div class="carousel-inner" role="listbox">
             <!--First slide-->
             <div class="carousel-item active">
-              <img
-                class="d-block w-100"
-                src="/images/BGSU-project.png"
-                alt="First slide"
-              />
+              <a href="/case_gsub.html">
+                <img
+                  class="d-block w-100"
+                  src="/images/BGSU-project.png"
+                  alt="First slide"
+                />
+              </a>
             </div>
             <!--/First slide-->
             <!--Second slide-->
             <div class="carousel-item">
-              <img
-                class="d-block w-100"
-                src="/images/Altitude-project.png"
-                alt="Second slide"
-              />
+              <a href="/case_Jckicks.html">
+                <img
+                  class="d-block w-100"
+                  src="/images/altitude-case-small.png"
+                  alt="Second slide"
+                />
+              </a>
             </div>
             <!--/Second slide-->
             <!--Third slide-->
             <div class="carousel-item">
-              <img
-                class="d-block w-100"
-                src="/images/JCKicks-project.png"
-                alt="Third slide"
-              />
+              <a href="/case_ecom.html">
+                <img
+                  class="d-block w-100"
+                  src="/images/ecom-case-small.png"
+                  alt="Third slide"
+                />
+              </a>
             </div>
             <!--/Third slide-->
           </div>
@@ -257,20 +265,6 @@
           </a>
           <!--/.Controls-->
         </div>
-
-        <ul id="project-slider-wrapper">
-          <li class="slider-gsub hvr-underline-from-left">
-            <a href="/case_ecom.html">
-            <img src="/images/GSUB.png" alt="" />
-          </a>
-          </li>
-          <li class="slider-ecom hvr-underline-from-center">
-            <img src="/images/Ecom.png" />
-          </li>
-          <li class="slider-jck hvr-underline-from-right">
-            <img src="/images/JCK.png" />
-          </li>
-        </ul>
       </div>
     </div>
 
@@ -321,9 +315,9 @@
         </div>
         <div id="process-pg">
           <p>
-            Have a concept you need done but don’t quite have the words to
-            articulate it? No worries, we got you. From Graphic Design to Web
-            Development we run a full stack creative media agency.
+          Throughout our 10 step
+            process, we utilize state of the art client management solutions to
+            keep you integrated into the creative process from start to launch.
           </p>
         </div>
       </div>
@@ -332,7 +326,7 @@
     <div class="contact-wrapper">
       <div id="contact-left">
         <div id="contact-head">
-          <p>Seen Enough?</p>
+          <p>Bring your idea to life.</p>
           <p id="contact-text-blue">Lets Work.</p>
         </div>
         <div class="contact-button">
@@ -393,19 +387,19 @@
       <div id="footer-right">
         <div id="footer-head"><p>Connect With Us.</p></div>
         <div id="footer-ig">
-          <img src="/images/insta.png" alt="instagram" />
+          <a href="https://www.instagram.com/vindici.co/?hl=en"> <img src="/images/Instagram.svg" alt="instagram" /> </a>
         </div>
         <div id="footer-behance">
-          <img src="/images/Behance.png" alt="behance" />
+        <a href="https://www.behance.net/VindiciCompany"> <img src="/images/Behance.svg" alt="behance" /> </a> 
         </div>
         <div id="footer-linkedin">
-          <img src="/images/Linkedin.png" alt="linkedin" />
+         <a href="https://www.linkedin.com/company/vindici/?viewAsMember=true"> <img src="/images/Linkedin.svg" alt="linkedin" /> </a> 
         </div>
-        <div class="hvr-grow" id="footer-menu"><p>Menu</p></div>
-        <div class="hvr-grow" id="footer-home"><p>Home</p></div>
-        <div class="hvr-grow" id="footer-work"><p>Work</p></div>
-        <div class="hvr-grow" id="footer-process"><p>Process</p></div>
-        <div class="hvr-grow" id="footer-contact"><p>Contact</p></div>
+        <div  id="footer-menu"><p>Menu</p></div>
+        <div class="hvr-grow" id="footer-home"><a id="a-override" href="#home">Home</a></div> 
+        <div class="hvr-grow" id="footer-work"><a id="a-override" href="#service-wrapper">Work</a></div>
+        <div class="hvr-grow" id="footer-process"><a id="a-override" href="#process-cols">Process</a> </div>
+        <div class="hvr-grow" id="footer-contact"><a id="a-override" href="#contact-left">Contact</a></div>
         <div id="footer-tm">
           <p>
             Designed & Developed by Vindici Co. © 2019-2020. All rights reserved

@@ -11,6 +11,16 @@ html {
 
 }
 
+#a-override {
+  color: white;
+  text-decoration: none;
+}
+
+#a-override:hover, #a-override:focus {
+  color: white;
+  text-decoration: none;
+}
+
 @media (min-width: 1056px) { 
 
 .project-wrapper {
@@ -37,9 +47,6 @@ html {
   ".    .    .    hd   hd   hd  hd  hd   hd    .    .     ."
   ".    .    .    ps   ps   ps  ps  ps   ps    .    .    ."
   ".    .    .    gy   gy   gy  gy  gy   gy    .    .    . "
-  ".    .    .    .    .   .    .   .    .    .    .    ."
-  ".    .    .    .    .    .    .   .    .    .    .    ."
-  ".    .    .    .    .    sl  sl   .    .    .    .    . "
   ".    .    .    .    .    .    .   .    .    .    .    .";
 
 }
@@ -82,7 +89,6 @@ html {
   text-align: center;
   justify-self: center;
   
-
 }
 
 
@@ -201,7 +207,7 @@ html {
 
   .project-wrapper {
     display: grid;
-    height: 107.563rem;
+    height: 40rem;
     width: 100%;
     object-fit: contain;
     grid-template-columns: 1fr;
@@ -214,27 +220,17 @@ html {
     background: linear-gradient(90deg, #4a4a4a 50%, #3b3b3b 50%);
     grid-template-columns: repeat(12 1fr);
     font-size: 30px;
-    height: 107.563rem;
+    height: 40rem;
     width: 100%;
     display: grid;
     grid-template-rows: auto;
     grid-template-areas:
-    ".    .    .    .    .   .    .   .    .    .    .    ."
-  
-    ".    .    .    hd   hd   hd  hd  hd   hd    .    .     ."
-    ".    .    .    .    .   .    .   .    .    .    .    ."
+    ".    .    .    .    .   .    .   .    .     .    .    ."
+    ".    .    .    hd   hd   hd  hd  hd   hd    .    .    ."
+    ".    .    .    .    .   .    .   .    .     .    .    ."
     ".    .    .    ps   ps   ps  ps  ps   ps    .    .    ."
-    ".    .    .    .    .   .    .   .    .    .    .    ."
+    ".    .    .    .    .   .    .   .    .     .    .    ."
     ".    .    .    gy   gy   gy  gy  gy   gy    .    .    . "
-    ".    .    .    .    .    .    .   .    .    .    .    ."
-    ".    .    .    .    .   .    .   .    .    .    .    ."
-    ".    .    .    .    .   .    .   .    .    .    .    ."
-    ".    .    .    .    .    sl  sl   .    .    .    .    . "
-    ".    .    .    .    .    sl  sl   .    .    .    .    . "
-    ".    .    .    .    .    sl  sl   .    .    .    .    . "
-    ".    .    .    .    .    sl  sl   .    .    .    .    . "
-    ".    .    .    .    .   .    .   .    .    .    .    ."
-
     ".    .    .    .    .    .    .   .    .    .    .    .";
   
   }
