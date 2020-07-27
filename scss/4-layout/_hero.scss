@@ -8,7 +8,7 @@ html {
 
 }
 
-@media (min-width: 1056px) { 
+@media (min-width: 700px) { 
   html {
     scroll-behavior: smooth;
     overflow-x:hidden
@@ -177,11 +177,14 @@ html {
 
 
 
+
+
+
 /*
  v v  v SCSS for Mobile and Tablet  v v v
 */
 
-@media (max-width: 1056px) { 
+@media (max-width: 700px) { 
   html {
     scroll-behavior: smooth;
     overflow-x:hidden
@@ -201,7 +204,7 @@ html {
   .hero-cols {
     z-index: 1;
     display: grid;
-    background-image: url(/images/landingBG_mobile2.png);
+    background-image: url(/images/mobile-hero.png);
     overflow: hidden;
     background-origin: content-box;
     background-position: center center;
