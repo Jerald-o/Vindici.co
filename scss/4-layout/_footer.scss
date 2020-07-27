@@ -229,7 +229,7 @@
   
   #footer-logo{
     grid-area: lgo;
-    margin-top: 5vh;
+    margin-top:1em;
   }
   
   #footer-head{
@@ -259,8 +259,6 @@
   
   #footer-menu{
     justify-self: start;
-    width: 3.813rem;
-    height: 1.75rem;
     font-family: Roboto;
     font-size: 1.25rem;
     font-weight: normal;
@@ -270,16 +268,13 @@
     letter-spacing: normal;
     color: #00cccc;
     grid-area: mnu;
-    margin-top: -3vh;
-    margin-right: 16px;
+    margin-right: 2em;
 
   }
   
   #footer-home{
-    margin-right: 16px;
+    margin-right: 2em;
     justify-self: start;
-    width: 4.063rem;
-    height: 1.75rem;
     font-family: Roboto;
     font-size: 1.25rem;
     font-weight: normal;
@@ -306,13 +301,10 @@
   }
   
   #footer-process{
-    margin-right: 16px;
+    margin-right: 2em;
     font-family: Roboto;
     font-size: 1.25rem;
     font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
     letter-spacing: normal;
     color: white;
     justify-self: start;
@@ -320,13 +312,10 @@
   }
   
   #footer-contact{
-    margin-right: 16px;
+    margin-right:2em;
     font-family: Roboto;
     font-size: 1.25rem;
     font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
     letter-spacing: normal;
     justify-self: start;
     color: white;

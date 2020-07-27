@@ -54,7 +54,7 @@ html {
 
 #project-header{
     font-family: Bebas-kai;
-    font-size: 8rem;
+    font-size: 6rem;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -199,9 +199,9 @@ html {
 }
 }
 
-/*
- v v  v SCSS for Tablet and Mobile  v v v
-*/
+
+// SCSS for Tablet and Mobile 
+
 
 @media (max-width: 1056px) { 
 
@@ -238,7 +238,7 @@ html {
   
   #project-header{
       font-family: Bebas-kai;
-      font-size: 5rem;
+      font-size: 4rem;
       font-weight: normal;
       font-stretch: normal;
       font-style: normal;
@@ -248,70 +248,56 @@ html {
       grid-area: hd;
       text-align: center;
       justify-self: center;
+      margin-bottom: -3em;
   }
+
   #project-sections{
       display: flex;
       flex-flow: row wrap;
-      height: 5rem;
-      justify-content: center;
+      justify-content: space-around;
       justify-self: center;
       grid-area: ps;
-      align-content: center;
-      align-items:center;
     
   }
   #project-identity{
     font-family: Bebas-kai;
-    font-size: 2.5rem;
+    font-size: 1em;
     font-weight: normal;
-    font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
     color: white;
     grid-area: id;
-    text-align: center;
-    justify-self: center;
-    
-  
   }
   
   
   #project-development{
     font-family: Bebas-kai;
-    font-size: 2.5rem;
+    font-size: 1em;
     font-weight: normal;
-    font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
     color: white;
     grid-area: dv;
-    text-align: center;
-    justify-self: center;
-    padding-left: 4.232142857142857vw;
-    padding-right: 4.232142857142857vw;
-  
+
   }
   
   #project-marketing{
     font-family: Bebas-kai;
-    font-size: 2.5rem;
+    font-size: 1em;
     font-weight: normal;
-    font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
     color: white;
     grid-area: mk;
-    text-align: center;
-    justify-self: center;
-  
+
   }
   
   #project-carousel{
     grid-area: gy;
-    width: 80%;
+    width: 90%;
     height: 90%;
     margin: 16px;
     justify-self: center;

@@ -158,8 +158,7 @@
   z-index: 2;
   position: relative;
   font-family: Bebas-kai;
-  font-size: 5rem;
-  width: 24.188rem;
+  font-size: 4rem;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -167,26 +166,23 @@
   letter-spacing: normal;
   color: white;
   margin-top: -3vw;
+  margin-left: .3em;
 
 }
 
 #partners-bh1{ 
+  margin-left:.3em;
   z-index: 2;
   position: relative;
   -webkit-filter: blur(16px);
   filter: blur(4px);
   font-family: Bebas-kai;
-  font-size: 7rem;
+  font-size: 6rem;
   grid-area: bh1;
-  width: auto;
-  margin-left: 10vw;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: normal;
   letter-spacing: normal;
   color: rgba(0, 204, 204, 0.3);
-  margin-top: -3vw;
+  margin-top: -.4em
 
 
 }

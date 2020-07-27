@@ -145,13 +145,13 @@
 }
 
 #process-pg{
-  height: 8.75rem;
+  
   font-family: Roboto;
   font-size: 1.3rem;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  line-height: normal;
+ 
   letter-spacing: normal;
   color: white;
   grid-area: ppg;
@@ -205,21 +205,17 @@
 }
 
 #process-head {
-  height: 4.25rem;
   font-family: Bebas-kai;
-  font-size: 3.25rem;
+  font-size: 2.4rem;
   font-weight: normal;
-  font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
   color: white;
   grid-area: phd;
   margin-top: 5vh;
-  margin-left: .938rem;
   justify-content: center;
   justify-self: center;
-
 }
 
 #process-1 {
@@ -315,22 +311,19 @@
 }
 
 #process-pg {
-  height: 9.75rem;
-  width: 90%;
+  margin-left:1em ;
+  margin-right: 1em;
   font-family: Roboto;
   font-size: 1.25rem;
-  margin-left: .938rem;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  line-height: normal;
   letter-spacing: normal;
   color: white;
-  text-align: center;
+  text-align: left;
   grid-area: ppg;
   margin-top: -7vh;
   justify-self: center;
-
 }
 
 }

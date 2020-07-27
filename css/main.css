@@ -7,18 +7,14 @@
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400);
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400);
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
 }
 
 .main-grid {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr [col-start])[12];
-      grid-template-columns: repeat(12, 1fr [col-start]);
-  -ms-grid-rows: (auto [row-start])[10];
-      grid-template-rows: repeat(10, auto [row-start]);
+  grid-template-columns: repeat(12, 1fr [col-start]);
+  grid-template-rows: repeat(10, auto [row-start]);
   grid-column-gap: 24px;
 }
 
@@ -108,8 +104,7 @@ nav ul li ul li a {
   position: absolute;
   display: none;
   z-index: 1;
-  -webkit-box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
-          box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Mobile navigation */
@@ -189,7 +184,6 @@ nav ul li ul li a {
   position: absolute;
   display: block;
   content: "";
-  -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
 
@@ -210,13 +204,11 @@ nav ul li ul li a {
 }
 
 #nav-toggle.active span:before {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 #nav-toggle.active span:after {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 .brand {
@@ -243,18 +235,14 @@ html {
     overflow-x: hidden;
   }
   #hero-wrapper {
-    display: -ms-grid;
     display: grid;
     height: 95vh;
     width: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     background-color: #4a4a4a;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
   .hero-cols {
-    display: -ms-grid;
     display: grid;
     background-image: url(/images/landingBG.png);
     overflow: hidden;
@@ -264,16 +252,14 @@ html {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    -ms-grid-columns: (1fr)[12];
-        grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     font-size: 40px;
     height: 95vh;
     width: 100%;
     display: grid;
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
+    grid-template-rows: auto;
     grid-gap: 26px;
-        grid-template-areas: ".      .      .      .       .     .      .      .     .      .    .      . " ".      .      .      .       .     .      .      .     .      .    .      . " ".      .      .      .       .     .      .      .     .      .    .      . " ".      .      .      .       .     .      .      .     .      .    .      . " ".     hh     hh     hh      hh     hh     .      .     .      .    .      . " ".     hh     hh     hh      hh     hh     .      .     .      .    .      . " ".      cfw    .      .       .     .      .      .     .      .    .      . " ".      cfw    .     .       .     .      .      .     .      .    .      . " ".      .      .      .       .     .      .      .     .      .    .      . " ".      .      .      .       .     .      .      .     .      .    .      . "  ".      .      .      .       .     .      .      .     .      .    .      . ";
+    grid-template-areas: ".      .      .      .       .     .      .      .     .      .    .      . " ".      .      .      .       .     .      .      .     .      .    .      . " ".      .      .      .       .     .      .      .     .      .    .      . " ".      .      .      .       .     .      .      .     .      .    .      . " ".     hh     hh     hh      hh     hh     .      .     .      .    .      . " ".     hh     hh     hh      hh     hh     .      .     .      .    .      . " ".      cfw    .      .       .     .      .      .     .      .    .      . " ".      cfw    .     .       .     .      .      .     .      .    .      . " ".      .      .      .       .     .      .      .     .      .    .      . " ".      .      .      .       .     .      .      .     .      .    .      . "  ".      .      .      .       .     .      .      .     .      .    .      . ";
   }
   section::after {
     position: absolute;
@@ -288,13 +274,11 @@ html {
     left: 50%;
     z-index: 2;
     display: inline-block;
-    -webkit-transform: translate(0, -50%);
     transform: translate(0, -50%);
     color: #00cccc;
     font: normal 400 20px/1 'Josefin Sans', sans-serif;
     letter-spacing: .1em;
     text-decoration: none;
-    -webkit-transition: opacity .3s;
     transition: opacity .3s;
   }
   .demo a:hover {
@@ -312,8 +296,7 @@ html {
     margin-left: -23px;
     border: 2px solid #00cccc;
     border-radius: 100%;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
   }
   #section02 a span::after {
     position: absolute;
@@ -325,10 +308,8 @@ html {
     margin: -12px 0 0 -8px;
     border-left: 2px solid #00cccc;
     border-bottom: 2px solid #00cccc;
-    -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
   }
   #hero-header {
     width: 30.625rem;
@@ -341,10 +322,6 @@ html {
     line-height: normal;
     letter-spacing: normal;
     color: var(--white);
-    -ms-grid-row: 5;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 5;
     grid-area: hh;
   }
   #hero-header ::after {
@@ -369,21 +346,10 @@ html {
     grid-area: hc;
   }
   #connect-flex-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-line-pack: end;
-        align-content: flex-end;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -ms-grid-row: 7;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 2;
+    flex-direction: column;
+    align-content: flex-end;
+    justify-content: flex-end;
     grid-area: cfw;
   }
 }
@@ -397,37 +363,29 @@ html {
     overflow-x: hidden;
   }
   #hero-wrapper {
-    display: -ms-grid;
     display: grid;
     height: 90vh;
     width: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     background-color: #4a4a4a;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
   .hero-cols {
-    display: -ms-grid;
     display: grid;
-    background-image: url(/images/tiff-logo.png);
+    background-image: url(/images/MobileBG.png);
     background-color: #4a4a4a;
     overflow: hidden;
     background-origin: content-box;
-    background-position: center 300px;
-    background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: contain;
-    -ms-grid-columns: (1fr)[6];
-        grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     font-size: 40px;
     height: 90vh;
     width: 100%;
     display: grid;
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
+    grid-template-rows: auto;
     grid-gap: 16px;
-        grid-template-areas: ".    .    .    .     .     .  " ".    .    .    .     .     .  " ".    .    .    .     .     .  "  "hh   hh   hh    hh  hh    hh  " "hl   hl   hl    hl   .     .  " ".    .    .    .     .     .  ";
+    grid-template-areas: ".    .    .    .     .     .  " ".    .    .    .     .     .  " ".    .    .    .     .     .  "  "hh   hh   hh    hh  hh    hh  " "hl   hl   hl    hl   .     .  " ".    .    .    .     .     .  ";
   }
   #hero-header {
     width: 23rem;
@@ -440,9 +398,6 @@ html {
     line-height: normal;
     letter-spacing: normal;
     color: var(--white);
-    -ms-grid-row: 4;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
     grid-area: hh;
     text-align: left;
     margin: 16px;
@@ -450,21 +405,15 @@ html {
   #hero-header ::after {
     display: block;
     content: "";
-    border-top: 0.6rem solid #00cccc;
+    border-top: 0.4rem solid #0B132B;
     width: 13.5rem;
     height: 0.5rem;
-    margin-top: 1rem;
-    -ms-grid-row: 5;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 4;
+    margin-top: .5rem;
     grid-area: hl;
   }
   .hero-text {
     margin-top: 2em;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 4;
     grid-column: 2 / 6;
-    -ms-grid-row: 2;
     grid-row: 2;
     font-family: Bebas-kai;
     font-size: 72px;
@@ -513,69 +462,50 @@ html {
 */
 @media (min-width: 1056px) {
   .footer-wrapper {
-    display: -ms-grid;
     display: grid;
     width: 89.938rem;
     height: 28.25rem;
     width: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
-    -ms-grid-columns: .35fr .65fr;
-        grid-template-columns: .35fr .65fr;
+    object-fit: contain;
+    grid-template-columns: .35fr .65fr;
   }
   #footer-left {
-    display: -ms-grid;
     display: grid;
     justify-items: center;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     background-color: #494949;
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     font-size: 40px;
     height: 28.25rem;
     width: 100%;
     display: grid;
-    -ms-grid-rows: (1fr)[6];
-        grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     grid-gap: 26px;
-        grid-template-areas: ".    .    .    .  " ".   lgo  lgo   .  " ".   lgo  lgo   .  " ".   lgo  lgo   .  " ".   lgo  lgo   .  " ".    .    .    .  ";
+    grid-template-areas: ".    .    .    .  " ".   lgo  lgo   .  " ".   lgo  lgo   .  " ".   lgo  lgo   .  " ".   lgo  lgo   .  " ".    .    .    .  ";
   }
   #footer-right {
-    display: -ms-grid;
     display: grid;
     background-color: #626262;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     height: 28.25rem;
-    -ms-grid-columns: (1fr)[8];
-        grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     font-size: 40px;
     width: 100%;
     display: grid;
-    -ms-grid-rows: (1fr)[10];
-        grid-template-rows: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
     grid-gap: 26px;
-        grid-template-areas: ".    .    .    .    .     .      .   . " ".    .    .    .    .     .      .   . " ".    .    .    .    .    mnu     .   . " ".   fhd  fhd   fhd  .    hme     .   . " ".    .    .    .    .    wrk     .   . " ".    be   ig  lin   .    prs     .   . " ".    be   ig  lin    .    cnt     .   . " ".    .    .    .    .     .      .   . " ".   tm   tm   tm   tm    tm      .   . " ".    .    .    .    .     .      .   . ";
+    grid-template-areas: ".    .    .    .    .     .      .   . " ".    .    .    .    .     .      .   . " ".    .    .    .    .    mnu     .   . " ".   fhd  fhd   fhd  .    hme     .   . " ".    .    .    .    .    wrk     .   . " ".    be   ig  lin   .    prs     .   . " ".    be   ig  lin    .    cnt     .   . " ".    .    .    .    .     .      .   . " ".   tm   tm   tm   tm    tm      .   . " ".    .    .    .    .     .      .   . ";
   }
   #footer-logo {
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 4;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
     grid-area: lgo;
     margin-top: 5vh;
   }
   #footer-head {
-    -ms-grid-row: 4;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 3;
     grid-area: fhd;
     font-family: Roboto;
     font-size: 1.875rem;
     font-weight: normal;
-    -ms-grid-column-align: start;
-        justify-self: start;
+    justify-self: start;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
@@ -583,26 +513,16 @@ html {
     color: white;
   }
   #footer-ig {
-    -ms-grid-row: 6;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 3;
     grid-area: ig;
   }
   #footer-behance {
-    -ms-grid-row: 6;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 2;
     grid-area: be;
   }
   #footer-linkedin {
-    -ms-grid-row: 6;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 4;
     grid-area: lin;
   }
   #footer-menu {
-    -ms-grid-column-align: start;
-        justify-self: start;
+    justify-self: start;
     width: 3.813rem;
     height: 1.75rem;
     font-family: Roboto;
@@ -613,14 +533,11 @@ html {
     line-height: normal;
     letter-spacing: normal;
     color: #00cccc;
-    -ms-grid-row: 3;
-    -ms-grid-column: 6;
     grid-area: mnu;
     margin-top: -3vh;
   }
   #footer-home {
-    -ms-grid-column-align: start;
-        justify-self: start;
+    justify-self: start;
     width: 4.063rem;
     height: 1.75rem;
     font-family: Roboto;
@@ -631,8 +548,6 @@ html {
     line-height: normal;
     letter-spacing: normal;
     color: white;
-    -ms-grid-row: 4;
-    -ms-grid-column: 6;
     grid-area: hme;
   }
   #footer-work {
@@ -644,11 +559,8 @@ html {
     line-height: normal;
     letter-spacing: normal;
     color: white;
-    -ms-grid-row: 5;
-    -ms-grid-column: 6;
     grid-area: wrk;
-    -ms-grid-column-align: start;
-        justify-self: start;
+    justify-self: start;
   }
   #footer-process {
     font-family: Roboto;
@@ -659,10 +571,7 @@ html {
     line-height: normal;
     letter-spacing: normal;
     color: white;
-    -ms-grid-column-align: start;
-        justify-self: start;
-    -ms-grid-row: 6;
-    -ms-grid-column: 6;
+    justify-self: start;
     grid-area: prs;
   }
   #footer-contact {
@@ -673,11 +582,8 @@ html {
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
-    -ms-grid-column-align: start;
-        justify-self: start;
+    justify-self: start;
     color: white;
-    -ms-grid-row: 7;
-    -ms-grid-column: 6;
     grid-area: cnt;
   }
   #footer-tm {
@@ -691,9 +597,6 @@ html {
     line-height: normal;
     letter-spacing: normal;
     color: white;
-    -ms-grid-row: 9;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 5;
     grid-area: tm;
   }
 }
@@ -703,49 +606,38 @@ html {
 */
 @media (max-width: 1056px) {
   .footer-wrapper {
-    display: -ms-grid;
     display: grid;
     width: 100%;
     height: 33.25rem;
     width: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
+    object-fit: contain;
+    grid-template-rows: 1fr;
   }
   #footer-left {
     display: none;
   }
   #footer-right {
-    display: -ms-grid;
     display: grid;
     background-color: #626262;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     height: 33.25rem;
-    -ms-grid-columns: (1fr)[6];
-        grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     width: 100%;
     display: grid;
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
+    grid-template-rows: auto;
     grid-gap: 16px;
-        grid-template-areas: ".    .    .    .    .     .       " ".    .    .    .    .     .      " ".    .    .    .    .    mnu     " ".   fhd  fhd   fhd  .    hme   " ".    .    .    .    .    wrk  " ".    be   ig  lin   .    prs     " ".    be   ig  lin    .    cnt  " ".    .    .    .    .     .     " ".   tm   tm   tm   tm    tm     " ".    .    .    .    .     .      ";
+    grid-template-areas: ".    .    .    .    .     .       " ".    .    .    .    .     .      " ".    .    .    .    .    mnu     " ".   fhd  fhd   fhd  .    hme   " ".    .    .    .    .    wrk  " ".    be   ig  lin   .    prs     " ".    be   ig  lin    .    cnt  " ".    .    .    .    .     .     " ".   tm   tm   tm   tm    tm     " ".    .    .    .    .     .      ";
   }
   #footer-logo {
     grid-area: lgo;
-    margin-top: 5vh;
+    margin-top: 1em;
   }
   #footer-head {
-    -ms-grid-row: 4;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 3;
     grid-area: fhd;
     font-family: Roboto;
     font-size: 1.875rem;
     font-weight: normal;
-    -ms-grid-column-align: start;
-        justify-self: start;
+    justify-self: start;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
@@ -753,28 +645,16 @@ html {
     color: white;
   }
   #footer-ig {
-    -ms-grid-row: 6;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 3;
     grid-area: ig;
   }
   #footer-behance {
-    -ms-grid-row: 6;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 2;
     grid-area: be;
   }
   #footer-linkedin {
-    -ms-grid-row: 6;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 4;
     grid-area: lin;
   }
   #footer-menu {
-    -ms-grid-column-align: start;
-        justify-self: start;
-    width: 3.813rem;
-    height: 1.75rem;
+    justify-self: start;
     font-family: Roboto;
     font-size: 1.25rem;
     font-weight: normal;
@@ -783,18 +663,12 @@ html {
     line-height: normal;
     letter-spacing: normal;
     color: #00cccc;
-    -ms-grid-row: 3;
-    -ms-grid-column: 6;
     grid-area: mnu;
-    margin-top: -3vh;
-    margin-right: 16px;
+    margin-right: 2em;
   }
   #footer-home {
-    margin-right: 16px;
-    -ms-grid-column-align: start;
-        justify-self: start;
-    width: 4.063rem;
-    height: 1.75rem;
+    margin-right: 2em;
+    justify-self: start;
     font-family: Roboto;
     font-size: 1.25rem;
     font-weight: normal;
@@ -803,8 +677,6 @@ html {
     line-height: normal;
     letter-spacing: normal;
     color: white;
-    -ms-grid-row: 4;
-    -ms-grid-column: 6;
     grid-area: hme;
   }
   #footer-work {
@@ -817,42 +689,27 @@ html {
     line-height: normal;
     letter-spacing: normal;
     color: white;
-    -ms-grid-row: 5;
-    -ms-grid-column: 6;
     grid-area: wrk;
-    -ms-grid-column-align: start;
-        justify-self: start;
+    justify-self: start;
   }
   #footer-process {
-    margin-right: 16px;
+    margin-right: 2em;
     font-family: Roboto;
     font-size: 1.25rem;
     font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
     letter-spacing: normal;
     color: white;
-    -ms-grid-column-align: start;
-        justify-self: start;
-    -ms-grid-row: 6;
-    -ms-grid-column: 6;
+    justify-self: start;
     grid-area: prs;
   }
   #footer-contact {
-    margin-right: 16px;
+    margin-right: 2em;
     font-family: Roboto;
     font-size: 1.25rem;
     font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
     letter-spacing: normal;
-    -ms-grid-column-align: start;
-        justify-self: start;
+    justify-self: start;
     color: white;
-    -ms-grid-row: 7;
-    -ms-grid-column: 6;
     grid-area: cnt;
   }
   #footer-tm {
@@ -867,9 +724,6 @@ html {
     line-height: normal;
     letter-spacing: normal;
     color: white;
-    -ms-grid-row: 9;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 5;
     grid-area: tm;
   }
 }
@@ -879,50 +733,39 @@ html {
 */
 @media (min-width: 1056px) {
   .contact-wrapper {
-    display: -ms-grid;
     display: grid;
     height: 44.125rem;
     width: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
-    -ms-grid-columns: .35fr .65fr;
-        grid-template-columns: .35fr .65fr;
+    object-fit: contain;
+    grid-template-columns: .35fr .65fr;
   }
   #contact-left {
-    display: -ms-grid;
     display: grid;
     justify-items: start;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     background-color: #838383;
-    -ms-grid-columns: (1fr)[5];
-        grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     font-size: 40px;
     min-height: 44.125rem;
     width: 100%;
     display: grid;
-    -ms-grid-rows: (1fr)[6];
-        grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     grid-gap: 26px;
-        grid-template-areas: ".    .    .    .      ." ".    .    .    .      ." ".   chd  chd  chd     ." ".   btn  btn  btn      ." ".    .    .    .      ." ".    .    .    .      .";
+    grid-template-areas: ".    .    .    .      ." ".    .    .    .      ." ".   chd  chd  chd     ." ".   btn  btn  btn      ." ".    .    .    .      ." ".    .    .    .      .";
   }
   #contact-right {
     justify-items: center;
-    display: -ms-grid;
     display: grid;
     background-color: #4a4a4a;
-    -o-object-fit: contain;
-       object-fit: contain;
-    -ms-grid-columns: (1fr)[8];
-        grid-template-columns: repeat(8, 1fr);
+    object-fit: contain;
+    grid-template-columns: repeat(8, 1fr);
     font-size: 40px;
     min-height: 44.125rem;
     width: 100%;
     display: grid;
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
+    grid-template-rows: auto;
     grid-gap: 26px;
-        grid-template-areas: ".    .    .    .   .   .    .   . " ".    .  nme  nme nme nme    .   . " ".    .  eml  eml eml eml    .   . " ".    .  bdg  bdg bdg bdg    .   . " ".    .  dsc  dsc dsc dsc    .   . " ".    .  smt  smt smt smt    .   . " ".    .    .    .   .   .    .   . " ".    .    .    .   .   .    .   . ";
+    grid-template-areas: ".    .    .    .   .   .    .   . " ".    .  nme  nme nme nme    .   . " ".    .  eml  eml eml eml    .   . " ".    .  bdg  bdg bdg bdg    .   . " ".    .  dsc  dsc dsc dsc    .   . " ".    .  smt  smt smt smt    .   . " ".    .    .    .   .   .    .   . " ".    .    .    .   .   .    .   . ";
   }
   #contact-head {
     width: 21rem;
@@ -935,9 +778,6 @@ html {
     line-height: normal;
     letter-spacing: normal;
     color: white;
-    -ms-grid-row: 3;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 3;
     grid-area: chd;
   }
   #contact-text-blue {
@@ -975,9 +815,6 @@ html {
     color: #838383;
     border: none;
     resize: none;
-    -ms-grid-row: 2;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 4;
     grid-area: nme;
   }
   .contact-email {
@@ -991,9 +828,6 @@ html {
     border: none;
     color: #838383;
     resize: none;
-    -ms-grid-row: 3;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 4;
     grid-area: eml;
   }
   .contact-budget {
@@ -1007,9 +841,6 @@ html {
     border: none;
     color: #838383;
     resize: none;
-    -ms-grid-row: 4;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 4;
     grid-area: bdg;
   }
   .contact-description {
@@ -1023,9 +854,6 @@ html {
     font-size: 1.813rem;
     padding: 12px 12px;
     color: #838383;
-    -ms-grid-row: 5;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 4;
     grid-area: dsc;
   }
   #submit {
@@ -1039,9 +867,6 @@ html {
     font-size: 1.813rem;
     padding: 12px 12px;
     color: white;
-    -ms-grid-row: 6;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 4;
     grid-area: smt;
   }
 }
@@ -1051,50 +876,39 @@ html {
 */
 @media (max-width: 1056px) {
   .contact-wrapper {
-    display: -ms-grid;
     display: grid;
     height: 77rem;
     width: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+    object-fit: contain;
+    grid-template-rows: 1fr 1fr;
   }
   #contact-left {
-    display: -ms-grid;
     display: grid;
     justify-items: start;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     background-color: #838383;
-    -ms-grid-columns: (1fr)[5];
-        grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     font-size: 30px;
     min-height: 30rem;
     width: 100%;
     display: grid;
-    -ms-grid-rows: (1fr)[6];
-        grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     grid-gap: 16px;
-        grid-template-areas: ".    .    .    .      ." ".    .    .    .      ." ".   chd  chd  chd     ." ".   chd  chd  chd     ." ".    .    .    .      ." ".    .    .    .      .";
+    grid-template-areas: ".    .    .    .      ." ".    .    .    .      ." ".   chd  chd  chd     ." ".   chd  chd  chd     ." ".    .    .    .      ." ".    .    .    .      .";
   }
   #contact-right {
     justify-items: center;
-    display: -ms-grid;
     display: grid;
     background-color: #4a4a4a;
-    -o-object-fit: contain;
-       object-fit: contain;
-    -ms-grid-columns: (1fr)[8];
-        grid-template-columns: repeat(8, 1fr);
+    object-fit: contain;
+    grid-template-columns: repeat(8, 1fr);
     font-size: 40px;
     height: 47rem;
     width: 100%;
     display: grid;
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
+    grid-template-rows: auto;
     grid-gap: 16px;
-        grid-template-areas: ".    .    .    .   .   .    .   . " ".    nme  nme  nme nme nme  nme   . " ".    eml  eml  eml eml eml  eml   . " ".    bdg  bdg  bdg bdg bdg   bdg   . " ".    dsc  dsc  dsc dsc dsc   dsc   . " ".    smt  smt  smt smt smt   smt   . " ".    .    .    .   .   .    .   . ";
+    grid-template-areas: ".    .    .    .   .   .    .   . " ".    nme  nme  nme nme nme  nme   . " ".    eml  eml  eml eml eml  eml   . " ".    bdg  bdg  bdg bdg bdg   bdg   . " ".    dsc  dsc  dsc dsc dsc   dsc   . " ".    smt  smt  smt smt smt   smt   . " ".    .    .    .   .   .    .   . ";
   }
   .form-right {
     justify-items: center;
@@ -1105,21 +919,14 @@ html {
     font-family: bebas-kai;
     font-size: 4rem;
     font-weight: normal;
-    font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
     color: white;
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 3;
     grid-area: chd;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    text-align: center;
+    justify-self: center;
+    align-content: center;
+    text-align: left;
   }
   .contact-button {
     display: none;
@@ -1162,9 +969,6 @@ html {
     padding: 12px 12px;
     color: #838383;
     resize: none;
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 6;
     grid-area: nme;
   }
   .contact-email {
@@ -1178,9 +982,6 @@ html {
     padding: 12px 12px;
     color: #838383;
     resize: none;
-    -ms-grid-row: 3;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 6;
     grid-area: eml;
   }
   .contact-budget {
@@ -1194,9 +995,6 @@ html {
     border: none;
     color: #838383;
     resize: none;
-    -ms-grid-row: 4;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 6;
     grid-area: bdg;
   }
   .contact-description {
@@ -1210,9 +1008,6 @@ html {
     font-size: 1.813rem;
     padding: 12px 12px;
     color: #838383;
-    -ms-grid-row: 5;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 6;
     grid-area: dsc;
   }
   #submit {
@@ -1226,9 +1021,6 @@ html {
     font-size: 1.813rem;
     padding: 12px 12px;
     color: white;
-    -ms-grid-row: 6;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 6;
     grid-area: smt;
   }
 }
@@ -1238,56 +1030,41 @@ html {
 */
 @media (min-width: 1056px) {
   #service-wrapper {
-    display: -ms-grid;
     display: grid;
     height: 32rem;
     width: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     background-color: #4a4a4a;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
     grid-template-columns: 1fr;
-    background-image: url(/images/bg-logo.png);
+    grid-template-columns: 1fr;
     background-repeat: no-repeat;
     background-size: initial;
     background-position: left top;
   }
   .service-cols {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[12];
-        grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     font-size: 40px;
     min-height: 32rem;
     width: 100%;
     display: grid;
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
+    grid-template-rows: auto;
     grid-gap: 26px;
-        grid-template-areas: ".    .    .    .     .     .    .    .         .       .      .      ." ".   head head head   .     .    .    .         .       .      .      ." ".   head head head   .     .    .  pshop      prem  figma   sass     ." ".    p    p    p     p     p    .    .         .       .      .      ." ".    p    p    p     p     p    .  jscript    html    css    notion  ." ".    p    p    p     p     p    .    .         .       .       .     ." ".    .    .    .     .     .    .    .         .       .       .     ." ".    .    .    .     .     .    .    .         .       .       .     .";
+    grid-template-areas: ".    .    .    .     .     .    .    .         .       .      .      ." ".   head head head   .     .    .    .         .       .      .      ." ".   head head head   .     .    .  pshop      prem  figma   sass     ." ".    p    p    p     p     p    .    .         .       .      .      ." ".    p    p    p     p     p    .  jscript    html    css    notion  ." ".    p    p    p     p     p    .    .         .       .       .     ." ".    .    .    .     .     .    .    .         .       .       .     ." ".    .    .    .     .     .    .    .         .       .       .     .";
   }
   .service-header {
     color: white;
     font-family: Bebas-kai;
     font-size: 3rem;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 3;
     grid-area: head;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     z-index: 2;
   }
   .Vector {
     width: 3.125rem;
     height: 3.125rem;
-    -o-object-fit: contain;
-       object-fit: contain;
-    -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    object-fit: contain;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     background-color: var(--tiffany);
   }
   #service-bg {
@@ -1297,22 +1074,15 @@ html {
     font-family: Roboto;
     font-size: 1.3rem;
     color: white;
-    -ms-grid-row: 4;
-    -ms-grid-row-span: 3;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 5;
     grid-area: p;
     z-index: 2;
   }
   .photoshop-icon {
-    -ms-grid-row: 3;
-    -ms-grid-column: 8;
     grid-area: pshop;
     z-index: 2;
   }
   #photoshop-img {
-    -webkit-transform: translate(10px, 0px);
-            transform: translate(10px, 0px);
+    transform: translate(10px, 0px);
   }
   #photoshop-p {
     width: 5.5rem;
@@ -1320,8 +1090,7 @@ html {
     font-family: Roboto;
     font-size: 1.125rem;
     color: white;
-    -webkit-transform: translate(-5px, 0px);
-            transform: translate(-5px, 0px);
+    transform: translate(-5px, 0px);
   }
   #notion-p {
     width: 5.5rem;
@@ -1331,8 +1100,6 @@ html {
     color: white;
   }
   .premiere-icon {
-    -ms-grid-row: 3;
-    -ms-grid-column: 9;
     grid-area: prem;
     z-index: 2;
   }
@@ -1342,13 +1109,10 @@ html {
     font-family: Roboto;
     font-size: 1.125rem;
     color: white;
-    -webkit-transform: translate(-8px, 0px);
-            transform: translate(-8px, 0px);
+    transform: translate(-8px, 0px);
   }
   .figma-icon {
     z-index: 2;
-    -ms-grid-row: 3;
-    -ms-grid-column: 10;
     grid-area: figma;
   }
   #figma-p {
@@ -1360,20 +1124,15 @@ html {
   }
   .notion-icon {
     z-index: 2;
-    -ms-grid-row: 5;
-    -ms-grid-column: 11;
     grid-area: notion;
   }
   .js-icon {
     z-index: 2;
-    -ms-grid-row: 5;
-    -ms-grid-column: 8;
     grid-area: jscript;
   }
   #js-img {
     z-index: 2;
-    -webkit-transform: translate(10px, 0px);
-            transform: translate(10px, 0px);
+    transform: translate(10px, 0px);
   }
   #javascript-p {
     width: 5.5rem;
@@ -1381,13 +1140,10 @@ html {
     font-family: Roboto;
     font-size: 1.125rem;
     color: white;
-    -webkit-transform: translate(-5px, 0px);
-            transform: translate(-5px, 0px);
+    transform: translate(-5px, 0px);
   }
   .css-icon {
     z-index: 2;
-    -ms-grid-row: 5;
-    -ms-grid-column: 10;
     grid-area: css;
   }
   #css-p {
@@ -1396,16 +1152,12 @@ html {
     font-family: Roboto;
     font-size: 1.125rem;
     color: white;
-    -webkit-transform: translate(9px, 0px);
-            transform: translate(9px, 0px);
+    transform: translate(9px, 0px);
   }
   .html-icon {
     z-index: 2;
-    -ms-grid-row: 5;
-    -ms-grid-column: 9;
     grid-area: html;
-    -webkit-transform: translate(2px, 0px);
-            transform: translate(2px, 0px);
+    transform: translate(2px, 0px);
   }
   #html-p {
     width: 5.5rem;
@@ -1413,21 +1165,17 @@ html {
     font-family: Roboto;
     font-size: 1.125rem;
     color: white;
-    -webkit-transform: translate(4px, 0px);
-            transform: translate(4px, 0px);
+    transform: translate(4px, 0px);
   }
   .sass-icon {
     z-index: 2;
-    -ms-grid-row: 3;
-    -ms-grid-column: 11;
     grid-area: sass;
   }
   #sass-p {
     font-family: Roboto;
     font-size: 1.125rem;
     color: white;
-    -webkit-transform: translate(5px, 0px);
-            transform: translate(5px, 0px);
+    transform: translate(5px, 0px);
   }
 }
 
@@ -1436,52 +1184,38 @@ html {
 */
 @media (max-width: 1056px) {
   #service-wrapper {
-    display: -ms-grid;
     display: grid;
     height: 38rem;
     width: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     background-color: #4a4a4a;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
     background-image: url(/images/bg-logo.png);
     background-repeat: no-repeat;
     background-size: initial;
     background-position: center 260px;
   }
   .service-cols {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     height: 38rem;
     width: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     display: grid;
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
+    grid-template-rows: auto;
     grid-gap: 16px;
-        grid-template-areas: ".            .        .           ." "head        head     head       head " "head        head     head       head" "p            p        p           p" "p            p        p           p" ".            .        .            ." "pshop      prem     figma      notion" "jscript     css     html         sass" ".            .        .           ." ".            .        .           ." ".            .        .           .";
+    grid-template-areas: ".            .        .           ." "head        head     head       head " "head        head     head       head" "p            p        p           p" "p            p        p           p" ".            .        .            ." "pshop      prem     figma      notion" "jscript     css     html         sass" ".            .        .           ." ".            .        .           ." ".            .        .           .";
   }
   .service-header {
-    -ms-grid-column-align: center;
-        justify-self: center;
-    padding-left: .7rem;
-    height: 5.875rem;
-    font-size: 2rem;
-    width: 80%;
+    justify-self: center;
+    margin-bottom: -.5em;
+    font-size: 2.4rem;
     font-stretch: normal;
     font-family: Bebas-kai, Roboto;
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
     color: white;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 4;
     grid-area: head;
     text-align: center;
     z-index: 2;
@@ -1489,28 +1223,22 @@ html {
   .Vector {
     width: 3.125rem;
     height: 3.125rem;
-    -o-object-fit: contain;
-       object-fit: contain;
-    -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    object-fit: contain;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     background-color: var(--tiffany);
   }
   #service-bg {
     display: none;
   }
   .service-p {
-    -ms-grid-column-align: center;
-        justify-self: center;
+    margin-left: 1em;
+    margin-right: 1em;
+    justify-self: center;
     font-family: Roboto;
-    text-align: center;
-    width: 100%;
-    height: 100%;
+    font-weight: 300;
+    text-align: left;
     font-size: 1.2rem;
     color: white;
-    -ms-grid-row: 4;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 4;
     grid-area: p;
     z-index: 2;
   }
@@ -1518,15 +1246,11 @@ html {
     display: none;
   }
   .photoshop-icon {
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -ms-grid-row: 7;
-    -ms-grid-column: 1;
+    justify-self: center;
     grid-area: pshop;
   }
   #photoshop-img {
-    -webkit-transform: translate(10px, 0px);
-            transform: translate(10px, 0px);
+    transform: translate(10px, 0px);
   }
   #photoshop-p {
     width: 100%;
@@ -1537,10 +1261,7 @@ html {
     color: white;
   }
   .premiere-icon {
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -ms-grid-row: 7;
-    -ms-grid-column: 2;
+    justify-self: center;
     grid-area: prem;
     font-size: 0.884rem;
   }
@@ -1550,15 +1271,11 @@ html {
     font-family: Roboto;
     font-size: 0.884rem;
     color: white;
-    -webkit-transform: translate(-5px, 0px);
-            transform: translate(-5px, 0px);
+    transform: translate(-5px, 0px);
   }
   .figma-icon {
-    -ms-grid-row: 7;
-    -ms-grid-column: 3;
     grid-area: figma;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   #figma-p {
     width: 100%;
@@ -1568,11 +1285,8 @@ html {
     color: white;
   }
   .notion-icon {
-    -ms-grid-row: 7;
-    -ms-grid-column: 4;
     grid-area: notion;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   #notion-p {
     width: 100%;
@@ -1582,11 +1296,8 @@ html {
     color: white;
   }
   .js-icon {
-    -ms-grid-row: 8;
-    -ms-grid-column: 1;
     grid-area: jscript;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   #javascript-p {
     width: 100%;
@@ -1596,29 +1307,21 @@ html {
     color: white;
   }
   #js-img {
-    -webkit-transform: translate(10px, 0px);
-            transform: translate(10px, 0px);
+    transform: translate(10px, 0px);
   }
   .css-icon {
-    -ms-grid-row: 8;
-    -ms-grid-column: 2;
     grid-area: css;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   #css-p {
     font-family: Roboto;
     font-size: 0.884rem;
     color: white;
-    -webkit-transform: translate(10px, 0px);
-            transform: translate(10px, 0px);
+    transform: translate(10px, 0px);
   }
   .html-icon {
-    -ms-grid-row: 8;
-    -ms-grid-column: 3;
     grid-area: html;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   #html-p {
     width: 100%;
@@ -1628,18 +1331,14 @@ html {
     color: white;
   }
   .sass-icon {
-    -ms-grid-row: 8;
-    -ms-grid-column: 4;
     grid-area: sass;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   #sass-p {
     font-family: Roboto;
     font-size: 1.125rem;
     color: white;
-    -webkit-transform: translate(10px, 0px);
-            transform: translate(10px, 0px);
+    transform: translate(10px, 0px);
   }
 }
 
@@ -1648,26 +1347,21 @@ html {
 */
 @media (min-width: 1056px) {
   .process-wrapper {
-    display: -ms-grid;
     display: grid;
     height: 40rem;
     background-color: #4a4a4a;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
   #process-cols {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[12];
-        grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     font-size: 40px;
     height: 40rem;
     width: 100%;
     display: grid;
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
+    grid-template-rows: auto;
     grid-gap: 26px;
-        grid-template-areas: ".    .    .    .     .     .      .    .       .       .       .      ." ".   phd  phd   phd   .     .      .    .       .       .       .      ." ".    .    .    .     .     .      .    .       .       .       .      ." ".    p1   p2   p3    p4    p5     .    .       .       .       .      ." ".    p6   p7   p8    p9    p10    .   ppg     ppg     ppg     ppg     ." ".    .    .    .     .     .      .    .       .       .       .      ." ".    .    .    .     .     .      .    .       .       .       .      ." ".    .    .    .     .     .      .    .       .       .       .      .";
+    grid-template-areas: ".    .    .    .     .     .      .    .       .       .       .      ." ".   phd  phd   phd   .     .      .    .       .       .       .      ." ".    .    .    .     .     .      .    .       .       .       .      ." ".    p1   p2   p3    p4    p5     .    .       .       .       .      ." ".    p6   p7   p8    p9    p10    .   ppg     ppg     ppg     ppg     ." ".    .    .    .     .     .      .    .       .       .       .      ." ".    .    .    .     .     .      .    .       .       .       .      ." ".    .    .    .     .     .      .    .       .       .       .      .";
   }
   #process-head {
     height: 2.25rem;
@@ -1679,15 +1373,10 @@ html {
     line-height: normal;
     letter-spacing: normal;
     color: white;
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 3;
     grid-area: phd;
     margin-top: 5vh;
   }
   #process-1 {
-    -ms-grid-row: 4;
-    -ms-grid-column: 2;
     grid-area: p1;
     font-family: Roboto;
     font-size: 1rem;
@@ -1695,8 +1384,6 @@ html {
     text-align: center;
   }
   #process-2 {
-    -ms-grid-row: 4;
-    -ms-grid-column: 3;
     grid-area: p2;
     font-family: Roboto;
     font-size: 1rem;
@@ -1704,8 +1391,6 @@ html {
     text-align: center;
   }
   #process-3 {
-    -ms-grid-row: 4;
-    -ms-grid-column: 4;
     grid-area: p3;
     font-family: Roboto;
     font-size: 1rem;
@@ -1713,8 +1398,6 @@ html {
     text-align: center;
   }
   #process-4 {
-    -ms-grid-row: 4;
-    -ms-grid-column: 5;
     grid-area: p4;
     font-family: Roboto;
     font-size: 1rem;
@@ -1722,8 +1405,6 @@ html {
     text-align: center;
   }
   #process-5 {
-    -ms-grid-row: 4;
-    -ms-grid-column: 6;
     grid-area: p5;
     font-family: Roboto;
     font-size: 1rem;
@@ -1731,8 +1412,6 @@ html {
     text-align: center;
   }
   #process-6 {
-    -ms-grid-row: 5;
-    -ms-grid-column: 2;
     grid-area: p6;
     margin-top: 5vh;
     font-family: Roboto;
@@ -1741,8 +1420,6 @@ html {
     text-align: center;
   }
   #process-7 {
-    -ms-grid-row: 5;
-    -ms-grid-column: 3;
     grid-area: p7;
     margin-top: 5vh;
     font-family: Roboto;
@@ -1751,8 +1428,6 @@ html {
     text-align: center;
   }
   #process-8 {
-    -ms-grid-row: 5;
-    -ms-grid-column: 4;
     grid-area: p8;
     margin-top: 5vh;
     font-family: Roboto;
@@ -1761,8 +1436,6 @@ html {
     text-align: center;
   }
   #process-9 {
-    -ms-grid-row: 5;
-    -ms-grid-column: 5;
     grid-area: p9;
     margin-top: 5vh;
     font-family: Roboto;
@@ -1771,8 +1444,6 @@ html {
     text-align: center;
   }
   #process-10 {
-    -ms-grid-row: 5;
-    -ms-grid-column: 6;
     grid-area: p10;
     margin-top: 5vh;
     font-family: Roboto;
@@ -1781,18 +1452,13 @@ html {
     text-align: center;
   }
   #process-pg {
-    height: 8.75rem;
     font-family: Roboto;
     font-size: 1.3rem;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
-    line-height: normal;
     letter-spacing: normal;
     color: white;
-    -ms-grid-row: 5;
-    -ms-grid-column: 8;
-    -ms-grid-column-span: 4;
     grid-area: ppg;
     margin-top: -7vh;
     text-align: left;
@@ -1804,55 +1470,37 @@ html {
 */
 @media (max-width: 1056px) {
   .process-wrapper {
-    -o-object-fit: contain;
-       object-fit: contain;
-    display: -ms-grid;
+    object-fit: contain;
     display: grid;
     height: 50rem;
     background-color: #4a4a4a;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
   #process-cols {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     height: 50rem;
     width: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     display: grid;
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
+    grid-template-rows: auto;
     grid-gap: 16px;
-        grid-template-areas: ".            .        .             ." "phd        phd      phd           phd" ".            .        .             ." ".            .        .             ." "ppg        ppg      ppg           ppg" "ppg        ppg      ppg           ppg" "p1           p2       p3           p4" "p5           p6       p7           p8" ".            p9       p10           ." ".            .        .             ." ".            .        .             .";
+    grid-template-areas: ".            .        .             ." "phd        phd      phd           phd" ".            .        .             ." ".            .        .             ." "ppg        ppg      ppg           ppg" "ppg        ppg      ppg           ppg" "p1           p2       p3           p4" "p5           p6       p7           p8" ".            p9       p10           ." ".            .        .             ." ".            .        .             .";
   }
   #process-head {
-    height: 4.25rem;
     font-family: Bebas-kai;
-    font-size: 3.25rem;
+    font-size: 2.4rem;
     font-weight: normal;
-    font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
     color: white;
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 4;
     grid-area: phd;
     margin-top: 5vh;
-    margin-left: .938rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-content: center;
+    justify-self: center;
   }
   #process-1 {
-    -ms-grid-row: 7;
-    -ms-grid-column: 1;
     grid-area: p1;
     font-family: Roboto;
     font-size: .8rem;
@@ -1860,8 +1508,6 @@ html {
     text-align: center;
   }
   #process-2 {
-    -ms-grid-row: 7;
-    -ms-grid-column: 2;
     grid-area: p2;
     font-family: Roboto;
     font-size: .8rem;
@@ -1869,8 +1515,6 @@ html {
     text-align: center;
   }
   #process-3 {
-    -ms-grid-row: 7;
-    -ms-grid-column: 3;
     grid-area: p3;
     font-family: Roboto;
     font-size: .8rem;
@@ -1878,8 +1522,6 @@ html {
     text-align: center;
   }
   #process-4 {
-    -ms-grid-row: 7;
-    -ms-grid-column: 4;
     grid-area: p4;
     font-family: Roboto;
     font-size: .8rem;
@@ -1887,8 +1529,6 @@ html {
     text-align: center;
   }
   #process-5 {
-    -ms-grid-row: 8;
-    -ms-grid-column: 1;
     grid-area: p5;
     font-family: Roboto;
     font-size: .8rem;
@@ -1896,8 +1536,6 @@ html {
     text-align: center;
   }
   #process-6 {
-    -ms-grid-row: 8;
-    -ms-grid-column: 2;
     grid-area: p6;
     font-family: Roboto;
     font-size: .8rem;
@@ -1905,8 +1543,6 @@ html {
     text-align: center;
   }
   #process-7 {
-    -ms-grid-row: 8;
-    -ms-grid-column: 3;
     grid-area: p7;
     font-family: Roboto;
     font-size: .8rem;
@@ -1914,8 +1550,6 @@ html {
     text-align: center;
   }
   #process-8 {
-    -ms-grid-row: 8;
-    -ms-grid-column: 4;
     grid-area: p8;
     font-family: Roboto;
     font-size: .8rem;
@@ -1923,8 +1557,6 @@ html {
     text-align: center;
   }
   #process-9 {
-    -ms-grid-row: 9;
-    -ms-grid-column: 2;
     grid-area: p9;
     font-family: Roboto;
     font-size: .8rem;
@@ -1932,8 +1564,6 @@ html {
     text-align: center;
   }
   #process-10 {
-    -ms-grid-row: 9;
-    -ms-grid-column: 3;
     grid-area: p10;
     font-family: Roboto;
     font-size: .8rem;
@@ -1941,26 +1571,19 @@ html {
     text-align: center;
   }
   #process-pg {
-    height: 9.75rem;
-    width: 90%;
+    margin-left: 1em;
+    margin-right: 1em;
     font-family: Roboto;
     font-size: 1.25rem;
-    margin-left: .938rem;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
-    line-height: normal;
     letter-spacing: normal;
     color: white;
-    text-align: center;
-    -ms-grid-row: 5;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 4;
+    text-align: left;
     grid-area: ppg;
     margin-top: -7vh;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
 }
 
@@ -1970,33 +1593,24 @@ html {
 @media (min-width: 1056px) {
   .partners-wrapper {
     width: 100%;
-    display: -ms-grid;
     display: grid;
     height: 38rem;
     background-color: #4a4a4a;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
   #partners-cols {
-    display: -ms-grid;
     display: grid;
     position: relative;
-    -ms-grid-columns: (1fr)[12];
-        grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     font-size: 40px;
     height: 38rem;
     width: 100%;
     display: grid;
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
+    grid-template-rows: auto;
     grid-gap: 26px;
-        grid-template-areas: ".    .    .     .    .     .    .    .       .       .      .      ." ".    h1   h1   h1    .     .    .    .       .       .      .      ." ".    h1   h1   h1    .     .    .    .       .       .      .      ." ".    .    gb   gb    .    ecm  ecm   .       jc     jc      .      ." ".    .    gb   gb    .    ecm  ecm   .       jc     jc      .      ." ".    .    .     .    .     .    .    .       .       .      .      ." ".    .    .     .    .     .    .    .       .       .      .      .";
+    grid-template-areas: ".    .    .     .    .     .    .    .       .       .      .      ." ".    h1   h1   h1    .     .    .    .       .       .      .      ." ".    h1   h1   h1    .     .    .    .       .       .      .      ." ".    .    gb   gb    .    ecm  ecm   .       jc     jc      .      ." ".    .    gb   gb    .    ecm  ecm   .       jc     jc      .      ." ".    .    .     .    .     .    .    .       .       .      .      ." ".    .    .     .    .     .    .    .       .       .      .      .";
   }
   #partners-head {
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 3;
     grid-area: h1;
     width: 15.875rem;
     height: 6rem;
@@ -2013,17 +1627,13 @@ html {
     position: relative;
     width: 39.688rem;
     height: 15rem;
-    -webkit-filter: blur(16px);
     filter: blur(8px);
     font-family: Bebas-kai;
     font-size: 12.5rem;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
-    -ms-grid-row: 4;
     grid-row: 4;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 5;
     grid-column: 2 / 7;
     line-height: normal;
     letter-spacing: normal;
@@ -2035,12 +1645,7 @@ html {
     position: relative;
     width: 13.5rem;
     height: 13.5rem;
-    -o-object-fit: contain;
-       object-fit: contain;
-    -ms-grid-row: 4;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 2;
+    object-fit: contain;
     grid-area: gb;
   }
   #partners-ecom {
@@ -2048,32 +1653,18 @@ html {
     height: 13.5rem;
     z-index: 2;
     margin-top: 8vh;
-    -o-object-fit: contain;
-       object-fit: contain;
-    -ms-grid-row: 4;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 6;
-    -ms-grid-column-span: 2;
+    object-fit: contain;
     grid-area: ecm;
   }
   #partners-jckicks {
     margin-top: 8vh;
     width: 13.5rem;
     height: 13.5rem;
-    -o-object-fit: contain;
-       object-fit: contain;
-    -ms-grid-row: 4;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 9;
-    -ms-grid-column-span: 2;
+    object-fit: contain;
     grid-area: jc;
   }
   #partners-bg {
-    -ms-grid-column: 9;
-    -ms-grid-column-span: 3;
     grid-column: 9 / 12;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 5;
     grid-row: 2 / 7;
   }
 }
@@ -2084,14 +1675,11 @@ html {
 @media (max-width: 1056px) {
   .partners-wrapper {
     width: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
-    display: -ms-grid;
+    object-fit: contain;
     display: grid;
     height: 60rem;
     background-color: #4a4a4a;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
     background-image: url(/images/bg-nowords.png);
     overflow: hidden;
     background-origin: content-box;
@@ -2101,30 +1689,22 @@ html {
     background-size: cover;
   }
   #partners-cols {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     height: 60rem;
     width: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     display: grid;
-    -ms-grid-rows: repeat();
-        grid-template-rows: repeat();
+    grid-template-rows: repeat();
     grid-gap: 16px;
-        grid-template-areas: ".          .      .      ." ".          .      .      ." "h1         h1     h1     ." "bh1        bh1    bh1    ." ".          gb     gb     ." ".          ecm    ecm    ." ".          jc     jc     ." ".          .      .      ." ".          .      .      .";
+    grid-template-areas: ".          .      .      ." ".          .      .      ." "h1         h1     h1     ." "bh1        bh1    bh1    ." ".          gb     gb     ." ".          ecm    ecm    ." ".          jc     jc     ." ".          .      .      ." ".          .      .      .";
   }
   #partners-head {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
     grid-area: h1;
     z-index: 2;
     position: relative;
     font-family: Bebas-kai;
-    font-size: 5rem;
-    width: 24.188rem;
+    font-size: 4rem;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -2132,38 +1712,26 @@ html {
     letter-spacing: normal;
     color: white;
     margin-top: -3vw;
+    margin-left: .3em;
   }
   #partners-bh1 {
+    margin-left: .3em;
     z-index: 2;
     position: relative;
-    -webkit-filter: blur(16px);
     filter: blur(4px);
     font-family: Bebas-kai;
-    font-size: 7rem;
-    -ms-grid-row: 4;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
+    font-size: 6rem;
     grid-area: bh1;
-    width: auto;
-    margin-left: 10vw;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: normal;
     letter-spacing: normal;
     color: rgba(0, 204, 204, 0.3);
-    margin-top: -3vw;
+    margin-top: -.4em;
   }
   #partners-gsub {
     z-index: 2;
-    -o-object-fit: contain;
-       object-fit: contain;
-    -ms-grid-row: 5;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
+    object-fit: contain;
     grid-area: gb;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   #gsub-pic {
     z-index: 2;
@@ -2172,14 +1740,9 @@ html {
   }
   #partners-ecom {
     z-index: 2;
-    -o-object-fit: contain;
-       object-fit: contain;
-    -ms-grid-row: 6;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
+    object-fit: contain;
     grid-area: ecm;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   #ecom-pic {
     z-index: 2;
@@ -2188,14 +1751,9 @@ html {
   }
   #partners-jckicks {
     z-index: 2;
-    -o-object-fit: contain;
-       object-fit: contain;
-    -ms-grid-row: 7;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
+    object-fit: contain;
     grid-area: jc;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   #jc-pic {
     z-index: 2;
@@ -2231,71 +1789,46 @@ html {
 
 @media (min-width: 1056px) {
   .project-wrapper {
-    display: -ms-grid;
     display: grid;
     height: 65.563rem;
     width: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    object-fit: contain;
+    grid-template-columns: 1fr;
   }
   #project-cols {
-    display: -ms-grid;
     display: grid;
-    -o-object-fit: contain;
-       object-fit: contain;
-    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #4a4a4a), color-stop(50%, #3b3b3b));
+    object-fit: contain;
     background: linear-gradient(90deg, #4a4a4a 50%, #3b3b3b 50%);
-    -ms-grid-columns: (1fr)[12];
-        grid-template-columns: repeat(12 1fr);
+    grid-template-columns: repeat(12 1fr);
     font-size: 30px;
     height: 65.563rem;
     width: 100%;
     display: grid;
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
-        grid-template-areas: ".    .    .    .    .   .    .   .    .    .    .    ."  ".    .    .    hd   hd   hd  hd  hd   hd    .    .     ." ".    .    .    ps   ps   ps  ps  ps   ps    .    .    ." ".    .    .    gy   gy   gy  gy  gy   gy    .    .    . " ".    .    .    .    .    .    .   .    .    .    .    .";
+    grid-template-rows: auto;
+    grid-template-areas: ".    .    .    .    .   .    .   .    .    .    .    ."  ".    .    .    hd   hd   hd  hd  hd   hd    .    .     ." ".    .    .    ps   ps   ps  ps  ps   ps    .    .    ." ".    .    .    gy   gy   gy  gy  gy   gy    .    .    . " ".    .    .    .    .    .    .   .    .    .    .    .";
   }
   #project-header {
     font-family: Bebas-kai;
-    font-size: 8rem;
+    font-size: 6rem;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
     color: white;
-    -ms-grid-row: 2;
-    -ms-grid-column: 4;
-    -ms-grid-column-span: 6;
     grid-area: hd;
     text-align: center;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   #project-sections {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
+    flex-flow: row wrap;
     height: 2rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     justify-self: center;
-    -ms-grid-row: 3;
-    -ms-grid-column: 4;
-    -ms-grid-column-span: 6;
     grid-area: ps;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-content: center;
+    align-items: center;
   }
   #project-identity {
     font-family: Bebas-kai;
@@ -2308,8 +1841,7 @@ html {
     color: white;
     grid-area: id;
     text-align: center;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   #project-development {
     font-family: Bebas-kai;
@@ -2322,8 +1854,7 @@ html {
     color: white;
     grid-area: dv;
     text-align: center;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
     padding-left: 4.232142857142857vw;
     padding-right: 4.232142857142857vw;
   }
@@ -2338,252 +1869,148 @@ html {
     color: white;
     grid-area: mk;
     text-align: center;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   #project-carousel {
-    -ms-grid-row: 4;
-    -ms-grid-column: 4;
-    -ms-grid-column-span: 6;
     grid-area: gy;
     width: 46.438rem;
     height: 22.964rem;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   #project-slider-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
+    flex-flow: row nowrap;
     height: 2rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     justify-self: center;
     grid-area: sl;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-content: center;
+    align-items: center;
     padding-right: 2.3rem;
   }
   .slider-gsub {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     /* NEW */
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
     list-style: none;
     padding-top: 1rem;
     padding: 2rem;
     overflow: hidden;
   }
   .slider-ecom {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     /* NEW */
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
     list-style: none;
     padding: 2rem;
     overflow: hidden;
   }
   .slider-jck {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     /* NEW */
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
     list-style: none;
     padding: 2rem;
     overflow: hidden;
   }
 }
 
-/*
- v v  v SCSS for Tablet and Mobile  v v v
-*/
 @media (max-width: 1056px) {
   .project-wrapper {
-    display: -ms-grid;
     display: grid;
     height: 40rem;
     width: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    object-fit: contain;
+    grid-template-columns: 1fr;
   }
   #project-cols {
-    display: -ms-grid;
     display: grid;
     justify-items: start;
-    -o-object-fit: contain;
-       object-fit: contain;
-    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #4a4a4a), color-stop(50%, #3b3b3b));
+    object-fit: contain;
     background: linear-gradient(90deg, #4a4a4a 50%, #3b3b3b 50%);
-    -ms-grid-columns: (1fr)[12];
-        grid-template-columns: repeat(12 1fr);
+    grid-template-columns: repeat(12 1fr);
     font-size: 30px;
     height: 40rem;
     width: 100%;
     display: grid;
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
-        grid-template-areas: ".    .    .    .    .   .    .   .    .     .    .    ." ".    .    .    hd   hd   hd  hd  hd   hd    .    .    ." ".    .    .    .    .   .    .   .    .     .    .    ." ".    .    .    ps   ps   ps  ps  ps   ps    .    .    ." ".    .    .    .    .   .    .   .    .     .    .    ." ".    .    .    gy   gy   gy  gy  gy   gy    .    .    . " ".    .    .    .    .    .    .   .    .    .    .    .";
+    grid-template-rows: auto;
+    grid-template-areas: ".    .    .    .    .   .    .   .    .     .    .    ." ".    .    .    hd   hd   hd  hd  hd   hd    .    .    ." ".    .    .    .    .   .    .   .    .     .    .    ." ".    .    .    ps   ps   ps  ps  ps   ps    .    .    ." ".    .    .    .    .   .    .   .    .     .    .    ." ".    .    .    gy   gy   gy  gy  gy   gy    .    .    . " ".    .    .    .    .    .    .   .    .    .    .    .";
   }
   #project-header {
     font-family: Bebas-kai;
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
     color: white;
-    -ms-grid-row: 2;
-    -ms-grid-column: 4;
-    -ms-grid-column-span: 6;
     grid-area: hd;
     text-align: center;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
+    margin-bottom: -3em;
   }
   #project-sections {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-    height: 5rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-flow: row wrap;
+    justify-content: space-around;
     justify-self: center;
-    -ms-grid-row: 4;
-    -ms-grid-column: 4;
-    -ms-grid-column-span: 6;
     grid-area: ps;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   #project-identity {
     font-family: Bebas-kai;
-    font-size: 2.5rem;
+    font-size: 1em;
     font-weight: normal;
-    font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
     color: white;
     grid-area: id;
-    text-align: center;
-    -ms-grid-column-align: center;
-        justify-self: center;
   }
   #project-development {
     font-family: Bebas-kai;
-    font-size: 2.5rem;
+    font-size: 1em;
     font-weight: normal;
-    font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
     color: white;
     grid-area: dv;
-    text-align: center;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    padding-left: 4.232142857142857vw;
-    padding-right: 4.232142857142857vw;
   }
   #project-marketing {
     font-family: Bebas-kai;
-    font-size: 2.5rem;
+    font-size: 1em;
     font-weight: normal;
-    font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
     color: white;
     grid-area: mk;
-    text-align: center;
-    -ms-grid-column-align: center;
-        justify-self: center;
   }
   #project-carousel {
-    -ms-grid-row: 6;
-    -ms-grid-column: 4;
-    -ms-grid-column-span: 6;
     grid-area: gy;
-    width: 80%;
+    width: 90%;
     height: 90%;
     margin: 16px;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   #project-slider-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-line-pack: end;
-        align-content: flex-end;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    flex-direction: column;
+    align-content: flex-end;
+    justify-content: flex-start;
     padding-right: 2.3rem;
     list-style: none;
     grid-area: sl;
@@ -2604,42 +2031,27 @@ html {
 */
 @media (min-width: 1056px) {
   .ecomCase-wrapper {
-    display: -ms-grid;
     display: grid;
     height: 120vh;
     width: 100%;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
   #ecomCase-cols {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[12];
-        grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     font-size: 40px;
     height: 120vh;
     background-color: #4a4a4a;
     width: 100%;
     display: grid;
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
+    grid-template-rows: auto;
     grid-gap: 26px;
-        grid-template-areas: ".    .    .    .     .     .      .    .       .       .       .      ." "hd   hd   hd   hd    hd   hd      hd   hd      hd      hd     hd     hd" ".    .    .    .     .     .      .    .       .       .       .      ." ".    bg   bg   bg   bg    bg      .    .       .       .       .      ." ".    es   es   es   es    es      .    .       .       .       .      ." ".    ed   ed   ed   ed    ed      .    bf      bf      bf      bf      ." ".    .    .    .     .     .      .    .       .       .       .      ."  ".    .    .    .     .     .      .    .       .       .       .      .";
+    grid-template-areas: ".    .    .    .     .     .      .    .       .       .       .      ." "hd   hd   hd   hd    hd   hd      hd   hd      hd      hd     hd     hd" ".    .    .    .     .     .      .    .       .       .       .      ." ".    bg   bg   bg   bg    bg      .    .       .       .       .      ." ".    es   es   es   es    es      .    .       .       .       .      ." ".    ed   ed   ed   ed    ed      .    bf      bf      bf      bf      ." ".    .    .    .     .     .      .    .       .       .       .      ."  ".    .    .    .     .     .      .    .       .       .       .      .";
   }
   .ecomCase-flex-head {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row nowrap;
-            flex-direction: row nowrap;
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 12;
+    justify-content: space-evenly;
+    flex-direction: row nowrap;
     grid-area: hd;
     background-image: url(/images/case-econ-bg.png);
     background-size: contain;
@@ -2676,9 +2088,6 @@ html {
     line-height: normal;
     letter-spacing: normal;
     color: #00cccc;
-    -ms-grid-row: 4;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 5;
     grid-area: bg;
     margin-top: 5vh;
   }
@@ -2692,9 +2101,6 @@ html {
     line-height: normal;
     letter-spacing: normal;
     color: #00cccc;
-    -ms-grid-row: 5;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 5;
     grid-area: es;
   }
   #service-type {
@@ -2711,30 +2117,16 @@ html {
     line-height: normal;
     letter-spacing: normal;
     color: white;
-    -ms-grid-row: 6;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 5;
     grid-area: ed;
   }
   #behance-flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row nowrap;
-            flex-direction: row nowrap;
-    -ms-grid-row: 6;
-    -ms-grid-column: 8;
-    -ms-grid-column-span: 4;
+    justify-content: space-around;
+    flex-direction: row nowrap;
     grid-area: bf;
   }
   #behance-text {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    align-self: center;
     height: 2.25rem;
     font-family: Roboto;
     font-size: 1.3rem;
@@ -2755,47 +2147,29 @@ html {
 */
 @media (max-width: 1056px) {
   .ecomCase-wrapper {
-    display: -ms-grid;
     display: grid;
     height: 100vh;
     width: 100%;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
   #ecomCase-cols {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[12];
-        grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     font-size: 40px;
     height: 100vh;
     background-color: #4a4a4a;
     width: 100%;
     display: grid;
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
+    grid-template-rows: auto;
     grid-gap: 26px;
-        grid-template-areas: ".    .    .    .     .     .      .    .       .       .       .      ." "hd   hd   hd   hd    hd   hd      hd   hd      hd      hd     hd     hd" "hd   hd   hd   hd    hd   hd      hd   hd      hd      hd     hd     hd" "hd   hd   hd   hd    hd   hd      hd   hd      hd      hd     hd     hd"  "bg   bg   bg   bg   bg    bg      bg   bg      bg      bg     bg     bg " "es   es   es   es   es    es      es   es      es      es      es     es" "ed   ed   ed   ed   ed    ed      ed   ed      ed      ed      ed     ed" ".    .    .    .     .     .      .    .       .       .       .      ." "bf   bf   bf   bf    bf   bf      bf    bf      bf      bf      bf     bf" ".    .    .    .     .     .      .    .       .       .       .      .";
+    grid-template-areas: ".    .    .    .     .     .      .    .       .       .       .      ." "hd   hd   hd   hd    hd   hd      hd   hd      hd      hd     hd     hd" "hd   hd   hd   hd    hd   hd      hd   hd      hd      hd     hd     hd" "hd   hd   hd   hd    hd   hd      hd   hd      hd      hd     hd     hd"  "bg   bg   bg   bg   bg    bg      bg   bg      bg      bg     bg     bg " "es   es   es   es   es    es      es   es      es      es      es     es" "ed   ed   ed   ed   ed    ed      ed   ed      ed      ed      ed     ed" ".    .    .    .     .     .      .    .       .       .       .      ." "bf   bf   bf   bf    bf   bf      bf    bf      bf      bf      bf     bf" ".    .    .    .     .     .      .    .       .       .       .      .";
   }
   .ecomCase-flex-head {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     justify-items: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 12;
+    align-items: center;
+    flex-direction: column;
     grid-area: hd;
     background-image: url(/images/case-econ-bg.png);
     background-size: contain;
@@ -2834,12 +2208,8 @@ html {
     line-height: normal;
     letter-spacing: normal;
     color: #00cccc;
-    -ms-grid-row: 5;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 12;
     grid-area: bg;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   #ecomCase-services {
     width: auto;
@@ -2851,11 +2221,7 @@ html {
     line-height: normal;
     letter-spacing: normal;
     color: #00cccc;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -ms-grid-row: 6;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 12;
+    justify-self: center;
     grid-area: es;
   }
   #service-type {
@@ -2872,35 +2238,20 @@ html {
     line-height: normal;
     letter-spacing: normal;
     color: white;
-    -ms-grid-row: 7;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 12;
     grid-area: ed;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
     text-align: center;
     margin: 16px;
   }
   #behance-flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row nowrap;
-            flex-direction: row nowrap;
-    -ms-grid-row: 9;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 12;
+    justify-content: space-around;
+    flex-direction: row nowrap;
     grid-area: bf;
     margin: 16px;
   }
   #behance-text {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    align-self: center;
     height: 2.25rem;
     font-family: Roboto;
     font-size: 1.3rem;
@@ -2918,42 +2269,27 @@ html {
 */
 @media (min-width: 1056px) {
   .ecomCase-wrapper {
-    display: -ms-grid;
     display: grid;
     height: 120vh;
     width: 100%;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
   #ecomCase-cols {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[12];
-        grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     font-size: 40px;
     height: 120vh;
     background-color: #4a4a4a;
     width: 100%;
     display: grid;
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
+    grid-template-rows: auto;
     grid-gap: 26px;
-        grid-template-areas: ".    .    .    .     .     .      .    .       .       .       .      ." "hd   hd   hd   hd    hd   hd      hd   hd      hd      hd     hd     hd" ".    .    .    .     .     .      .    .       .       .       .      ." ".    bg   bg   bg   bg    bg      .    .       .       .       .      ." ".    es   es   es   es    es      .    .       .       .       .      ." ".    ed   ed   ed   ed    ed      .    bf      bf      bf      bf      ." ".    .    .    .     .     .      .    .       .       .       .      ."  ".    .    .    .     .     .      .    .       .       .       .      .";
+    grid-template-areas: ".    .    .    .     .     .      .    .       .       .       .      ." "hd   hd   hd   hd    hd   hd      hd   hd      hd      hd     hd     hd" ".    .    .    .     .     .      .    .       .       .       .      ." ".    bg   bg   bg   bg    bg      .    .       .       .       .      ." ".    es   es   es   es    es      .    .       .       .       .      ." ".    ed   ed   ed   ed    ed      .    bf      bf      bf      bf      ." ".    .    .    .     .     .      .    .       .       .       .      ."  ".    .    .    .     .     .      .    .       .       .       .      .";
   }
   .gsubCase-flex-head {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row nowrap;
-            flex-direction: row nowrap;
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 12;
+    justify-content: space-evenly;
+    flex-direction: row nowrap;
     grid-area: hd;
     background-image: url(/images/new-GSUB.png);
     background-size: contain;
@@ -2990,9 +2326,6 @@ html {
     line-height: normal;
     letter-spacing: normal;
     color: #00cccc;
-    -ms-grid-row: 4;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 5;
     grid-area: bg;
     margin-top: 5vh;
   }
@@ -3006,9 +2339,6 @@ html {
     line-height: normal;
     letter-spacing: normal;
     color: #00cccc;
-    -ms-grid-row: 5;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 5;
     grid-area: es;
     margin-top: 16px;
   }
@@ -3026,30 +2356,16 @@ html {
     line-height: normal;
     letter-spacing: normal;
     color: white;
-    -ms-grid-row: 6;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 5;
     grid-area: ed;
   }
   #behance-flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row nowrap;
-            flex-direction: row nowrap;
-    -ms-grid-row: 6;
-    -ms-grid-column: 8;
-    -ms-grid-column-span: 4;
+    justify-content: space-around;
+    flex-direction: row nowrap;
     grid-area: bf;
   }
   #behance-text {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    align-self: center;
     height: 2.25rem;
     font-family: Roboto;
     font-size: 1.3rem;
@@ -3070,47 +2386,29 @@ html {
   */
 @media (max-width: 1056px) {
   .ecomCase-wrapper {
-    display: -ms-grid;
     display: grid;
     height: 80rem;
     width: 100%;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
   #ecomCase-cols {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[12];
-        grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     font-size: 40px;
     height: 80rem;
     background-color: #4a4a4a;
     width: 100%;
     display: grid;
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
+    grid-template-rows: auto;
     grid-gap: 26px;
-        grid-template-areas: ".    .    .    .     .     .      .    .       .       .       .      ." "hd   hd   hd   hd    hd   hd      hd   hd      hd      hd     hd     hd" "hd   hd   hd   hd    hd   hd      hd   hd      hd      hd     hd     hd" "hd   hd   hd   hd    hd   hd      hd   hd      hd      hd     hd     hd"  "bg   bg   bg   bg   bg    bg      bg   bg      bg      bg     bg     bg " ".    .    .    .     .     .      .    .       .       .       .      ."  "es   es   es   es   es    es      es   es      es      es      es     es" "ed   ed   ed   ed   ed    ed      ed   ed      ed      ed      ed     ed" ".    .    .    .     .     .      .    .       .       .       .      ." "bf   bf   bf   bf    bf   bf      bf    bf      bf      bf      bf     bf" ".    .    .    .     .     .      .    .       .       .       .      ."  ".    .    .    .     .     .      .    .       .       .       .      .";
+    grid-template-areas: ".    .    .    .     .     .      .    .       .       .       .      ." "hd   hd   hd   hd    hd   hd      hd   hd      hd      hd     hd     hd" "hd   hd   hd   hd    hd   hd      hd   hd      hd      hd     hd     hd" "hd   hd   hd   hd    hd   hd      hd   hd      hd      hd     hd     hd"  "bg   bg   bg   bg   bg    bg      bg   bg      bg      bg     bg     bg " ".    .    .    .     .     .      .    .       .       .       .      ."  "es   es   es   es   es    es      es   es      es      es      es     es" "ed   ed   ed   ed   ed    ed      ed   ed      ed      ed      ed     ed" ".    .    .    .     .     .      .    .       .       .       .      ." "bf   bf   bf   bf    bf   bf      bf    bf      bf      bf      bf     bf" ".    .    .    .     .     .      .    .       .       .       .      ."  ".    .    .    .     .     .      .    .       .       .       .      .";
   }
   .gsubCase-flex-head {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     justify-items: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 12;
+    align-items: center;
+    flex-direction: column;
     grid-area: hd;
     background-image: url(/images/new-GSUB.png);
     background-size: contain;
@@ -3149,12 +2447,8 @@ html {
     line-height: normal;
     letter-spacing: normal;
     color: #00cccc;
-    -ms-grid-row: 5;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 12;
     grid-area: bg;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   #gsubCase-services {
     width: auto;
@@ -3166,11 +2460,7 @@ html {
     line-height: normal;
     letter-spacing: normal;
     color: #00cccc;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -ms-grid-row: 7;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 12;
+    justify-self: center;
     grid-area: es;
   }
   #service-type {
@@ -3187,35 +2477,20 @@ html {
     line-height: normal;
     letter-spacing: normal;
     color: white;
-    -ms-grid-row: 8;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 12;
     grid-area: ed;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
     text-align: center;
     margin: 16px;
   }
   #behance-flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row nowrap;
-            flex-direction: row nowrap;
-    -ms-grid-row: 10;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 12;
+    justify-content: space-around;
+    flex-direction: row nowrap;
     grid-area: bf;
     margin: 16px;
   }
   #behance-text {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    align-self: center;
     height: 2.25rem;
     font-family: Roboto;
     font-size: 1.3rem;
@@ -3233,42 +2508,27 @@ html {
 */
 @media (min-width: 1056px) {
   .ecomCase-wrapper {
-    display: -ms-grid;
     display: grid;
     height: 120vh;
     width: 100%;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
   #ecomCase-cols {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[12];
-        grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     font-size: 40px;
     height: 120vh;
     background-color: #4a4a4a;
     width: 100%;
     display: grid;
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
+    grid-template-rows: auto;
     grid-gap: 26px;
-        grid-template-areas: ".    .    .    .     .     .      .    .       .       .       .      ." "hd   hd   hd   hd    hd   hd      hd   hd      hd      hd     hd     hd" ".    .    .    .     .     .      .    .       .       .       .      ." ".    bg   bg   bg   bg    bg      .    .       .       .       .      ." ".    es   es   es   es    es      .    .       .       .       .      ." ".    ed   ed   ed   ed    ed      .    bf      bf      bf      bf      ." ".    .    .    .     .     .      .    .       .       .       .      ."  ".    .    .    .     .     .      .    .       .       .       .      .";
+    grid-template-areas: ".    .    .    .     .     .      .    .       .       .       .      ." "hd   hd   hd   hd    hd   hd      hd   hd      hd      hd     hd     hd" ".    .    .    .     .     .      .    .       .       .       .      ." ".    bg   bg   bg   bg    bg      .    .       .       .       .      ." ".    es   es   es   es    es      .    .       .       .       .      ." ".    ed   ed   ed   ed    ed      .    bf      bf      bf      bf      ." ".    .    .    .     .     .      .    .       .       .       .      ."  ".    .    .    .     .     .      .    .       .       .       .      .";
   }
   .altitudeCase-flex-head {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row nowrap;
-            flex-direction: row nowrap;
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 12;
+    justify-content: space-evenly;
+    flex-direction: row nowrap;
     grid-area: hd;
     background-size: contain;
     background-position: 20.5vw center;
@@ -3305,9 +2565,6 @@ html {
     line-height: normal;
     letter-spacing: normal;
     color: #00cccc;
-    -ms-grid-row: 4;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 5;
     grid-area: bg;
     margin-top: 5vh;
   }
@@ -3321,9 +2578,6 @@ html {
     line-height: normal;
     letter-spacing: normal;
     color: #00cccc;
-    -ms-grid-row: 5;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 5;
     grid-area: es;
     margin-top: 16px;
   }
@@ -3341,30 +2595,16 @@ html {
     line-height: normal;
     letter-spacing: normal;
     color: white;
-    -ms-grid-row: 6;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 5;
     grid-area: ed;
   }
   #behance-flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row nowrap;
-            flex-direction: row nowrap;
-    -ms-grid-row: 6;
-    -ms-grid-column: 8;
-    -ms-grid-column-span: 4;
+    justify-content: space-around;
+    flex-direction: row nowrap;
     grid-area: bf;
   }
   #behance-text {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    align-self: center;
     height: 2.25rem;
     font-family: Roboto;
     font-size: 1.3rem;
@@ -3385,47 +2625,29 @@ html {
   */
 @media (max-width: 1056px) {
   .ecomCase-wrapper {
-    display: -ms-grid;
     display: grid;
     height: 110vh;
     width: 100%;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
   #ecomCase-cols {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[12];
-        grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     font-size: 40px;
     height: 110vh;
     background-color: #4a4a4a;
     width: 100%;
     display: grid;
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
+    grid-template-rows: auto;
     grid-gap: 26px;
-        grid-template-areas: ".    .    .    .     .     .      .    .       .       .       .      ." "hd   hd   hd   hd    hd   hd      hd   hd      hd      hd     hd     hd" "hd   hd   hd   hd    hd   hd      hd   hd      hd      hd     hd     hd" "hd   hd   hd   hd    hd   hd      hd   hd      hd      hd     hd     hd"  "bg   bg   bg   bg   bg    bg      bg   bg      bg      bg     bg     bg " ".    .    .    .     .     .      .    .       .       .       .      ."  "es   es   es   es   es    es      es   es      es      es      es     es" "ed   ed   ed   ed   ed    ed      ed   ed      ed      ed      ed     ed" ".    .    .    .     .     .      .    .       .       .       .      ." "bf   bf   bf   bf    bf   bf      bf    bf      bf      bf      bf     bf" ".    .    .    .     .     .      .    .       .       .       .      .";
+    grid-template-areas: ".    .    .    .     .     .      .    .       .       .       .      ." "hd   hd   hd   hd    hd   hd      hd   hd      hd      hd     hd     hd" "hd   hd   hd   hd    hd   hd      hd   hd      hd      hd     hd     hd" "hd   hd   hd   hd    hd   hd      hd   hd      hd      hd     hd     hd"  "bg   bg   bg   bg   bg    bg      bg   bg      bg      bg     bg     bg " ".    .    .    .     .     .      .    .       .       .       .      ."  "es   es   es   es   es    es      es   es      es      es      es     es" "ed   ed   ed   ed   ed    ed      ed   ed      ed      ed      ed     ed" ".    .    .    .     .     .      .    .       .       .       .      ." "bf   bf   bf   bf    bf   bf      bf    bf      bf      bf      bf     bf" ".    .    .    .     .     .      .    .       .       .       .      .";
   }
   .altitudeCase-flex-head {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     justify-items: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 12;
+    align-items: center;
+    flex-direction: column;
     grid-area: hd;
     background-image: url(/images/new-altitude-logo.png);
     background-size: contain;
@@ -3464,12 +2686,8 @@ html {
     line-height: normal;
     letter-spacing: normal;
     color: #00cccc;
-    -ms-grid-row: 5;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 12;
     grid-area: bg;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   #ecomCase-services1 {
     width: auto;
@@ -3481,11 +2699,7 @@ html {
     line-height: normal;
     letter-spacing: normal;
     color: #00cccc;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -ms-grid-row: 7;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 12;
+    justify-self: center;
     grid-area: es;
   }
   #service-type {
@@ -3502,35 +2716,20 @@ html {
     line-height: normal;
     letter-spacing: normal;
     color: white;
-    -ms-grid-row: 8;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 12;
     grid-area: ed;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
     text-align: center;
     margin: 16px;
   }
   #behance-flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row nowrap;
-            flex-direction: row nowrap;
-    -ms-grid-row: 10;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 12;
+    justify-content: space-around;
+    flex-direction: row nowrap;
     grid-area: bf;
     margin: 16px;
   }
   #behance-text {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    align-self: center;
     height: 2.25rem;
     font-family: Roboto;
     font-size: 1.3rem;
