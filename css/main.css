@@ -2187,7 +2187,7 @@ html {
     line-height: normal;
     letter-spacing: normal;
     color: white;
-    text-align: center;
+    text-align: Left;
   }
   #ecomCase-img {
     height: auto;
@@ -2239,7 +2239,7 @@ html {
     color: white;
     grid-area: ed;
     justify-self: center;
-    text-align: center;
+    text-align: left;
     margin: 16px;
   }
   #behance-flex {
@@ -2665,7 +2665,7 @@ html {
     line-height: normal;
     letter-spacing: normal;
     color: white;
-    text-align: center;
+    text-align: left;
   }
   #ecomCase-img {
     height: auto;
@@ -2717,7 +2717,7 @@ html {
     color: white;
     grid-area: ed;
     justify-self: center;
-    text-align: center;
+    text-align: left;
     margin: 16px;
   }
   #behance-flex {
