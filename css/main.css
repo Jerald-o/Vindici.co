@@ -113,7 +113,6 @@ nav ul li ul li a {
   position: absolute;
   top: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.7);
   height: 70px;
   width: 70px;
 }
@@ -144,7 +143,7 @@ nav ul li ul li a {
     padding: 0 20px;
     line-height: 70px;
     background-color: rgba(0, 0, 0, 0.7);
-    color: #ffffff;
+    color: #00cccc;
     text-decoration: none;
   }
   nav ul li a {
@@ -180,7 +179,7 @@ nav ul li ul li a {
   border-radius: 1px;
   height: 5px;
   width: 35px;
-  background: #ffffff;
+  background: #00cccc;
   position: absolute;
   display: block;
   content: "";
@@ -239,7 +238,6 @@ html {
     height: 95vh;
     width: 100%;
     object-fit: contain;
-    background-color: #4a4a4a;
     grid-template-columns: 1fr;
   }
   .hero-cols {
@@ -2480,7 +2478,7 @@ html {
     color: white;
     grid-area: ed;
     justify-self: center;
-    text-align: center;
+    text-align: left;
     margin: 16px;
   }
   #behance-flex {
